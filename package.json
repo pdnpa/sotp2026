@@ -2,9 +2,10 @@
   "name": "test-vite-standalone",
   "version": "1.0.0",
   "scripts": {
-    "docs:dev": "vitepress dev pdnpaconfig",
-    "docs:build": "vitepress build pdnpaconfig",
-    "docs:preview": "vitepress preview pdnpaconfig"
+    "postinstall": "cd engine && npm install",
+    "dev": "vitepress dev pdnpaconfig",
+    "build": "vitepress build pdnpaconfig",
+    "preview": "vitepress preview pdnpaconfig"
   },
   "devDependencies": {
     "sass-embedded": "^1.97.3",
