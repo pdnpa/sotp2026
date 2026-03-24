@@ -1,5 +1,6 @@
 !.gitkeep
-engine
+/engine
 /.vitepress/cache
 /.idea
 /node_modules
+/.claude
