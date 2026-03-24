@@ -22,7 +22,7 @@ export default defineConfig({
     description: "Report-specific description",
 
     themeConfig: {
-        logo: "/logo.png",
+        logo: "/pdnpa_logo_white.png",
         siteTitle: false,
         nav: [
             { text: 'Home', link: '/' },
