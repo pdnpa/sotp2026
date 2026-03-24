@@ -1,34 +1,29 @@
 ---
 layout: home
-hero:
-  name: Protected Landscapes 
-  text: Interpretation Key
-  tagline: Guidance for the digitisation of habitats and land cover across protected landscapes in England
+metakey: Meta value
+pageLevelMetaData:  
+  name: Custom page title
+  text: A subtitle used on layout=home pages
+  tagline: The tagline used on layout=home pages
   actions:
     - theme: brand
-      text: Read the introduction
-      link: /introduction
+      text: First action
+      link: /page
     - theme: alt
-      text: Explore the guidance
-      link: /guidance/data
+      text: Second action
+      link: /page2
 
 
 ---
 
-<div style="text-align: center; margin: 3rem 0;">
-  <img
-    src="/assets/images/main/org-logos.png"
-    alt="Organisational logos"
-    style="max-width: 900px; width: 100%; filter: saturate(0%);"
-  >
-</div>
+<script setup>
+import { withBase } from 'vitepress'
+</script>
 
+![PDNPA Logo in dark grey](/pdnpa_logo.png)
 
-<div style="text-align: center; margin-bottom: 2rem;">
-  <strong>Version:</strong> v0.1 (Public draft)  
-  <br>
-  <em>Last updated: {{ git_revision_date_localized }}</em>
-</div>
+<img :src="withBase('/pdnpa_logo_white.png')" alt="White logo" />
+
 
 <!-- 
 features:
