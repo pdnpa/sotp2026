@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "types": ["vite/client"],
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "allowJs": true
+  },
+  "include": [
+    "pdnpaconfig/.vitepress/**/*.ts",
+    "pdnpaconfig/.vitepress/**/*.vue",
+    "pdnpaconfig/global-components/**/*.vue"
+  ]
+}
