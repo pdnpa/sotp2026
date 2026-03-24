@@ -16,13 +16,9 @@ pageLevelMetaData:
 
 ---
 
-<script setup>
-import { withBase } from 'vitepress'
-</script>
-
 ![PDNPA Logo in dark grey](/pdnpa_logo.png)
 
-<img :src="withBase('/pdnpa_logo_white.png')" alt="White logo" />
+<img :src="$withBase('/pdnpa_logo_white.png')" alt="White logo" />
 
 
 <!-- 
