@@ -1,18 +1,42 @@
 # PDNPA Report Template
 
-This repository is intended to be used as a shell for starting a new PDNPA report. Clone it into a new folder and then run `npm install` to install the dependencies. 
+This repository is intended to be used as a shell for starting a new PDNPA report. It contains the basic structure of a report and the theme engine as a git submodule. 
 
-## Installing and updating the theme engine git submodule
+To create a new report:
+* Clone this repository
+* Install the theme engine submodule
+* Install dependencies
+* Specify the theme for development or production
 
-You will need to install the theme engine git submodule after cloning the repository (although it should be possible to use `git submodule update --init` instead, but we have not tested this yet).
+## Clone the repository into a new folder
 
-This will also be needed when changes have been made to the theme engine.
-
-```shell    
-git submodule update --remote --merge
+```shell
+git clone https://github.com/pdnpa/pdnpa-vitepress-report-template.git
 ```
 
-## Specifying the theme
+## Installing the theme engine submodule
+
+You will need to install the theme engine git submodule after cloning the repository:
+
+```shell
+git submodule add -f git@github.com:pdnpa/pdnpa-vitepress.git engine
+```
+
+* NB - the `-f` flag is required to force the submodule to be added even though it is in the .gitignore file.
+
+## Install dependencies
+
+Run `npm install` to install the dependencies.
+
+### Updating the theme engine
+
+When changes have been made to the theme engine repository you can merge in the changes using:
+
+```shell    
+git submodule update --init
+```
+
+## Specifying the theme for development or production
 
 ```
 $env:VITEPRESS_BASE="/"; $env:VP_THEME="{themename}"; npx vitepress dev pdnpaconfig
