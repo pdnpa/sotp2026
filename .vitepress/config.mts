@@ -12,7 +12,16 @@ const reportSidebar = generateSidebar({
 
 export default defineConfig({
     // Inherit plugins and markdown config
-    vite: baseVitePressOptions.vite,
+    vite: {
+        ...baseVitePressOptions.vite,
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    api: 'modern-compiler'
+                }
+            }
+        }
+    },
     markdown: baseVitePressOptions.markdown,
 
     // Override content and branding
