@@ -19,10 +19,10 @@ git clone https://github.com/pdnpa/pdnpa-vitepress-report-template.git
 You will need to install the theme engine git submodule after cloning the repository:
 
 ```shell
-git submodule add -f git@github.com:pdnpa/pdnpa-vitepress.git engine
+git submodule update --remote engine
 ```
 
-* NB - the `-f` flag is required to force the submodule to be added even though it is in the .gitignore file.
+*Previously, we tried `git submodule add git@github.com:pdnpa/pdnpa-vitepress.git engine`, which worked until we committed the submodule to the template repository.*
 
 ## Install dependencies
 
@@ -33,8 +33,28 @@ Run `npm install` to install the dependencies.
 When changes have been made to the theme engine repository you can merge in the changes using:
 
 ```shell    
-git submodule update --init
+git submodule update --remote --merge
+
+# 1. Enter the submodule directory
+cd engine
+
+# 2. Switch to the main branch (replaces 'main' with your branch name if different)
+git checkout main
+
+# 3. Pull the latest changes from the remote
+git pull origin main
+
+# 4. Go back to the main project root
+cd ..
 ```
+
+#### Pro Tip for the future:
+
+If you want your submodule to always track a specific branch when you update it, you can configure it like this:
+```shell   
+git config -f .gitmodules submodule.engine.branch main
+```
+This will ensure future `git submodule update --remote` commands know exactly which branch to stay on.
 
 ## Specifying the theme for development or production
 
