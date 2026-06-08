@@ -19,10 +19,30 @@ git clone https://github.com/pdnpa/pdnpa-vitepress-report-template.git
 You will need to install the theme engine git submodule after cloning the repository:
 
 ```shell
-git submodule update --remote engine
+
+// The first time you install, it (probably, sometimes) needs the --init flag
+git submodule update --init --remote engine
+
+# git submodule update --remote engine
+
 ```
 
 *Previously, we tried `git submodule add git@github.com:pdnpa/pdnpa-vitepress.git engine`, which worked until we committed the submodule to the template repository.*
+
+## Create a new repository 
+
+This repository will contain all the content and custom components for the report instance.
+
+Create it on github (or whatever hosting service you prefer), noting the new repository URL.
+
+### Assign the new repository origin
+
+```
+
+git remote add origin git@github.com:new/repository-url.git
+
+```
+
 
 ## Install dependencies
 
