@@ -2,11 +2,21 @@
 
 This repository is intended to be used as a shell for starting a new PDNPA report. It contains the basic structure of a report and the theme engine as a git submodule. 
 
+This readme covers:
+
+1. Creating a new report based on this template
+2. Working on the report instance
+3. Bringing in changes from the underlying theme engine and template repository
+
+# 1. Creating a new report
+
 To create a new report:
 * Clone this repository
 * Install the theme engine submodule
+* Create a new repository for your report instance
+* Assign the new repository origin
+* Add the template repository as a remote
 * Install dependencies
-* Specify the theme for development or production
 
 ## Clone the repository into a new folder
 
@@ -36,48 +46,120 @@ git submodule update --init --remote engine
 
 ## Create a new repository 
 
-This repository will contain all the content and custom components for the report instance.
+This new repository will contain all the content and custom components for the report instance.
 
 Create it on github (or whatever hosting service you prefer), noting the new repository URL.
 
 ### Assign the new repository origin
 
-```
+Remove the template remote (which will currently be set as `origin` and replace it with the new repository
 
-## Remove the template remote and replace it with the new repository
+```
 git remote rename origin template
 git remote add origin git@github.com:new/repository-url.git
-
 ```
 
 ### Add the template repository as a remote
 
-This isn't needed if you run `git remote rename origin template` in the step above.
+** This isn't needed if you run `git remote rename origin template` in the step above. **
+
+If for whatever reason you don't have a remote called `template` you can add it using:
 
 ```
 git remote add template https://github.com/pdnpa/pdnpa-vitepress-report-template
 ```
 
-### Merging the template repository into the new repository
-
-If any changes to the template repository have been made, you can merge them into your new repository. It is very likely that there have been changes to the files in the local report repository, so just be careful when merging.
-
-```
-
-# Get the latest changes from the template
-git fetch template
-
-# Merge the template's main branch into your current branch
-git merge template/main
-
-```
-
-
 ## Install dependencies
 
 Run `npm install` to install the dependencies.
 
-### Updating the theme engine
+
+
+
+
+# 2. Working on the report instance
+
+## Committing content and changes on the local repository
+
+The first time you make changes and try to commit and push them you will also have to push all the commits from the template repository. i.e. Pushing to `origin:main` for the first time will be a large commit. There are ways to avoid this if you want to totally squash the history (search for things like "Interactively rebase" for help). 
+
+After the first commit - whether you squash or not - you can safely push any report-specific changes to `origin:main` on your report repository.
+
+## Developing styles and components
+
+To build and watch the report instance for development, simply run:
+
+```
+npm run dev
+```
+
+Also see below about specifying the theme. You can obviously override a lot of styles using the custom scss and components, but the main layout is defined in the theme engine.
+
+## Specifying the theme for development or production
+
+To specify the theme for development at runtime, you can use:
+
+```
+npm run theme --theme=val
+```
+
+Alternatively, from a terminal/powershell window, you can run:
+
+```
+$env:VITEPRESS_BASE="/"; $env:VP_THEME="{themename}"; npx vitepress dev pdnpaconfig
+```
+
+The default theme is `pdnpa`.
+
+## Deploying to a subfolder
+
+When building for production, typically the files are stored in a subfolder on the webserver, e.g. `../report_publishing/{reportname}`. The vitepress base path can be set using the environment variable `VITEPRESS_BASE`.
+
+```
+$env:VITEPRESS_BASE="/{reportname}/"; npx vitepress prod pdnpaconfig
+```
+
+The theme can also be specified using the environment variable `VP_THEME`:
+
+```
+$env:VITEPRESS_BASE="/{reportname}/"; $env:VP_THEME="{themename}"; npx vitepress prod pdnpaconfig
+```
+
+## Report-specific content
+
+Store all the content for your report in the `~/docs` directory.
+
+Assets that are used by the report can be stored in the `~/docs/public` directory.
+
+You can access images in this folder in a couple of ways, depending on whether you are using markdown or Vue components:
+
+```
+
+![PDNPA Logo in dark grey](/pdnpa_logo.png)
+
+<img :src="$withBase('/pdnpa_logo_white.png')" alt="White logo" />
+
+```
+
+## Report-specific configuration
+
+You can edit the content of `~/.vitepress/config.js` to change the report title, and other global config settings. You can also edit the `~/.vitepress/theme/index.ts` to change runtime things like adding extra components or packages.
+
+** Don't edit anything in the `~/engine` directory!! **
+
+## Report-specific styles and assets
+
+A file called `customstyles.scss` is provided in the `~/.vitepress/theme` directory. You can use this to add custom styles and import other stylesheets or resources.
+
+## Report-specific components
+
+Any components you want to use in your report can be added to the `~/.vitepress/theme/components` directory. These are all auto-loaded by `~/.vitepress/theme/.index.ts`.
+
+
+# 3. Bringing in changes from the underlying theme engine and template repository
+
+
+## Updates to the theme engine
 
 When changes have been made to the theme engine repository you can merge in the changes using:
 
@@ -105,50 +187,16 @@ git config -f .gitmodules submodule.engine.branch main
 ```
 This will ensure future `git submodule update --remote` commands know exactly which branch to stay on.
 
-## Committing content and changes on the local repository
+## Updates to the template repository
 
-The first time you make changes and try to commit and push them you will also have to push all the commits from the template repository. i.e. Pushing to `origin:main` for the first time will be a large commit. There are ways to avoid this if you want to totally squash the history. 
-
-Make one or two content commits, then in PHPStorm open the Git tool window at the bottom  go to the Log tab.
-
-- Scroll down to find the very first commit you made after cloning the template.
-
-- Right-click the commit just before yours (the last commit belonging strictly to the template) and select Interactively Rebase from Here...
-
-- A window will open listing all the template commits. Select all of them except the very first one, and change their dropdown option from Pick to Fixup (or Squash).
-
-- This will collapse the entire template history into a single commit. Your subsequent individual commits will remain untouched on top of it.
-
-- Once the rebase is complete, opening the Push dialog will look much cleaner, showing only that one collapsed template base commit plus your new commits.
-
-After the first commit - whether you squash or not - you can safely push any report-specific changes to `origin:main`.
-
-## Specifying the theme for development or production
+If any changes to the template repository have been made, you can merge them into your new repository. It is very likely that there have been changes to the files in the local report repository, so just be careful when merging.
 
 ```
-$env:VITEPRESS_BASE="/"; $env:VP_THEME="{themename}"; npx vitepress dev pdnpaconfig
-```
 
-The default theme is `pdnpa`.
+# Get the latest changes from the template
+git fetch template
 
-## Deploying to a subfolder
-
-When building for production, typically the files are stored in a subfolder on the webserver, e.g. `../report_publishing/{reportname}`. The vitepress base path can be set using the environment variable `VITEPRESS_BASE`.
+# Merge the template's main branch into your current branch
+git merge template/main
 
 ```
-$env:VITEPRESS_BASE="/{reportname}/"; npx vitepress prod pdnpaconfig
-```
-
-The theme can also be specified using the environment variable `VP_THEME`:
-
-```
-$env:VITEPRESS_BASE="/{reportname}/"; $env:VP_THEME="{themename}"; npx vitepress prod pdnpaconfig
-```
-
-## Report-specific configuration
-
-## Report-specific styles and assets
-
-## Report-specific components
-
-
