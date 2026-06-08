@@ -43,6 +43,26 @@ git remote add origin git@github.com:new/repository-url.git
 
 ```
 
+### Add the template repository as a remote
+
+```
+git remote add template https://github.com/pdnpa/pdnpa-vitepress-report-template
+```
+
+### Merging the template repository into the new repository
+
+If any changes to the template repository have been made, you can merge them into your new repository. It is very likely that there have been changes to the files in the local report repository, so just be careful when merging.
+
+```
+
+# Get the latest changes from the template
+git fetch template
+
+# Merge the template's main branch into your current branch
+git merge template/main
+
+```
+
 
 ## Install dependencies
 
