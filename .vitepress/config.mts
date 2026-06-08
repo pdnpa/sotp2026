@@ -34,7 +34,7 @@ export default withChartjs(defineConfig({
     // Override content and branding
     srcDir: './docs',
     base: process.env.VITEPRESS_BASE ?? '/',
-    title: "",
+    title: "State of the Park Report 2026",
     description: "Report-specific description",
 
     themeConfig: {
