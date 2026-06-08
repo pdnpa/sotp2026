@@ -16,8 +16,12 @@
   "dependencies": {
     "@mdit/plugin-footnote": "^0.22.4",
     "chart.js": "^4.5.1",
+    "chartjs-plugin-datalabels": "^2.2.0",
+    "leaflet": "^1.9.4",
     "lodash-es": "^4.17.23",
     "pagefind": "^1.4.0",
-    "vitepress-plugin-pagefind": "^0.4.18"
+    "tippy.js": "^6.3.7",
+    "vitepress-plugin-pagefind": "^0.4.18",
+    "vuepress-plugin-chart": "^0.3.0"
   }
 }
