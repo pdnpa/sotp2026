@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar'
 import { withChartjs } from 'vitepress-plugin-chartjs'
+import reportContents from './reportcontents.js'
 // Import base config and shared options from engine
 import baseVitePressOptions, {
     vitePressSidebarOptions
@@ -44,6 +45,15 @@ export default withChartjs(defineConfig({
             { text: 'Home', link: '/' },
             // Report-specific nav
         ],
-        sidebar: reportSidebar,
+        sidebar:[
+            {
+              "text": "Introduction",
+              "link": "family.md"
+            },
+            {
+                text: 'Feature assessments',
+                items: reportContents
+            }
+        ]
     },
 }))
