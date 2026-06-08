@@ -20,6 +20,12 @@ export default defineConfig({
                     api: 'modern-compiler'
                 }
             }
+        },
+        resolve: {
+            alias: [
+                // This targets exactly the Vue build that includes the runtime compiler
+                { find: /^vue$/, replacement: 'vue/dist/vue.esm-bundler.js' }
+            ]
         }
     },
     markdown: baseVitePressOptions.markdown,

@@ -20,8 +20,7 @@ pageLevelMetaData:
 
 <img :src="$withBase('/pdnpa_logo_white.png')" alt="White logo" />
 
-
-<!-- 
+[family](family.md)
 features:
   - title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -29,4 +28,3 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
--->
