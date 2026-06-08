@@ -31,11 +31,22 @@ export default {
 
 <template>
 <div class="family-page">
-  This is a family page
-  <div class="objective-section-block body-text pb-0"><h4 class="mb-0 mt-0">Introduction</h4></div>
-  <div class="objective-section-block pt-0">
-    <div class="objective-data-elements">
-      <div v-for="contentchunk in family.introductions" :key="contentchunk.id" class="objective-data-element">
+
+  <DocBefore>
+    <div :id="`objective_heading_${family.id}`"
+         class="colourblock objective-section-block mt-2 headertext progress-objective-details">
+
+      <h1>{{ family.title }} <small><code>&lt;Feature family group {{family.id}}&gt;</code></small></h1>
+
+
+    </div>
+
+  </DocBefore>
+
+  <div class="family-section-block body-text pb-0"><h2 class="mb-0 mt-0">Introduction</h2></div>
+  <div class="family-section-block pt-0">
+    <div class="family-data-elements">
+      <div v-for="contentchunk in family.introductions" :key="contentchunk.id" class="family-data-element">
         <template v-if="contentchunk.content_type === 'rte'">
           <div v-html="contentchunk.introduction"></div>
         </template>
@@ -47,6 +58,18 @@ export default {
     </div>
     <hr/>
   </div>
+
+  <div class="family-section-block body-text pb-0"><h4 class="mb-0 mt-0">Features in this family</h4></div>
+  <ul class="family-features-list">
+    <li v-for="group in family.groups" :key="group.id">
+      <a href="#">{{group.title}}</a>
+      <ul>
+        <li v-for="feature in group.features" :key="feature.id">
+          <a href="#" :title="feature.key_data">{{feature.title}}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
 </div>
 </template>
 
