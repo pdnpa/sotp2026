@@ -16,9 +16,15 @@ export default {
 </script>
 
 <template>
-<div class="footnote-reference" :id="`fnref-${footnote_id}`">[Footnote {{footnote_id}} here]</div>
+  <a :href="`#footnote_${footnote_id}`" class="footnote-reference" title="Go to footnote reference detail below"><small :id="`fnref-${footnote_id}`"><sup>[{{footnote_id}}]</sup></small></a>
 </template>
 
-<style scoped>
-
+<style scoped lang="scss">
+.footnote-reference {
+  font-size: 0.8rem;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
 </style>
