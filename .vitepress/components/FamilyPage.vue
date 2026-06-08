@@ -36,7 +36,7 @@ export default {
     <div :id="`objective_heading_${family.id}`"
          class="colourblock objective-section-block mt-2 headertext progress-objective-details">
 
-      <h1>{{ family.title }} <small><code>&lt;Feature family group {{family.id}}&gt;</code></small></h1>
+      <h1>{{ family.title }}</h1>
 
 
     </div>
@@ -62,10 +62,10 @@ export default {
   <div class="family-section-block body-text pb-0"><h4 class="mb-0 mt-0">Features in this family</h4></div>
   <ul class="family-features-list">
     <li v-for="group in family.groups" :key="group.id">
-      <a href="#">{{group.title}}</a>
+      <a :href="group.url">{{group.title}}</a>
       <ul>
         <li v-for="feature in group.features" :key="feature.id">
-          <a href="#" :title="feature.key_data">{{feature.title}}</a>
+          <a :href="feature.url" :title="feature.key_data">{{feature.title}}</a>
         </li>
       </ul>
     </li>
