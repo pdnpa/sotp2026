@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar'
+import { withChartjs } from 'vitepress-plugin-chartjs'
 // Import base config and shared options from engine
 import baseVitePressOptions, {
     vitePressSidebarOptions
@@ -10,7 +11,7 @@ const reportSidebar = generateSidebar({
     documentRootPath: './docs',
 })
 
-export default defineConfig({
+export default withChartjs(defineConfig({
     // Inherit plugins and markdown config
     vite: {
         ...baseVitePressOptions.vite,
@@ -45,4 +46,4 @@ export default defineConfig({
         ],
         sidebar: reportSidebar,
     },
-})
+}))

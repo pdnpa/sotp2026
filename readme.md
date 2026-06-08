@@ -12,6 +12,11 @@ To create a new report:
 
 ```shell
 git clone https://github.com/pdnpa/pdnpa-vitepress-report-template.git
+
+// Or if you have an existing emtpy directory
+
+git clone https://github.com/pdnpa/pdnpa-vitepress-report-template.git .
+
 ```
 
 ## Installing the theme engine submodule
@@ -39,11 +44,15 @@ Create it on github (or whatever hosting service you prefer), noting the new rep
 
 ```
 
+## Remove the template remote and replace it with the new repository
+git remote rename origin template
 git remote add origin git@github.com:new/repository-url.git
 
 ```
 
 ### Add the template repository as a remote
+
+This isn't needed if you run `git remote rename origin template` in the step above.
 
 ```
 git remote add template https://github.com/pdnpa/pdnpa-vitepress-report-template
@@ -95,6 +104,24 @@ If you want your submodule to always track a specific branch when you update it,
 git config -f .gitmodules submodule.engine.branch main
 ```
 This will ensure future `git submodule update --remote` commands know exactly which branch to stay on.
+
+## Committing content and changes on the local repository
+
+The first time you make changes and try to commit and push them you will also have to push all the commits from the template repository. i.e. Pushing to `origin:main` for the first time will be a large commit. There are ways to avoid this if you want to totally squash the history. 
+
+Make one or two content commits, then in PHPStorm open the Git tool window at the bottom  go to the Log tab.
+
+- Scroll down to find the very first commit you made after cloning the template.
+
+- Right-click the commit just before yours (the last commit belonging strictly to the template) and select Interactively Rebase from Here...
+
+- A window will open listing all the template commits. Select all of them except the very first one, and change their dropdown option from Pick to Fixup (or Squash).
+
+- This will collapse the entire template history into a single commit. Your subsequent individual commits will remain untouched on top of it.
+
+- Once the rebase is complete, opening the Push dialog will look much cleaner, showing only that one collapsed template base commit plus your new commits.
+
+After the first commit - whether you squash or not - you can safely push any report-specific changes to `origin:main`.
 
 ## Specifying the theme for development or production
 
