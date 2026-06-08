@@ -5,7 +5,8 @@
     "postinstall": "cd engine && npm install",
     "dev": "vitepress dev .",
     "build": "vitepress build .",
-    "preview": "vitepress preview ."
+    "preview": "vitepress preview .",
+    "theme" : "set VP_THEME=%npm_config_theme%&& npx vitepress dev . pdnpaconfig"
   },
   "devDependencies": {
     "sass-embedded": "^1.97.3",
