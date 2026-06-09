@@ -20,7 +20,7 @@ const DynamicComponent = markRaw(
     defineComponent({
       // If you imported ReferenceFootnote above, register it here:
       // components: { ReferenceFootnote },
-      template: `<div>${props.content}</div>`
+      template: props.content.trim().startsWith('<') ? `<div>${props.content}</div>` : `<div><p>${props.content}</p></div>`
     })
 )
 </script>
