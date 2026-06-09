@@ -2,6 +2,7 @@
 
 import {data} from "../reportdata.data";
 import DynamicComponent from "./DynamicComponent.vue";
+import WebMap from "./WebMap.vue";
 
 const defaultGroup = {
   number: '0'
@@ -18,7 +19,7 @@ const defaultGroup = {
 
 export default {
   name: "GroupPage",
-  components: {DynamicComponent},
+  components: {DynamicComponent,WebMap},
   props: {
     group_id: {type: Number, required: true},
     family_id: {type: Number, required: true},
@@ -33,6 +34,11 @@ export default {
     this.group = data.families[this.family_id]['groups'][this.group_id] || { ...defaultGroup };
     this.family = data.families[this.family_id] || {};
   },
+  methods: {
+    getLCALayerString(group) {
+      return Object.values(group.landscape_character_areas).map(area => area.layer_slug).join(',');
+    }
+  }
 }
 </script>
 
@@ -43,7 +49,7 @@ export default {
          class="colourblock objective-section-block mt-2 headertext progress-objective-details">
 
       <h1>{{ group.title }}</h1>
-      <p>< {{family.title}}</p>
+      <p><a :href="family.url" class="back-to-family-link">{{family.title}}</a></p>
 
 
     </div>
@@ -63,7 +69,6 @@ export default {
 
       </div>
     </div>
-    <hr/>
   </div>
 
   <div class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0">Distribution</h2></div>
@@ -78,8 +83,15 @@ export default {
         </template>
 
       </div>
+
+      <div v-if="group.landscape_character_areas">
+        <div class="group-data-element">
+          <h3>Landscape Character Areas</h3>
+          <WebMap :layer="getLCALayerString(group)"></WebMap>
+        </div>
+      </div>
+
     </div>
-    <hr/>
   </div>
 
   <div class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0">Why is {{group.title}} important?</h2></div>
@@ -95,7 +107,6 @@ export default {
 
       </div>
     </div>
-    <hr/>
   </div>
 
   <h3>@todo List benefits based on feature pages</h3>
@@ -103,13 +114,11 @@ export default {
   <div class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0">State of {{group.title}}</h2></div>
   <div class="group-section-block pt-0">
     <p>@todo generate table from features</p>
-    <hr/>
   </div>
 
   <div class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0">Impact assessment</h2></div>
   <div class="group-section-block pt-0">
     <p>@todo generate table from features</p>
-    <hr/>
   </div>
 
   ::: warning
@@ -126,6 +135,30 @@ export default {
 </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+.back-to-family-link {
+  font-size: .8rem;
+  text-decoration: none;
+  color: var(--pdnpa-medium);
+  display: block;
+  padding-left: 1rem;
+  &:hover {
+    text-decoration: underline;
+  }
 
+  &:before {
+    content: "← ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .2s ease-in-out;
+  }
+  &:hover {
+    &:before {
+      left: -8px;
+    }
+  }
+}
 </style>
