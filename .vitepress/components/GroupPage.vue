@@ -3,6 +3,7 @@
 import {data} from "../reportdata.data";
 import DynamicComponent from "./DynamicComponent.vue";
 import WebMap from "./WebMap.vue";
+import RiskScaleBadge from "./RiskScaleBadge.vue";
 
 const defaultGroup = {
   number: '0'
@@ -19,7 +20,7 @@ const defaultGroup = {
 
 export default {
   name: "GroupPage",
-  components: {DynamicComponent,WebMap},
+  components: {DynamicComponent,WebMap,RiskScaleBadge},
   props: {
     group_id: {type: Number, required: true},
     family_id: {type: Number, required: true},
@@ -118,7 +119,32 @@ export default {
 
   <div class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0">Impact assessment</h2></div>
   <div class="group-section-block pt-0">
-    <p>@todo generate table from features</p>
+
+    <table>
+      <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Cause</th>
+        <th>Factors</th>
+        <th>Likelihood</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr v-for="impact in group.impacts" :key="impact.id">
+        <td>{{impact.impact}}</td>
+        <td>-- causes --</td>
+        <td>
+          <ul>
+            <li v-for="factor in impact.factors" :key="factor.id">{{factor.title}}</li>
+          </ul>
+        </td>
+        <td>
+          <RiskScaleBadge risktype="veryhigh">{{impact.likelihood}}</RiskScaleBadge>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
   </div>
 
   ::: warning
@@ -131,7 +157,13 @@ export default {
     </template>
   </div>
   :::
-  
+
+  ::: warning
+
+  Some text
+
+  :::
+
 </div>
 </template>
 
