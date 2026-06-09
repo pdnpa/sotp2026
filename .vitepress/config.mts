@@ -48,7 +48,21 @@ export default withChartjs(defineConfig({
         sidebar:[
             {
               "text": "Introduction",
-              "link": "family.md"
+              "collapsed": true,
+              "items": [
+                  {
+                      "text": "Overview of the Peak District",
+                      "link": "introduction/overview"
+                  },
+                  {
+                      "text": "Methodology",
+                      "link": "introduction/methodology"
+                  },
+                  {
+                      "text": "Test map",
+                      "link": "test-map"
+                  }
+              ]
             },
             {
                 text: 'Feature assessments',
