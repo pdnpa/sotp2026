@@ -114,7 +114,30 @@ export default {
 
   <div class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0">State of {{group.title}}</h2></div>
   <div class="group-section-block pt-0">
-    <p>@todo generate table from features</p>
+    <table>
+      <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Key data</th>
+        <th>Factors</th>
+        <th>Benefits</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr v-for="feature in group.features" :key="feature.id">
+        <td>{{feature.title}}</td>
+        <td>{{feature.key_data}}</td>
+        <td>
+          <ul>
+            <li v-for="factor in feature.factors" :key="factor.id">{{factor.title}}</li>
+          </ul>
+        </td>
+        <td>
+          -- benefits --
+        </td>
+      </tr>
+      </tbody>
+    </table>
   </div>
 
   <div class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0">Impact assessment</h2></div>
@@ -147,22 +170,17 @@ export default {
 
   </div>
 
-  ::: warning
-  <div v-for="contentchunk in group.data_qualities" :key="contentchunk.id" class="group-data-element">
-    <template v-if="contentchunk.content_type === 'rte'">
-      <div v-html="contentchunk.quality"></div>
-    </template>
-    <template v-else-if="contentchunk.content_type === 'md'">
-      <DynamicComponent :content="contentchunk.quality" />
-    </template>
+  <div class="warning custom-block">
+    <p class="custom-block-title">What are the gaps in our research & data?</p>
+    <div v-for="contentchunk in group.data_qualities" :key="contentchunk.id" class="group-data-element">
+      <template v-if="contentchunk.content_type === 'rte'">
+        <div v-html="contentchunk.quality"></div>
+      </template>
+      <template v-else-if="contentchunk.content_type === 'md'">
+        <DynamicComponent :content="contentchunk.quality" />
+      </template>
+    </div>
   </div>
-  :::
-
-  ::: warning
-
-  Some text
-
-  :::
 
 </div>
 </template>
