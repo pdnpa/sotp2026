@@ -57,7 +57,7 @@ export default {
 
   </DocBefore>
 
-  <div class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0">Introduction</h2></div>
+  <div id="introduction" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0">Introduction</h2></div>
   <div class="group-section-block pt-0">
     <div class="group-data-elements">
       <div v-for="contentchunk in group.introductions" :key="contentchunk.id" class="group-data-element">
@@ -72,7 +72,7 @@ export default {
     </div>
   </div>
 
-  <div class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0">Distribution</h2></div>
+  <div id="distribution" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0">Distribution</h2></div>
   <div class="group-section-block pt-0">
     <div class="group-data-elements">
       <div v-for="contentchunk in group.distributions" :key="contentchunk.id" class="group-data-element">
@@ -95,7 +95,7 @@ export default {
     </div>
   </div>
 
-  <div class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0">Why is {{group.title}} important?</h2></div>
+  <div id="why-is-important" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0">Why is {{group.title}} important?</h2></div>
   <div class="group-section-block pt-0">
     <div class="group-data-elements">
       <div v-for="contentchunk in group.importances" :key="contentchunk.id" class="group-data-element">
@@ -112,7 +112,7 @@ export default {
 
   <h3>@todo List benefits based on feature pages</h3>
 
-  <div class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0">State of {{group.title}}</h2></div>
+  <div id="state-of" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0">State of {{group.title}}</h2></div>
   <div class="group-section-block pt-0">
     <table>
       <thead>
@@ -140,7 +140,7 @@ export default {
     </table>
   </div>
 
-  <div class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0">Impact assessment</h2></div>
+  <div id="impact-assessment" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0">Impact assessment</h2></div>
   <div class="group-section-block pt-0">
 
     <table>
@@ -170,7 +170,7 @@ export default {
 
   </div>
 
-  <div class="warning custom-block">
+  <div id="what-are-the-gaps-in-our-research-data" class="warning custom-block">
     <p class="custom-block-title">What are the gaps in our research & data?</p>
     <div v-for="contentchunk in group.data_qualities" :key="contentchunk.id" class="group-data-element">
       <template v-if="contentchunk.content_type === 'rte'">
