@@ -43,7 +43,7 @@ export default {
 
   </DocBefore>
 
-  <div class="family-section-block body-text pb-0"><h2 class="mb-0 mt-0">Introduction</h2></div>
+  <div class="family-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="introduction">Introduction</h2></div>
   <div class="family-section-block pt-0">
     <div class="family-data-elements">
       <div v-for="contentchunk in family.introductions" :key="contentchunk.id" class="family-data-element">
@@ -59,7 +59,7 @@ export default {
     <hr/>
   </div>
 
-  <div class="family-section-block body-text pb-0"><h4 class="mb-0 mt-0">Features in this family</h4></div>
+  <div class="family-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="features">Features in this family</h2></div>
   <ul class="family-features-list">
     <li v-for="group in family.groups" :key="group.id">
       <a :href="group.url">{{group.title}}</a>
