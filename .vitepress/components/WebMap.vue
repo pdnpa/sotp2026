@@ -42,6 +42,7 @@ const initMap = async () => {
 
     view = new MapView({
       container: mapDiv.value,
+      zoom: 10,
       map: webmap
     })
 
