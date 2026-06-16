@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar'
 import { withChartjs } from 'vitepress-plugin-chartjs'
-import reportContents from './reportcontents.js'
+import {contentsFeatures,contentsFactors} from './reportcontents.js'
 import fs from 'node:fs'
 import path from 'node:path'
 // Import base config and shared options from engine
@@ -74,7 +74,12 @@ export default withChartjs(defineConfig({
             },
             {
                 text: 'Feature assessments',
-                items: reportContents
+                items: contentsFeatures
+            },
+            {
+                text: 'Factors',
+                "collapsed": true,
+                items: contentsFactors
             }
         ]
     },
