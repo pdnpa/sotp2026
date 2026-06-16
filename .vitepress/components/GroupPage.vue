@@ -113,7 +113,20 @@ export default {
     </div>
   </div>
 
-  <h3>@todo List benefits based on feature pages</h3>
+  <ul>
+    <li v-for="benefit in group.benefits" :key="benefit.id">
+
+        <img
+            class="benefit-image"
+            v-if="getFirstImage(benefit)"
+            :src="getFirstImage(benefit).url"
+            :alt="benefit.title"
+        >
+
+        {{ benefit.title }}
+
+    </li>
+  </ul>
 
   <div id="state-of" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0">State of {{group.title}}</h2></div>
   <div class="group-section-block pt-0">
@@ -236,7 +249,7 @@ export default {
     }
   }
 }
-.factor-image {
+.factor-image, .benefit-image {
   width: 100px;
   height: 100px;
   object-fit: cover;
