@@ -56,7 +56,6 @@ export default {
 
       </div>
     </div>
-    <hr/>
   </div>
 
   <div class="family-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="features">Features in this family</h2></div>
