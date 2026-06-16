@@ -38,6 +38,9 @@ export default {
   methods: {
     getLCALayerString(group) {
       return Object.values(group.landscape_character_areas).map(area => area.layer_slug).join(',');
+    },
+    getFirstImage(factor) {
+      return factor.images ? Object.values(factor.images)[0] : null;
     }
   }
 }
@@ -125,11 +128,22 @@ export default {
       </thead>
       <tbody>
       <tr v-for="feature in group.features" :key="feature.id">
-        <td>{{feature.title}}</td>
+        <td><a :href="feature.url">{{feature.title}}</a></td>
         <td>{{feature.key_data}}</td>
         <td>
           <ul>
-            <li v-for="factor in feature.factors" :key="factor.id">{{factor.title}}</li>
+            <li v-for="factor in feature.factors" :key="factor.id">
+              <a :href="factor.url">
+              <img
+                  class="factor-image"
+                v-if="getFirstImage(factor)"
+                :src="getFirstImage(factor).url"
+                :alt="factor.title"
+              >
+
+              {{ factor.title }}
+              </a>
+            </li>
           </ul>
         </td>
         <td>
@@ -158,7 +172,18 @@ export default {
         <td>-- causes --</td>
         <td>
           <ul>
-            <li v-for="factor in impact.factors" :key="factor.id">{{factor.title}}</li>
+            <li v-for="factor in impact.factors" :key="factor.id">
+              <a :href="factor.url">
+                <img
+                    class="factor-image"
+                    v-if="getFirstImage(factor)"
+                    :src="getFirstImage(factor).url"
+                    :alt="factor.title"
+                >
+
+                {{ factor.title }}
+              </a>
+            </li>
           </ul>
         </td>
         <td>
@@ -210,5 +235,11 @@ export default {
       left: -8px;
     }
   }
+}
+.factor-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 1rem;
 }
 </style>
