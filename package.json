@@ -1,5 +1,6 @@
 {
-  "name": "test-vite-standalone",
+  "name": "sotp2026",
+  "description": "State of the Park Report 2026 by the Peak District National Park Authority",
   "version": "1.0.0",
   "scripts": {
     "postinstall": "cd engine && npm install",
