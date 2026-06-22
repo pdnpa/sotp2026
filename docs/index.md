@@ -13,18 +13,38 @@ pageLevelMetaData:
       text: Second action
       link: /page2
 
-
+hero:
+  name: 2026
+  text: State of the Park Report
+  tagline: by Peak District National Park Authority
+  image:
+    src: /pdnpa_logo_white.png
+    alt: PDNPA 75th Anniversary logo
+  actions:
+    - theme: brand
+      text: Introduction
+      link: /introduction/overview.md
+      
+features:
+    - title: Feature A
+      details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    - title: Feature B
+      details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    - title: Feature C
+      details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
+
+<!--
 
 ![PDNPA Logo in dark grey](/pdnpa_logo.png)
 
 <img :src="$withBase('/pdnpa_logo_white.png')" alt="White logo" />
 
 [family](family.md)
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
+actions:
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/vuejs/vitepress
+
+-->

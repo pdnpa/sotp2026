@@ -56,7 +56,7 @@ export default withChartjs(defineConfig({
         sidebar:[
             {
               "text": "Introduction",
-              "collapsed": true,
+              "collapsed": false,
               "items": [
                   {
                       "text": "Overview of the Peak District",
