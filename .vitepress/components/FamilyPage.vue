@@ -2,6 +2,7 @@
 //import reportdata, { features, references } from '../reportdata.js'
 import { data } from '../reportdata.data.js'
 import DynamicComponent from "./DynamicComponent.vue";
+import FamilyRiskAssessment from "./FamilyRiskAssessment.vue";
 
 
 const defaultFamily = {
@@ -9,11 +10,12 @@ const defaultFamily = {
   ,text: ''
   ,introductions: []
   ,families: []
+  ,riskAssessments: []
 }
 
 export default {
   name: "FamilyPage",
-  components: {DynamicComponent},
+  components: {DynamicComponent, FamilyRiskAssessment},
   props: {
     family_id: {type: Number, required: true}
   },
@@ -69,6 +71,10 @@ export default {
       </ul>
     </li>
   </ul>
+
+  <div class="family-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="risks">Risk to {{family.title}}</h2></div>
+  <FamilyRiskAssessment :family="family"/>
+
 </div>
 </template>
 
