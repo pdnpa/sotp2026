@@ -50,7 +50,8 @@ export default withChartjs(defineConfig({
         logo: "/pdnpa_logo_white.png",
         siteTitle: false,
         nav: [
-            { text: 'Home', link: '/' },
+            { "text": 'Home', "link": '/' },
+            { "text": 'Overview', "link": '/introduction/overview' },
             // Report-specific nav
         ],
         sidebar:[
@@ -60,26 +61,24 @@ export default withChartjs(defineConfig({
               "items": [
                   {
                       "text": "Overview of the Peak District",
-                      "link": "introduction/overview"
+                      "link": "/introduction/overview"
                   },
                   {
                       "text": "Methodology",
-                      "link": "introduction/methodology"
-                  },
-                  {
-                      "text": "Test map",
-                      "link": "test-map"
+                      "link": "/introduction/methodology"
                   }
               ]
             },
             {
-                text: 'Feature assessments',
-                items: contentsFeatures
+                "text": 'Feature assessments',
+                "link": "assessments",
+                "collapsed": false,
+                "items": contentsFeatures
             },
             {
-                text: 'Factors',
+                "text": 'Factors',
                 "collapsed": true,
-                items: contentsFactors
+                "items": contentsFactors
             }
         ]
     },

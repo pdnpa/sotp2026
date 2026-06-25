@@ -17,9 +17,7 @@ hero:
   name: 2026
   text: State of the Park Report
   tagline: by Peak District National Park Authority
-  image:
-    src: /pdnpa_logo_white.png
-    alt: PDNPA 75th Anniversary logo
+
   actions:
     - theme: brand
       text: Introduction
