@@ -182,7 +182,15 @@ export default {
       <tbody>
       <tr v-for="impact in group.impacts" :key="impact.id">
         <td>{{impact.impact}}</td>
-        <td>-- causes --</td>
+        <td>
+          <ul>
+            <li v-for="cause in impact.impacts" :key="cause.id">
+
+                {{ cause.impact }}
+
+            </li>
+          </ul>
+        </td>
         <td>
           <ul>
             <li v-for="factor in impact.factors" :key="factor.id">
