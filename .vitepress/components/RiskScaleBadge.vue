@@ -6,9 +6,9 @@ export default {
   name: 'RiskScaleBadge',
   props: {
     risktype: {
-      type: String,
+      type: [String, Number],
       default() {
-        return 'low';
+        return '';
       }
     },
     marker: {
@@ -31,28 +31,42 @@ export default {
     marker_class() {
       switch(this.risktype) {
         case 'low':
+        case 1:
           return 'risk-badge-low';
         case 'medium' :
+        case 2:
           return 'risk-badge-medium';
         case 'high' :
+        case 3:
           return 'risk-badge-high';
         case 'veryhigh':
-        default:
+        case 4:
           return 'risk-badge-veryhigh';
+        case '':
+        case 0:
+        default:
+          return 'risk-badge-na';
       }
     },
 
     marker_text() {
       switch(this.risktype) {
         case 'low':
+        case 1:
           return 'Very low to low';
         case 'medium' :
+        case 2:
           return 'Medium';
         case 'high' :
+        case 3:
           return 'High';
         case 'veryhigh':
-        default:
+        case 4:
           return 'Very High';
+        case '':
+        case 0:
+        default:
+          return 'N/A';
       }
     }
   }
@@ -70,11 +84,13 @@ $low: #FCFDBF;
 $medium: #FC8961;
 $high: #B73779;
 $veryhigh: #51127C;
+$na: #e8e8e8;
 
 $low-text: #030303;
 $medium-text: #1c120d;
 $high-text: #ffffff;
 $veryhigh-text: #ffffff;
+$na-text: #434343;
 
 .risk-bg-low {
   background-color: $low;
@@ -91,6 +107,10 @@ $veryhigh-text: #ffffff;
 .risk-bg-veryhigh {
   background-color: $veryhigh;
   color: $veryhigh-text;
+}
+.risk-bg-na {
+  background-color: $na;
+  color: $na-text;
 }
 
 .risk-level-text {
@@ -191,6 +211,18 @@ $texture-cross: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0
       background-color: $veryhigh;
       background-image: $texture-cross;
       clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); // Diamond
+    }
+  }
+
+}
+
+.risk-badge-na {
+  background-color: $na; color: $na-text;
+
+  &.is-marker {
+    background-color: transparent;
+    &::before {
+      background-color: $na-text;
     }
   }
 
