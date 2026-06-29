@@ -4,6 +4,7 @@ import {data} from "../reportdata.data";
 import DynamicComponent from "./DynamicComponent.vue";
 import WebMap from "./WebMap.vue";
 import RiskScaleBadge from "./RiskScaleBadge.vue";
+import LikelihoodBadge from "./LikelihoodBadge.vue";
 
 const defaultGroup = {
   number: '0'
@@ -20,7 +21,7 @@ const defaultGroup = {
 
 export default {
   name: "GroupPage",
-  components: {DynamicComponent,WebMap,RiskScaleBadge},
+  components: {DynamicComponent,WebMap,RiskScaleBadge,LikelihoodBadge},
   props: {
     group_id: {type: Number, required: true},
     family_id: {type: Number, required: true},
@@ -49,12 +50,13 @@ export default {
 <template>
 <div class="group-page">
   <DocBefore>
+    <div class="feature-family-heading feature-family-heading__descendant">
+      <a :href="family.url" class="back-to-family-link">< {{family.title}}</a>
+    </div>
     <div :id="`group_heading_${family.id}`"
-         class="colourblock objective-section-block mt-2 headertext progress-objective-details">
+         class="feature-group-heading">
 
       <h1>{{ group.title }}</h1>
-      <p><a :href="family.url" class="back-to-family-link">{{family.title}}</a></p>
-
 
     </div>
 
@@ -113,18 +115,24 @@ export default {
     </div>
   </div>
 
-  <ul>
+  <ul class="benefit-list">
     <li v-for="benefit in group.benefits" :key="benefit.id">
 
+      <div v-if="getFirstImage(benefit)">
+        <a :href="benefit.url">
         <img
             class="benefit-image"
             v-if="getFirstImage(benefit)"
             :src="getFirstImage(benefit).url"
-            :alt="benefit.title"
-        >
-
-        {{ benefit.title }}
-
+            :alt="benefit.benefit"
+        />
+       <span>{{ benefit.benefit }}</span></a>
+      </div>
+      <div v-else>
+        <a :href="benefit.url">
+        <span class="image-placeholder"></span>
+        <span>{{ benefit.benefit }}</span></a>
+      </div>
     </li>
   </ul>
 
@@ -136,7 +144,7 @@ export default {
         <th>Feature</th>
         <th>Key data</th>
         <th>Factors</th>
-        <th>Benefits</th>
+        <!-- <th>Benefits</th> -->
       </tr>
       </thead>
       <tbody>
@@ -159,9 +167,9 @@ export default {
             </li>
           </ul>
         </td>
-        <td>
+        <!-- <td>
           -- benefits --
-        </td>
+        </td> -->
       </tr>
       </tbody>
     </table>
@@ -208,7 +216,7 @@ export default {
           </ul>
         </td>
         <td>
-          <RiskScaleBadge risktype="veryhigh">{{impact.likelihood}}</RiskScaleBadge>
+          <LikelihoodBadge :likelihood="impact.likelihood">{{impact.likelihood}}</LikelihoodBadge>
         </td>
       </tr>
       </tbody>
@@ -232,35 +240,6 @@ export default {
 </template>
 
 <style scoped lang="scss">
-.back-to-family-link {
-  font-size: .8rem;
-  text-decoration: none;
-  color: var(--pdnpa-medium);
-  display: block;
-  padding-left: 1rem;
-  &:hover {
-    text-decoration: underline;
-  }
 
-  &:before {
-    content: "← ";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: all .2s ease-in-out;
-  }
-  &:hover {
-    &:before {
-      left: -8px;
-    }
-  }
-}
-.factor-image, .benefit-image {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  margin-right: 1rem;
-}
+
 </style>

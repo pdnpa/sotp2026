@@ -36,7 +36,7 @@ export default {
 
   <DocBefore>
     <div :id="`objective_heading_${family.id}`"
-         class="colourblock objective-section-block mt-2 headertext progress-objective-details">
+         class="feature-family-heading">
 
       <h1>{{ family.title }}</h1>
 
