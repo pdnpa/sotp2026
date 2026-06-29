@@ -5,4 +5,4 @@
     ## Impacts
 
 </div>
-<ClientOnly><FactorPage :factor_id="6" /></ClientOnly>
+<FactorPage :factor_id="6" />

@@ -7,4 +7,4 @@
 ## Risks
 
 </div>
-<ClientOnly><FamilyPage :family_id="2" /></ClientOnly>
+<FamilyPage :family_id="2" />

@@ -13,4 +13,4 @@
 ## What are the gaps in our research & data?
 
 </div>
-<ClientOnly><GroupPage :family_id="2" :group_id="4" /></ClientOnly>
+<GroupPage :family_id="2" :group_id="4" />

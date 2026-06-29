@@ -11,4 +11,4 @@
     ## Condition
 
 </div>
-<ClientOnly><FeaturePage :feature_id="12" /></ClientOnly>
+<FeaturePage :feature_id="12" />
