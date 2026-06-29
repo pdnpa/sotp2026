@@ -62,7 +62,7 @@ export default withChartjs(defineConfig({
             label: 'On this page'
         },
         logo: "/pdnpa_logo_white.png",
-        siteTitle: false,
+        siteTitle: "State of the Park Report 2026",
         nav: [
             { "text": 'Home', "link": '/' },
             { "text": 'Overview', "link": '/introduction/overview' },
