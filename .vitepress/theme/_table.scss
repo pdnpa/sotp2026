@@ -1,0 +1,37 @@
+.vp-doc {
+  table   {
+    thead {
+      tr {
+        border: none;
+        background: none;
+      }
+    }
+    th {
+      font-size: 1.2rem;
+      border-top: none;
+      background: none;
+      &:first-child {
+        border-left: none;
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    td {
+      &:first-child {
+        border-left: none;
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    tr:last-child {
+      td {
+        border-bottom: none;
+      }
+    }
+
+  }
+}

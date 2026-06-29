@@ -17,12 +17,6 @@ export default {
 <div class="feature-assessment-index">
 
   <DocBefore>
-    <div class="colourblock objective-section-block mt-2 headertext progress-objective-details">
-
-      <h1>Feature Assessments</h1>
-      <p></p>
-
-    </div>
 
   </DocBefore>
 

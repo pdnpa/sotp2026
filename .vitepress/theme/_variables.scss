@@ -1,0 +1,32 @@
+// NB the html:root definition here - it is required for a specificity hack
+// because the submodule still imports its own stylesheets in the base and default
+// themes, and these occur later in the page load
+html:root {
+  --sopr-family-bg: antiquewhite;
+  --sopr-group-bg: #f5f5f5;
+  --sopr-feature-bg: #f5f5f5;
+  --sopr-aside-bg: #fff;
+  --vp-c-divider: var(--pdnpa-midbrown);
+  --vp-c-divider-dark: var(--pdnpa-darkbrown);
+  --vp-nav-bg-color: #6494a2;
+  --vp-sidebar-bg-color: #424242;
+
+  // 1634px;
+  --vp-layout-max-width: 100vw;
+
+}
+html.dark {
+
+  --sopr-family-bg: #493f33;
+  --sopr-group-bg: #222;
+  --sopr-feature-bg: #222;
+  --sopr-aside-bg: #0e0e0e;
+
+  --vp-nav-bg-color: #3d4347;
+
+  --vp-sidebar-bg-color: var(--pdnpa-darkest);
+
+  --vp-c-divider: var(--pdnpa-midbrown);
+  --vp-c-divider-dark: var(--pdnpa-darkbrown);
+
+}

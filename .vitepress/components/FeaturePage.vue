@@ -73,7 +73,7 @@ export default {
 <div class="factor-page" data-pagefind-body>
   <DocBefore>
     <div class="feature-family-heading feature-family-heading__descendant">
-      <a :href="$withBase(family.url)" class="back-to-family-link">< {{family.title}}</a> <a :href="group.url" class="back-to-group-link">< {{group.title}}</a>
+      <a :href="$withBase(family.url)" class="back-to-family-link">{{family.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span> <a :href="group.url" class="back-to-group-link">{{group.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span>
     </div>
     <div :id="`objective_heading_${feature.id}`"
          class="feature-heading">
@@ -200,5 +200,7 @@ export default {
 </template>
 
 <style scoped>
-
+.feature-benefits, .feature-factors {
+  display: flex;
+}
 </style>

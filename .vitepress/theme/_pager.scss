@@ -1,0 +1,25 @@
+html {
+  .VPContent {
+    .prev-next {
+      border-top: none;
+      .pager-link {
+        border: none;
+        border-top: 2px solid var(--vp-nav-bg-color);
+        background: transparent;
+        border-radius: 0;
+        margin-top: 3rem;
+
+        .title {
+          color: var(--nav-link-hover);
+          font-size: 1.1rem;
+
+          &:hover, &:visited, &:active, .active, .hover {
+            color: var(--pdnpa-darkorange);
+          }
+        }
+
+      }
+    }
+  }
+
+}

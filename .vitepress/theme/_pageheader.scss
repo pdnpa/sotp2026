@@ -1,0 +1,63 @@
+@mixin large-page-heading() {
+  padding: 1.5rem;
+}
+@mixin descendant-page-heading() {
+  padding: 0.5rem 1.5rem;
+}
+
+.feature-family-heading {
+  @include large-page-heading();
+  background-color: var(--sopr-family-bg);
+
+  &.feature-family-heading__descendant {
+    @include descendant-page-heading();
+  }
+}
+.feature-group-heading {
+  @include large-page-heading();
+  background-color: var(--sopr-group-bg);
+  &.feature-group-heading__descendant {
+    @include descendant-page-heading();
+  }
+}
+
+.feature-heading {
+  @include large-page-heading();
+  background-color: var(--sopr-feature-bg);
+}
+
+.vp-doc a.back-to-family-link,
+.vp-doc a.back-to-group-link {
+  font-size: .8rem;
+  text-decoration: none;
+  color: var(--pdnpa-medium);
+  display: inline-block;
+  position: relative;
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:before {
+    content: "← ";
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .2s ease-in-out;
+  }
+  &:hover {
+    &:before {
+      left: -8px;
+    }
+  }
+
+  .dark & {
+    color: var(--pdnpa-light);
+  }
+}
+
+.breadcrumb-arrow {
+  color: var(--vp-c-divider);
+
+}

@@ -30,8 +30,10 @@ export default {
 
 <style scoped lang="scss">
 .footnote-reference {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   text-decoration: none;
+  text-underline-offset: -3px;
+  margin-left: 1px;
   &:hover {
     text-decoration: underline;
   }

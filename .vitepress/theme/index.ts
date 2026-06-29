@@ -3,7 +3,7 @@ import engineTheme from '../../engine/pdnpaconfig/.vitepress/theme/index'
 import type { Theme } from 'vitepress'
 import { Chart, registerables } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
-import '../customstyles.scss';
+import './customstyles.scss';
 
 Chart.register(...registerables, ChartDataLabels);
 

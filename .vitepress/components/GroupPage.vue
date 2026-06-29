@@ -58,7 +58,7 @@ export default {
 <div class="group-page" data-pagefind-body>
   <DocBefore>
     <div class="feature-family-heading feature-family-heading__descendant">
-      <a :href="$withBase(family.url)" class="back-to-family-link">< {{family.title}}</a>
+      <a :href="$withBase(family.url)" class="back-to-family-link">{{family.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span>
     </div>
     <div :id="`group_heading_${family.id}`"
          class="feature-group-heading">
@@ -159,18 +159,24 @@ export default {
         <td><a :href="$withBase(feature.url)">{{feature.title}}</a></td>
         <td>{{feature.key_data}}</td>
         <td>
-          <ul>
+          <ul class="factor-list">
             <li v-for="factor in feature.factors" :key="factor.id">
-              <a :href="$withBase(factor.url)">
-              <img
-                  class="factor-image"
-                v-if="getFirstImage(factor)"
-                :src="getFirstImage(factor).url"
-                :alt="factor.title"
-              >
 
-              {{ factor.title }}
-              </a>
+              <div v-if="getFirstImage(factor)">
+                <a :href="$withBase(factor.url)">
+                  <img
+                      class="factor-image"
+                      v-if="getFirstImage(factor)"
+                      :src="getFirstImage(factor).url"
+                      :alt="factor.title"
+                  />
+                  <span>{{ factor.title }}</span></a>
+              </div>
+              <div v-else>
+                <a :href="$withBase(factor.url)">
+                  <span class="image-placeholder"></span>
+                  <span>{{ factor.title }}</span></a>
+              </div>
             </li>
           </ul>
         </td>
@@ -207,20 +213,28 @@ export default {
           </ul>
         </td>
         <td>
-          <ul>
-            <li v-for="factor in impact.factors" :key="factor.id">
-              <a :href="$withBase(factor.url)">
-                <img
-                    class="factor-image"
-                    v-if="getFirstImage(factor)"
-                    :src="getFirstImage(factor).url"
-                    :alt="factor.title"
-                >
 
-                {{ factor.title }}
-              </a>
+          <ul class="factor-list">
+            <li v-for="factor in impact.factors" :key="factor.id">
+
+              <div v-if="getFirstImage(factor)">
+                <a :href="$withBase(factor.url)">
+                  <img
+                      class="factor-image"
+                      v-if="getFirstImage(factor)"
+                      :src="getFirstImage(factor).url"
+                      :alt="factor.factor"
+                  />
+                  <span>{{ factor.title }}</span></a>
+              </div>
+              <div v-else>
+                <a :href="$withBase(factor.url)">
+                  <span class="image-placeholder"></span>
+                  <span>{{ factor.title }}</span></a>
+              </div>
             </li>
           </ul>
+
         </td>
         <td>
           <LikelihoodBadge :likelihood="impact.likelihood">{{impact.likelihood}}</LikelihoodBadge>
