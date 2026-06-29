@@ -1,6 +1,7 @@
 <script>
 import { data } from '../reportdata.data.js'
 import DynamicComponent from "./DynamicComponent.vue";
+import ReferenceList from "./ReferenceList.vue";
 
 const defaultBenefit = {
   number: '0'
@@ -15,17 +16,29 @@ const defaultBenefit = {
 
 export default {
   name: "BenefitPage",
-  components: {DynamicComponent},
+  components: {DynamicComponent, ReferenceList},
   props: {
-    factor_id: {type: Number, required: true}
+    benefit_id: {type: Number, required: true}
+  },
+  provide() {
+    return {
+      registerReference: (id) => {
+        if (!this.usedReferenceIds.includes(id)) {
+          this.usedReferenceIds.push(id);
+        }
+      }
+    }
   },
   data() {
     return {
-      benefit: {}
+      benefit: {},
+      usedReferenceIds: []
     }
   },
   beforeMount() {
-    this.benefit = data.benefits[this.benefit_id] || { ...defaultBenefit };
+    // Attempt to find benefit in all features/groups or a top level benefits if it exists
+    // Given the previous files, let's assume it might be in data.benefits or we need to find it
+    this.benefit = (data.benefits && data.benefits[this.benefit_id]) || { ...defaultBenefit };
   },
 }
 
@@ -44,7 +57,7 @@ export default {
   <div class="factor-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Description">Description</h2></div>
   <div class="factor-section-block pt-0">
     <div class="factor-data-elements">
-      <div v-for="contentchunk in factor.descriptions" :key="contentchunk.id" class="factor-data-element">
+      <div v-for="contentchunk in benefit.descriptions" :key="contentchunk.id" class="factor-data-element">
         <template v-if="contentchunk.content_type === 'rte'">
           <DynamicComponent :content="contentchunk.description" />
         </template>
@@ -57,19 +70,18 @@ export default {
   </div>
 
 
-  <div class="factor-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="impacts">Impacts resulting from {{factor.title}}</h2></div>
+  <div class="factor-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="impacts">Impacts resulting from {{benefit.title}}</h2></div>
   <div class="factor-section-block pt-0">
     <div class="factor-data-elements">
-      <div v-for="impact in factor.impacts" :key="impact.id" class="factor-data-element">
+      <div v-for="impact in benefit.impacts" :key="impact.id" class="factor-data-element">
         <h3>{{impact.title}}</h3>
 
-        <DynamicComponent :content="impact.factor_impact_description" />
+        <DynamicComponent :content="impact.benefit_impact_description" />
       </div>
     </div>
   </div>
 
-
-
+  <ReferenceList :reference-ids="usedReferenceIds" />
 
 </div>
 </template>

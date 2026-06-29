@@ -3,6 +3,7 @@
 import { data } from '../reportdata.data.js'
 import DynamicComponent from "./DynamicComponent.vue";
 import FamilyRiskAssessment from "./FamilyRiskAssessment.vue";
+import ReferenceList from "./ReferenceList.vue";
 
 
 const defaultFamily = {
@@ -15,13 +16,23 @@ const defaultFamily = {
 
 export default {
   name: "FamilyPage",
-  components: {DynamicComponent, FamilyRiskAssessment},
+  components: {DynamicComponent, FamilyRiskAssessment, ReferenceList},
   props: {
     family_id: {type: Number, required: true}
   },
+  provide() {
+    return {
+      registerReference: (id) => {
+        if (!this.usedReferenceIds.includes(id)) {
+          this.usedReferenceIds.push(id);
+        }
+      }
+    }
+  },
   data() {
     return {
-      family: {}
+      family: {},
+      usedReferenceIds: []
     }
   },
   beforeMount() {
@@ -74,6 +85,8 @@ export default {
 
   <div class="family-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="risks">Risk to {{family.title}}</h2></div>
   <FamilyRiskAssessment :family="family"/>
+
+  <ReferenceList :reference-ids="usedReferenceIds" />
 
 </div>
 </template>

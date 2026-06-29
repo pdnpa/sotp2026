@@ -1,6 +1,12 @@
 <script>
 export default {
   name: "ReferenceFootnote",
+  inject: {
+    registerReference: {
+      from: 'registerReference',
+      default: null
+    }
+  },
   props: {
     footnoteref: {type: String, required: true}
   },
@@ -11,6 +17,9 @@ export default {
   },
   beforeMount() {
     this.footnote_id = parseInt(this.footnoteref);
+    if (this.registerReference) {
+      this.registerReference(this.footnote_id);
+    }
   },
 }
 </script>

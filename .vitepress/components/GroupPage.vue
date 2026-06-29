@@ -5,6 +5,7 @@ import DynamicComponent from "./DynamicComponent.vue";
 import WebMap from "./WebMap.vue";
 import RiskScaleBadge from "./RiskScaleBadge.vue";
 import LikelihoodBadge from "./LikelihoodBadge.vue";
+import ReferenceList from "./ReferenceList.vue";
 
 const defaultGroup = {
   number: '0'
@@ -21,15 +22,25 @@ const defaultGroup = {
 
 export default {
   name: "GroupPage",
-  components: {DynamicComponent,WebMap,RiskScaleBadge,LikelihoodBadge},
+  components: {DynamicComponent,WebMap,RiskScaleBadge,LikelihoodBadge,ReferenceList},
   props: {
     group_id: {type: Number, required: true},
     family_id: {type: Number, required: true},
+  },
+  provide() {
+    return {
+      registerReference: (id) => {
+        if (!this.usedReferenceIds.includes(id)) {
+          this.usedReferenceIds.push(id);
+        }
+      }
+    }
   },
   data() {
     return {
       group: {},
       family: {},
+      usedReferenceIds: []
     }
   },
   beforeMount() {
@@ -67,7 +78,7 @@ export default {
     <div class="group-data-elements">
       <div v-for="contentchunk in group.introductions" :key="contentchunk.id" class="group-data-element">
         <template v-if="contentchunk.content_type === 'rte'">
-          <div v-html="contentchunk.introduction"></div>
+          <DynamicComponent :content="contentchunk.introduction" />
         </template>
         <template v-else-if="contentchunk.content_type === 'md'">
           <DynamicComponent :content="contentchunk.introduction" />
@@ -235,6 +246,8 @@ export default {
       </template>
     </div>
   </div>
+
+  <ReferenceList :reference-ids="usedReferenceIds" />
 
 </div>
 </template>

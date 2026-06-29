@@ -2,6 +2,7 @@
 import { data } from '../reportdata.data.js'
 import DynamicComponent from "./DynamicComponent.vue";
 import WebMap from "./WebMap.vue";
+import ReferenceList from "./ReferenceList.vue";
 
 const defaultFeature = {
   number: '0'
@@ -16,15 +17,25 @@ const defaultFeature = {
 
 export default {
   name: "FeaturePage",
-  components: {WebMap, DynamicComponent},
+  components: {WebMap, DynamicComponent, ReferenceList},
   props: {
     feature_id: {type: Number, required: true}
+  },
+  provide() {
+    return {
+      registerReference: (id) => {
+        if (!this.usedReferenceIds.includes(id)) {
+          this.usedReferenceIds.push(id);
+        }
+      }
+    }
   },
   data() {
     return {
       feature: {},
       group: {},
       family: {},
+      usedReferenceIds: []
     }
   },
   beforeMount() {
@@ -181,7 +192,7 @@ export default {
     </div>
   </div>
 
-
+  <ReferenceList :reference-ids="usedReferenceIds" />
 
 </div>
 </template>

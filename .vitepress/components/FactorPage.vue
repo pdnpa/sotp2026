@@ -1,6 +1,7 @@
 <script>
 import { data } from '../reportdata.data.js'
 import DynamicComponent from "./DynamicComponent.vue";
+import ReferenceList from "./ReferenceList.vue";
 
 const defaultFactor = {
   number: '0'
@@ -15,13 +16,23 @@ const defaultFactor = {
 
 export default {
   name: "FactorPage",
-  components: {DynamicComponent},
+  components: {DynamicComponent, ReferenceList},
   props: {
     factor_id: {type: Number, required: true}
   },
+  provide() {
+    return {
+      registerReference: (id) => {
+        if (!this.usedReferenceIds.includes(id)) {
+          this.usedReferenceIds.push(id);
+        }
+      }
+    }
+  },
   data() {
     return {
-      factor: {}
+      factor: {},
+      usedReferenceIds: []
     }
   },
   beforeMount() {
@@ -71,8 +82,7 @@ export default {
     </div>
   </div>
 
-
-
+  <ReferenceList :reference-ids="usedReferenceIds" />
 
 </div>
 </template>
