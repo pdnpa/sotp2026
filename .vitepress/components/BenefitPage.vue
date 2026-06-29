@@ -2,7 +2,7 @@
 import { data } from '../reportdata.data.js'
 import DynamicComponent from "./DynamicComponent.vue";
 
-const defaultFactor = {
+const defaultBenefit = {
   number: '0'
   ,id: '0'
   ,title: ''
@@ -14,18 +14,18 @@ const defaultFactor = {
 }
 
 export default {
-  name: "FactorPage",
+  name: "BenefitPage",
   components: {DynamicComponent},
   props: {
     factor_id: {type: Number, required: true}
   },
   data() {
     return {
-      factor: {}
+      benefit: {}
     }
   },
   beforeMount() {
-    this.factor = data.factors[this.factor_id] || { ...defaultFactor };
+    this.benefit = data.benefits[this.benefit_id] || { ...defaultBenefit };
   },
 }
 
@@ -34,14 +34,11 @@ export default {
 <template>
 <div class="factor-page">
   <DocBefore>
-    <div :id="`objective_heading_${factor.id}`"
+    <div :id="`objective_heading_${benefit.id}`"
          class="feature-family-heading">
 
-      <h1>{{ factor.title }}</h1>
-
-
+      <h1>{{ benefit.title }}</h1>
     </div>
-
   </DocBefore>
 
   <div class="factor-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Description">Description</h2></div>
