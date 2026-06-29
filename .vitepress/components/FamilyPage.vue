@@ -74,10 +74,10 @@ export default {
   <div class="family-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="features">Features in this family</h2></div>
   <ul class="family-features-list">
     <li v-for="group in family.groups" :key="group.id">
-      <a :href="group.url">{{group.title}}</a>
+      <a :href="$withBase(group.url)">{{group.title}}</a>
       <ul>
         <li v-for="feature in group.features" :key="feature.id">
-          <a :href="feature.url" :title="feature.key_data">{{feature.title}}</a>
+          <a :href="$withBase(feature.url)" :title="feature.key_data">{{feature.title}}</a>
         </li>
       </ul>
     </li>

@@ -62,7 +62,7 @@ export default {
 <div class="group-page">
   <DocBefore>
     <div class="feature-family-heading feature-family-heading__descendant">
-      <a :href="family.url" class="back-to-family-link">< {{family.title}}</a>
+      <a :href="$withBase(family.url)" class="back-to-family-link">< {{family.title}}</a>
     </div>
     <div :id="`group_heading_${family.id}`"
          class="feature-group-heading">
@@ -130,7 +130,7 @@ export default {
     <li v-for="benefit in group.benefits" :key="benefit.id">
 
       <div v-if="getFirstImage(benefit)">
-        <a :href="benefit.url">
+        <a :href="$withBase(benefit.url)">
         <img
             class="benefit-image"
             v-if="getFirstImage(benefit)"
@@ -140,7 +140,7 @@ export default {
        <span>{{ benefit.benefit }}</span></a>
       </div>
       <div v-else>
-        <a :href="benefit.url">
+        <a :href="$withBase(benefit.url)">
         <span class="image-placeholder"></span>
         <span>{{ benefit.benefit }}</span></a>
       </div>
@@ -160,12 +160,12 @@ export default {
       </thead>
       <tbody>
       <tr v-for="feature in group.features" :key="feature.id">
-        <td><a :href="feature.url">{{feature.title}}</a></td>
+        <td><a :href="$withBase(feature.url)">{{feature.title}}</a></td>
         <td>{{feature.key_data}}</td>
         <td>
           <ul>
             <li v-for="factor in feature.factors" :key="factor.id">
-              <a :href="factor.url">
+              <a :href="$withBase(factor.url)">
               <img
                   class="factor-image"
                 v-if="getFirstImage(factor)"
@@ -213,7 +213,7 @@ export default {
         <td>
           <ul>
             <li v-for="factor in impact.factors" :key="factor.id">
-              <a :href="factor.url">
+              <a :href="$withBase(factor.url)">
                 <img
                     class="factor-image"
                     v-if="getFirstImage(factor)"

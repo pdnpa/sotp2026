@@ -27,7 +27,7 @@ export default {
   </DocBefore>
 
   <div v-for="family in families" :key="family.id">
-    <h2><a :href="family.url">{{family.title}}</a></h2>
+    <h2><a :href="$withBase(family.url)">{{family.title}}</a></h2>
   </div>
 </div>
 </template>
