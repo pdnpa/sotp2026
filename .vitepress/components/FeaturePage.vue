@@ -31,28 +31,30 @@ export default {
     }
   },
   data() {
-    return {
-      feature: {},
-      group: {},
-      family: {},
-      usedReferenceIds: []
-    }
-  },
-  beforeMount() {
-    for (const familyId in data.families) {
-      const family = data.families[familyId];
-      for (const groupId in family.groups) {
-        const group = family.groups[groupId];
-        // Ensure group.features is handled correctly if it's an object or an array
-        const features = Array.isArray(group.features) ? group.features : Object.values(group.features);
-        const feature = features.find(f => f.id === this.feature_id);
-        if (feature) {
-          this.feature = feature;
-          this.group = group;
-          this.family = family;
-          return;
+    let feature = {};
+    let group = {};
+    let family = {};
+
+    outerLoop: for (const familyId in data.families) {
+      const f = data.families[familyId];
+      for (const groupId in f.groups) {
+        const g = f.groups[groupId];
+        const features = Array.isArray(g.features) ? g.features : Object.values(g.features);
+        const foundFeature = features.find(feat => feat.id === this.feature_id);
+        if (foundFeature) {
+          feature = foundFeature;
+          group = g;
+          family = f;
+          break outerLoop;
         }
       }
+    }
+
+    return {
+      feature,
+      group,
+      family,
+      usedReferenceIds: []
     }
   },
   methods: {
@@ -68,7 +70,7 @@ export default {
 </script>
 
 <template>
-<div class="factor-page">
+<div class="factor-page" data-pagefind-body>
   <DocBefore>
     <div class="feature-family-heading feature-family-heading__descendant">
       <a :href="$withBase(family.url)" class="back-to-family-link">< {{family.title}}</a> <a :href="group.url" class="back-to-group-link">< {{group.title}}</a>

@@ -31,19 +31,16 @@ export default {
   },
   data() {
     return {
-      factor: {},
+      factor: data.factors[this.factor_id] || { ...defaultFactor },
       usedReferenceIds: []
     }
-  },
-  beforeMount() {
-    this.factor = data.factors[this.factor_id] || { ...defaultFactor };
   },
 }
 
 </script>
 
 <template>
-<div class="factor-page">
+<div class="factor-page" data-pagefind-body>
   <DocBefore>
     <div :id="`objective_heading_${factor.id}`"
          class="feature-family-heading">

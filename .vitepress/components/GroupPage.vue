@@ -38,14 +38,10 @@ export default {
   },
   data() {
     return {
-      group: {},
-      family: {},
+      group: data.families[this.family_id]?.['groups']?.[this.group_id] || { ...defaultGroup },
+      family: data.families[this.family_id] || {},
       usedReferenceIds: []
     }
-  },
-  beforeMount() {
-    this.group = data.families[this.family_id]['groups'][this.group_id] || { ...defaultGroup };
-    this.family = data.families[this.family_id] || {};
   },
   methods: {
     getLCALayerString(group) {
@@ -59,7 +55,7 @@ export default {
 </script>
 
 <template>
-<div class="group-page">
+<div class="group-page" data-pagefind-body>
   <DocBefore>
     <div class="feature-family-heading feature-family-heading__descendant">
       <a :href="$withBase(family.url)" class="back-to-family-link">< {{family.title}}</a>

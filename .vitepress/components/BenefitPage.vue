@@ -31,21 +31,16 @@ export default {
   },
   data() {
     return {
-      benefit: {},
+      benefit: (data.benefits && data.benefits[this.benefit_id]) || { ...defaultBenefit },
       usedReferenceIds: []
     }
-  },
-  beforeMount() {
-    // Attempt to find benefit in all features/groups or a top level benefits if it exists
-    // Given the previous files, let's assume it might be in data.benefits or we need to find it
-    this.benefit = (data.benefits && data.benefits[this.benefit_id]) || { ...defaultBenefit };
   },
 }
 
 </script>
 
 <template>
-<div class="factor-page">
+<div class="factor-page" data-pagefind-body>
   <DocBefore>
     <div :id="`objective_heading_${benefit.id}`"
          class="feature-family-heading">

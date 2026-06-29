@@ -15,7 +15,7 @@ export default {
       footnote_id: 0
     }
   },
-  beforeMount() {
+  created() {
     this.footnote_id = parseInt(this.footnoteref);
     if (this.registerReference) {
       this.registerReference(this.footnote_id);

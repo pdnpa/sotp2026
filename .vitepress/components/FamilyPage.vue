@@ -31,19 +31,16 @@ export default {
   },
   data() {
     return {
-      family: {},
+      family: data.families[this.family_id] || { ...defaultFamily },
       usedReferenceIds: []
     }
-  },
-  beforeMount() {
-    this.family = data.families[this.family_id] || { ...defaultFamily };
   },
 }
 
 </script>
 
 <template>
-<div class="family-page">
+<div class="family-page" data-pagefind-body>
 
   <DocBefore>
     <div :id="`objective_heading_${family.id}`"
