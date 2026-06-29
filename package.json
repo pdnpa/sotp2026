@@ -6,6 +6,7 @@
     "postinstall": "cd engine && npm install",
     "dev": "vitepress dev .",
     "build": "set VITEPRESS_BASE=/sotp26/&&npx vitepress build . ",
+    "deploy": "npx vitepress build . ",
     "preview": "vitepress preview .",
     "theme" : "set VP_THEME=%npm_config_theme%&& npx vitepress dev . pdnpaconfig"
   },

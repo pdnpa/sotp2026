@@ -20,7 +20,7 @@ export default withChartjs(defineConfig({
     // markdown: baseVitePressOptions.markdown,
     // Override content and branding
     srcDir: './docs',
-    outDir: 'C:/www/report_publishing_local/sotp26',
+    outDir: process.env.OUTPUT_TO ?? 'C:/www/report_publishing_local/sotp26',
     base: process.env.VITEPRESS_BASE ?? '/',
     title: "State of the Park Report 2026",
     description: "Report-specific description",
