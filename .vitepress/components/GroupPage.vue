@@ -82,7 +82,7 @@ export default {
     <div class="group-data-elements">
       <div v-for="contentchunk in group.distributions" :key="contentchunk.id" class="group-data-element">
         <template v-if="contentchunk.content_type === 'rte'">
-          <div v-html="contentchunk.distribution"></div>
+          <DynamicComponent :content="contentchunk.distribution" />
         </template>
         <template v-else-if="contentchunk.content_type === 'md'">
           <DynamicComponent :content="contentchunk.distribution" />
@@ -105,7 +105,7 @@ export default {
     <div class="group-data-elements">
       <div v-for="contentchunk in group.importances" :key="contentchunk.id" class="group-data-element">
         <template v-if="contentchunk.content_type === 'rte'">
-          <div v-html="contentchunk.importance"></div>
+          <DynamicComponent :content="contentchunk.importance" />
         </template>
         <template v-else-if="contentchunk.content_type === 'md'">
           <DynamicComponent :content="contentchunk.importance" />
@@ -228,7 +228,7 @@ export default {
     <p class="custom-block-title">What are the gaps in our research & data?</p>
     <div v-for="contentchunk in group.data_qualities" :key="contentchunk.id" class="group-data-element">
       <template v-if="contentchunk.content_type === 'rte'">
-        <div v-html="contentchunk.quality"></div>
+        <DynamicComponent :content="contentchunk.quality" />
       </template>
       <template v-else-if="contentchunk.content_type === 'md'">
         <DynamicComponent :content="contentchunk.quality" />

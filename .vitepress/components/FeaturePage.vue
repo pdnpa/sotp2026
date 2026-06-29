@@ -133,7 +133,7 @@ export default {
     <div class="factor-data-elements">
       <div v-for="contentchunk in feature.descriptions" :key="contentchunk.id" class="factor-data-element">
         <template v-if="contentchunk.content_type === 'rte'">
-          <div v-html="contentchunk.description"></div>
+          <DynamicComponent :content="contentchunk.description" />
         </template>
         <template v-else-if="contentchunk.content_type === 'md'">
           <DynamicComponent :content="contentchunk.description" />
@@ -148,7 +148,7 @@ export default {
     <div class="group-data-elements">
       <div v-for="contentchunk in group.distributions" :key="contentchunk.id" class="group-data-element">
         <template v-if="contentchunk.content_type === 'rte'">
-          <div v-html="contentchunk.distribution"></div>
+          <DynamicComponent :content="contentchunk.distribution" />
         </template>
         <template v-else-if="contentchunk.content_type === 'md'">
           <DynamicComponent :content="contentchunk.distribution" />
@@ -171,7 +171,7 @@ export default {
     <div class="factor-data-elements">
       <div v-for="contentchunk in feature.conditions" :key="contentchunk.id" class="factor-data-element">
         <template v-if="contentchunk.content_type === 'rte'">
-          <div v-html="contentchunk.condition"></div>
+          <DynamicComponent :content="contentchunk.condition" />
         </template>
         <template v-else-if="contentchunk.content_type === 'md'">
           <DynamicComponent :content="contentchunk.condition" />

@@ -49,7 +49,7 @@ export default {
     <div class="factor-data-elements">
       <div v-for="contentchunk in factor.descriptions" :key="contentchunk.id" class="factor-data-element">
         <template v-if="contentchunk.content_type === 'rte'">
-          <div v-html="contentchunk.description"></div>
+          <DynamicComponent :content="contentchunk.description" />
         </template>
         <template v-else-if="contentchunk.content_type === 'md'">
           <DynamicComponent :content="contentchunk.description" />

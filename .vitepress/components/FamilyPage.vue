@@ -50,7 +50,7 @@ export default {
     <div class="family-data-elements">
       <div v-for="contentchunk in family.introductions" :key="contentchunk.id" class="family-data-element">
         <template v-if="contentchunk.content_type === 'rte'">
-          <div v-html="contentchunk.introduction"></div>
+          <DynamicComponent :content="contentchunk.introduction" />
         </template>
         <template v-else-if="contentchunk.content_type === 'md'">
           <DynamicComponent :content="contentchunk.introduction" />
