@@ -16,8 +16,29 @@ const reportSidebar = generateSidebar({
 
 export default withChartjs(defineConfig({
     // Inherit plugins and markdown config
+    ...baseVitePressOptions,
+    // markdown: baseVitePressOptions.markdown,
+    // Override content and branding
+    srcDir: './docs',
+    outDir: 'C:/www/report_publishing_local/sotp26',
+    base: process.env.VITEPRESS_BASE ?? '/',
+    title: "State of the Park Report 2026",
+    description: "Report-specific description",
+
     vite: {
         ...baseVitePressOptions.vite,
+        build: {
+            target: 'es2022',
+            rollupOptions: {
+                output: {
+                    manualChunks: (id) => {
+                        if (id.includes('node_modules/vue') || id.includes('node_modules/@vue')) {
+                            return 'vendor-vue';
+                        }
+                    }
+                }
+            }
+        },
         css: {
             preprocessorOptions: {
                 scss: {
@@ -32,13 +53,6 @@ export default withChartjs(defineConfig({
             ]
         }
     },
-    markdown: baseVitePressOptions.markdown,
-
-    // Override content and branding
-    srcDir: './docs',
-    base: process.env.VITEPRESS_BASE ?? '/',
-    title: "State of the Park Report 2026",
-    description: "Report-specific description",
 
 
 
