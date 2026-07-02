@@ -78,6 +78,7 @@ export default {
 </template>
 
 <style lang="scss">
+@use 'sass:color';
 
 
 $low: #FCFDBF;
@@ -165,7 +166,8 @@ $texture-cross: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0
     background-color: transparent;
     &::before {
       background-color: $low;
-      border: 2px solid darken($low, 25%);
+      border: 2px solid color.adjust($low, $lightness: -25%);
+
       border-radius: 50%; // Circle
     }
   }
