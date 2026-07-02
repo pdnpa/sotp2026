@@ -4,13 +4,13 @@
 
 ## Distribution
 
-## Why is important?
+## Importance
 
-## State of
+## State
 
-## Impact assessment
+## Impact
 
-## What are the gaps in our research & data?
+## Research
 
 </div>
 <GroupPage :family_id="1" :group_id="2" />
