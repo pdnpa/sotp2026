@@ -24,7 +24,10 @@ export default withChartjs(defineConfig({
     base: process.env.VITEPRESS_BASE ?? '/',
     title: "State of the Park Report 2026",
     description: "Report-specific description",
-
+    appearance: {
+        // @ts-expect-error not fully supported yet
+        initialValue: 'light'
+    },
     vite: {
         ...baseVitePressOptions.vite,
         build: {
@@ -46,6 +49,15 @@ export default withChartjs(defineConfig({
                 }
             }
         },
+        resolve: {
+            alias: [
+                // This targets exactly the Vue build that includes the runtime compiler
+                { find: /^vue$/, replacement: 'vue/dist/vue.esm-bundler.js' }
+            ]
+        },
+        ssr: {
+            noExternal: ['vue']
+        }
     },
 
 
