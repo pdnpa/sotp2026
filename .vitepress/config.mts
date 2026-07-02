@@ -24,10 +24,11 @@ export default withChartjs(defineConfig({
     base: process.env.VITEPRESS_BASE ?? '/',
     title: "State of the Park Report 2026",
     description: "Report-specific description",
-    appearance: {
+    appearance: false,
+    //appearance: {
         // @ts-expect-error not fully supported yet
-        initialValue: 'light'
-    },
+    //    initialValue: 'light'
+    //},
     vite: {
         ...baseVitePressOptions.vite,
         build: {
