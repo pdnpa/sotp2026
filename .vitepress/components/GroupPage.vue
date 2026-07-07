@@ -6,6 +6,7 @@ import WebMap from "./WebMap.vue";
 import RiskScaleBadge from "./RiskScaleBadge.vue";
 import LikelihoodBadge from "./LikelihoodBadge.vue";
 import ReferenceList from "./ReferenceList.vue";
+import GroupImpactAssessment from "./GroupImpactAssessment.vue";
 
 const defaultGroup = {
   number: '0'
@@ -22,7 +23,7 @@ const defaultGroup = {
 
 export default {
   name: "GroupPage",
-  components: {DynamicComponent,WebMap,RiskScaleBadge,LikelihoodBadge,ReferenceList},
+  components: {DynamicComponent,WebMap,RiskScaleBadge,LikelihoodBadge,ReferenceList,GroupImpactAssessment},
   props: {
     group_id: {type: Number, required: true},
     family_id: {type: Number, required: true},
@@ -122,26 +123,38 @@ export default {
     </div>
   </div>
 
-  <ul class="benefit-list">
-    <li v-for="benefit in group.benefits" :key="benefit.id">
 
-      <div v-if="getFirstImage(benefit)">
-        <a :href="$withBase(benefit.url)">
-        <img
-            class="benefit-image"
-            v-if="getFirstImage(benefit)"
-            :src="getFirstImage(benefit).url"
-            :alt="benefit.benefit"
-        />
-       <span>{{ benefit.benefit }}</span></a>
-      </div>
-      <div v-else>
-        <a :href="$withBase(benefit.url)">
-        <span class="image-placeholder"></span>
-        <span>{{ benefit.benefit }}</span></a>
-      </div>
-    </li>
-  </ul>
+
+
+  <div class="feature-benefits">
+    <div class="first-col">
+    <h3>Benefits provided by {{group.title}}</h3>
+    </div>
+
+    <div class="second-col">
+      <ul class="benefit-list show-icon-text">
+        <li v-for="benefit in group.benefits" :key="benefit.id">
+
+          <div v-if="getFirstImage(benefit)">
+            <a :href="$withBase(benefit.url)">
+              <img
+                  class="benefit-image"
+                  v-if="getFirstImage(benefit)"
+                  :src="getFirstImage(benefit).url"
+                  :alt="benefit.benefit"
+              />
+              <span class="icon-text">{{ benefit.benefit }}</span></a>
+          </div>
+          <div v-else>
+            <a :href="$withBase(benefit.url)">
+              <span class="image-placeholder"></span>
+              <span class="icon-text">{{ benefit.benefit }}</span></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
 
   <div id="state-block" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="State">State of {{group.title}}</h2></div>
   <div class="group-section-block pt-0">
@@ -170,12 +183,12 @@ export default {
                       :src="getFirstImage(factor).url"
                       :alt="factor.title"
                   />
-                  <span>{{ factor.title }}</span></a>
+                  <span class="icon-text">{{ factor.title }}</span></a>
               </div>
               <div v-else>
                 <a :href="$withBase(factor.url)">
                   <span class="image-placeholder"></span>
-                  <span>{{ factor.title }}</span></a>
+                  <span class="icon-text">{{ factor.title }}</span></a>
               </div>
             </li>
           </ul>
@@ -189,71 +202,20 @@ export default {
   </div>
 
   <div id="impact-assessment-block" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="impact">Impact assessment</h2></div>
-  <div class="group-section-block pt-0">
+  <GroupImpactAssessment :group="group"></GroupImpactAssessment>
 
-    <table>
-      <thead>
-      <tr>
-        <th>Feature</th>
-        <th>Cause</th>
-        <th>Factors</th>
-        <th>Likelihood</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr v-for="impact in group.impacts" :key="impact.id">
-        <td>{{impact.impact}}</td>
-        <td>
-          <ul>
-            <li v-for="cause in impact.impacts" :key="cause.id">
+  <div id="what-are-the-gaps-in-our-research-data" class="group-section-block body-text pb-0">
+    <h2 class="mb-0 mt-0" id="Research">What are the gaps in our research & data?</h2>
 
-                {{ cause.impact }}
-
-            </li>
-          </ul>
-        </td>
-        <td>
-
-          <ul class="factor-list">
-            <li v-for="factor in impact.factors" :key="factor.id">
-
-              <div v-if="getFirstImage(factor)">
-                <a :href="$withBase(factor.url)">
-                  <img
-                      class="factor-image"
-                      v-if="getFirstImage(factor)"
-                      :src="getFirstImage(factor).url"
-                      :alt="factor.factor"
-                  />
-                  <span>{{ factor.title }}</span></a>
-              </div>
-              <div v-else>
-                <a :href="$withBase(factor.url)">
-                  <span class="image-placeholder"></span>
-                  <span>{{ factor.title }}</span></a>
-              </div>
-            </li>
-          </ul>
-
-        </td>
-        <td>
-          <LikelihoodBadge :likelihood="impact.likelihood">{{impact.likelihood}}</LikelihoodBadge>
-        </td>
-      </tr>
-      </tbody>
-    </table>
-
-  </div>
-
-  <div id="what-are-the-gaps-in-our-research-data" class="warning custom-block">
-    <p class="custom-block-title" id="Research">What are the gaps in our research & data?</p>
-    <div v-for="contentchunk in group.data_qualities" :key="contentchunk.id" class="group-data-element">
-      <template v-if="contentchunk.content_type === 'rte'">
-        <DynamicComponent :content="contentchunk.quality" />
-      </template>
-      <template v-else-if="contentchunk.content_type === 'md'">
-        <DynamicComponent :content="contentchunk.quality" />
-      </template>
+    <div class="warning custom-block">
+      <div v-for="contentchunk in group.data_qualities" :key="contentchunk.id" class="group-data-element">
+        <template v-if="contentchunk.content_type === 'rte'">
+          <DynamicComponent :content="contentchunk.quality" />
+        </template>
+        <template v-else-if="contentchunk.content_type === 'md'">
+          <DynamicComponent :content="contentchunk.quality" />
+        </template>
+      </div>
     </div>
   </div>
 

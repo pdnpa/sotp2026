@@ -89,36 +89,42 @@ export default {
 
 
   <div class="feature-benefits">
-    <h2 id="Benefits">Benefits provided by {{feature.title}}</h2>
-    <div>
-      <ul class="benefit-list">
-        <li v-for="benefit in feature.benefits" :key="benefit.id">
 
-          <div v-if="getFirstImage(benefit)">
-            <a :href="$withBase(benefit.url)">
-            <img
-                class="benefit-image"
-                v-if="getFirstImage(benefit)"
-                :src="getFirstImage(benefit).url"
-                :alt="benefit.benefit"
-            />
-            <span>{{ benefit.benefit }}</span></a>
-          </div>
-          <div v-else>
-            <a :href="$withBase(benefit.url)">
-            <span class="image-placeholder"></span>
-            <span>{{ benefit.benefit }}</span></a>
-          </div>
+      <div class="first-col">
+        <h2 id="Benefits">Benefits provided by {{feature.title}}</h2>
+      </div>
+      <div class="second-col">
+        <ul class="benefit-list show-icon-text">
+          <li v-for="benefit in feature.benefits" :key="benefit.id">
 
-        </li>
-      </ul>
-    </div>
+            <div v-if="getFirstImage(benefit)">
+              <a :href="$withBase(benefit.url)">
+                <img
+                    class="benefit-image"
+                    v-if="getFirstImage(benefit)"
+                    :src="getFirstImage(benefit).url"
+                    :alt="benefit.benefit"
+                />
+                <span class="icon-text">{{ benefit.benefit }}</span></a>
+            </div>
+            <div v-else>
+              <a :href="$withBase(benefit.url)">
+                <span class="image-placeholder"></span>
+                <span class="icon-text">{{ benefit.benefit }}</span></a>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+
   </div>
 
   <div class="feature-factors">
+    <div class="first-col">
     <h2 id="ImpactFactors">Factors which impact {{feature.title}}</h2>
-    <div>
-      <ul class="factor-list">
+    </div>
+    <div class="second-col">
+      <ul class="factor-list show-icon-text">
         <li v-for="factor in feature.factors" :key="factor.id">
 
           <div v-if="getFirstImage(factor)">
@@ -129,12 +135,12 @@ export default {
                 :src="getFirstImage(factor).url"
                 :alt="factor.factor"
             />
-            <span>{{ factor.title }}</span></a>
+            <span class="icon-text">{{ factor.title }}</span></a>
           </div>
           <div v-else>
             <a :href="$withBase(factor.url)">
             <span class="image-placeholder"></span>
-            <span>{{ factor.title }}</span></a>
+            <span class="icon-text">{{ factor.title }}</span></a>
           </div>
         </li>
       </ul>
@@ -199,8 +205,7 @@ export default {
 </div>
 </template>
 
-<style scoped>
-.feature-benefits, .feature-factors {
-  display: flex;
-}
+<style lang="scss">
+
+
 </style>
