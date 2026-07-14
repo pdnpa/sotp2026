@@ -70,7 +70,7 @@ export default {
 
   <div class="family-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="features">Features in this family</h2></div>
   <ul class="family-features-list">
-    <li v-for="group in family.groups" :key="group.id">
+    <li v-for="group in family.groups" :key="group.id" class="family-feature-group">
       <a :href="$withBase(group.url)">{{group.title}}</a>
       <ul>
         <li v-for="feature in group.features" :key="feature.id">
@@ -90,4 +90,53 @@ export default {
 
 <style scoped>
 
+.family-features-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  margin: 4rem 0;
+
+  padding: 0;
+}
+.family-feature-group {
+  margin: 0 1rem 0 0;
+  background-color: var(--pdnpa-lightblue);
+  border-radius: 14px;
+  padding: 1.4rem 1.6rem;
+  color: #fff;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.2rem 0 0 1.4rem;
+
+    a {
+      text-decoration: none;
+      color: var(--pdnpa-lightbrown);
+      &:hover, &:focus, &:focus-within {
+        text-decoration: underline;
+      }
+    }
+
+  }
+}
+.family-feature-group > a {
+  display: block;
+  font-size: 1.3rem;
+
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 8px;
+
+
+
+  transition: background-color 0.2s ease;
+
+  &:hover, &:focus, &:focus-within {
+    //background-color: var(--pdnpa-midbrown);
+    color: #323339;
+  }
+}
 </style>

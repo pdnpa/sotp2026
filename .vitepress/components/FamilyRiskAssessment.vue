@@ -43,7 +43,7 @@ export default {
   <table>
     <thead>
     <tr>
-      <th></th>
+      <th class="feature-title-column"></th>
       <th v-for="factor in factors">
         {{factor.title}}
       </th>
@@ -100,5 +100,7 @@ export default {
     padding: 0;
   }
 }
-
+.feature-title-column {
+  width: 320px;
+}
 </style>

@@ -233,6 +233,9 @@ html {
 
 }
 
+.vp-doc p {
+  max-width: 1090px;
+}
 
 
 .web-map-container {
@@ -285,5 +288,16 @@ html {
     -ms-flex: 0 0 70%;
     flex: 0 0 70%;
     max-width: 70%;
+  }
+}
+
+.distribution-block {
+
+  &.distribution-block-has-text.distribution-block-has-map {
+    display: flex;
+    justify-content: flex-start;
+    > :first-child {
+      margin-right: 2rem;
+    }
   }
 }

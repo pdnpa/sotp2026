@@ -86,7 +86,7 @@ export default {
   </div>
 
   <div id="distribution-block" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Distribution">Distribution</h2></div>
-  <div class="group-section-block pt-0">
+  <div class="group-section-block pt-0 distribution-block" :class="{'distribution-block-has-text': Object.keys(group.distributions || {}).length > 0, 'distribution-block-has-map': Object.keys(group.landscape_character_areas || {}).length > 0}">
     <div class="group-data-elements">
       <div v-for="contentchunk in group.distributions" :key="contentchunk.id" class="group-data-element">
         <template v-if="contentchunk.content_type === 'rte'">
@@ -97,15 +97,16 @@ export default {
         </template>
 
       </div>
+    </div>
 
-      <div v-if="group.landscape_character_areas">
+      <div v-if="Object.keys(group.landscape_character_areas || {}).length > 0">
         <div class="group-data-element">
           <h3>Landscape Character Areas</h3>
           <WebMap :layer="getLCALayerString(group)"></WebMap>
         </div>
       </div>
 
-    </div>
+
   </div>
 
   <div id="why-is-important-block" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Importance">Why is {{group.title}} important?</h2></div>
@@ -161,7 +162,7 @@ export default {
     <table>
       <thead>
       <tr>
-        <th>Feature</th>
+        <th class="feature-title-column">Feature</th>
         <th>Key data</th>
         <th>Factors</th>
         <!-- <th>Benefits</th> -->
@@ -226,5 +227,8 @@ export default {
 
 <style scoped lang="scss">
 
+.feature-title-column {
+  width: 380px;
+}
 
 </style>

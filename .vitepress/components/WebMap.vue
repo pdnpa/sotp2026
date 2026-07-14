@@ -1,5 +1,12 @@
 <template>
+  <div class="web-map-container-outer">
   <div ref="mapDiv" class="web-map-container"></div>
+    <div class="web-map-legend">
+      <ul>
+        <li v-for="layer in layers" :key="layer.id">{{ layer.title }}</li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -24,6 +31,9 @@ const mapDiv = ref(null)
 let view = null
 let webmap = null
 
+//const layers = ref(null)
+let layers = ref(null)
+
 const initMap = async () => {
   if (typeof window === 'undefined') return
 
@@ -42,7 +52,7 @@ const initMap = async () => {
 
     view = new MapView({
       container: mapDiv.value,
-      zoom: 10,
+      zoom: 9,
       map: webmap
     })
 
@@ -68,6 +78,12 @@ const updateLayerVisibility = () => {
       layer.visible = showLayers.includes(layer.title)
     }
   })
+  layers = webmap.allLayers
+  console.log("Updating layer visibly",showLayers,webmap.allLayers)
+  if (showLayers.length > 0) {
+    console.log(webmap.allLayers)
+    layers = showLayers
+  }
 }
 
 watch(() => props.layer, updateLayerVisibility)
@@ -95,8 +111,8 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .web-map-container {
-  height: 500px;
-  width: 100%;
+  height: 350px;
+  width: 260px;
   margin: 1em 0;
   border: 1px solid #ccc;
 }
