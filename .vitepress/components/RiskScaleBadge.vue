@@ -93,23 +93,23 @@ $high-text: #ffffff;
 $veryhigh-text: #ffffff;
 $na-text: #434343;
 
-.risk-bg-low {
+.risk-bg-low, .vp-doc table th.risk-bg-low {
   background-color: $low;
   color: $low-text;
 }
-.risk-bg-medium {
+.risk-bg-medium, .vp-doc table th.risk-bg-medium {
   background-color: $medium;
   color: $medium-text;
 }
-.risk-bg-high {
+.risk-bg-high, .vp-doc table th.risk-bg-high {
   background-color: $high;
   color: $high-text;
 }
-.risk-bg-veryhigh {
+.risk-bg-veryhigh, .vp-doc table th.risk-bg-veryhigh {
   background-color: $veryhigh;
   color: $veryhigh-text;
 }
-.risk-bg-na {
+.risk-bg-na, .vp-doc table th.risk-bg-na {
   background-color: $na;
   color: $na-text;
 }

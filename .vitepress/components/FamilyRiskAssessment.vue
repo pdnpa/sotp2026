@@ -58,9 +58,47 @@ export default {
       </tr>
     </tbody>
   </table>
+
+
+  <div class="risk-assessment-legend">
+    <h6>Legend:</h6>
+    <table>
+      <thead>
+      <tr>
+        <th class="risk-bg-low"><strong>Very low to low</strong></th>
+        <th class="risk-bg-medium"><strong>Medium</strong></th>
+        <th class="risk-bg-high"><strong>High</strong></th>
+        <th class="risk-bg-veryhigh"><strong>Very high</strong></th>
+        <th class="risk-bg-na"><strong>N/A</strong></th>
+      </tr>
+      </thead>
+      <tbody>
+
+      <tr>
+        <td><RiskScaleBadge risktype="low" marker></RiskScaleBadge></td>
+        <td><RiskScaleBadge risktype="medium" marker></RiskScaleBadge></td>
+        <td><RiskScaleBadge risktype="high" marker></RiskScaleBadge></td>
+        <td><RiskScaleBadge risktype="veryhigh" marker></RiskScaleBadge></td>
+        <td><RiskScaleBadge risktype="na" marker></RiskScaleBadge></td>
+      </tr>
+      </tbody>
+
+    </table>
+  </div>
+
 </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+
+.risk-assessment-legend {
+  margin-top: 2rem;
+  th {
+    font-size: 14px;
+  }
+  td {
+    padding: 0;
+  }
+}
 
 </style>
