@@ -4,6 +4,15 @@
 @use "pageheader";
 @use "table";
 @use "sidebar";
+@use "sass:color";
+
+html {
+  .Layout {
+    .VPDoc.has-aside .content-container {
+      max-width: 1500px;
+    }
+  }
+}
 
 .aside-content {
   background-color: var(--sopr-aside-bg);
@@ -183,7 +192,7 @@ $icon-size: 60px;
           text-decoration: none;
           background: var(--pdnpa-midbrown);
           .icon-text {
-            color: darken(variables.$pdnpa-darkbrown,20%);
+            color: color.scale(variables.$pdnpa-darkbrown, $lightness: -20%);
             transform: translate(0, 0);
           }
         }
