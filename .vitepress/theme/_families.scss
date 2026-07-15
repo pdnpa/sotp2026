@@ -1,0 +1,52 @@
+@use "sass:map";
+@use "sass:color";
+
+$family-colors: (
+  "landscape": #4A4D3A,
+  "cultural-heritage": #7B3D64,
+  "people": #7996A4,
+);
+$family-colors-text: (
+        "landscape": #FFFFFF,
+        "cultural-heritage": #FFFFFF,
+        "people": #323339,
+);
+.vp-doc {
+  @each $name, $value in $family-colors {
+    .text-#{$name} {
+      color: #{$value} !important;
+    }
+    .bg-#{$name} {
+      background-color: #{$value};
+      color: map.get($family-colors-text, $name);
+
+      a, &:is(a) {
+        color: map.get($family-colors-text, $name);
+        transition: color 0.2s ease-in-out;
+        will-change: color;
+
+        &:hover, &:active, &:focus {
+          color: color.scale($value, $lightness: 40%);
+        }
+      }
+
+    }
+    a.bg-#{$name} {
+      color: map.get($family-colors-text, $name);
+      transition: color 0.1s ease-in-out, background-color 0.2s ease-in-out;
+      will-change: color, background-color;
+
+      &:hover, &:active, &:focus {
+        color: color.scale($value, $lightness: 40%);
+        background-color: color.scale($value, $lightness: -10%);
+      }
+    }
+    :root {
+      --family-#{$name}: #{$value};
+      --family-#{$name}-bg: #{$value};
+      --family-#{$name}-text: map.get($family-colors-text, $name);
+    }
+  }
+
+
+}

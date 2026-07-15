@@ -35,6 +35,11 @@ export default {
       usedReferenceIds: []
     }
   },
+  methods: {
+    getFirstImage(family) {
+      return family.images ? Object.values(family.images)[0] : null;
+    }
+  }
 }
 
 </script>
@@ -44,10 +49,13 @@ export default {
 
   <DocBefore>
     <div :id="`objective_heading_${family.id}`"
+         :class="[`bg-${family.slug}`, { 'feature-family-heading-has-image': getFirstImage(family)?.url }]"
+
          class="feature-family-heading">
 
-      <h1>{{ family.title }}</h1>
+      <h1 class="feature-family-heading__title">{{ family.title }}</h1>
 
+      <div class="feature-family-heading__image-holder" v-if="getFirstImage(family)" :style="`background-image: url(`+getFirstImage(family).url+`)`"></div>
 
     </div>
 
@@ -70,7 +78,7 @@ export default {
 
   <div class="family-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="features">Features in this family</h2></div>
   <ul class="family-features-list">
-    <li v-for="group in family.groups" :key="group.id" class="family-feature-group">
+    <li v-for="group in family.groups" :key="group.id" class="family-feature-group" :class="`bg-${family.slug}`">
       <a :href="$withBase(group.url)">{{group.title}}</a>
       <ul>
         <li v-for="feature in group.features" :key="feature.id">
@@ -89,6 +97,16 @@ export default {
 </template>
 
 <style scoped>
+
+.feature-family-heading.feature-family-heading-has-image {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  justify-content: space-between;
+}
 
 .family-features-list {
   list-style: none;
@@ -139,4 +157,22 @@ export default {
     color: #323339;
   }
 }
+
+.feature-family-heading__image-holder  {
+  width: 45vw;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.feature-family-heading__image {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
 </style>

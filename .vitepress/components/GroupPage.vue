@@ -58,7 +58,7 @@ export default {
 <template>
 <div class="group-page" data-pagefind-body>
   <DocBefore>
-    <div class="feature-family-heading feature-family-heading__descendant">
+    <div class="feature-family-heading feature-family-heading__descendant" :class="`bg-${family.slug}`">
       <a :href="$withBase(family.url)" class="back-to-family-link">{{family.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span>
     </div>
     <div :id="`group_heading_${family.id}`"
