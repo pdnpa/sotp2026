@@ -39,6 +39,7 @@ export default {
   },
   data() {
     return {
+      pageHeaderFullWidth: false,
       group: data.families[this.family_id]?.['groups']?.[this.group_id] || { ...defaultGroup },
       family: data.families[this.family_id] || {},
       usedReferenceIds: []
@@ -48,8 +49,8 @@ export default {
     getLCALayerString(group) {
       return Object.values(group.landscape_character_areas).map(area => area.layer_slug).join(',');
     },
-    getFirstImage(factor) {
-      return factor.images ? Object.values(factor.images)[0] : null;
+    getFirstImage(obj) {
+      return obj.images ? Object.values(obj.images)[0] : null;
     }
   }
 }
@@ -58,10 +59,10 @@ export default {
 <template>
 <div class="group-page" data-pagefind-body>
   <DocBefore>
-    <div class="feature-family-heading feature-family-heading__descendant" :class="`bg-${family.slug}`">
+    <div v-if="pageHeaderFullWidth" class="feature-family-heading feature-family-heading__descendant" :class="`bg-${family.slug}`">
       <a :href="$withBase(family.url)" class="back-to-family-link">{{family.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span>
     </div>
-    <div :id="`group_heading_${family.id}`"
+    <div v-if="pageHeaderFullWidth" :id="`group_heading_${family.id}`"
          class="feature-group-heading">
 
       <h1>{{ group.title }}</h1>
@@ -69,6 +70,21 @@ export default {
     </div>
 
   </DocBefore>
+
+  <div v-if="!pageHeaderFullWidth" class="feature-family-heading feature-family-heading-page-width feature-family-heading__descendant"
+       :class="[`bg-${family.slug}`, { 'feature-family-heading-has-image': getFirstImage(family)?.url }]"
+  >
+    <div class="back-to-family-link__outer">
+    <a :href="$withBase(family.url)" class="back-to-family-link">{{family.title}}</a>  <span class="vpi-chevron-right caret-icon"></span>
+    </div>
+    <div class="feature-family-heading__image-holder" v-if="getFirstImage(family)" :style="`background-image: url(`+getFirstImage(family).url+`)`"></div>
+  </div>
+  <div v-if="!pageHeaderFullWidth" :id="`group_heading_${family.id}`"
+       class="feature-group-heading feature-group-heading-page-width">
+
+    <h1>{{ group.title }}</h1>
+
+  </div>
 
   <div id="introduction-block" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Introduction">Introduction</h2></div>
   <div class="group-section-block pt-0">
@@ -225,10 +241,24 @@ export default {
 </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
+.vp-doc {
+  .feature-title-column {
+    width: 380px;
+  }
 
-.feature-title-column {
-  width: 380px;
+  .feature-family-heading-page-width {
+    position: relative;
+    z-index: 1;
+    padding-top: 2.5rem;
+    .back-to-family-link {
+      color: var(--pdnpa-lightbrown);
+      font-size: var(--font-size-base);
+
+      .caret-icon {
+        display: inline-block;
+      }
+    }
+  }
 }
-
 </style>

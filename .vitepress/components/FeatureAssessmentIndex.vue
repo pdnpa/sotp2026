@@ -50,7 +50,7 @@ export default {
   display: block;
   font-size: 1.2rem;
   text-decoration: none;
-  border-radius: 14px;
+  border-radius: var(--block-border-radius);
 
 
   &:hover, &:focus, &:focus-within {
@@ -58,13 +58,13 @@ export default {
   }
 
   .feature-assessment-title {
-    border-radius: 14px 14px 0 0;
+    border-radius: var(--block-border-radius) var(--block-border-radius) 0 0;
     padding: 1rem;
   }
 
   .feature-assessment-image {
     overflow: hidden;
-    border-radius: 0 0 14px 14px;
+    border-radius: 0 0 var(--block-border-radius) var(--block-border-radius);
   }
 
 }

@@ -54,6 +54,7 @@ export default {
       feature,
       group,
       family,
+      pageHeaderFullWidth: false,
       usedReferenceIds: []
     }
   },
@@ -72,10 +73,11 @@ export default {
 <template>
 <div class="factor-page" data-pagefind-body>
   <DocBefore>
-    <div class="feature-family-heading feature-family-heading__descendant" :class="`bg-${family.slug}`">
+    <div v-if="pageHeaderFullWidth" class="feature-family-heading feature-family-heading__descendant" :class="`bg-${family.slug}`">
       <a :href="$withBase(family.url)" class="back-to-family-link">{{family.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span> <a :href="group.url" class="back-to-group-link">{{group.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span>
     </div>
     <div :id="`objective_heading_${feature.id}`"
+         v-if="pageHeaderFullWidth"
          class="feature-heading">
 
       <h1>{{ feature.title }}</h1>
@@ -85,7 +87,20 @@ export default {
 
   </DocBefore>
 
+  <div v-if="!pageHeaderFullWidth" class="feature-family-heading feature-family-heading-page-width feature-family-heading__descendant"
+       :class="[`bg-${family.slug}`, { 'feature-family-heading-has-image': getFirstImage(family)?.url }]"
+  >
+    <div class="back-to-family-link__outer">
+      <a :href="$withBase(family.url)" class="back-to-family-link">{{family.title}}</a>  <span class="vpi-chevron-right caret-icon"></span>  <a :href="group.url" class="back-to-group-link">{{group.title}}</a> <span class="vpi-chevron-right caret-icon"></span>
+    </div>
+    <div class="feature-family-heading__image-holder" v-if="getFirstImage(family)" :style="`background-image: url(`+getFirstImage(family).url+`)`"></div>
+  </div>
+  <div v-if="!pageHeaderFullWidth" :id="`feature_heading_${feature.id}`"
+       class="feature-heading feature-heading-page-width">
 
+    <h1>{{ feature.title }}</h1>
+
+  </div>
 
 
   <div class="feature-benefits">
@@ -165,7 +180,7 @@ export default {
   <div id="distribution" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Distribution">Distribution</h2></div>
   <div class="group-section-block pt-0 distribution-block" :class="{'distribution-block-has-text': Object.keys(group.distributions || {}).length > 0, 'distribution-block-has-map': Object.keys(group.landscape_character_areas || {}).length > 0}">
     <div class="group-data-elements">
-      <div v-for="contentchunk in group.distributions" :key="contentchunk.id" class="group-data-element">
+      <div v-for="contentchunk in feature.distributions" :key="contentchunk.id" class="group-data-element">
         <template v-if="contentchunk.content_type === 'rte'">
           <DynamicComponent :content="contentchunk.distribution" />
         </template>
@@ -175,10 +190,10 @@ export default {
 
       </div>
     </div>
-      <div v-if="Object.keys(group.landscape_character_areas || {}).length > 0">
+      <div v-if="Object.keys(feature.landscape_character_areas || {}).length > 0">
         <div class="group-data-element">
           <h3>Landscape Character Areas</h3>
-          <WebMap :layer="getLCALayerString(group)"></WebMap>
+          <WebMap :layer="getLCALayerString(feature)"></WebMap>
         </div>
       </div>
 

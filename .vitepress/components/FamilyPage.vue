@@ -31,6 +31,7 @@ export default {
   },
   data() {
     return {
+      pageHeaderFullWidth: false,
       family: data.families[this.family_id] || { ...defaultFamily },
       usedReferenceIds: []
     }
@@ -50,7 +51,7 @@ export default {
   <DocBefore>
     <div :id="`objective_heading_${family.id}`"
          :class="[`bg-${family.slug}`, { 'feature-family-heading-has-image': getFirstImage(family)?.url }]"
-
+         v-if="pageHeaderFullWidth"
          class="feature-family-heading">
 
       <h1 class="feature-family-heading__title">{{ family.title }}</h1>
@@ -60,6 +61,19 @@ export default {
     </div>
 
   </DocBefore>
+
+  <div :id="`objective_heading_${family.id}`"
+       :class="[`bg-${family.slug}`, { 'feature-family-heading-has-image': getFirstImage(family)?.url }]"
+       v-if="!pageHeaderFullWidth"
+       class="feature-family-heading feature-family-heading-page-width">
+
+    <div>
+    <p class="feature-family-heading__subtitle">Feature assessments <span class="vpi-chevron-right caret-icon"></span></p>
+    <h1 class="feature-family-heading__title">{{ family.title }}</h1>
+    </div>
+    <div class="feature-family-heading__image-holder" v-if="getFirstImage(family)" :style="`background-image: url(`+getFirstImage(family).url+`)`"></div>
+
+  </div>
 
   <div class="family-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="introduction">Introduction</h2></div>
   <div class="family-section-block pt-0">
@@ -96,83 +110,116 @@ export default {
 </div>
 </template>
 
-<style scoped>
+<style lang="scss">
+.vp-doc {
+  .feature-family-heading.feature-family-heading-has-image {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    justify-content: space-between;
+  }
 
-.feature-family-heading.feature-family-heading-has-image {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  justify-content: space-between;
-}
-
-.family-features-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1rem;
-  margin: 4rem 0;
-
-  padding: 0;
-}
-.family-feature-group {
-  margin: 0 1rem 0 0;
-  background-color: var(--pdnpa-lightblue);
-  border-radius: 14px;
-  padding: 1.4rem 1.6rem;
-  color: #fff;
-
-  ul {
+  .family-features-list {
     list-style: none;
-    padding: 0;
-    margin: 1.2rem 0 0 1.4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    margin: 4rem 0;
 
-    a {
-      text-decoration: none;
-      color: var(--pdnpa-lightbrown);
-      &:hover, &:focus, &:focus-within {
-        text-decoration: underline;
+    padding: 0;
+  }
+
+  .family-feature-group {
+    margin: 0 1rem 0 0;
+    background-color: var(--pdnpa-lightblue);
+    border-radius: var(--block-border-radius);
+    padding: 1.4rem 1.6rem;
+    color: #fff;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 1.2rem 0 0 1.4rem;
+
+      a {
+        text-decoration: none;
+        color: var(--pdnpa-lightbrown);
+
+        &:hover, &:focus, &:focus-within {
+          text-decoration: underline;
+        }
       }
+
+    }
+  }
+
+  .family-feature-group > a {
+    display: block;
+    font-size: 1.3rem;
+
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 8px;
+
+
+    transition: background-color 0.2s ease;
+
+    &:hover, &:focus, &:focus-within {
+      //background-color: var(--pdnpa-midbrown);
+      color: #323339;
+    }
+  }
+
+  .feature-family-heading__image-holder {
+    width: 45vw;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  .feature-family-heading-page-width {
+    border-radius: 0 0 14px 14px;
+    .feature-family-heading__image-holder {
+      width: 30vw;
+      border-radius: 0 0 14px 0;
     }
 
+    &.feature-family-heading__descendant {
+      position: relative;
+      z-index: 1;
+      margin-bottom: calc(0px - var(--block-border-radius));
+
+      .feature-family-heading__image-holder {
+        height: 3rem;
+      }
+    }
+  }
+
+  .feature-family-heading__image {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  .feature-family-heading__subtitle, .back-to-family-link__outer {
+    color: var(--pdnpa-lightbrown);
+
+    .caret-icon {
+      color: var(--pdnpa-lightbrown);
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -2px;
+
+    }
   }
 }
-.family-feature-group > a {
-  display: block;
-  font-size: 1.3rem;
-
-  text-decoration: none;
-  color: #fff;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 8px;
-
-
-
-  transition: background-color 0.2s ease;
-
-  &:hover, &:focus, &:focus-within {
-    //background-color: var(--pdnpa-midbrown);
-    color: #323339;
-  }
-}
-
-.feature-family-heading__image-holder  {
-  width: 45vw;
-  height: 300px;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.feature-family-heading__image {
-  position: absolute;
-  right: 50%;
-  top: 50%;
-  transform: translate(50%, -50%);
-}
-
 </style>

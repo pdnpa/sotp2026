@@ -16,6 +16,12 @@
 .feature-group-heading {
   @include large-page-heading();
   background-color: var(--sopr-group-bg);
+
+  &.feature-group-heading-page-width {
+    padding-top: 4rem;
+    border-radius: 0 0 var(--block-border-radius) var(--block-border-radius);
+  }
+
   &.feature-group-heading__descendant {
     @include descendant-page-heading();
   }
@@ -24,6 +30,12 @@
 .feature-heading {
   @include large-page-heading();
   background-color: var(--sopr-feature-bg);
+
+  &.feature-heading-page-width {
+    padding-top: 4rem;
+    border-radius: 0 0 var(--block-border-radius) var(--block-border-radius);
+  }
+
 }
 
 .vp-doc a.back-to-family-link,
