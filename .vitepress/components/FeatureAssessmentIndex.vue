@@ -40,7 +40,7 @@ export default {
 <style scoped>
 .feature-assessments {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   grid-gap: 1rem;
   margin-top: 2rem;
 }

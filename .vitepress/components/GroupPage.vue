@@ -2,6 +2,7 @@
 
 import {data} from "../reportdata.data";
 import DynamicComponent from "./DynamicComponent.vue";
+import DynamicContentType from "./DynamicContentType.vue";
 import WebMap from "./WebMap.vue";
 import RiskScaleBadge from "./RiskScaleBadge.vue";
 import LikelihoodBadge from "./LikelihoodBadge.vue";
@@ -23,7 +24,7 @@ const defaultGroup = {
 
 export default {
   name: "GroupPage",
-  components: {DynamicComponent,WebMap,RiskScaleBadge,LikelihoodBadge,ReferenceList,GroupImpactAssessment},
+  components: {DynamicContentType,DynamicComponent,WebMap,RiskScaleBadge,LikelihoodBadge,ReferenceList,GroupImpactAssessment},
   props: {
     group_id: {type: Number, required: true},
     family_id: {type: Number, required: true},
@@ -89,30 +90,18 @@ export default {
   <div id="introduction-block" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Introduction">Introduction</h2></div>
   <div class="group-section-block pt-0">
     <div class="group-data-elements">
-      <div v-for="contentchunk in group.introductions" :key="contentchunk.id" class="group-data-element">
-        <template v-if="contentchunk.content_type === 'rte'">
-          <DynamicComponent :content="contentchunk.introduction" />
-        </template>
-        <template v-else-if="contentchunk.content_type === 'md'">
-          <DynamicComponent :content="contentchunk.introduction" />
-        </template>
 
-      </div>
+      <DynamicContentType :chunks="group.introductions" contentFieldName="introduction" outerClass="group-data-element"/>
+
     </div>
   </div>
 
   <div id="distribution-block" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Distribution">Distribution</h2></div>
   <div class="group-section-block pt-0 distribution-block" :class="{'distribution-block-has-text': Object.keys(group.distributions || {}).length > 0, 'distribution-block-has-map': Object.keys(group.landscape_character_areas || {}).length > 0}">
     <div class="group-data-elements">
-      <div v-for="contentchunk in group.distributions" :key="contentchunk.id" class="group-data-element">
-        <template v-if="contentchunk.content_type === 'rte'">
-          <DynamicComponent :content="contentchunk.distribution" />
-        </template>
-        <template v-else-if="contentchunk.content_type === 'md'">
-          <DynamicComponent :content="contentchunk.distribution" />
-        </template>
 
-      </div>
+      <DynamicContentType :chunks="group.distributions" contentFieldName="distribution" outerClass="group-data-element"/>
+
     </div>
 
       <div v-if="Object.keys(group.landscape_character_areas || {}).length > 0">
@@ -128,15 +117,8 @@ export default {
   <div id="why-is-important-block" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Importance">Why is {{group.title}} important?</h2></div>
   <div class="group-section-block pt-0">
     <div class="group-data-elements">
-      <div v-for="contentchunk in group.importances" :key="contentchunk.id" class="group-data-element">
-        <template v-if="contentchunk.content_type === 'rte'">
-          <DynamicComponent :content="contentchunk.importance" />
-        </template>
-        <template v-else-if="contentchunk.content_type === 'md'">
-          <DynamicComponent :content="contentchunk.importance" />
-        </template>
+      <DynamicContentType :chunks="group.importances" contentFieldName="importance" outerClass="group-data-element"/>
 
-      </div>
     </div>
   </div>
 
@@ -225,14 +207,7 @@ export default {
     <h2 class="mb-0 mt-0" id="Research">What are the gaps in our research & data?</h2>
 
     <div class="warning custom-block">
-      <div v-for="contentchunk in group.data_qualities" :key="contentchunk.id" class="group-data-element">
-        <template v-if="contentchunk.content_type === 'rte'">
-          <DynamicComponent :content="contentchunk.quality" />
-        </template>
-        <template v-else-if="contentchunk.content_type === 'md'">
-          <DynamicComponent :content="contentchunk.quality" />
-        </template>
-      </div>
+      <DynamicContentType :content="group.data_qualities" content-field-name="quality" />
     </div>
   </div>
 

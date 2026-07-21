@@ -1,6 +1,6 @@
 <script>
 import { data } from '../reportdata.data.js'
-import DynamicComponent from "./DynamicComponent.vue";
+import DynamicContentType from "./DynamicContentType.vue";
 import WebMap from "./WebMap.vue";
 import ReferenceList from "./ReferenceList.vue";
 
@@ -17,7 +17,7 @@ const defaultFeature = {
 
 export default {
   name: "FeaturePage",
-  components: {WebMap, DynamicComponent, ReferenceList},
+  components: {WebMap, ReferenceList, DynamicContentType},
   props: {
     feature_id: {type: Number, required: true}
   },
@@ -165,30 +165,18 @@ export default {
   <div class="factor-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Description">Description</h2></div>
   <div class="factor-section-block pt-0">
     <div class="factor-data-elements">
-      <div v-for="contentchunk in feature.descriptions" :key="contentchunk.id" class="factor-data-element">
-        <template v-if="contentchunk.content_type === 'rte'">
-          <DynamicComponent :content="contentchunk.description" />
-        </template>
-        <template v-else-if="contentchunk.content_type === 'md'">
-          <DynamicComponent :content="contentchunk.description" />
-        </template>
 
-      </div>
+      <DynamicContentType :chunks="feature.descriptions" contentFieldName="description" outerClass="factor-data-element"/>
+
     </div>
   </div>
 
   <div id="distribution" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Distribution">Distribution</h2></div>
   <div class="group-section-block pt-0 distribution-block" :class="{'distribution-block-has-text': Object.keys(group.distributions || {}).length > 0, 'distribution-block-has-map': Object.keys(group.landscape_character_areas || {}).length > 0}">
     <div class="group-data-elements">
-      <div v-for="contentchunk in feature.distributions" :key="contentchunk.id" class="group-data-element">
-        <template v-if="contentchunk.content_type === 'rte'">
-          <DynamicComponent :content="contentchunk.distribution" />
-        </template>
-        <template v-else-if="contentchunk.content_type === 'md'">
-          <DynamicComponent :content="contentchunk.distribution" />
-        </template>
 
-      </div>
+      <DynamicContentType :chunks="feature.distributions" contentFieldName="distribution" outerClass="group-data-element"/>
+
     </div>
       <div v-if="Object.keys(feature.landscape_character_areas || {}).length > 0">
         <div class="group-data-element">
@@ -203,15 +191,9 @@ export default {
   <div class="factor-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Condition">Condition</h2></div>
   <div class="factor-section-block pt-0">
     <div class="factor-data-elements">
-      <div v-for="contentchunk in feature.conditions" :key="contentchunk.id" class="factor-data-element">
-        <template v-if="contentchunk.content_type === 'rte'">
-          <DynamicComponent :content="contentchunk.condition" />
-        </template>
-        <template v-else-if="contentchunk.content_type === 'md'">
-          <DynamicComponent :content="contentchunk.condition" />
-        </template>
 
-      </div>
+      <DynamicContentType :chunks="feature.conditions" contentFieldName="condition" outerClass="factor-data-element"/>
+
     </div>
   </div>
 

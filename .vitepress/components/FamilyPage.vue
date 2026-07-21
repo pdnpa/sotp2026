@@ -1,7 +1,7 @@
 <script>
 //import reportdata, { features, references } from '../reportdata.js'
 import { data } from '../reportdata.data.js'
-import DynamicComponent from "./DynamicComponent.vue";
+import DynamicContentType from "./DynamicContentType.vue";
 import FamilyRiskAssessment from "./FamilyRiskAssessment.vue";
 import ReferenceList from "./ReferenceList.vue";
 
@@ -16,7 +16,7 @@ const defaultFamily = {
 
 export default {
   name: "FamilyPage",
-  components: {DynamicComponent, FamilyRiskAssessment, ReferenceList},
+  components: {DynamicContentType, FamilyRiskAssessment, ReferenceList},
   props: {
     family_id: {type: Number, required: true}
   },
@@ -78,15 +78,9 @@ export default {
   <div class="family-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="introduction">Introduction</h2></div>
   <div class="family-section-block pt-0">
     <div class="family-data-elements">
-      <div v-for="contentchunk in family.introductions" :key="contentchunk.id" class="family-data-element">
-        <template v-if="contentchunk.content_type === 'rte'">
-          <DynamicComponent :content="contentchunk.introduction" />
-        </template>
-        <template v-else-if="contentchunk.content_type === 'md'">
-          <DynamicComponent :content="contentchunk.introduction" />
-        </template>
 
-      </div>
+      <DynamicContentType :chunks="family.introductions" contentFieldName="introduction" outerClass="family-data-element"/>
+
     </div>
   </div>
 
@@ -187,6 +181,7 @@ export default {
 
   .feature-family-heading-page-width {
     border-radius: 0 0 14px 14px;
+    margin-bottom: 2rem;
     .feature-family-heading__image-holder {
       width: 30vw;
       border-radius: 0 0 14px 0;

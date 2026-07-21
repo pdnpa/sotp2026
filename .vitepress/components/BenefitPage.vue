@@ -1,7 +1,8 @@
 <script>
 import { data } from '../reportdata.data.js'
-import DynamicComponent from "./DynamicComponent.vue";
+import DynamicContentType from "./DynamicContentType.vue";
 import ReferenceList from "./ReferenceList.vue";
+import DynamicComponent from "./DynamicComponent.vue";
 
 const defaultBenefit = {
   number: '0'
@@ -16,7 +17,7 @@ const defaultBenefit = {
 
 export default {
   name: "BenefitPage",
-  components: {DynamicComponent, ReferenceList},
+  components: {DynamicContentType, ReferenceList, DynamicComponent},
   props: {
     benefit_id: {type: Number, required: true}
   },
@@ -52,15 +53,9 @@ export default {
   <div class="factor-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Description">Description</h2></div>
   <div class="factor-section-block pt-0">
     <div class="factor-data-elements">
-      <div v-for="contentchunk in benefit.descriptions" :key="contentchunk.id" class="factor-data-element">
-        <template v-if="contentchunk.content_type === 'rte'">
-          <DynamicComponent :content="contentchunk.description" />
-        </template>
-        <template v-else-if="contentchunk.content_type === 'md'">
-          <DynamicComponent :content="contentchunk.description" />
-        </template>
 
-      </div>
+      <DynamicContentType :chunks="benefit.descriptions" contentFieldName="description" outerClass="benefit-data-element"/>
+
     </div>
   </div>
 

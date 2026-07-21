@@ -1,6 +1,7 @@
 <script>
 import { data } from '../reportdata.data.js'
 import DynamicComponent from "./DynamicComponent.vue";
+import DynamicContentType from "./DynamicContentType.vue";
 import ReferenceList from "./ReferenceList.vue";
 
 const defaultFactor = {
@@ -16,7 +17,7 @@ const defaultFactor = {
 
 export default {
   name: "FactorPage",
-  components: {DynamicComponent, ReferenceList},
+  components: {DynamicComponent, ReferenceList, DynamicContentType},
   props: {
     factor_id: {type: Number, required: true}
   },
@@ -55,15 +56,9 @@ export default {
   <div class="factor-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Description">Description</h2></div>
   <div class="factor-section-block pt-0">
     <div class="factor-data-elements">
-      <div v-for="contentchunk in factor.descriptions" :key="contentchunk.id" class="factor-data-element">
-        <template v-if="contentchunk.content_type === 'rte'">
-          <DynamicComponent :content="contentchunk.description" />
-        </template>
-        <template v-else-if="contentchunk.content_type === 'md'">
-          <DynamicComponent :content="contentchunk.description" />
-        </template>
 
-      </div>
+      <DynamicContentType :chunks="factor.descriptions" contentFieldName="description"/>
+
     </div>
   </div>
 
