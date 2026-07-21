@@ -12,3 +12,32 @@
 .VPNav .blog-search .nav-search-btn-wait .metaKey {
   border-color: #9bc1cc !important;
 }
+
+@media screen and (max-width: 960px) {
+
+  .VPNav .blog-search {
+    &:after {
+      display: none;
+    }
+  }
+
+  .Layout .VPNavBar {
+
+    --vp-nav-logo-height: 64px;
+    --vp-nav-height: 110px;
+
+    .title {
+      span {
+        font-size: 1rem;
+      }
+    }
+
+    .wrapper {
+     padding: 0 8px 0 12px;
+      > .container {
+        max-width: var(--vp-layout-max-width);
+      }
+    }
+  }
+
+}

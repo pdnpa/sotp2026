@@ -73,3 +73,13 @@
   color: var(--vp-c-divider);
 
 }
+
+@media screen and (max-width: 967px) {
+  .feature-family-heading-page-width,
+  .feature-group-heading-page-width,
+  .feature-heading-page-width {
+    margin-left: -24px;
+    margin-right: -24px;
+    border-radius: 0 !important;
+  }
+}
