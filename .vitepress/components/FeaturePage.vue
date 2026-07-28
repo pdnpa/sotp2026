@@ -172,7 +172,7 @@ export default {
   </div>
 
   <div id="distribution" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Distribution">Distribution</h2></div>
-  <div class="group-section-block pt-0 distribution-block" :class="{'distribution-block-has-text': Object.keys(group.distributions || {}).length > 0, 'distribution-block-has-map': Object.keys(group.landscape_character_areas || {}).length > 0}">
+  <div class="group-section-block pt-0 distribution-block" :class="{'distribution-block-has-text': Object.keys(feature.distributions || {}).length > 0, 'distribution-block-has-map': Object.keys(feature.landscape_character_areas || {}).length > 0}">
     <div class="group-data-elements">
 
       <DynamicContentType :chunks="feature.distributions" contentFieldName="distribution" outerClass="group-data-element"/>
