@@ -324,10 +324,19 @@ html {
 .distribution-block {
 
   &.distribution-block-has-text.distribution-block-has-map {
-    display: flex;
-    justify-content: flex-start;
-    > :first-child {
-      margin-right: 2rem;
+
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .distribution-block {
+
+    &.distribution-block-has-text.distribution-block-has-map {
+      display: flex;
+      justify-content: flex-start;
+      > :first-child {
+        margin-right: 2rem;
+      }
     }
   }
 }
