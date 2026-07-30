@@ -8,7 +8,7 @@
     "build": "set VITEPRESS_BASE=/sotp26/&&npx vitepress build . ",
     "deploy": "npx vitepress build . ",
     "preview": "vitepress preview .",
-    "theme" : "set VP_THEME=%npm_config_theme%&& npx vitepress dev . pdnpaconfig"
+    "theme": "set VP_THEME=%npm_config_theme%&& npx vitepress dev . pdnpaconfig"
   },
   "devDependencies": {
     "sass-embedded": "^1.97.3",
@@ -17,6 +17,7 @@
     "vue": "^3.5.28"
   },
   "dependencies": {
+    "@arcgis/map-components": "^5.1.14",
     "@mdit/plugin-footnote": "^0.22.4",
     "chart.js": "^4.5.1",
     "chartjs-plugin-datalabels": "^2.2.0",

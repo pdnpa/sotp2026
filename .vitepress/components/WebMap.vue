@@ -1,119 +1,108 @@
 <template>
   <div class="web-map-container-outer">
-  <div ref="mapDiv" class="web-map-container"></div>
-    <div class="web-map-legend">
-      <ul>
-        <li v-for="layer in layers" :key="layer.id">{{ layer.title }}</li>
-      </ul>
+    <div class="web-map-container">
+      <ClientOnly>
+        <arcgis-map
+            :id="uniqueId"
+            ref="mapRef"
+            :item-id="props.portalId"
+            zoom="9"
+            @arcgisViewReadyChange="handleMapReady"
+        >
+
+
+        </arcgis-map>
+        <arcgis-legend v-if="isMapReady" legend-style="card" :reference-element="uniqueId" />
+      </ClientOnly>
     </div>
   </div>
 </template>
 
 <script setup>
-import { onMounted, ref, onBeforeUnmount, watch } from 'vue'
+import { ref, watch, useId } from 'vue'
+
+// 1. Web components & styles
+import "@arcgis/map-components/components/arcgis-map"
+import "@arcgis/map-components/components/arcgis-expand"
+import "@arcgis/map-components/components/arcgis-legend"
+import "@arcgis/map-components/components/arcgis-popup"
+
+import "@arcgis/map-components/main.css"
+import "@esri/calcite-components/main.css"
+import "@arcgis/core/assets/esri/themes/light/main.css"
+
+const uniqueId = useId();
+const isMapReady = ref(false);
 
 const props = defineProps({
-  layer: {
-    type: String,
-    default: ''
-  },
-  show: {
-    type: String,
-    default: ''
-  },
-  portalId: {
-    type: String,
-    default: '8eb77252cba74187ba0763622d316584'
-  }
+  layer: { type: String, default: '' },
+  show: { type: String, default: '' },
+  portalId: { type: String, default: '8eb77252cba74187ba0763622d316584' }
 })
 
-const mapDiv = ref(null)
-let view = null
+const mapRef = ref(null)
 let webmap = null
 
-//const layers = ref(null)
-let layers = ref(null)
+const handleMapReady = async (event) => {
+  const mapElement = event.target
+  webmap = mapElement.map
 
-const initMap = async () => {
-  if (typeof window === 'undefined') return
-
-  try {
-    // Use ESM from CDN
-    const [WebMap, MapView] = await Promise.all([
-      import('https://js.arcgis.com/4.34/@arcgis/core/WebMap.js'),
-      import('https://js.arcgis.com/4.34/@arcgis/core/views/MapView.js')
-    ]).then(modules => modules.map(m => m.default))
-
-    webmap = new WebMap({
-      portalItem: {
-        id: props.portalId
-      }
-    })
-
-    view = new MapView({
-      container: mapDiv.value,
-      zoom: 9,
-      map: webmap
-    })
-
-    await webmap.when()
-    updateLayerVisibility()
-  } catch (e) {
-    console.error('Failed to load ArcGIS modules:', e)
+  // Ensure the map element resizes and renders canvas tiles
+  if (mapElement.view) {
+    mapElement.view.container.style.height = '100%'
+    mapElement.view.container.style.width = '100%'
   }
+
+  await webmap.when()
+  isMapReady.value = true;
+  updateLayerVisibility()
 }
 
 const updateLayerVisibility = () => {
   if (!webmap) return
 
   const showLayers = (props.layer || props.show || '')
-    .split(',')
-    .map(s => s.trim())
-    .filter(s => s)
+      .split(',')
+      .map(s => s.trim())
+      .filter(Boolean)
 
-  webmap.allLayers.forEach(layer => {
-    // If showLayers is empty, maybe keep default? 
-    // Original code says: Everything off by default, then turn on whatever is in ?show=
-    if (showLayers.length > 0) {
-      layer.visible = showLayers.includes(layer.title)
-    }
-  })
-  layers = webmap.allLayers
-  console.log("Updating layer visibly",showLayers,webmap.allLayers)
   if (showLayers.length > 0) {
-    console.log(webmap.allLayers)
-    layers = showLayers
+    webmap.layers.forEach(layer => {
+      layer.visible = showLayers.includes(layer.title)
+    })
   }
 }
 
-watch(() => props.layer, updateLayerVisibility)
-watch(() => props.show, updateLayerVisibility)
-
-onMounted(() => {
-  // Load CSS
-  if (!document.getElementById('arcgis-css')) {
-    const link = document.createElement('link')
-    link.id = 'arcgis-css'
-    link.rel = 'stylesheet'
-    link.href = 'https://js.arcgis.com/4.34/esri/themes/light/main.css'
-    document.head.appendChild(link)
-  }
-
-  initMap()
-})
-
-onBeforeUnmount(() => {
-  if (view) {
-    view.destroy()
-  }
-})
+watch(() => [props.layer, props.show], updateLayerVisibility)
 </script>
 
 <style scoped>
+.web-map-container-outer {
+  width: 100%;
+}
+
 .web-map-container {
-  height: 350px;
-  width: 260px;
+  width: 300px;
   margin: 1em 0;
   border: 1px solid #ccc;
+  position: relative;
+}
+
+arcgis-map {
+  height: 350px !important;
+}
+
+/* Custom elements require explicit display block and 100% sizing */
+arcgis-map, arcgis-popup {
+  display: block !important;
+  width: 100% !important;
+  /*height: 100% !important;*/
+}
+
+arcgis-legend {
+  display: block !important;
+  max-height: 250px;
+  width: 100%;
+  overflow-y: auto;
 }
 </style>

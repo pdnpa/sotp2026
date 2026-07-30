@@ -29,8 +29,16 @@ export default withChartjs(defineConfig({
         // @ts-expect-error not fully supported yet
     //    initialValue: 'light'
     //},
+    vue: {
+        template: {
+            compilerOptions: {
+                isCustomElement: (tag) => tag.startsWith('arcgis-') || tag.startsWith('calcite-')
+            }
+        }
+    },
     vite: {
         ...baseVitePressOptions.vite,
+
         build: {
             target: 'es2022',
             rollupOptions: {
@@ -57,7 +65,7 @@ export default withChartjs(defineConfig({
             ]
         },
         ssr: {
-            noExternal: ['vue']
+            noExternal: ['vue', '@arcgis/map-components', '@esri/calcite-components', '@arcgis/core']
         }
     },
 
