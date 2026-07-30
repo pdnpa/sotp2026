@@ -65,7 +65,7 @@ export default withChartjs(defineConfig({
             ]
         },
         ssr: {
-            noExternal: ['vue', '@arcgis/map-components', '@esri/calcite-components', '@arcgis/core']
+            noExternal: ['vue', '@arcgis/map-components', '@esri/calcite-components', '@arcgis/core', '@amcharts/amcharts5']
         }
     },
 
