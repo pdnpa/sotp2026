@@ -12,7 +12,8 @@
 
 
         </arcgis-map>
-        <arcgis-legend v-if="isMapReady" legend-style="card" :reference-element="uniqueId" />
+        <arcgis-legend legend-style="card"
+                       card-style-layout="auto" v-if="isMapReady" :reference-element="uniqueId" />
       </ClientOnly>
     </div>
   </div>
@@ -42,7 +43,7 @@ const props = defineProps({
 
 const mapRef = ref(null)
 let webmap = null
-
+//  xlegend-style="card"
 const handleMapReady = async (event) => {
   const mapElement = event.target
   webmap = mapElement.map
@@ -84,12 +85,14 @@ watch(() => [props.layer, props.show], updateLayerVisibility)
 .web-map-container {
   width: 300px;
   margin: 1em 0;
-  border: 1px solid #ccc;
+  border: 6px solid #eddfbd;
   position: relative;
 }
 
 arcgis-map {
   height: 350px !important;
+  --arcgis-internal-legend-layer-padding: 0 10px;
+  --arcgis-internal-legend-heading-margin: 0;
 }
 
 /* Custom elements require explicit display block and 100% sizing */
@@ -104,5 +107,8 @@ arcgis-legend {
   max-height: 250px;
   width: 100%;
   overflow-y: auto;
+  --arcgis-internal-legend-layer-padding: 0 10px;
 }
+
+
 </style>
