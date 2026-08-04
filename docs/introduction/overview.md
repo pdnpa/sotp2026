@@ -10,6 +10,8 @@
 
 :::
 
+<div class="mt-5"></div>
+
 # Using charts
 
 You can see all the supported chart types at https://s00d.github.io/vitepress-plugin-chartjs/examples.html.

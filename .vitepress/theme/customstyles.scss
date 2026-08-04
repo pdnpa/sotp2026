@@ -7,6 +7,16 @@
 @use "families";
 @use "sass:color";
 
+.mt-3 {
+  margin-top: 1rem;
+}
+.mt-4 {
+  margin-top: 2rem;
+}
+.mt-5 {
+  margin-top: 4rem;
+}
+
 html {
   .Layout {
     .VPDoc.has-aside .content-container {

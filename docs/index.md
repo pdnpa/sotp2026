@@ -21,28 +21,10 @@ hero:
   actions:
     - theme: brand
       text: Introduction
-      link: /introduction/overview.md
-      
-features:
-    - title: Feature A
-      details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    - title: Feature B
-      details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    - title: Feature C
-      details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      link: /introduction/introduction.md
 ---
 
-<!--
 
-![PDNPA Logo in dark grey](/pdnpa_logo.png)
 
-<img :src="$withBase('/pdnpa_logo_white.png')" alt="White logo" />
+<LandingPage />
 
-[family](family.md)
-
-actions:
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/vuejs/vitepress
-
--->

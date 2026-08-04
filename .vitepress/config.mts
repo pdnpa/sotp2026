@@ -124,10 +124,11 @@ export default withChartjs(defineConfig({
         sidebar:[
             {
                 "text": "Executive summary",
-                "link": "executive-summary"
+                "link": "/executive-summary"
             },
             {
               "text": "Introduction",
+              "link": "/introduction/introduction",
               "collapsed": false,
               "items": [
                   {
@@ -142,12 +143,13 @@ export default withChartjs(defineConfig({
             },
             {
                 "text": 'Feature assessments',
-                "link": "assessments",
+                "link": "/assessments",
                 "collapsed": false,
                 "items": contentsFeatures
             },
             {
                 "text": 'Factors',
+                "link": "/factors",
                 "collapsed": true,
                 "items": contentsFactors
             }
