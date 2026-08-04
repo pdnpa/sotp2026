@@ -4,10 +4,32 @@ import { withChartjs } from 'vitepress-plugin-chartjs'
 import {contentsFeatures,contentsFactors} from './reportcontents.js'
 import fs from 'node:fs'
 import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 // Import base config and shared options from engine
 import baseVitePressOptions, {
     vitePressSidebarOptions
 } from '../engine/pdnpaconfig/.vitepress/config.mts'
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+
+function getScssThemeVariables(filePath: string) {
+    try {
+        const content = fs.readFileSync(filePath, 'utf-8')
+        const variables: Record<string, string> = {}
+        // Matches $variable-name: value; (ignoring lines starting with //)
+        const regex = /^\s*\$([\w-]+):\s*([^;]+);/gm
+        let match
+        while ((match = regex.exec(content)) !== null) {
+            variables[match[1]] = match[2].trim()
+        }
+        return variables
+    } catch (e) {
+        console.warn(`Could not load SCSS variables from ${filePath}`, e)
+        return {}
+    }
+}
+
+const themeVars = getScssThemeVariables(path.resolve(__dirname, 'theme/_variables.scss'))
 
 const reportSidebar = generateSidebar({
     ...vitePressSidebarOptions,
@@ -17,6 +39,22 @@ const reportSidebar = generateSidebar({
 export default withChartjs(defineConfig({
     // Inherit plugins and markdown config
     ...baseVitePressOptions,
+
+    chartjs: {
+        defaultHeight: '400px',
+        enableZoom: true,
+        colorPalette: [
+            themeVars['pdnpa-darkorange'],
+            themeVars['pdnpa-lightblue'],
+            themeVars['pdnpa-lilac'],
+            themeVars['pdnpa-midbrown'],
+            themeVars['pdnpa-lime'],
+            themeVars['pdnpa-orange'],
+            themeVars['pdnpa-blue'],
+            themeVars['pdnpa-stone'],
+        ].filter(Boolean),
+    },
+
     // markdown: baseVitePressOptions.markdown,
     // Override content and branding
     srcDir: './docs',
@@ -79,11 +117,15 @@ export default withChartjs(defineConfig({
         logo: "/pdnpa_logo_white.png",
         siteTitle: "State of the Park Report 2026",
         nav: [
-            { "text": 'Home', "link": '/' },
-            { "text": 'Overview', "link": '/introduction/overview' },
+            { "text": 'Home', "link": '/' }
+            // ,{ "text": 'Overview', "link": '/introduction/overview' },
             // Report-specific nav
         ],
         sidebar:[
+            {
+                "text": "Executive summary",
+                "link": "executive-summary"
+            },
             {
               "text": "Introduction",
               "collapsed": false,
