@@ -18,10 +18,6 @@ hero:
   text: State of the Park Report
   tagline: by Peak District National Park Authority
 
-  actions:
-    - theme: brand
-      text: Introduction
-      link: /introduction/introduction.md
 ---
 
 

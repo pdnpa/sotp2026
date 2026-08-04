@@ -42,5 +42,11 @@ export default defineComponent({
   background-color: var(--vp-c-bg-soft);
   border-radius: var(--block-border-radius);
   padding: 1rem;
+
+  h2 {
+    margin-bottom: 1rem;
+    margin-top: 0;
+    padding-bottom: 2rem;
+  }
 }
 </style>

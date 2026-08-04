@@ -21,9 +21,6 @@ export default {
 <template>
 <div class="feature-assessment-index">
 
-  <DocBefore>
-
-  </DocBefore>
   <div class="feature-assessments">
     <div v-for="family in families" :key="family.id" class="feature-assessment-entry">
       <a :href="$withBase(family.url)" class="feature-assessment-link" :class="`bg-${family.slug}`">
@@ -39,11 +36,10 @@ export default {
 </template>
 <style scoped>
 
-:root {
-  --assessment-item-width: 340px;
-}
 
 .feature-assessments {
+
+
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--assessment-item-width), 1fr));
   grid-gap: 1rem;
