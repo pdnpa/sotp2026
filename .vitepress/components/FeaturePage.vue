@@ -64,6 +64,41 @@ export default {
     },
     getFirstImage(factor) {
       return factor.images ? Object.values(factor.images)[0] : null;
+    },
+    contentCollectionIsNotEmpty(obj, content_field_name) {
+      if (!obj || typeof obj !== 'object') {
+        return false;
+      }
+
+      return Object.values(obj).some(entry => {
+        if (!entry || !content_field_name) return false;
+        const content = entry[content_field_name];
+
+        if (typeof content === 'string') {
+          // Strip HTML tags and &nbsp; entities to ensure actual textual/image content exists
+          const textContent = content.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, '').trim();
+          return textContent.length > 0;
+        }
+
+        return Boolean(content);
+      });
+    }
+  },
+  computed: {
+    hasBenefits() {
+      return this.feature.benefits && Object.keys(this.feature.benefits).length > 0;
+    },
+    hasFactors() {
+      return this.contentCollectionIsNotEmpty(this.feature.factors, 'title');
+    },
+    hasDescriptions() {
+      return this.contentCollectionIsNotEmpty(this.feature.descriptions, 'description');
+    },
+    hasDistributions() {
+      return this.contentCollectionIsNotEmpty(this.feature.distributions, 'distribution');
+    },
+    hasConditions() {
+      return this.contentCollectionIsNotEmpty(this.feature.conditions, 'condition');
     }
   }
 }
@@ -103,7 +138,7 @@ export default {
   </div>
 
 
-  <div class="feature-benefits">
+  <div class="feature-benefits" v-if="hasBenefits">
 
       <div class="first-col">
         <h2 id="Benefits">Benefits provided by {{feature.title}}</h2>
@@ -134,7 +169,7 @@ export default {
 
   </div>
 
-  <div class="feature-factors">
+  <div class="feature-factors" v-if="hasFactors">
     <div class="first-col">
     <h2 id="ImpactFactors">Factors which impact {{feature.title}}</h2>
     </div>
@@ -162,8 +197,8 @@ export default {
     </div>
   </div>
 
-  <div class="factor-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Description">Description</h2></div>
-  <div class="factor-section-block pt-0">
+  <div class="factor-section-block body-text pb-0" v-if="hasDescriptions"><h2 class="mb-0 mt-0" id="Description">Description</h2></div>
+  <div class="factor-section-block pt-0" v-if="hasDescriptions">
     <div class="factor-data-elements">
 
       <DynamicContentType :chunks="feature.descriptions" contentFieldName="description" outerClass="factor-data-element"/>
@@ -171,8 +206,8 @@ export default {
     </div>
   </div>
 
-  <div id="distribution" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Distribution">Distribution</h2></div>
-  <div class="group-section-block pt-0 distribution-block" :class="{'distribution-block-has-text': Object.keys(feature.distributions || {}).length > 0, 'distribution-block-has-map': Object.keys(feature.landscape_character_areas || {}).length > 0}">
+  <div id="distribution" class="group-section-block body-text pb-0" v-if="hasDistributions"><h2 class="mb-0 mt-0" id="Distribution">Distribution</h2></div>
+  <div class="group-section-block pt-0 distribution-block" v-if="hasDistributions" :class="{'distribution-block-has-text': Object.keys(feature.distributions || {}).length > 0, 'distribution-block-has-map': Object.keys(feature.landscape_character_areas || {}).length > 0}">
     <div class="group-data-elements">
 
       <DynamicContentType :chunks="feature.distributions" contentFieldName="distribution" outerClass="group-data-element"/>
@@ -188,8 +223,8 @@ export default {
 
   </div>
 
-  <div class="factor-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Condition">Condition</h2></div>
-  <div class="factor-section-block pt-0">
+  <div class="factor-section-block body-text pb-0" v-if="hasConditions"><h2 class="mb-0 mt-0" id="Condition">Condition</h2></div>
+  <div class="factor-section-block pt-0" v-if="hasConditions">
     <div class="factor-data-elements">
 
       <DynamicContentType :chunks="feature.conditions" contentFieldName="condition" outerClass="factor-data-element"/>

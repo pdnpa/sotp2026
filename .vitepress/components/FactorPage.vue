@@ -36,6 +36,35 @@ export default {
       usedReferenceIds: []
     }
   },
+  methods: {
+    contentCollectionIsNotEmpty(obj, content_field_name) {
+      if (!obj || typeof obj !== 'object') {
+        return false;
+      }
+
+      return Object.values(obj).some(entry => {
+        if (!entry || !content_field_name) return false;
+        const content = entry[content_field_name];
+
+        if (typeof content === 'string') {
+          // Strip HTML tags and &nbsp; entities to ensure actual textual/image content exists
+          const textContent = content.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, '').trim();
+          return textContent.length > 0;
+        }
+
+        return Boolean(content);
+      });
+    }
+  },
+  computed: {
+    hasDescriptions() {
+      return this.contentCollectionIsNotEmpty(this.factor.descriptions, 'description');
+    },
+    hasImpacts() {
+      return this.factor.impacts && Object.keys(this.factor.impacts).length > 0;
+    }
+
+  }
 }
 
 </script>
@@ -53,8 +82,8 @@ export default {
 
   </DocBefore>
 
-  <div class="factor-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Description">Description</h2></div>
-  <div class="factor-section-block pt-0">
+  <div class="factor-section-block body-text pb-0" v-if="hasDescriptions"><h2 class="mb-0 mt-0" id="Description">Description</h2></div>
+  <div class="factor-section-block pt-0" v-if="hasDescriptions">
     <div class="factor-data-elements">
 
       <DynamicContentType :chunks="factor.descriptions" contentFieldName="description"/>
@@ -63,8 +92,8 @@ export default {
   </div>
 
 
-  <div class="factor-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="impacts">Impacts resulting from {{factor.title}}</h2></div>
-  <div class="factor-section-block pt-0">
+  <div class="factor-section-block body-text pb-0" v-if="hasImpacts"><h2 class="mb-0 mt-0" id="impacts">Impacts resulting from {{factor.title}}</h2></div>
+  <div class="factor-section-block pt-0" v-if="hasImpacts">
     <div class="factor-data-elements">
       <div v-for="impact in factor.impacts" :key="impact.id" class="factor-data-element">
         <h3>{{impact.title}}</h3>

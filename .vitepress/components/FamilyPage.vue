@@ -39,6 +39,29 @@ export default {
   methods: {
     getFirstImage(family) {
       return family.images ? Object.values(family.images)[0] : null;
+    },
+    contentCollectionIsNotEmpty(obj, content_field_name) {
+      if (!obj || typeof obj !== 'object') {
+        return false;
+      }
+
+      return Object.values(obj).some(entry => {
+        if (!entry || !content_field_name) return false;
+        const content = entry[content_field_name];
+
+        if (typeof content === 'string') {
+          // Strip HTML tags and &nbsp; entities to ensure actual textual/image content exists
+          const textContent = content.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, '').trim();
+          return textContent.length > 0;
+        }
+
+        return Boolean(content);
+      });
+    }
+  },
+  computed: {
+    hasIntroductions() {
+      return this.contentCollectionIsNotEmpty(this.family.introductions, 'introduction');
     }
   }
 }
@@ -75,8 +98,8 @@ export default {
 
   </div>
 
-  <div class="family-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="introduction">Introduction</h2></div>
-  <div class="family-section-block pt-0">
+  <div class="family-section-block body-text pb-0" v-if="hasIntroductions"><h2 class="mb-0 mt-0" id="introduction">Introduction</h2></div>
+  <div class="family-section-block pt-0" v-if="hasIntroductions">
     <div class="family-data-elements">
 
       <DynamicContentType :chunks="family.introductions" contentFieldName="introduction" outerClass="family-data-element"/>
@@ -96,8 +119,8 @@ export default {
     </li>
   </ul>
 
-  <div class="family-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="risks">Risk to {{family.title}}</h2></div>
-  <FamilyRiskAssessment :family="family"/>
+  <div class="family-section-block body-text pb-0" v-if="family.riskAssessments && Object.keys(family.riskAssessments).length"><h2 class="mb-0 mt-0" id="risks">Risk to {{family.title}}</h2></div>
+  <FamilyRiskAssessment :family="family" v-if="family.riskAssessments && Object.keys(family.riskAssessments).length" />
 
   <ReferenceList :reference-ids="usedReferenceIds" />
 

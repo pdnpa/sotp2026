@@ -52,6 +52,47 @@ export default {
     },
     getFirstImage(obj) {
       return obj.images ? Object.values(obj.images)[0] : null;
+    },
+    contentCollectionIsNotEmpty(obj, content_field_name) {
+      if (!obj || typeof obj !== 'object') {
+        return false;
+      }
+
+      return Object.values(obj).some(entry => {
+        if (!entry || !content_field_name) return false;
+        const content = entry[content_field_name];
+
+        if (typeof content === 'string') {
+          // Strip HTML tags and &nbsp; entities to ensure actual textual/image content exists
+          const textContent = content.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, '').trim();
+          return textContent.length > 0;
+        }
+
+        return Boolean(content);
+      });
+    }
+  },
+  computed: {
+    hasIntroductions() {
+      return this.contentCollectionIsNotEmpty(this.group.introductions, 'introduction');
+    },
+    hasDistributions() {
+      return this.contentCollectionIsNotEmpty(this.group.distributions, 'distribution');
+    },
+    hasImportances() {
+      return this.contentCollectionIsNotEmpty(this.group.importances, 'importance');
+    },
+    hasBenefits() {
+      return this.contentCollectionIsNotEmpty(this.group.benefits, 'benefit');
+    },
+    hasFeatures() {
+      return this.contentCollectionIsNotEmpty(this.group.features, 'title');
+    },
+    hasImpacts() {
+      return this.contentCollectionIsNotEmpty(this.group.impacts, 'impact');
+    },
+    hasDataQuality() {
+      return this.contentCollectionIsNotEmpty(this.group.data_qualities, 'quality');
     }
   }
 }
@@ -87,8 +128,8 @@ export default {
 
   </div>
 
-  <div id="introduction-block" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Introduction">Introduction</h2></div>
-  <div class="group-section-block pt-0">
+  <div id="introduction-block" class="group-section-block body-text pb-0" v-if="hasIntroductions"><h2 class="mb-0 mt-0" id="Introduction">Introduction</h2></div>
+  <div class="group-section-block pt-0" v-if="hasIntroductions">
     <div class="group-data-elements">
 
       <DynamicContentType :chunks="group.introductions" contentFieldName="introduction" outerClass="group-data-element"/>
@@ -96,8 +137,8 @@ export default {
     </div>
   </div>
 
-  <div id="distribution-block" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Distribution">Distribution</h2></div>
-  <div class="group-section-block pt-0 distribution-block" :class="{'distribution-block-has-text': Object.keys(group.distributions || {}).length > 0, 'distribution-block-has-map': Object.keys(group.landscape_character_areas || {}).length > 0}">
+  <div id="distribution-block" class="group-section-block body-text pb-0" v-if="hasDistributions"><h2 class="mb-0 mt-0" id="Distribution">Distribution</h2></div>
+  <div class="group-section-block pt-0 distribution-block" v-if="hasDistributions" :class="{'distribution-block-has-text': Object.keys(group.distributions || {}).length > 0, 'distribution-block-has-map': Object.keys(group.landscape_character_areas || {}).length > 0}">
     <div class="group-data-elements">
 
       <DynamicContentType :chunks="group.distributions" contentFieldName="distribution" outerClass="group-data-element"/>
@@ -114,8 +155,8 @@ export default {
 
   </div>
 
-  <div id="why-is-important-block" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="Importance">Why is {{group.title}} important?</h2></div>
-  <div class="group-section-block pt-0">
+  <div id="why-is-important-block" class="group-section-block body-text pb-0" v-if="hasImportances"><h2 class="mb-0 mt-0" id="Importance">Why is {{group.title}} important?</h2></div>
+  <div class="group-section-block pt-0" v-if="hasImportances">
     <div class="group-data-elements">
       <DynamicContentType :chunks="group.importances" contentFieldName="importance" outerClass="group-data-element"/>
 
@@ -125,7 +166,7 @@ export default {
 
 
 
-  <div class="feature-benefits">
+  <div class="feature-benefits" v-if="hasBenefits">
     <div class="first-col">
     <h3>Benefits provided by {{group.title}}</h3>
     </div>
@@ -155,7 +196,7 @@ export default {
   </div>
 
 
-  <div id="state-block" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="State">State of {{group.title}}</h2></div>
+  <div id="state-block" class="group-section-block body-text pb-0" v-if="hasFeatures"><h2 class="mb-0 mt-0" id="State">State of {{group.title}}</h2></div>
   <div class="group-section-block pt-0">
     <table>
       <thead>
@@ -200,15 +241,14 @@ export default {
     </table>
   </div>
 
-  <div id="impact-assessment-block" class="group-section-block body-text pb-0"><h2 class="mb-0 mt-0" id="impact">Impact assessment</h2></div>
-  <GroupImpactAssessment :group="group"></GroupImpactAssessment>
+  <div id="impact-assessment-block" class="group-section-block body-text pb-0" v-if="hasImpacts"><h2 class="mb-0 mt-0" id="impact">Impact assessment</h2></div>
+  <GroupImpactAssessment :group="group" v-if="hasImpacts"></GroupImpactAssessment>
 
-  <div id="what-are-the-gaps-in-our-research-data" class="group-section-block body-text pb-0">
+  <div id="what-are-the-gaps-in-our-research-data" class="group-section-block body-text pb-0" v-if="hasDataQuality">
     <h2 class="mb-0 mt-0" id="Research">What are the gaps in our research & data?</h2>
 
-    <div class="warning custom-block">
       <DynamicContentType :content="group.data_qualities" content-field-name="quality" />
-    </div>
+
   </div>
 
   <ReferenceList :reference-ids="usedReferenceIds" />
