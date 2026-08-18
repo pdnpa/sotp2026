@@ -8,6 +8,7 @@ import RiskScaleBadge from "./RiskScaleBadge.vue";
 import LikelihoodBadge from "./LikelihoodBadge.vue";
 import ReferenceList from "./ReferenceList.vue";
 import GroupImpactAssessment from "./GroupImpactAssessment.vue";
+import { contentCollectionIsNotEmpty, getFirstImage, getLCALayerString } from '../utils.js'
 
 const defaultGroup = {
   number: '0'
@@ -47,30 +48,9 @@ export default {
     }
   },
   methods: {
-    getLCALayerString(group) {
-      return Object.values(group.landscape_character_areas).map(area => area.layer_slug).join(',');
-    },
-    getFirstImage(obj) {
-      return obj.images ? Object.values(obj.images)[0] : null;
-    },
-    contentCollectionIsNotEmpty(obj, content_field_name) {
-      if (!obj || typeof obj !== 'object') {
-        return false;
-      }
-
-      return Object.values(obj).some(entry => {
-        if (!entry || !content_field_name) return false;
-        const content = entry[content_field_name];
-
-        if (typeof content === 'string') {
-          // Strip HTML tags and &nbsp; entities to ensure actual textual/image content exists
-          const textContent = content.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, '').trim();
-          return textContent.length > 0;
-        }
-
-        return Boolean(content);
-      });
-    }
+    getLCALayerString,
+    getFirstImage,
+    contentCollectionIsNotEmpty
   },
   computed: {
     hasIntroductions() {

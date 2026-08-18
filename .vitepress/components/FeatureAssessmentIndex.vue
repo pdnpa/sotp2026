@@ -1,5 +1,6 @@
 <script>
 import { data } from '../reportdata.data.js'
+import { getFirstImage } from '../utils.js'
 
 export default {
   name: "FeatureAssessmentIndex",
@@ -12,9 +13,7 @@ export default {
     this.families = Object.values(data.reportdata);
   },
   methods: {
-    getFirstImage(family) {
-      return family.images ? Object.values(family.images)[0] : null;
-    }
+    getFirstImage
   }
 }
 </script>

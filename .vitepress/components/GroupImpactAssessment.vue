@@ -1,4 +1,5 @@
 <script>
+import { getFirstImage } from '../utils.js'
 
 export default {
   name: "GroupImpactAssessment",
@@ -6,9 +7,7 @@ export default {
     group: {type: Object, required: true}
   },
   methods: {
-    getFirstImage(factor) {
-      return factor.images ? Object.values(factor.images)[0] : null;
-    }
+    getFirstImage
   }
 }
 

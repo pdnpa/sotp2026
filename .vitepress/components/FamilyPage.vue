@@ -4,6 +4,7 @@ import { data } from '../reportdata.data.js'
 import DynamicContentType from "./DynamicContentType.vue";
 import FamilyRiskAssessment from "./FamilyRiskAssessment.vue";
 import ReferenceList from "./ReferenceList.vue";
+import { contentCollectionIsNotEmpty, getFirstImage } from '../utils.js'
 
 
 const defaultFamily = {
@@ -37,27 +38,8 @@ export default {
     }
   },
   methods: {
-    getFirstImage(family) {
-      return family.images ? Object.values(family.images)[0] : null;
-    },
-    contentCollectionIsNotEmpty(obj, content_field_name) {
-      if (!obj || typeof obj !== 'object') {
-        return false;
-      }
-
-      return Object.values(obj).some(entry => {
-        if (!entry || !content_field_name) return false;
-        const content = entry[content_field_name];
-
-        if (typeof content === 'string') {
-          // Strip HTML tags and &nbsp; entities to ensure actual textual/image content exists
-          const textContent = content.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, '').trim();
-          return textContent.length > 0;
-        }
-
-        return Boolean(content);
-      });
-    }
+    getFirstImage,
+    contentCollectionIsNotEmpty
   },
   computed: {
     hasIntroductions() {

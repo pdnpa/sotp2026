@@ -3,6 +3,7 @@ import { data } from '../reportdata.data.js'
 import DynamicContentType from "./DynamicContentType.vue";
 import WebMap from "./WebMap.vue";
 import ReferenceList from "./ReferenceList.vue";
+import { contentCollectionIsNotEmpty, getFirstImage, getLCALayerString } from '../utils.js'
 
 const defaultFeature = {
   number: '0'
@@ -59,30 +60,9 @@ export default {
     }
   },
   methods: {
-    getLCALayerString(group) {
-      return Object.values(group.landscape_character_areas).map(area => area.layer_slug).join(',');
-    },
-    getFirstImage(factor) {
-      return factor.images ? Object.values(factor.images)[0] : null;
-    },
-    contentCollectionIsNotEmpty(obj, content_field_name) {
-      if (!obj || typeof obj !== 'object') {
-        return false;
-      }
-
-      return Object.values(obj).some(entry => {
-        if (!entry || !content_field_name) return false;
-        const content = entry[content_field_name];
-
-        if (typeof content === 'string') {
-          // Strip HTML tags and &nbsp; entities to ensure actual textual/image content exists
-          const textContent = content.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, '').trim();
-          return textContent.length > 0;
-        }
-
-        return Boolean(content);
-      });
-    }
+    getLCALayerString,
+    getFirstImage,
+    contentCollectionIsNotEmpty
   },
   computed: {
     hasBenefits() {
