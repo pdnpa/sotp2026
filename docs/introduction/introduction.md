@@ -11,4 +11,4 @@ Battle suicide abstract sexuality. Truth virtues right love chaos will law snare
 - [Overview of the Peak District](/introduction/overview)
 - [Methodology](/introduction/methodology)
 - [Feature assessments](/assessments)
-- [Factors](/introduction/factors)
+- [Factors](/factors)
