@@ -224,11 +224,11 @@ export default {
   <div id="impact-assessment-block" class="group-section-block body-text pb-0" v-if="hasImpacts"><h2 class="mb-0 mt-0" id="impact">Impact assessment</h2></div>
   <GroupImpactAssessment :group="group" v-if="hasImpacts"></GroupImpactAssessment>
 
-  <div id="what-are-the-gaps-in-our-research-data" class="group-section-block body-text pb-0" v-if="hasDataQuality">
-    <h2 class="mb-0 mt-0" id="Research">What are the gaps in our research & data?</h2>
-
-      <DynamicContentType :content="group.data_qualities" content-field-name="quality" />
-
+  <div id="what-are-the-gaps-in-our-research-data" class="group-section-block body-text pb-0" v-if="hasDataQuality"><h2 class="mb-0 mt-0" id="Research">What are the gaps in our research & data?</h2></div>
+  <div class="group-section-block pt-0" v-if="hasDataQuality">
+    <div class="group-data-elements data-quality-elements">
+      <DynamicContentType :chunks="group.data_qualities" contentFieldName="quality" outerClass="group-data-element data-quality-element"/>
+    </div>
   </div>
 
   <ReferenceList :reference-ids="usedReferenceIds" />
