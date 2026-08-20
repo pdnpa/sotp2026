@@ -2,4 +2,4 @@
 
 
 </div>
-<FeaturePage :feature_id="3" />
+<FamilyPage :family_id="4" />
