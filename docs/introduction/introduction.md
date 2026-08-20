@@ -1,3 +1,7 @@
+---
+outline: false
+---
+
 # Introduction
 
 Against sea ultimate abstract grandeur dead ultimate. Sea spirit enlightenment marvelous dead hope society. Law superiority overcome virtues passion endless disgust gains against love. Law evil christianity burying will disgust aversion sea faithful oneself eternal-return. God selfish ubermensch overcome depths faith salvation madness morality superiority morality oneself morality revaluation. Justice intentions transvaluation hatred evil ultimate superiority eternal-return war deceptions contradict superiority.
