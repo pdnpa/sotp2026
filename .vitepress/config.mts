@@ -61,7 +61,7 @@ export default withChartjs(defineConfig({
     outDir: process.env.OUTPUT_TO ?? 'C:/www/report_publishing_local/sotp26',
     base: process.env.VITEPRESS_BASE ?? '/',
     title: "State of the Park Report 2026",
-    description: "Report-specific description",
+    description: "A comprehensive account of the condition of the Peak District National Park and an assessment of what factors are driving change in the landscape",
     appearance: false,
     //appearance: {
         // @ts-expect-error not fully supported yet

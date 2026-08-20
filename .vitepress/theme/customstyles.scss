@@ -5,6 +5,7 @@
 @use "table";
 @use "sidebar";
 @use "families";
+@use "landing";
 @use "sass:color";
 
 .mt-3 {
@@ -39,9 +40,7 @@ html {
   background-color: var(--sopr-aside-bg);
 }
 
-.VPHome .clip {
-  background: var(--pdnpa-midbrown);
-}
+
 
 .vp-doc {
   h2 {
