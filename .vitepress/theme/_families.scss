@@ -1,15 +1,16 @@
 @use "sass:map";
 @use "sass:color";
+@use "variables";
 
 $family-colors: (
   "landscape": #4A4D3A,
-  "cultural-heritage": #7B3D64,
-  "people": #7996A4,
+  "cultural-heritage": variables.$pdnpa-purple,
+  "people": variables.$pdnpa-darkorange,
 );
 $family-colors-text: (
         "landscape": #FFFFFF,
         "cultural-heritage": #FFFFFF,
-        "people": #323339,
+        "people": #ffffff,
 );
 .vp-doc {
   @each $name, $value in $family-colors {
