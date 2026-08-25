@@ -46,7 +46,7 @@ const props = defineProps({
 
 const mapRef = ref(null)
 let webmap = null
-//  xlegend-style="card"
+
 const handleMapReady = async (event) => {
   const mapElement = event.target
   webmap = mapElement.map

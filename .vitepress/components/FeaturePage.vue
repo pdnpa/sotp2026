@@ -71,6 +71,9 @@ export default {
     hasFactors() {
       return this.contentCollectionIsNotEmpty(this.feature.factors, 'title');
     },
+    hasLcas() {
+      return this.contentCollectionIsNotEmpty(this.feature.landscape_character_areas, 'layer_slug');
+    },
     hasDescriptions() {
       return this.contentCollectionIsNotEmpty(this.feature.descriptions, 'description');
     },
@@ -120,10 +123,9 @@ export default {
 
   <div class="feature-benefits" v-if="hasBenefits">
 
-      <div class="first-col">
-        <h2 id="Benefits">Benefits provided by {{feature.title}}</h2>
-      </div>
-      <div class="second-col">
+    <h2 id="Benefits">Benefits provided by {{feature.title}}</h2>
+
+
         <ul class="benefit-list show-icon-text">
           <li v-for="benefit in feature.benefits" :key="benefit.id">
 
@@ -145,16 +147,14 @@ export default {
 
           </li>
         </ul>
-      </div>
 
   </div>
 
   <div class="feature-factors" v-if="hasFactors">
-    <div class="first-col">
+
     <h2 id="ImpactFactors">Factors which impact {{feature.title}}</h2>
-    </div>
-    <div class="second-col">
-      <ul class="factor-list show-icon-text">
+
+    <ul class="factor-list show-icon-text">
         <li v-for="factor in feature.factors" :key="factor.id">
 
           <div v-if="getFirstImage(factor)">
@@ -174,7 +174,7 @@ export default {
           </div>
         </li>
       </ul>
-    </div>
+
   </div>
 
   <div class="factor-section-block body-text pb-0" v-if="hasDescriptions"><h2 class="mb-0 mt-0" id="Description">Description</h2></div>
@@ -186,20 +186,21 @@ export default {
     </div>
   </div>
 
-  <div id="distribution" class="group-section-block body-text pb-0" v-if="hasDistributions"><h2 class="mb-0 mt-0" id="Distribution">Distribution</h2></div>
-  <div class="group-section-block pt-0 distribution-block" v-if="hasDistributions" :class="{'distribution-block-has-text': Object.keys(feature.distributions || {}).length > 0, 'distribution-block-has-map': Object.keys(feature.landscape_character_areas || {}).length > 0}">
-    <div class="group-data-elements">
+  <div id="distribution-block" class="distribution-block group-section-block body-text pb-0" v-if="hasDistributions">
 
-      <DynamicContentType :chunks="feature.distributions" contentFieldName="distribution" outerClass="group-data-element"/>
+    <div class="distribution-block-text">
+      <h2 class="mb-0 mt-0" id="Distribution">Distribution</h2>
+      <div class="group-data-elements">
 
-    </div>
-      <div v-if="Object.keys(feature.landscape_character_areas || {}).length > 0">
-        <div class="group-data-element">
-          <h3>Landscape Character Areas</h3>
-          <WebMap :layer="getLCALayerString(feature)"></WebMap>
-        </div>
+        <DynamicContentType :chunks="feature.distributions" contentFieldName="distribution" outerClass="group-data-element"/>
+
       </div>
+    </div>
 
+    <div v-if="hasLcas">
+      <h3>Landscape Character Areas</h3>
+      <WebMap :layer="getLCALayerString(feature)"></WebMap>
+    </div>
 
   </div>
 
@@ -218,6 +219,5 @@ export default {
 </template>
 
 <style lang="scss">
-
 
 </style>

@@ -59,6 +59,9 @@ export default {
     hasDistributions() {
       return this.contentCollectionIsNotEmpty(this.group.distributions, 'distribution');
     },
+    hasLcas() {
+      return this.contentCollectionIsNotEmpty(this.group.landscape_character_areas, 'layer_slug');
+    },
     hasImportances() {
       return this.contentCollectionIsNotEmpty(this.group.importances, 'importance');
     },
@@ -117,25 +120,27 @@ export default {
     </div>
   </div>
 
-  <div id="distribution-block" class="group-section-block body-text pb-0" v-if="hasDistributions"><h2 class="mb-0 mt-0" id="Distribution">Distribution</h2></div>
-  <div class="group-section-block pt-0 distribution-block" v-if="hasDistributions" :class="{'distribution-block-has-text': Object.keys(group.distributions || {}).length > 0, 'distribution-block-has-map': Object.keys(group.landscape_character_areas || {}).length > 0}">
-    <div class="group-data-elements">
 
-      <DynamicContentType :chunks="group.distributions" contentFieldName="distribution" outerClass="group-data-element"/>
+  <div id="distribution-block" class="distribution-block group-section-block body-text pb-0" v-if="hasDistributions">
 
+    <div class="distribution-block-text">
+      <h2 class="mb-0 mt-0" id="Distribution">Distribution</h2>
+      <div class="group-data-elements">
+
+        <DynamicContentType :chunks="group.distributions" contentFieldName="distribution" outerClass="group-data-element"/>
+
+      </div>
     </div>
 
-      <div v-if="Object.keys(group.landscape_character_areas || {}).length > 0">
-        <div class="group-data-element">
-          <h3>Landscape Character Areas</h3>
-          <WebMap :layer="getLCALayerString(group)"></WebMap>
-        </div>
-      </div>
-
+    <div v-if="hasLcas">
+      <h3>Landscape Character Areas</h3>
+      <WebMap :layer="getLCALayerString(group)"></WebMap>
+    </div>
 
   </div>
 
-  <div id="why-is-important-block" class="group-section-block body-text pb-0" v-if="hasImportances"><h2 class="mb-0 mt-0" id="Importance">Why is {{group.title}} important?</h2></div>
+
+  <div id="why-is-important-block" class="group-section-block body-text pb-0" v-if="hasImportances"><h2 class="mb-0 mt-0" id="Importance">The importance of {{group.title}}</h2></div>
   <div class="group-section-block pt-0" v-if="hasImportances">
     <div class="group-data-elements">
       <DynamicContentType :chunks="group.importances" contentFieldName="importance" outerClass="group-data-element"/>
@@ -147,11 +152,8 @@ export default {
 
 
   <div class="feature-benefits" v-if="hasBenefits">
-    <div class="first-col">
-    <h3>Benefits provided by {{group.title}}</h3>
-    </div>
 
-    <div class="second-col">
+    <h2 id="Benefits">Benefits provided by {{group.title}}</h2>
       <ul class="benefit-list show-icon-text">
         <li v-for="benefit in group.benefits" :key="benefit.id">
 
@@ -172,7 +174,7 @@ export default {
           </div>
         </li>
       </ul>
-    </div>
+
   </div>
 
 
@@ -183,7 +185,7 @@ export default {
       <tr>
         <th class="feature-title-column">Feature</th>
         <th>Key data</th>
-        <th>Factors</th>
+        <th class="feature-state-factors">Factors</th>
         <!-- <th>Benefits</th> -->
       </tr>
       </thead>
@@ -256,4 +258,21 @@ export default {
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+
+}
+
+.feature-state-factors {
+  width: 260px;
+}
+
+@media screen and (min-width: 1180px) {
+  .feature-state-factors {
+    width: auto;
+    min-width: 370px;
+  }
+}
+
+
 </style>
