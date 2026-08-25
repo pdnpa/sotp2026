@@ -1,0 +1,63 @@
+@use "sass:map";
+@use "sass:color";
+@use "variables";
+
+$factor-colors: (
+    'climate-change':  #b65321,
+    'demographic-and-sociocultural-change': #a0aeac,
+    'ecological-change': #989d6e,
+    'governance-and-legislation': #9b8a64,
+    'land-management-practises': #4a4d3a,
+    'pollution': #7996a4,
+    'visitation-and-access': #9b637c,
+    'economy-and-industry': #000000
+);
+$factor-colors-text: (
+        'climate-change':  #fff,
+        'demographic-and-sociocultural-change': variables.$pdnpa_darkbrown,
+        'ecological-change': #fff,
+        'governance-and-legislation': #fff,
+        'land-management-practises': #fff,
+        'pollution':#fff,
+        'visitation-and-access': #fff,
+        'economy-and-industry': #fff,
+);
+.vp-doc {
+  @each $name, $value in $factor-colors {
+    .text-#{$name} {
+      color: #{$value} !important;
+    }
+    .bg-#{$name} {
+      background-color: #{$value};
+      color: map.get($factor-colors-text, $name);
+
+      a, &:is(a) {
+        color: map.get($factor-colors-text, $name);
+        transition: color 0.2s ease-in-out;
+        will-change: color;
+
+        &:hover, &:active, &:focus {
+          color: color.scale($value, $lightness: 40%);
+        }
+      }
+
+    }
+    a.bg-#{$name} {
+      color: map.get($factor-colors-text, $name);
+      transition: color 0.1s ease-in-out, background-color 0.2s ease-in-out;
+      will-change: color, background-color;
+
+      &:hover, &:active, &:focus {
+        color: color.scale($value, $lightness: 40%);
+        background-color: color.scale($value, $lightness: -10%);
+      }
+    }
+    :root {
+      --factor-#{$name}: #{$value};
+      --factor-#{$name}-bg: #{$value};
+      --factor-#{$name}-text: map.get($factor-colors-text, $name);
+    }
+  }
+
+
+}

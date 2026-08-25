@@ -152,7 +152,7 @@ export default {
 
   <div class="feature-factors" v-if="hasFactors">
 
-    <h2 id="ImpactFactors">Factors which impact {{feature.title}}</h2>
+    <h2 id="ImpactFactors">Factors that impact {{feature.title}}</h2>
 
     <ul class="factor-list show-icon-text">
         <li v-for="factor in feature.factors" :key="factor.id">

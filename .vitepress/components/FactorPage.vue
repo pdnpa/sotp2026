@@ -48,8 +48,10 @@ export default {
     },
     hasImpacts() {
       return this.factor.impacts && Object.keys(this.factor.impacts).length > 0;
+    },
+    hasFeatures() {
+      return this.contentCollectionIsNotEmpty(this.factor.features, 'title');
     }
-
   }
 }
 
@@ -65,7 +67,7 @@ export default {
   </DocBefore>
 
   <div v-if="!pageHeaderFullWidth" :id="`group_heading_${factor.id}`"
-       class="factor-group-heading factor-group-heading-page-width">
+       class="factor-group-heading factor-group-heading-page-width" :class="`bg-${factor.slug}`">
 
     <div>
     <p class="back-to-factors-link__outer"><a href="/factors.html" class="back-to-family-link back-to-factors-link">Factors</a> <span class="vpi-chevron-right caret-icon"></span></p>
@@ -99,6 +101,17 @@ export default {
     </div>
   </div>
 
+  <div class="factor-section-block body-text pb-0" v-if="hasFeatures"><h2 class="mb-0 mt-0" id="impacts">Features linked to {{factor.title}}</h2></div>
+  <div class="factor-section-block pt-0" v-if="hasFeatures">
+    <div class="factor-data-elements">
+        <ul>
+          <li v-for="feature in factor.features" :key="feature.id">
+            <a :href="$withBase(feature.url)" :title="feature.key_data">{{feature.title}}</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+
   <ReferenceList :reference-ids="usedReferenceIds" />
 
 </div>
@@ -127,7 +140,7 @@ export default {
   }
 
   .factor-family-heading-page-width {
-    background-color: var(--pdnpa-midbrown-lightforeground);
+    /*background-color: var(--pdnpa-midbrown-lightforeground);*/
   }
 
   .factor-family-heading-page-width {
@@ -166,7 +179,7 @@ export default {
     align-items: center;
     justify-content: space-between;
 
-    background-color: var(--pdnpa-midbrown);
+    /*background-color: var(--pdnpa-midbrown);*/
   }
   .factor-family-heading {
     padding-top: 1rem;

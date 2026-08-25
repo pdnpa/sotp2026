@@ -26,7 +26,7 @@ export default defineComponent({
       <div v-for="factor in factors" :key="factor.id" class="factor-list-entry">
         <a :href="$withBase(factor.url)" class="factor-list-link" :class="`bg-${factor.slug}`">
           <h3 class="factor-list-title">{{factor.title}}</h3>
-          <div class="factor-list-image">
+          <div class="factor-list-image" :class="`bg-${factor.slug}`">
             <img v-if="getFirstImage(factor)"
                  :src="getFirstImage(factor).url" :alt="factor.title">
           </div>
