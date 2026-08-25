@@ -3,7 +3,7 @@ import { data } from '../reportdata.data.js'
 import DynamicComponent from "./DynamicComponent.vue";
 import DynamicContentType from "./DynamicContentType.vue";
 import ReferenceList from "./ReferenceList.vue";
-import { contentCollectionIsNotEmpty } from '../utils.js'
+import { contentCollectionIsNotEmpty, getFirstImage } from '../utils.js'
 
 const defaultFactor = {
   number: '0'
@@ -22,6 +22,13 @@ export default {
   props: {
     factor_id: {type: Number, required: true}
   },
+  data() {
+    return {
+      factor: data.factors[this.factor_id] || { ...defaultFactor },
+      pageHeaderFullWidth: false,
+      usedReferenceIds: []
+    }
+  },
   provide() {
     return {
       registerReference: (id) => {
@@ -31,14 +38,9 @@ export default {
       }
     }
   },
-  data() {
-    return {
-      factor: data.factors[this.factor_id] || { ...defaultFactor },
-      usedReferenceIds: []
-    }
-  },
   methods: {
-    contentCollectionIsNotEmpty
+    contentCollectionIsNotEmpty,
+    getFirstImage
   },
   computed: {
     hasDescriptions() {
@@ -56,15 +58,25 @@ export default {
 <template>
 <div class="factor-page" data-pagefind-body>
   <DocBefore>
-    <div :id="`objective_heading_${factor.id}`"
-         class="feature-family-heading">
-
-      <h1>{{ factor.title }}</h1>
-
-
+    <div v-if="pageHeaderFullWidth" class="feature-family-heading feature-family-heading__descendant" :class="`bg-${factor.slug}`">
+      <a :href="$withBase(factor.url)" class="back-to-family-link">{{factor.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span>
     </div>
 
   </DocBefore>
+
+  <div v-if="!pageHeaderFullWidth" :id="`group_heading_${factor.id}`"
+       class="factor-group-heading factor-group-heading-page-width">
+
+    <div>
+    <p class="back-to-factors-link__outer"><a href="/factors.html" class="back-to-family-link back-to-factors-link">Factors</a> <span class="vpi-chevron-right caret-icon"></span></p>
+    <h1>{{ factor.title }}</h1>
+    </div>
+    <div class="factor-heading__image-holder" v-if="getFirstImage(factor)" :style="`background-image: url(`+getFirstImage(factor).url+`)`">
+
+    </div>
+
+  </div>
+
 
   <div class="factor-section-block body-text pb-0" v-if="hasDescriptions"><h2 class="mb-0 mt-0" id="Description">Description</h2></div>
   <div class="factor-section-block pt-0" v-if="hasDescriptions">
@@ -92,6 +104,85 @@ export default {
 </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+.vp-doc {
+
+  .back-to-factors-link {
+    color: #fff;
+    font-size: var(--font-size-base);
+
+  }
+  .back-to-factors-link__outer {
+    margin-bottom: 8px;
+    .caret-icon {
+      color: var(--pdnpa-lightgrey);
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -2px;
+    }
+  }
+
+  .factor-title-column {
+    width: 380px;
+  }
+
+  .factor-family-heading-page-width {
+    background-color: var(--pdnpa-midbrown-lightforeground);
+  }
+
+  .factor-family-heading-page-width {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+
+    .back-to-family-link {
+      color: #fff;
+      font-size: var(--font-size-base);
+
+
+    }
+
+
+    .back-to-family-link__outer {
+      .caret-icon {
+        color: var(--pdnpa-lightgrey);
+        display: inline-block;
+      }
+    }
+
+  }
+
+  .factor-group-heading.factor-group-heading-page-width {
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .back-to-family-link__outer .caret-icon {
+    color: var(--pdnpa-darkbrown);
+  }
+
+  .factor-group-heading-page-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--pdnpa-midbrown);
+  }
+  .factor-family-heading {
+    padding-top: 1rem;
+  }
+
+  .factor-heading__image-holder {
+    width: 180px;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+}
 
 </style>

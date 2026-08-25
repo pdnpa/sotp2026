@@ -5,7 +5,7 @@
   padding: 0.5rem 1.5rem;
 }
 
-.feature-family-heading {
+.feature-family-heading, .factor-family-heading {
   @include large-page-heading();
   background-color: var(--sopr-family-bg);
 
@@ -13,11 +13,11 @@
     @include descendant-page-heading();
   }
 }
-.feature-group-heading {
+.feature-group-heading, .factor-group-heading {
   @include large-page-heading();
   background-color: var(--sopr-group-bg);
 
-  &.feature-group-heading-page-width {
+  &.feature-group-heading-page-width, &.factor-group-heading-page-width {
     padding-top: 4rem;
     border-radius: 0 0 var(--block-border-radius) var(--block-border-radius);
   }
