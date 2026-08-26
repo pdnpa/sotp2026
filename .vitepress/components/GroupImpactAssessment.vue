@@ -44,7 +44,7 @@ export default {
             <li v-for="factor in impact.factors" :key="factor.id">
 
               <div v-if="getFirstImage(factor)">
-                <a :href="$withBase(factor.url)">
+                <a :href="factor.url ? $withBase(factor.url) : '#'">
                   <img
                       class="factor-image"
                       v-if="getFirstImage(factor)"
@@ -54,7 +54,7 @@ export default {
                   <span class="icon-text">{{ factor.title }}</span></a>
               </div>
               <div v-else>
-                <a :href="$withBase(factor.url)">
+                <a :href="factor.url ? $withBase(factor.url) : '#'">
                   <span class="image-placeholder"></span>
                   <span class="icon-text">{{ factor.title }}</span></a>
               </div>

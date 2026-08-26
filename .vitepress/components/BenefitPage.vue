@@ -9,6 +9,8 @@ const defaultBenefit = {
   number: '0'
   ,id: '0'
   ,title: ''
+  ,url: '#'
+  ,slug: ''
   ,primary_color: ''
   ,secondary_color: ''
   ,descriptions: []
@@ -57,8 +59,8 @@ export default {
 <template>
 <div class="factor-page" data-pagefind-body>
   <DocBefore>
-    <div v-if="pageHeaderFullWidth" class="feature-family-heading feature-family-heading__descendant" :class="`bg-${benefit.slug}`">
-      <a :href="$withBase(benefit.url)" class="back-to-family-link">{{benefit.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span>
+    <div v-if="pageHeaderFullWidth && benefit.url" class="feature-family-heading feature-family-heading__descendant" :class="`bg-${benefit.slug}`">
+      <a :href="benefit.url ? $withBase(benefit.url) : '#'" class="back-to-family-link">{{benefit.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span>
     </div>
 
   </DocBefore>

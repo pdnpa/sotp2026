@@ -91,8 +91,8 @@ export default {
 <template>
 <div class="factor-page" data-pagefind-body>
   <DocBefore>
-    <div v-if="pageHeaderFullWidth" class="feature-family-heading feature-family-heading__descendant" :class="`bg-${family.slug}`">
-      <a :href="$withBase(family.url)" class="back-to-family-link">{{family.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span> <a :href="group.url" class="back-to-group-link">{{group.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span>
+    <div v-if="pageHeaderFullWidth && family?.url" class="feature-family-heading feature-family-heading__descendant" :class="`bg-${family.slug}`">
+      <a :href="family?.url ? $withBase(family.url) : '#'" class="back-to-family-link">{{family.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span> <a :href="group.url" class="back-to-group-link">{{group.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span>
     </div>
     <div :id="`objective_heading_${feature.id}`"
          v-if="pageHeaderFullWidth"
@@ -105,11 +105,11 @@ export default {
 
   </DocBefore>
 
-  <div v-if="!pageHeaderFullWidth" class="feature-family-heading feature-family-heading-page-width feature-family-heading__descendant"
+  <div v-if="!pageHeaderFullWidth && family?.url" class="feature-family-heading feature-family-heading-page-width feature-family-heading__descendant"
        :class="[`bg-${family.slug}`, { 'feature-family-heading-has-image': getFirstImage(family)?.url }]"
   >
     <div class="back-to-family-link__outer">
-      <a :href="$withBase(family.url)" class="back-to-family-link">{{family.title}}</a>  <span class="vpi-chevron-right caret-icon"></span>  <a :href="group.url" class="back-to-group-link">{{group.title}}</a> <span class="vpi-chevron-right caret-icon"></span>
+      <a :href="family?.url ? $withBase(family.url) : '#'" class="back-to-family-link">{{family.title}}</a>  <span class="vpi-chevron-right caret-icon"></span>  <a :href="group.url" class="back-to-group-link">{{group.title}}</a> <span class="vpi-chevron-right caret-icon"></span>
     </div>
     <div class="feature-family-heading__image-holder" v-if="getFirstImage(family)" :style="`background-image: url(`+getFirstImage(family).url+`)`"></div>
   </div>
@@ -130,7 +130,7 @@ export default {
           <li v-for="benefit in feature.benefits" :key="benefit.id">
 
             <div v-if="getFirstImage(benefit)">
-              <a :href="$withBase(benefit.url)">
+              <a :href="benefit.url ? $withBase(benefit.url) : '#'">
                 <img
                     class="benefit-image"
                     v-if="getFirstImage(benefit)"
@@ -140,7 +140,7 @@ export default {
                 <span class="icon-text">{{ benefit.benefit }}</span></a>
             </div>
             <div v-else>
-              <a :href="$withBase(benefit.url)">
+              <a :href="benefit.url ? $withBase(benefit.url) : '#'">
                 <span class="image-placeholder"></span>
                 <span class="icon-text">{{ benefit.benefit }}</span></a>
             </div>
@@ -158,7 +158,7 @@ export default {
         <li v-for="factor in feature.factors" :key="factor.id">
 
           <div v-if="getFirstImage(factor)">
-            <a :href="$withBase(factor.url)">
+            <a :href="factor.url ? $withBase(factor.url) : '#'">
             <img
                 class="factor-image"
                 v-if="getFirstImage(factor)"
@@ -168,7 +168,7 @@ export default {
             <span class="icon-text">{{ factor.title }}</span></a>
           </div>
           <div v-else>
-            <a :href="$withBase(factor.url)">
+            <a :href="factor.url ? $withBase(factor.url) : '#'">
             <span class="image-placeholder"></span>
             <span class="icon-text">{{ factor.title }}</span></a>
           </div>

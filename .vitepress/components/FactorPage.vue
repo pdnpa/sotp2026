@@ -9,6 +9,8 @@ const defaultFactor = {
   number: '0'
   ,id: '0'
   ,title: ''
+  ,url: '#'
+  ,slug: ''
   ,primary_color: ''
   ,secondary_color: ''
   ,descriptions: []
@@ -60,8 +62,8 @@ export default {
 <template>
 <div class="factor-page" data-pagefind-body>
   <DocBefore>
-    <div v-if="pageHeaderFullWidth" class="feature-family-heading feature-family-heading__descendant" :class="`bg-${factor.slug}`">
-      <a :href="$withBase(factor.url)" class="back-to-family-link">{{factor.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span>
+    <div v-if="pageHeaderFullWidth && factor.url" class="feature-family-heading feature-family-heading__descendant" :class="`bg-${factor.slug}`">
+      <a :href="factor.url ? $withBase(factor.url) : '#'" class="back-to-family-link">{{factor.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span>
     </div>
 
   </DocBefore>
@@ -106,7 +108,7 @@ export default {
     <div class="factor-data-elements">
         <ul>
           <li v-for="feature in factor.features" :key="feature.id">
-            <a :href="$withBase(feature.url)" :title="feature.key_data">{{feature.title}}</a>
+            <a :href="feature.url ? $withBase(feature.url) : '#'" :title="feature.key_data">{{feature.title}}</a>
           </li>
         </ul>
     </div>
