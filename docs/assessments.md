@@ -4,7 +4,7 @@ outline: false
 
 # Feature Assessments
 
-<FeatureAssessmentIndex />
+<FeatureAssessmentIndex  :show-intros="true" />
 
 
 

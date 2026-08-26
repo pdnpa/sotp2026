@@ -29,10 +29,10 @@ export default defineComponent({
       <li><a href="/introduction/methodology" class="landing-btn">Methodology</a></li>
     </ul>
   </div>
-  <div class="col">
+  <div class="col landing-page-second-col">
     <h2>Explore the State of the Park</h2>
     <p>Dive in to find out more about the features of the National Park, or explore the factors which are driving change.</p>
-    <FeatureAssessmentIndex />
+    <FeatureAssessmentIndex :extra-pages='[{"title": "Factors", "intro": "Drivers of change to the landscape", "url": "/factors.html", "bg_class": "bg-pdnpa-lightbrown", "id": 1}]' :show-intros="true" :is-landing-page="true" />
   </div>
 </div>
 </template>
@@ -68,33 +68,43 @@ export default defineComponent({
     padding-right: 2rem;
   }
 }
+.VPContent {
+  .landing-btns {
+    list-style: none;
+    padding: 0;
+    margin: 2.5rem 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
 
-.landing-btns {
-  list-style: none;
-  padding: 0;
-  margin: 2.5rem 0 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1rem;
+    li {
+      padding: 0;
+      margin: 0;
+    }
 
-  li {
-    padding: 0; margin: 0;
-  }
+    .landing-btn {
+      background: var(--pdnpa-lightblue);
+      display: block;
+      color: #fff;
+      border-radius: var(--block-border-radius);
+      padding: 0.7rem 1.2rem;
+      text-decoration: none;
+      font-size: 20px;
 
-  .landing-btn {
-    background: var(--pdnpa-lightblue);
-    display: block;
-    color: #fff;
-    border-radius: var(--block-border-radius);
-    padding: 0.7rem 1.2rem;
-    text-decoration: none;
-    font-size: 20px;
-
-    &:hover, &:focus, &:focus-within {
-      background: var(--pdnpa-blue);
+      &:hover, &:focus, &:focus-within {
+        background: var(--pdnpa-blue);
+      }
     }
   }
 }
+
+  .col:first-child {
+    flex: 2;
+  }
+
+
+
+
 </style>

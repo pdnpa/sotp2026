@@ -38,7 +38,7 @@ $family-colors-text: (
       will-change: color, background-color;
 
       &:hover, &:active, &:focus {
-        color: color.scale($value, $lightness: 40%);
+        color: color.scale($value, $lightness: 75%);
         background-color: color.scale($value, $lightness: -10%);
       }
     }

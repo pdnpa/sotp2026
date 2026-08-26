@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "sass:color";
 // NB the html:root definition here - it is required for a specificity hack
 // because the submodule still imports its own stylesheets in the base and default
 // themes, and these occur later in the page load
@@ -21,6 +23,63 @@ $pdnpa-lightgrey: #f1ebdf;
 $pdnpa-darkbrown: #474329;
 $pdnpa-lightbrowngrey: #cdcccc;
 $navbar-bg-color: #6494a2;
+
+$pdnpa-colours: (
+        "pdnpa-lime": #d7df21,
+        "pdnpa-orange": #ed8b00,
+        "pdnpa-lilac": #b580d1,
+        "pdnpa-lightlilac": #9b637c,
+        "pdnpa-stone": #6d6b5c,
+        "pdnpa-purple": #7B3D64,
+        "pdnpa-midbrown": #BDA375,
+        "pdnpa-midbrown-lightforeground": #9B8A64,
+        "pdnpa-lightbrown": #efdfbf,
+        "pdnpa-darkgreen": #2E3829,
+        "pdnpa-blue": #3F608F,
+        "pdnpa-lightblue": #7996A4,
+        "pdnpa-darkorange": #B65321,
+        "pdnpa-lightgrey": #f1ebdf,
+        "pdnpa-darkbrown": #474329,
+        "pdnpa-lightbrowngrey": #cdcccc,
+);
+$pdnpa-colours-text: (
+        "pdnpa-lime": #d7df21,
+        "pdnpa-orange": #ed8b00,
+        "pdnpa-lilac": #b580d1,
+        "pdnpa-lightlilac": #9b637c,
+        "pdnpa-stone": #6d6b5c,
+        "pdnpa-purple": #7B3D64,
+        "pdnpa-midbrown": #BDA375,
+        "pdnpa-midbrown-lightforeground": #9B8A64,
+        "pdnpa-lightbrown": #efdfbf,
+        "pdnpa-darkgreen": #2E3829,
+        "pdnpa-blue": #3F608F,
+        "pdnpa-lightblue": #7996A4,
+        "pdnpa-darkorange": #B65321,
+        "pdnpa-lightgrey": #f1ebdf,
+        "pdnpa-darkbrown": #474329,
+        "pdnpa-lightbrowngrey": #cdcccc,
+);
+
+@each $name, $value in $pdnpa-colours {
+  .text-#{$name} {
+    color: #{$value} !important;
+  }
+  .bg-#{$name} {
+    background-color: #{$value};
+    color: map.get($pdnpa-colours-text, $name);
+
+    a, &:is(a) {
+      color: map.get($pdnpa-colours-text, $name);
+      transition: color 0.2s ease-in-out;
+      will-change: color;
+
+      &:hover, &:active, &:focus {
+        color: color.scale($value, $lightness: 40%);
+      }
+    }
+  }
+}
 
 html:root {
   --sopr-family-bg: antiquewhite;
