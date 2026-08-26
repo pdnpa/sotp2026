@@ -1,19 +1,31 @@
 <script lang="ts">
-import {defineComponent} from 'vue'
+import { defineComponent } from 'vue'
 import FeatureAssessmentIndex from './FeatureAssessmentIndex.vue'
-
 
 export default defineComponent({
   name: "LandingPage",
-  components: {FeatureAssessmentIndex},
-  mounted: () => {
+  components: { FeatureAssessmentIndex },
+  mounted() {
     document.body.classList.add('landing-page')
 
-    document.getElementsByClassName('logo')[0].src = '/pdnpa_logo_dark.png'
+    const isSotp26 = window.location.pathname.startsWith('/sotp26')
+    const prefix = isSotp26 ? '/sotp26' : ''
+
+    const logo = document.getElementsByClassName('logo')[0] as HTMLImageElement | undefined
+    if (logo) {
+      logo.src = `${prefix}/pdnpa_logo_dark.png`
+    }
   },
-  unmounted: () => {
+  unmounted() {
     document.body.classList.remove('landing-page')
-    document.getElementsByClassName('logo')[0].src = '/pdnpa_logo_white.png'
+
+    const isSotp26 = window.location.pathname.startsWith('/sotp26')
+    const prefix = isSotp26 ? '/sotp26' : ''
+
+    const logo = document.getElementsByClassName('logo')[0] as HTMLImageElement | undefined
+    if (logo) {
+      logo.src = `${prefix}/pdnpa_logo_white.png`
+    }
   }
 })
 </script>
