@@ -8,7 +8,7 @@ import RiskScaleBadge from "./RiskScaleBadge.vue";
 import LikelihoodBadge from "./LikelihoodBadge.vue";
 import ReferenceList from "./ReferenceList.vue";
 import GroupImpactAssessment from "./GroupImpactAssessment.vue";
-import { contentCollectionIsNotEmpty, getFirstImage, getLCALayerString } from '../utils.js'
+import { contentCollectionIsNotEmpty, getFirstImage, getLCALayerString, shouldShowBenefits } from '../utils.js'
 
 const defaultGroup = {
   number: '0'
@@ -50,7 +50,8 @@ export default {
   methods: {
     getLCALayerString,
     getFirstImage,
-    contentCollectionIsNotEmpty
+    contentCollectionIsNotEmpty,
+    shouldShowBenefits
   },
   computed: {
     hasIntroductions() {
@@ -66,7 +67,7 @@ export default {
       return this.contentCollectionIsNotEmpty(this.group.importances, 'importance');
     },
     hasBenefits() {
-      return this.contentCollectionIsNotEmpty(this.group.benefits, 'benefit');
+      return this.shouldShowBenefits && this.contentCollectionIsNotEmpty(this.group.benefits, 'benefit');
     },
     hasFeatures() {
       return this.contentCollectionIsNotEmpty(this.group.features, 'title');
