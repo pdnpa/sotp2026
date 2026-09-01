@@ -3,7 +3,7 @@ import { data } from '../reportdata.data.js'
 import DynamicContentType from "./DynamicContentType.vue";
 import ReferenceList from "./ReferenceList.vue";
 import DynamicComponent from "./DynamicComponent.vue";
-import { contentCollectionIsNotEmpty, getFirstImage } from '../utils.js'
+import { contentCollectionIsNotEmpty, getFirstImage, shouldShowBenefits } from '../utils.js'
 
 const defaultBenefit = {
   number: '0'

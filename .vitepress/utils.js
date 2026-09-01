@@ -28,8 +28,13 @@ export function getLCALayerString(group) {
   return Object.values(group.landscape_character_areas).map(area => area.layer_slug).join(',');
 }
 
+export function shouldShowBenefits() {
+  return false;
+}
+
 export default {
   contentCollectionIsNotEmpty,
   getFirstImage,
-  getLCALayerString
+  getLCALayerString,
+  shouldShowBenefits
 };

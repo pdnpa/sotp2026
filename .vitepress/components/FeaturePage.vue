@@ -3,7 +3,7 @@ import { data } from '../reportdata.data.js'
 import DynamicContentType from "./DynamicContentType.vue";
 import WebMap from "./WebMap.vue";
 import ReferenceList from "./ReferenceList.vue";
-import { contentCollectionIsNotEmpty, getFirstImage, getLCALayerString } from '../utils.js'
+import { contentCollectionIsNotEmpty, getFirstImage, getLCALayerString, shouldShowBenefits } from '../utils.js'
 
 const defaultFeature = {
   number: '0'
@@ -62,11 +62,12 @@ export default {
   methods: {
     getLCALayerString,
     getFirstImage,
-    contentCollectionIsNotEmpty
+    contentCollectionIsNotEmpty,
+    shouldShowBenefits
   },
   computed: {
     hasBenefits() {
-      return this.feature.benefits && Object.keys(this.feature.benefits).length > 0;
+      return this.shouldShowBenefits() && this.feature.benefits && Object.keys(this.feature.benefits).length > 0;
     },
     hasFactors() {
       return this.contentCollectionIsNotEmpty(this.feature.factors, 'title');
