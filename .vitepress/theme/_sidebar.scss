@@ -45,9 +45,19 @@
 
       }
 
+      .indicator {
+        width: 3px;
+        left: -18px;
+      }
+
       .VPSidebarItem.level-2.is-active > .item > .indicator {
         background-color: #e77821;
       }
+      .VPSidebarItem.level-3.is-active > .item > .indicator {
+        background-color: #96b459;
+      }
+
+
 
       .group:has([role='button']) .VPSidebarItem.level-0 .items {
         border-left: 1px solid var(--vp-c-divider);
