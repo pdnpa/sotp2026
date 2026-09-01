@@ -55,6 +55,9 @@ export default defineComponent({
 
     </div>
   </div>
+
+  <ReferenceList :reference-ids="usedReferenceIds" />
+
 </div>
 </template>
 
