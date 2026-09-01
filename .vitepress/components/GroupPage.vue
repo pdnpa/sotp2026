@@ -67,7 +67,7 @@ export default {
       return this.contentCollectionIsNotEmpty(this.group.importances, 'importance');
     },
     hasBenefits() {
-      return this.shouldShowBenefits && this.contentCollectionIsNotEmpty(this.group.benefits, 'benefit');
+      return this.shouldShowBenefits() && this.contentCollectionIsNotEmpty(this.group.benefits, 'benefit');
     },
     hasFeatures() {
       return this.contentCollectionIsNotEmpty(this.group.features, 'title');
