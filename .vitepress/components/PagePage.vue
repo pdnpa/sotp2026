@@ -22,6 +22,9 @@ export default defineComponent({
       usedReferenceIds: []
     }
   },
+  methods: {
+    contentCollectionIsNotEmpty
+  },
   provide() {
     return {
       registerReference: (id) => {
@@ -31,6 +34,11 @@ export default defineComponent({
       }
     }
   },
+  computed: {
+    hasContents() {
+      return this.contentCollectionIsNotEmpty(this.page.contents, 'content');
+    },
+  }
 })
 </script>
 
@@ -39,8 +47,8 @@ export default defineComponent({
 
   <h1>{{page.title}}</h1>
 
-  <div class="factor-section-block body-text pb-0" v-if="hasDescriptions"><h2 class="mb-0 mt-0" id="Description">Description</h2></div>
-  <div class="factor-section-block pt-0" v-if="hasDescriptions">
+
+  <div class="factor-section-block pt-0" v-if="hasContents">
     <div class="factor-data-elements">
 
       <DynamicContentType :chunks="page.contents" contentFieldName="content"/>
