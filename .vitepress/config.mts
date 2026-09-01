@@ -55,6 +55,10 @@ export default withChartjs(defineConfig({
         ].filter(Boolean),
     },
 
+    head: [
+        ['link', { rel: 'stylesheet', href: 'https://js.arcgis.com/5.1/@arcgis/core/assets/esri/themes/light/main.css' }],
+        ['script', { type: 'module', src: 'https://js.arcgis.com/5.1/' }]
+    ],
     // markdown: baseVitePressOptions.markdown,
     // Override content and branding
     srcDir: './docs',
@@ -103,7 +107,7 @@ export default withChartjs(defineConfig({
             ]
         },
         ssr: {
-            noExternal: ['vue', '@arcgis/map-components', '@esri/calcite-components', '@arcgis/core', '@amcharts/amcharts5']
+            noExternal: ['vue']
         }
     },
 

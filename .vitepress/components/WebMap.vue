@@ -20,23 +20,10 @@
 </template>
 
 <script setup>
-import { ref, watch, useId, onMounted } from 'vue'
-
-// 1. CSS imports (these are usually safe in Vite SSR)
-import "@arcgis/map-components/main.css"
-import "@esri/calcite-components/main.css"
-import "@arcgis/core/assets/esri/themes/light/main.css"
+import { ref, watch, useId } from 'vue'
 
 const uniqueId = useId();
 const isMapReady = ref(false);
-
-onMounted(async () => {
-  // 2. Web components dynamic imports (client-only)
-  await import("@arcgis/map-components/components/arcgis-map")
-  await import("@arcgis/map-components/components/arcgis-expand")
-  await import("@arcgis/map-components/components/arcgis-legend")
-  await import("@arcgis/map-components/components/arcgis-popup")
-})
 
 const props = defineProps({
   layer: { type: String, default: '' },
