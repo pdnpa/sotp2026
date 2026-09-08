@@ -42,6 +42,13 @@ html {
 }
 
 
+@media screen and (min-width: 1168px) {
+  .aside, .aside-curtain, .aside-container {
+      width: 346px !important;
+  }
+}
+
+
 
 .vp-doc {
   h2 {
