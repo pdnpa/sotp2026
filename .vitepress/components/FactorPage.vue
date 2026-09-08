@@ -96,14 +96,14 @@ export default {
   <div class="factor-section-block pt-0" v-if="hasImpacts">
     <div class="factor-data-elements">
       <div v-for="impact in factor.impacts" :key="impact.id" class="factor-data-element">
-        <h3>{{impact.title}}</h3>
+        <h3 :id="impact.slug">{{impact.title}}</h3>
 
         <DynamicComponent :content="impact.factor_impact_description" />
       </div>
     </div>
   </div>
 
-  <div class="factor-section-block body-text pb-0" v-if="hasFeatures"><h2 class="mb-0 mt-0" id="impacts">Features linked to {{factor.title}}</h2></div>
+  <div class="factor-section-block body-text pb-0" v-if="hasFeatures"><h2 class="mb-0 mt-0" id="features">Features linked to {{factor.title}}</h2></div>
   <div class="factor-section-block pt-0" v-if="hasFeatures">
     <div class="factor-data-elements">
         <ul>
