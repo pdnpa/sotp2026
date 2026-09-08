@@ -44,7 +44,26 @@ html {
 
 @media screen and (min-width: 1168px) {
   .aside, .aside-curtain, .aside-container {
-      width: 346px !important;
+      max-width: 346px !important;
+  }
+  .aside-container {
+    width: 346px !important;
+  }
+}
+.VPDocOutlineItem .nested
+{
+.outline-link {
+  text-overflow: unset;
+  overflow: initial;
+  white-space: break-spaces;
+  line-height: 1.5;
+  padding: 13px 0 0;
+
+}
+  li:last-child {
+    .outline-link {
+      margin-bottom: 13px;
+    }
   }
 }
 
