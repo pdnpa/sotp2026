@@ -44,7 +44,7 @@ export default defineComponent({
   <div class="col landing-page-second-col">
     <h2>Explore the State of the Park</h2>
     <p>Dive in to find out more about the features of the National Park, or explore the factors which are driving change.</p>
-    <FeatureAssessmentIndex :extra-pages='[{"title": "Factors", "intro": "Drivers of change to the landscape", "url": "/factors.html", "bg_class": "bg-pdnpa-lightbrown", "id": 1}]' :show-intros="true" :is-landing-page="true" />
+    <FeatureAssessmentIndex :extra-pages='[{"title": "Factors", "intro": "Drivers of change to the landscape", "url": "factors.html", "bg_class": "bg-pdnpa-lightbrown", "id": 1}]' :show-intros="true" :is-landing-page="true" />
   </div>
 </div>
 </template>
