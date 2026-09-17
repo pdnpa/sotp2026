@@ -5,4 +5,4 @@ outline: [2,3]
 
 
 </div>
-<FactorPage :factor_id="2" />
+<FactorPage :factor_id="5" />

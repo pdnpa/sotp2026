@@ -1,7 +1,6 @@
 ---
-outline: false
+outline: [2,3]
 ---
-
 <div class="outline-source">
 
 
