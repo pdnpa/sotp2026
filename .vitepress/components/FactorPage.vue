@@ -51,6 +51,9 @@ export default {
     hasImpacts() {
       return this.factor.impacts && Object.keys(this.factor.impacts).length > 0;
     },
+    hasFactorImpacts() {
+      return this.factor.factor_factor_impacts && Object.keys(this.factor.factor_factor_impacts).length > 0;
+    },
     hasFeatures() {
       return this.contentCollectionIsNotEmpty(this.factor.features, 'title');
     }
@@ -100,6 +103,13 @@ export default {
 
         <DynamicComponent :content="impact.factor_impact_description" />
       </div>
+    </div>
+  </div>
+
+  <div class="factor-section-block body-text pb-0" v-if="hasFactorImpacts"><h2 class="mb-0 mt-0" id="impactsonotherfactors">Impacts on other factors</h2></div>
+  <div class="factor-section-block pt-0" v-if="hasFactorImpacts">
+    <div class="factor-data-elements">
+      <DynamicContentType :chunks="factor.factor_factor_impacts" contentFieldName="impact" outerClass="group-data-element"/>
     </div>
   </div>
 
