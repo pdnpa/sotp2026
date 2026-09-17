@@ -1,6 +1,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import FeatureAssessmentIndex from './FeatureAssessmentIndex.vue'
+import { withBase } from 'vitepress'
 
 export default defineComponent({
   name: "LandingPage",
@@ -16,6 +17,9 @@ export default defineComponent({
       logo.src = `${prefix}/pdnpa_logo_dark.png`
     }
   },
+  methods: {
+    withBase
+  },
   unmounted() {
     document.body.classList.remove('landing-page')
 
@@ -26,6 +30,11 @@ export default defineComponent({
     if (logo) {
       logo.src = `${prefix}/pdnpa_logo_white.png`
     }
+  },
+  computed: {
+   pathToFactors() {
+     return withBase('/factors')
+   }
   }
 })
 </script>
@@ -37,14 +46,14 @@ export default defineComponent({
     <p>This report is a comprehensive account of the condition of the Peak District National Park. It presents the latest data and evidence to account for the wide variety of features that make the National Park a special place, and assesses what factors are driving change in the landscape.</p>
 
     <ul class="landing-btns">
-      <li><a href="/introduction/introduction" class="landing-btn">Introduction</a></li>
-      <li><a href="/introduction/methodology" class="landing-btn">Methodology</a></li>
+      <li><a :href="withBase('/introduction/introduction')" class="landing-btn">Introduction</a></li>
+      <li><a :href="withBase('/introduction/methodology')" class="landing-btn">Methodology</a></li>
     </ul>
   </div>
   <div class="col landing-page-second-col">
     <h2>Explore the State of the Park</h2>
     <p>Dive in to find out more about the features of the National Park, or explore the factors which are driving change.</p>
-    <FeatureAssessmentIndex :extra-pages='[{"title": "Factors", "intro": "Drivers of change to the landscape", "url": "factors.html", "bg_class": "bg-pdnpa-lightbrown", "id": 1}]' :show-intros="true" :is-landing-page="true" />
+    <FeatureAssessmentIndex :extra-pages='[{"title": "Factors", "intro": "Drivers of change to the landscape", "url": pathToFactors, "bg_class": "bg-pdnpa-lightbrown", "id": 1}]' :show-intros="true" :is-landing-page="true" />
   </div>
 </div>
 </template>
