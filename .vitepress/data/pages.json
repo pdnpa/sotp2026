@@ -1,0 +1,208 @@
+{
+  "9": {
+    "id": 9,
+    "title": "Executive Summary",
+    "description": "A short description of the exec summary",
+    "slug": "executive-summary",
+    "url": "/pages/executive-summary",
+    "contents": {
+      "9": {
+        "id": 9,
+        "page_id": 9,
+        "content": "<p>This is the content</p>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 0
+      }
+    }
+  },
+  "10": {
+    "id": 10,
+    "title": "Introduction",
+    "description": "Telling the story of the Peak District with data and evidence",
+    "slug": "introduction",
+    "url": "/pages/introduction",
+    "contents": {
+      "11": {
+        "id": 11,
+        "page_id": 10,
+        "content": "<p>The Peak District National Park is Britain’s first national park, celebrating its 75<sup>th</sup> birthday in 2026. Taken as a whole, it is a treasured landscape that has been shaped and continues to evolve through the interaction of natural and cultural forces. It is a landscape of exceptional natural beauty that provides many benefits to people, from a sense of connection and identity to producing food and clean water, as well as being home to a wide variety of species and habitats.</p>\r\n<p>This State of the Park Report draws on a wide range of technical information, research and local knowledge to provide an insight into the condition of the landscape through examining the different features that together make the landscape what it is. This report takes this evidence a step further, by presenting an assessment of the risks to these features as a result of factors which are driving change, from climate change to pollution to demographic and sociocultural change. This work will inform and support the Peak District National Park Management Plan, which will be reviewed and updated ready for a new plan to guide the work of all those who love and care for the National Park from 2028 to 2033.</p>\r\n<h3>How to use this report</h3>\r\n<p><strong>This report has sections relating to the features of the National Park, and the factors that may impact them. </strong></p>\r\n<p>Use the menu on the left of the page to navigate between sections, while in-text links will guide you between related sections. Over time the report will grow and change as new data is released and our understanding of both the landscape and what is driving change within it evolves, so check back for the latest updates.</p>\r\n<p>Wherever possible, data will relate to the area within the PDNP boundary and will draw from the latest evidence bases. However, this will not always be possible due to temporal and spatial constraints of the data and evidence available. Anyone with a special interest in a particular theme or data topic can request supporting technical information, or let us know about evidence we’re missing by contacting the Peak District National Park Authority using the email address <a href=\"mailto:strategy@peakdistrict.gov.uk\">strategy@peakdistrict.gov.uk</a>.</p>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 0
+      },
+      "12": {
+        "id": 12,
+        "page_id": 10,
+        "content": "<div class=\"mt-5\"></div>\r\n\r\n## Where to go next\r\n\r\n- [Overview of the Peak District](/introduction/overview)\r\n- [Methodology](/introduction/methodology)\r\n- [Feature assessments](/assessments)\r\n- [Factors](/factors)",
+        "content_type": "md",
+        "properties": [],
+        "order": 1
+      }
+    }
+  },
+  "11": {
+    "id": 11,
+    "title": "Methodology",
+    "description": "The Peak District National Park was designated because it exhibits a range of special qualities which are of national, and sometimes international, significance. This State of the Park Report assesses the condition of the constituent features of these special qualities, and which contribute toward the provision of the benefits of the National Park both within its boundaries and in its wider setting.",
+    "slug": "methodology",
+    "url": "/pages/methodology",
+    "contents": {
+      "27": {
+        "id": 27,
+        "page_id": 11,
+        "content": "<h2>How we will monitor the National Park</h2>\r\n<p>Effective policy making and evaluation is based on robust evidence. Evidence helps to guide decisions, from issues of national policy to choices about individual site management.</p>\r\n<p>This State of the Park Report provides the evidence base from which to develop the National Park Management Plan by undertaking three steps:</p>\r\n<ol>\r\n<li>Assessing the <strong>condition </strong>of the key features of the National Park</li>\r\n<li>Identifying the key <strong>factors</strong> affecting these features</li>\r\n<li>Evaluating the level of <strong>risk </strong>posed by each of these factors to support the prioritisation of management actions to reduce their impact</li>\r\n</ol>\r\n<p>In the process of developing the National Park Management Plan, the research and evidence gathered in this report will go on to support subsequent monitoring steps, including:</p>\r\n<ol>\r\n<li>Ensuring that appropriate long term <strong>data collection and monitoring</strong> mechanisms are in place to review management actions</li>\r\n<li>Collaborating with <strong>partners</strong> to develop and refine our evidence base over time</li>\r\n</ol>\r\n<p>The methodology for how the first three of these steps were undertaken in this report is outlined below in more detail. If you have further questions or would like to collaborate to help develop our monitoring approach going forward, please contact <a href=\"mailto:strategy@peakdistrict.gov.uk\">strategy@peakdistrict.gov.uk</a>.</p>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 0
+      },
+      "28": {
+        "id": 28,
+        "page_id": 11,
+        "content": "<h2>Definitions</h2>\r\n<p>This report uses a “feature and factor” based approach to understand landscape and landscape change. Key definitions that may be useful in engaging with this report are:</p>\r\n<table>\r\n<tbody>\r\n<tr>\r\n<td width=\"94\">\r\n<p><strong>Feature</strong></p>\r\n</td>\r\n<td width=\"507\">\r\n<p>A tangible aspect of the landscape which, together with other features, constitutes the landscapes’ character, its special qualities and contributes towards the benefits it provides.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"94\">\r\n<p><strong>Factor</strong></p>\r\n</td>\r\n<td width=\"507\">\r\n<p>Something which is driving change to the features, positive or negative. May also be called “driver of change” or “pressure”.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"94\">\r\n<p><strong>Impact</strong></p>\r\n</td>\r\n<td width=\"507\">\r\n<p>The outcome of the interaction between the feature and the factor, i.e. how the features has changed.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"94\">\r\n<p><strong>Cause</strong></p>\r\n</td>\r\n<td width=\"507\">\r\n<p>The mechanism through which the factor has an impact on the feature, may otherwise be referred to as a hazard. </p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 1
+      },
+      "29": {
+        "id": 29,
+        "page_id": 11,
+        "content": "https://report-publishing/media/sotp26/Feature%20and%20factor%20explainer.jpg",
+        "content_type": "file",
+        "properties": [],
+        "order": 2
+      },
+      "30": {
+        "id": 30,
+        "page_id": 11,
+        "content": "<h2>Step 1- Feature condition assessment</h2>\r\n<h4><em>Defining the features to be assessed</em></h4>\r\n<p>This report uses a list of features compiled from previous work for the Climate Change Vulnerability Assessment. These features were further consolidated and refined to align to the latest policy, for example using Protected Landscape Targets and Outcomes Framework priority habitats, and through discussion with expert officers within the Peak District National Park Authority.</p>\r\n<p>Features were grouped with others with shared characteristics that as a result are likely to experience similar impacts, and therefore require similar management actions. This resulted in 3 feature families, 12 feature groups and 51 features.</p>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 3
+      },
+      "31": {
+        "id": 31,
+        "page_id": 11,
+        "content": "https://report-publishing/media/sotp26/Feature%20grouping%20v2.jpg",
+        "content_type": "file",
+        "properties": [],
+        "order": 4
+      },
+      "32": {
+        "id": 32,
+        "page_id": 11,
+        "content": "<h4><em>Condition evidence gathering</em></h4>\r\n<p>Evidence to assess the condition of the identified features was gathered through desk-based research between December 2025 and July 2026. This sought to answer three key questions regarding each feature:</p>\r\n<ul>\r\n<li>Where is it?</li>\r\n<li>How much is there?</li>\r\n<li>What condition is it in?</li>\r\n</ul>\r\n<p>Evidence to answer these questions was drawn from a variety of sources including data from relevant governmental departments, internal Peak District National Park Authority data, academic research and grey literature. Original analyses of data were undertaken where necessary.</p>\r\n<p> In many cases, evidence was limited to answering the first and second questions, with limited evidence to contribute to condition understanding for many features. Data gaps are identified on feature-group pages.</p>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 5
+      },
+      "33": {
+        "id": 33,
+        "page_id": 11,
+        "content": "<h2>Step 2 – Factor identification</h2>\r\n<p>A preliminary list of factors impacting the Peak District list was drawn up during previous work which defined the special qualities of the National Park. This was cross-referenced with the IPBES’s <em>Global assessment report on Biodiversity and Ecosystem Services</em><ReferenceFootnote footnoteref=\"69\">[69]</ReferenceFootnote><em> </em>classification of direct and indirect drivers.</p>\r\n<p>This led to a factor list which was tailored to the Peak District as a cultural landscape within its context, which also aligns with international best practice.</p>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 6
+      },
+      "34": {
+        "id": 34,
+        "page_id": 11,
+        "content": "https://report-publishing/media/sotp26/IPBES%20drivers%20of%20change.png",
+        "content_type": "file",
+        "properties": {
+          "caption": "Direct and indirect drivers of change to ecosystems from IPBES’ Global assessment report on Biodiversity and Ecosystem Services report."
+        },
+        "order": 7
+      },
+      "35": {
+        "id": 35,
+        "page_id": 11,
+        "content": "https://report-publishing/media/sotp26/Factors.jpg",
+        "content_type": "file",
+        "properties": [],
+        "order": 8
+      },
+      "36": {
+        "id": 36,
+        "page_id": 11,
+        "content": "<h2>Step 3 – Risk assessment</h2>\r\n<p>The risk assessment methodology is drawn from Natural England’s <em>State of Natural Capital Report </em>and the Peak District National Park Authority’s <em>Climate Change Vulnerability Assessment. </em>It was determined that assessing risk at the level of the feature-group was most appropriate due to the availability of information and as this is a landscape-scale report having a higher resolution of assessment for risk is most appropriate.</p>\r\n<p>Risk was estimated by:</p>\r\n<ol>\r\n<li>Determining what factors may cause impact to features over the next 5-10 years (including whether this impact is currently underway or whether it will continue beyond this period).</li>\r\n<li>Assigning a severity and impact rating for each factor against each feature-group based on how many impacts it is likely to cause, the consequences of these impacts, and the certainty and evidence availability that these are likely to occur.</li>\r\n</ol>\r\n<p>Definitions of severity and impact used in this assessment:</p>\r\n<p><strong>Severity</strong>: A measure of how significant the impact will be on the feature which can include how and to what degree it will change the feature, how noticeable this would be to a specialist or non-specialist, the scale of the impact and how manageable the impact could be.</p>\r\n<p><strong>Likelihood</strong>: The chance or possibility that the impact will occur over the next five to ten years taking account of the availability and quality of projections, expert opinions and an estimation of the degree of change that will occur over this time period.</p>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 9
+      },
+      "37": {
+        "id": 37,
+        "page_id": 11,
+        "content": "https://report-publishing/media/sotp26/Risk%20ratings.jpg",
+        "content_type": "file",
+        "properties": [],
+        "order": 10
+      }
+    }
+  },
+  "12": {
+    "id": 12,
+    "title": "Overview of the Peak District",
+    "description": null,
+    "slug": "overview-of-the-peak-district",
+    "url": "/pages/overview-of-the-peak-district",
+    "contents": {
+      "38": {
+        "id": 38,
+        "page_id": 12,
+        "content": "<h3>The character of the landscape</h3>\r\n<p>Taken as a whole, the Peak District is a distinctive and treasured national landscape, while at a local scale there are many individual landscape types, each valued for their unique characteristics. This wide variety of landscapes include broad open moorlands, intimate enclosed farmlands, and wooded river valleys. These landscapes have been shaped by variations in geology and landform, ecological change, and a long history of settlement and use by people. Today's landscapes have a rich diversity of natural and cultural heritage, enjoyed today by local communities and visitors.</p>\r\n<p>Understanding the characteristics of the different parts of the National Park is important to assess how they may be at risk from different factors or require different management. To do so, this report uses the Landscape Character Area (LCA) classification which was carried out for the Landscape Strategy 2009 by the Peak District National Park Authority.</p>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 0
+      },
+      "39": {
+        "id": 39,
+        "page_id": 12,
+        "content": "https://report-publishing/media/sotp26/LCAs%20nice%20map.jpg",
+        "content_type": "file",
+        "properties": [],
+        "order": 1
+      },
+      "40": {
+        "id": 40,
+        "page_id": 12,
+        "content": "<p>While together these LCAs make up the Peak District landscape as a whole, they each have distinct characteristics which can be seen today in the types of land cover across the National Park. The topography and altitude of the Peak District has a significant bearing upon some types of land cover, whilst the climate will also affect the extent of certain vegetation types. Using the most recent UKCEH (the UK Centre for Ecology and Hydrology) land cover data from 2024, the different land cover types within different LCAs become visible; the Dark Peak dominated by bog, the Eastern Moors by acid grassland, and the White Peak by improved and calcareous grassland, for example.</p>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 2
+      },
+      "41": {
+        "id": 41,
+        "page_id": 12,
+        "content": "https://report-publishing/media/sotp26/Land%20cover.jpg",
+        "content_type": "file",
+        "properties": [],
+        "order": 3
+      },
+      "42": {
+        "id": 42,
+        "page_id": 12,
+        "content": "<h3>Legal status</h3>\r\n<p>The Peak District was designated as a National Park in 1951, giving it the statutory purposes to:</p>\r\n<ul>\r\n<li>To conserve and enhance the natural beauty, wildlife and cultural heritage</li>\r\n<li>To promote opportunities for the public understanding and enjoyment of the special qualities of the Parks</li>\r\n</ul>\r\n<p>And a duty to:</p>\r\n<ul>\r\n<li>To seek to foster the social and economic wellbeing of the local communities within the National Park in pursuit of our purposes.</li>\r\n</ul>\r\n<p>In cases where an irreconcilable conflict exists between the two purposes, the first purpose should take precedence – this is known as the Sandford Principle.</p>\r\n<p>Other key pieces of legislation and policy have an influence over the National Park, for example the National Planning Policy Framework which guides the work of the Peak District National Park as a Planning Authority, the Protected Landscapes Targets and Outcomes Framework guides the direction of land management in the National Park, and the Countryside and Rights of Way Act 2000 designates large parts of the National Park as open access for some recreational activities.</p>\r\n<h3>Governance and land ownership</h3>\r\n<p>There is no one person or organisation who is responsible for delivering these purposes for the landscape. The Peak District National Park Authority exists to guide this work and collaborate with stakeholders and delivery partners to develop a National Park Management Plan.</p>\r\n<p>Other constituent authorities in the National Park, along with other government departments and public bodies, such as Natural England and the Environment Agency, have a responsibility to further the delivery of the National Parks purposes (the Protected Landscapes Duty). In return, the Peak District National Park Authority has a responsibility to engage with these bodies in developing the Management Plan.</p>\r\n<p>These ‘relevant authorities’ – the local and combined authorities and other public bodies - are one of large land owners in the Peak District who contribute to delivering the National Park purposes. Others include environmental NGOs (non-governmental organisations) such as Wildlife Trusts and the Woodland Trust, as well as private estates. The below map shows some these major land owners, which account for about 40% of the Peak District’s total area. The other 60% is likely to be owned by private individuals such as farms and businesses; there is little data about this land ownership, but it shows that as they own 60% of the land these smaller land owners are also important contributors to delivering the National Park purposes.</p>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 4
+      },
+      "43": {
+        "id": 43,
+        "page_id": 12,
+        "content": "https://report-publishing/media/sotp26/Consituent%20authorities%20map.jpg",
+        "content_type": "file",
+        "properties": [],
+        "order": 5
+      },
+      "44": {
+        "id": 44,
+        "page_id": 12,
+        "content": "https://report-publishing/media/sotp26/Land%20ownership.jpg",
+        "content_type": "file",
+        "properties": [],
+        "order": 6
+      }
+    }
+  }
+}

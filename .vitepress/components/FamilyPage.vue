@@ -1,6 +1,5 @@
 <script>
-//import reportdata, { features, references } from '../reportdata.js'
-import { data } from '../reportdata.data.js'
+import { data } from '../loaders/families.data.js'
 import DynamicContentType from "./DynamicContentType.vue";
 import FamilyRiskAssessment from "./FamilyRiskAssessment.vue";
 import ReferenceList from "./ReferenceList.vue";

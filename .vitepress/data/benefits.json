@@ -1,0 +1,355 @@
+{
+  "1": {
+    "id": 1,
+    "title": "Abiotic production",
+    "slug": "abiotic-production",
+    "url": "/benefits/abiotic-production",
+    "primary_color": "#000000",
+    "secondary_color": "#000000",
+    "descriptions": null,
+    "factor_impacts": null,
+    "factor_factor_impacts": null,
+    "impacts": null,
+    "features": [],
+    "group_impacts": null,
+    "images": {
+      "1": {
+        "id": 1,
+        "path": "https://focus.test/storage/sotp/benefits/JjnRlgLOsI4SrbUTr9Cud3kbOO8HTxGF4pwr4FyC.png",
+        "url": "https://focus.test/storage/sotp/benefits/JjnRlgLOsI4SrbUTr9Cud3kbOO8HTxGF4pwr4FyC.png",
+        "name": "SOPR_Factor_Benefit_Icons_Abiotic Production.png"
+      }
+    }
+  },
+  "2": {
+    "id": 2,
+    "title": "Clean and plentiful water",
+    "slug": "clean-and-plentiful-water",
+    "url": "/benefits/clean-and-plentiful-water",
+    "primary_color": null,
+    "secondary_color": null,
+    "descriptions": null,
+    "factor_impacts": null,
+    "factor_factor_impacts": null,
+    "impacts": null,
+    "features": {
+      "1": {
+        "id": 1,
+        "group_id": 1,
+        "title": "Upland oakwood",
+        "key_data": "Really cool. May contain owls and outlaws. And fungi.",
+        "descriptions": null,
+        "conditions": null,
+        "distributions": null,
+        "benefits": null,
+        "factors": null,
+        "landscape_character_areas": null,
+        "slug": "upland-oakwood",
+        "url": "/landscape/woodland/upland-oakwood"
+      }
+    },
+    "group_impacts": null,
+    "images": {
+      "2": {
+        "id": 2,
+        "path": "https://focus.test/storage/sotp/benefits/K9kZBVs0BUDxJwkgQ0Q71sDkFYPzTbiraEMJdSdd.png",
+        "url": "https://focus.test/storage/sotp/benefits/K9kZBVs0BUDxJwkgQ0Q71sDkFYPzTbiraEMJdSdd.png",
+        "name": "SOPR_Factor_Benefit_Icons_Clean and Plentiful Water.png"
+      }
+    }
+  },
+  "3": {
+    "id": 3,
+    "title": "Climate regulation",
+    "slug": "climate-regulation",
+    "url": "/benefits/climate-regulation",
+    "primary_color": null,
+    "secondary_color": null,
+    "descriptions": null,
+    "factor_impacts": null,
+    "factor_factor_impacts": null,
+    "impacts": null,
+    "features": [],
+    "group_impacts": null,
+    "images": {
+      "3": {
+        "id": 3,
+        "path": "https://focus.test/storage/sotp/benefits/YnaKH6foJJ5EfgIDosQWmN06xIMoArhblVETsRxs.png",
+        "url": "https://focus.test/storage/sotp/benefits/YnaKH6foJJ5EfgIDosQWmN06xIMoArhblVETsRxs.png",
+        "name": "SOPR_Factor_Benefit_Icons_Climate Regulation.png"
+      }
+    }
+  },
+  "4": {
+    "id": 4,
+    "title": "Connection to place",
+    "slug": "connection-to-place",
+    "url": "/benefits/connection-to-place",
+    "primary_color": null,
+    "secondary_color": null,
+    "descriptions": null,
+    "factor_impacts": null,
+    "factor_factor_impacts": null,
+    "impacts": null,
+    "features": [],
+    "group_impacts": null,
+    "images": {
+      "4": {
+        "id": 4,
+        "path": "https://focus.test/storage/sotp/benefits/QRm00qGl6H3ooYqwvFmPZO6Wg7sCuEHtIuVBvw9O.png",
+        "url": "https://focus.test/storage/sotp/benefits/QRm00qGl6H3ooYqwvFmPZO6Wg7sCuEHtIuVBvw9O.png",
+        "name": "SOPR_Factor_Benefit_Icons_Connection to Place.png"
+      }
+    }
+  },
+  "5": {
+    "id": 5,
+    "title": "Cultural significance",
+    "slug": "cultural-significance",
+    "url": "/benefits/cultural-significance",
+    "primary_color": null,
+    "secondary_color": null,
+    "descriptions": null,
+    "factor_impacts": null,
+    "factor_factor_impacts": null,
+    "impacts": null,
+    "features": [],
+    "group_impacts": null,
+    "images": {
+      "5": {
+        "id": 5,
+        "path": "https://focus.test/storage/sotp/benefits/BdUFLDZBnQBiZoUMzZKbnZooCN1tmvLTjpgfooyp.png",
+        "url": "https://focus.test/storage/sotp/benefits/BdUFLDZBnQBiZoUMzZKbnZooCN1tmvLTjpgfooyp.png",
+        "name": "SOPR_Factor_Benefit_Icons_Cultural Significance.png"
+      }
+    }
+  },
+  "6": {
+    "id": 6,
+    "title": "Ecosystem regulation",
+    "slug": "ecosystem-regulation",
+    "url": "/benefits/ecosystem-regulation",
+    "primary_color": null,
+    "secondary_color": null,
+    "descriptions": null,
+    "factor_impacts": null,
+    "factor_factor_impacts": null,
+    "impacts": null,
+    "features": {
+      "1": {
+        "id": 1,
+        "group_id": 1,
+        "title": "Upland oakwood",
+        "key_data": "Really cool. May contain owls and outlaws. And fungi.",
+        "descriptions": null,
+        "conditions": null,
+        "distributions": null,
+        "benefits": null,
+        "factors": null,
+        "landscape_character_areas": null,
+        "slug": "upland-oakwood",
+        "url": "/landscape/woodland/upland-oakwood"
+      }
+    },
+    "group_impacts": null,
+    "images": {
+      "6": {
+        "id": 6,
+        "path": "https://focus.test/storage/sotp/benefits/StJ9Io0cp3MNoHLr9ZtbqGTKG4J4ire9MFmdmHgq.png",
+        "url": "https://focus.test/storage/sotp/benefits/StJ9Io0cp3MNoHLr9ZtbqGTKG4J4ire9MFmdmHgq.png",
+        "name": "SOPR_Factor_Benefit_Icons_Ecosystem Regulation.png"
+      }
+    }
+  },
+  "7": {
+    "id": 7,
+    "title": "Food, fuel, fibre and timber",
+    "slug": "food-fuel-fibre-and-timber",
+    "url": "/benefits/food-fuel-fibre-and-timber",
+    "primary_color": null,
+    "secondary_color": null,
+    "descriptions": null,
+    "factor_impacts": null,
+    "factor_factor_impacts": null,
+    "impacts": null,
+    "features": [],
+    "group_impacts": null,
+    "images": {
+      "7": {
+        "id": 7,
+        "path": "https://focus.test/storage/sotp/benefits/zq6CXo6rmu1Sm9YZMne275z54qrEcTx6F0uBTpzb.png",
+        "url": "https://focus.test/storage/sotp/benefits/zq6CXo6rmu1Sm9YZMne275z54qrEcTx6F0uBTpzb.png",
+        "name": "SOPR_Factor_Benefit_Icons_Food, Fuel, Fibre and Timber.png"
+      }
+    }
+  },
+  "8": {
+    "id": 8,
+    "title": "Hazard mitigation ",
+    "slug": "hazard-mitigation",
+    "url": "/benefits/hazard-mitigation",
+    "primary_color": null,
+    "secondary_color": null,
+    "descriptions": null,
+    "factor_impacts": null,
+    "factor_factor_impacts": null,
+    "impacts": null,
+    "features": [],
+    "group_impacts": null,
+    "images": {
+      "8": {
+        "id": 8,
+        "path": "https://focus.test/storage/sotp/benefits/rINebmCqXMUwvCMuZT4V8T6QdUNX7OhJeXT29HWn.png",
+        "url": "https://focus.test/storage/sotp/benefits/rINebmCqXMUwvCMuZT4V8T6QdUNX7OhJeXT29HWn.png",
+        "name": "SOPR_Factor_Benefit_Icons_Hazard Mitigation.png"
+      }
+    }
+  },
+  "9": {
+    "id": 9,
+    "title": "Health and wellbeing",
+    "slug": "health-and-wellbeing",
+    "url": "/benefits/health-and-wellbeing",
+    "primary_color": null,
+    "secondary_color": null,
+    "descriptions": null,
+    "factor_impacts": null,
+    "factor_factor_impacts": null,
+    "impacts": null,
+    "features": [],
+    "group_impacts": null,
+    "images": {
+      "9": {
+        "id": 9,
+        "path": "https://focus.test/storage/sotp/benefits/eikw2Nv2XVEYzEcCDb3eTM8xSTdayYi1JuD5y3O4.png",
+        "url": "https://focus.test/storage/sotp/benefits/eikw2Nv2XVEYzEcCDb3eTM8xSTdayYi1JuD5y3O4.png",
+        "name": "SOPR_Factor_Benefit_Icons_Health and Wellbeing.png"
+      }
+    }
+  },
+  "10": {
+    "id": 10,
+    "title": "Housing",
+    "slug": "housing",
+    "url": "/benefits/housing",
+    "primary_color": null,
+    "secondary_color": null,
+    "descriptions": null,
+    "factor_impacts": null,
+    "factor_factor_impacts": null,
+    "impacts": null,
+    "features": [],
+    "group_impacts": null,
+    "images": {
+      "10": {
+        "id": 10,
+        "path": "https://focus.test/storage/sotp/benefits/2p6fhDlzuUIynKy4kdXZq7iek1QwHnfNY1GTgsc6.png",
+        "url": "https://focus.test/storage/sotp/benefits/2p6fhDlzuUIynKy4kdXZq7iek1QwHnfNY1GTgsc6.png",
+        "name": "SOPR_Factor_Benefit_Icons_Housing.png"
+      }
+    }
+  },
+  "11": {
+    "id": 11,
+    "title": "Leisure and recreation",
+    "slug": "leisure-and-recreation",
+    "url": "/benefits/leisure-and-recreation",
+    "primary_color": null,
+    "secondary_color": null,
+    "descriptions": null,
+    "factor_impacts": null,
+    "factor_factor_impacts": null,
+    "impacts": null,
+    "features": [],
+    "group_impacts": null,
+    "images": {
+      "11": {
+        "id": 11,
+        "path": "https://focus.test/storage/sotp/benefits/7emc1cGehtc3z7W8y4JNQWadT6sgDUFfQL9gKJhH.png",
+        "url": "https://focus.test/storage/sotp/benefits/7emc1cGehtc3z7W8y4JNQWadT6sgDUFfQL9gKJhH.png",
+        "name": "SOPR_Factor_Benefit_Icons_Leisure and Recreation.png"
+      }
+    }
+  },
+  "12": {
+    "id": 12,
+    "title": "Livelihoods",
+    "slug": "livelihoods",
+    "url": "/benefits/livelihoods",
+    "primary_color": null,
+    "secondary_color": null,
+    "descriptions": null,
+    "factor_impacts": null,
+    "factor_factor_impacts": null,
+    "impacts": null,
+    "features": [],
+    "group_impacts": null,
+    "images": {
+      "12": {
+        "id": 12,
+        "path": "https://focus.test/storage/sotp/benefits/wty01mRpBPebVbcwXEJbj6OHHCYoaNhg47OF6Ojp.png",
+        "url": "https://focus.test/storage/sotp/benefits/wty01mRpBPebVbcwXEJbj6OHHCYoaNhg47OF6Ojp.png",
+        "name": "SOPR_Factor_Benefit_Icons_Livelihoods.png"
+      }
+    }
+  },
+  "13": {
+    "id": 13,
+    "title": "Pest and disease control",
+    "slug": "pest-and-disease-control",
+    "url": "/benefits/pest-and-disease-control",
+    "primary_color": null,
+    "secondary_color": null,
+    "descriptions": null,
+    "factor_impacts": null,
+    "factor_factor_impacts": null,
+    "impacts": null,
+    "features": [],
+    "group_impacts": null,
+    "images": []
+  },
+  "14": {
+    "id": 14,
+    "title": "Regulation of soil quality and function",
+    "slug": "regulation-of-soil-quality-and-function",
+    "url": "/benefits/regulation-of-soil-quality-and-function",
+    "primary_color": null,
+    "secondary_color": null,
+    "descriptions": null,
+    "factor_impacts": null,
+    "factor_factor_impacts": null,
+    "impacts": null,
+    "features": [],
+    "group_impacts": null,
+    "images": {
+      "14": {
+        "id": 14,
+        "path": "https://focus.test/storage/sotp/benefits/QnYR1hl4SuRTf9igKJVBWvkIR7YeZZd5UEqAg7r2.png",
+        "url": "https://focus.test/storage/sotp/benefits/QnYR1hl4SuRTf9igKJVBWvkIR7YeZZd5UEqAg7r2.png",
+        "name": "SOPR_Factor_Benefit_Icons_Regulation of Soil Quality.png"
+      }
+    }
+  },
+  "15": {
+    "id": 15,
+    "title": "Sensory and aesthetic regulation",
+    "slug": "sensory-and-aesthetic-regulation",
+    "url": "/benefits/sensory-and-aesthetic-regulation",
+    "primary_color": null,
+    "secondary_color": null,
+    "descriptions": null,
+    "factor_impacts": null,
+    "factor_factor_impacts": null,
+    "impacts": null,
+    "features": [],
+    "group_impacts": null,
+    "images": {
+      "15": {
+        "id": 15,
+        "path": "https://focus.test/storage/sotp/benefits/oUdbBUUcL7oXkImNriN3Oo3E1WdBknSW8QLlbX9N.png",
+        "url": "https://focus.test/storage/sotp/benefits/oUdbBUUcL7oXkImNriN3Oo3E1WdBknSW8QLlbX9N.png",
+        "name": "SOPR_Factor_Benefit_Icons_Sensory and Aesthetic Regulation.png"
+      }
+    }
+  }
+}

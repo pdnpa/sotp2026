@@ -1,5 +1,5 @@
 <script>
-import { data } from '../reportdata.data.js'
+import { data as factors } from '../loaders/factors.data.js'
 import DynamicComponent from "./DynamicComponent.vue";
 import DynamicContentType from "./DynamicContentType.vue";
 import ReferenceList from "./ReferenceList.vue";
@@ -26,7 +26,7 @@ export default {
   },
   data() {
     return {
-      factor: data.factors[this.factor_id] || { ...defaultFactor },
+      factor: factors[this.factor_id] || { ...defaultFactor },
       pageHeaderFullWidth: false,
       usedReferenceIds: []
     }

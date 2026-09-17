@@ -1,5 +1,5 @@
 <script>
-import { data } from '../reportdata.data.js'
+import { data as benefits } from '../loaders/benefits.data.js'
 import DynamicContentType from "./DynamicContentType.vue";
 import ReferenceList from "./ReferenceList.vue";
 import DynamicComponent from "./DynamicComponent.vue";
@@ -35,7 +35,7 @@ export default {
   },
   data() {
     return {
-      benefit: (data.benefits && data.benefits[this.benefit_id]) || { ...defaultBenefit },
+      benefit: (benefits && benefits[this.benefit_id]) || { ...defaultBenefit },
       usedReferenceIds: []
     }
   },

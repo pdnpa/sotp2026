@@ -1,5 +1,5 @@
 <script>
-import { data } from '../reportdata.data.js'
+import { data } from '../loaders/families.data.js'
 import DynamicContentType from "./DynamicContentType.vue";
 import WebMap from "./WebMap.vue";
 import ReferenceList from "./ReferenceList.vue";
@@ -32,24 +32,10 @@ export default {
     }
   },
   data() {
-    let feature = {};
-    let group = {};
-    let family = {};
-
-    outerLoop: for (const familyId in data.families) {
-      const f = data.families[familyId];
-      for (const groupId in f.groups) {
-        const g = f.groups[groupId];
-        const features = Array.isArray(g.features) ? g.features : Object.values(g.features);
-        const foundFeature = features.find(feat => feat.id === this.feature_id);
-        if (foundFeature) {
-          feature = foundFeature;
-          group = g;
-          family = f;
-          break outerLoop;
-        }
-      }
-    }
+    const item = data.features?.[this.feature_id]
+    const feature = item?.feature || {}
+    const group = item?.group || {}
+    const family = item?.family || {}
 
     return {
       feature,

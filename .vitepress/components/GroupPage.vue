@@ -1,6 +1,6 @@
 <script>
 
-import {data} from "../reportdata.data";
+import { data } from '../loaders/families.data.js'
 import DynamicComponent from "./DynamicComponent.vue";
 import DynamicContentType from "./DynamicContentType.vue";
 import WebMap from "./WebMap.vue";

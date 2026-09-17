@@ -1,5 +1,5 @@
 <script>
-import { data } from '../reportdata.data.js'
+import { data as references } from '../loaders/references.data.js'
 
 export default {
   name: "ReferenceList",
@@ -20,7 +20,7 @@ export default {
       // Sort IDs and map to reference objects, ensuring uniqueness
       return [...new Set(this.referenceIds)]
         .sort((a, b) => parseInt(a) - parseInt(b))
-        .map(id => data.references[id])
+        .map(id => references[id])
         .filter(ref => !!ref);
     }
   },

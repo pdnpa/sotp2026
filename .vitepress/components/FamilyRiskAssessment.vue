@@ -1,6 +1,6 @@
 <script>
 import DynamicComponent from "./DynamicComponent.vue"
-import { data } from '../reportdata.data.js'
+import { data as factors } from '../loaders/factors.data.js'
 import RiskScaleBadge from "./RiskScaleBadge.vue";
 
 export default {
@@ -11,13 +11,12 @@ export default {
   },
   data() {
     return {
-      risk_levels: [],
+      risk_levels: [1, 2, 3, 4],
       factors: [],
     }
   },
   beforeMount() {
-    this.risk_levels = data.risk_levels;
-    this.factors = data.factors;
+    this.factors = factors;
   },
 
   methods: {

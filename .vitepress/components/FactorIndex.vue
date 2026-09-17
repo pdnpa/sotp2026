@@ -1,6 +1,6 @@
 <script lang="ts">
 import {defineComponent} from 'vue'
-import { data } from '../reportdata.data.js'
+import { data as factors } from '../loaders/factors.data.js'
 import { getFirstImage } from '../utils.js'
 
 export default defineComponent({
@@ -11,7 +11,7 @@ export default defineComponent({
     }
   },
   beforeMount() {
-    this.factors = Object.values(data.factors);
+    this.factors = Object.values(factors);
   },
   methods: {
     getFirstImage

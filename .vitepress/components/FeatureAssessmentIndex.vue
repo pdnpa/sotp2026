@@ -1,5 +1,5 @@
 <script>
-import { data } from '../reportdata.data.js'
+import { data } from '../loaders/families.data.js'
 import { getFirstImage } from '../utils.js'
 
 export default {
@@ -24,7 +24,7 @@ export default {
     }
   },
   beforeMount() {
-    this.families = Object.values(data.reportdata);
+    this.families = Object.values(data.rawFamilies || data.families);
   },
   methods: {
     getFirstImage

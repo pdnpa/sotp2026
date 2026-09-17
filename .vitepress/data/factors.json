@@ -1,0 +1,585 @@
+{
+  "1": {
+    "id": 1,
+    "title": "Climate change",
+    "slug": "climate-change",
+    "url": "/factors/climate-change",
+    "primary_color": "#b65321",
+    "secondary_color": "#000000",
+    "descriptions": {
+      "1": {
+        "factor_id": 1,
+        "description": "<p>Climate change here describes the wide range of effects resulting from human-caused disruption to atmospheric and oceanic carbon cycling. The influence of humans on the global climate system is primarily due to the emission of greenhouse gases into the atmosphere. These effects include rapid global heating, alterations to long-term large-scale climatic patterns such as global circulatory systems, altered local weather patterns, shifts in historic climate regions, and the localised biotic and abiotic responses to these changes.</p>\r\n<h4><strong>Note on climate change projections</strong></h4>\r\n<p>Modelling is used to project the future impacts of climate change, the exact pathways of which are uncertain due to different possible responses to climate change. Representative Concentration Pathways (RCPs) are used to project a range of climate change scenarios which account for different concentrations of greenhouse gas emissions resulting from different economic, social and physical responses<ReferenceFootnote footnoteref=\"123\">[123]</ReferenceFootnote>. This factor page primarily notes the two most extreme scenarios:</p>\r\n<ul>\r\n<li><strong>Best case scenario (RCP2.6): </strong>This is the most benign scenario in which future emissions are severely restricted to limit future climate change, although significant change is still projected.</li>\r\n</ul>\r\n<ul>\r\n<li><strong>Worst case scenario (RCP8.5</strong>): This is the most extreme scenario which aligns with the current global emission trajectory.</li>\r\n</ul>\r\n<p>Under any available scenario average global temperatures will increase with far reaching impacts across the planet during the coming years and decades.</p>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 0
+      }
+    },
+    "factor_impacts": null,
+    "factor_factor_impacts": {
+      "1": {
+        "factor_id": 1,
+        "impact": "<p>I've just created some impact on another factor</p>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 0
+      },
+      "2": {
+        "factor_id": 1,
+        "impact": "https://report-publishing-local.test/media/sotp26/Chrome-Hill-Parkhouse-Hill.jpg",
+        "content_type": "file",
+        "properties": {
+          "alignright": "1",
+          "cssclassnames": ""
+        },
+        "order": 1
+      }
+    },
+    "impacts": {
+      "1": {
+        "factor_id": 1,
+        "impact_id": 1,
+        "title": "Increased average temperature",
+        "slug": "increased-average-temperature",
+        "factor_impact_description": "<p>Short explanatory text</p>"
+      },
+      "3": {
+        "factor_id": 1,
+        "impact_id": 3,
+        "title": "Non-linear climatic change",
+        "slug": "non-linear-climatic-change",
+        "factor_impact_description": "<p>Here is the non-linear impact</p>"
+      }
+    },
+    "features": {
+      "1": {
+        "id": 1,
+        "group_id": 1,
+        "title": "Upland oakwood",
+        "key_data": "Really cool. May contain owls and outlaws. And fungi.",
+        "descriptions": null,
+        "conditions": null,
+        "distributions": null,
+        "benefits": null,
+        "factors": null,
+        "landscape_character_areas": null,
+        "slug": "upland-oakwood",
+        "url": "/landscape/woodland/upland-oakwood"
+      }
+    },
+    "group_impacts": {
+      "1": {
+        "id": 1,
+        "group_id": 1,
+        "likelihood": null,
+        "likelihood_text": null,
+        "severity": null,
+        "impact": "My first impact assessment text",
+        "content_type": null,
+        "properties": null,
+        "order": 0,
+        "factors": null,
+        "impacts": null
+      },
+      "2": {
+        "id": 2,
+        "group_id": 1,
+        "likelihood": null,
+        "likelihood_text": null,
+        "severity": null,
+        "impact": "How about another impact assessment",
+        "content_type": null,
+        "properties": null,
+        "order": 1,
+        "factors": null,
+        "impacts": null
+      },
+      "3": {
+        "id": 3,
+        "group_id": 1,
+        "likelihood": null,
+        "likelihood_text": "Chuck Norris can lead a horse to water AND make it drink Crop circles are Chuck Norris' way of telling the world that sometimes corn needs to lie down, There is no chin behind Chuck Norris' beard. There is only another fist Chuck Norris doesn't wear a watch. HE decides what time it is. Chuck Norris drives an ice cream truck covered in human skulls Remember the Soviet Union? They decided to quit after watching a DeltaForce marathon on Satellite TV, Chuck Norris invented Kentucky Fried Chicken's famous secret recipe, with eleven herbs and spices. But nobody ever mentions the twelfth ingredient: Fear. Fool me once, shame on you. Fool Chuck Norris once and he will roundhouse you in the face Chuck Norris is the reason why Waldo is hiding. Chuck Norris is my Homeboy.\r\n\r\nChuck Norris has two speeds. Walk, and Kill, Guiness World Record Book doesn't let Chuck Norris in because he would hold the record for everything Fool me once, shame on you. Fool Chuck Norris once and he will roundhouse you in the face. Fool me once, shame on you. Fool Chuck Norris once and he will roundhouse you in the face. Chuck Norris can hear you type Chuck Norris on your keyboard, Chuck Norris has two speeds. Walk, and Kill.\r\n\r\nThere is no chin behind Chuck Norris' beard. There is only another fist Chuck Norris' hand is the only hand that can beat a Royal Flush. Chuck Norris is so awesome that he is now the lead singer of Queen Contrary to popular belief, America is not a democracy, it is a Chucktatorship Chuck Norris counted to infinity - twice, Chuck Norris can program a computer to breath. CNN was originally created as the \"Chuck Norris Network\" to update Americans with on-the-spot ass kicking in real-time Chuck Norris can win a game of Connect Four in only three moves. What was going through the minds of all of Chuck Norris' victims before they died? His shoe, Police label anyone attacking Chuck Norris as a Code 45-11... a suicide The leading causes of death in the United States are: 1. Heart Disease 2. Chuck Norris 3. Cancer There is no theory of evolution. Just a list of creatures Chuck Norris has allowed to live. What was going through the minds of all of Chuck Norris' victims before they died? His shoe There is no theory of evolution. Just a list of animals Chuck Norris allows to live.\r\n\r\nCNN was originally created as the \"Chuck Norris Network\" to update Americans with on-the-spot ass kicking in real-time Chuck Norris once roundhouse kicked someone so hard that his foot broke the speed of light, went back in time, and killed Amelia Earhart while she was flying over the Pacific Ocean, Chuck Norris invented Kentucky Fried Chicken's famous secret recipe, with eleven herbs and spices. But nobody ever mentions the twelfth ingredient: Fear A Handicapped parking sign does not signify that this spot is for handicapped people. It is actually in fact a warning, that the spot belongs to Chuck Norris and that you will be handicapped if you park there, Chuck Norris once roundhouse kic",
+        "severity": null,
+        "impact": "A new row",
+        "content_type": null,
+        "properties": null,
+        "order": 2,
+        "factors": null,
+        "impacts": null
+      },
+      "4": {
+        "id": 4,
+        "group_id": 4,
+        "likelihood": null,
+        "likelihood_text": null,
+        "severity": null,
+        "impact": "Loss of visibility and accessibility of cultural monuments\r\nPhysical damage to structural remains and earthworks",
+        "content_type": null,
+        "properties": null,
+        "order": 0,
+        "factors": null,
+        "impacts": null
+      }
+    },
+    "images": {
+      "1": {
+        "id": 1,
+        "path": "https://focus.test/storage/sotp/factors/e88iJ5PlWAXugi7DoJY0Wz201fshnTjUBtgkpMiH.png",
+        "url": "https://focus.test/storage/sotp/factors/e88iJ5PlWAXugi7DoJY0Wz201fshnTjUBtgkpMiH.png",
+        "name": "SOPR_Factor_Benefit_Icons_Climate Change.png"
+      }
+    }
+  },
+  "2": {
+    "id": 2,
+    "title": "Demographic and sociocultural change",
+    "slug": "demographic-and-sociocultural-change",
+    "url": "/factors/demographic-and-sociocultural-change",
+    "primary_color": "#a0aeac",
+    "secondary_color": "#000000",
+    "descriptions": {
+      "2": {
+        "factor_id": 2,
+        "description": "<p>Demographic and sociocultural change refers to features of human populations, for example the distribution of age, race and employment among people in a place. This also includes change to the ways humans interact and relate to each other through behaviour carried out across populations. This may result in changes to the ways people live and care for each other, what people consume, what people think, and what ideologies are dominant or minoritised. These changes can result from or relate to global change such as climate change, changing trends in technology especially relating to communication, and political changes.</p>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 0
+      }
+    },
+    "factor_impacts": null,
+    "factor_factor_impacts": [],
+    "impacts": {
+      "2": {
+        "factor_id": 2,
+        "impact_id": 2,
+        "title": "Increased frequency of extreme weather events\r\n",
+        "slug": "increased-frequency-of-extreme-weather-events",
+        "factor_impact_description": "<p>Description for this impact</p>"
+      }
+    },
+    "features": {
+      "1": {
+        "id": 1,
+        "group_id": 1,
+        "title": "Upland oakwood",
+        "key_data": "Really cool. May contain owls and outlaws. And fungi.",
+        "descriptions": null,
+        "conditions": null,
+        "distributions": null,
+        "benefits": null,
+        "factors": null,
+        "landscape_character_areas": null,
+        "slug": "upland-oakwood",
+        "url": "/landscape/woodland/upland-oakwood"
+      },
+      "16": {
+        "id": 16,
+        "group_id": 4,
+        "title": "Prehistoric monuments and sites",
+        "key_data": "70% of designated scheduled monuments are prehistoric features. Nine scheduled prehistoric features are considered at risk, while 43 scheduled features are vulnerable. Prehistoric features are found across all Landscape Character Areas of the Peak District indicating their widespread distribution.",
+        "descriptions": null,
+        "conditions": null,
+        "distributions": null,
+        "benefits": null,
+        "factors": null,
+        "landscape_character_areas": null,
+        "slug": "prehistoric-monuments-and-sites",
+        "url": "/cultural-heritage/cultural-monuments/prehistoric-monuments-and-sites"
+      }
+    },
+    "group_impacts": {
+      "1": {
+        "id": 1,
+        "group_id": 1,
+        "likelihood": null,
+        "likelihood_text": null,
+        "severity": null,
+        "impact": "My first impact assessment text",
+        "content_type": null,
+        "properties": null,
+        "order": 0,
+        "factors": null,
+        "impacts": null
+      },
+      "3": {
+        "id": 3,
+        "group_id": 1,
+        "likelihood": null,
+        "likelihood_text": "Chuck Norris can lead a horse to water AND make it drink Crop circles are Chuck Norris' way of telling the world that sometimes corn needs to lie down, There is no chin behind Chuck Norris' beard. There is only another fist Chuck Norris doesn't wear a watch. HE decides what time it is. Chuck Norris drives an ice cream truck covered in human skulls Remember the Soviet Union? They decided to quit after watching a DeltaForce marathon on Satellite TV, Chuck Norris invented Kentucky Fried Chicken's famous secret recipe, with eleven herbs and spices. But nobody ever mentions the twelfth ingredient: Fear. Fool me once, shame on you. Fool Chuck Norris once and he will roundhouse you in the face Chuck Norris is the reason why Waldo is hiding. Chuck Norris is my Homeboy.\r\n\r\nChuck Norris has two speeds. Walk, and Kill, Guiness World Record Book doesn't let Chuck Norris in because he would hold the record for everything Fool me once, shame on you. Fool Chuck Norris once and he will roundhouse you in the face. Fool me once, shame on you. Fool Chuck Norris once and he will roundhouse you in the face. Chuck Norris can hear you type Chuck Norris on your keyboard, Chuck Norris has two speeds. Walk, and Kill.\r\n\r\nThere is no chin behind Chuck Norris' beard. There is only another fist Chuck Norris' hand is the only hand that can beat a Royal Flush. Chuck Norris is so awesome that he is now the lead singer of Queen Contrary to popular belief, America is not a democracy, it is a Chucktatorship Chuck Norris counted to infinity - twice, Chuck Norris can program a computer to breath. CNN was originally created as the \"Chuck Norris Network\" to update Americans with on-the-spot ass kicking in real-time Chuck Norris can win a game of Connect Four in only three moves. What was going through the minds of all of Chuck Norris' victims before they died? His shoe, Police label anyone attacking Chuck Norris as a Code 45-11... a suicide The leading causes of death in the United States are: 1. Heart Disease 2. Chuck Norris 3. Cancer There is no theory of evolution. Just a list of creatures Chuck Norris has allowed to live. What was going through the minds of all of Chuck Norris' victims before they died? His shoe There is no theory of evolution. Just a list of animals Chuck Norris allows to live.\r\n\r\nCNN was originally created as the \"Chuck Norris Network\" to update Americans with on-the-spot ass kicking in real-time Chuck Norris once roundhouse kicked someone so hard that his foot broke the speed of light, went back in time, and killed Amelia Earhart while she was flying over the Pacific Ocean, Chuck Norris invented Kentucky Fried Chicken's famous secret recipe, with eleven herbs and spices. But nobody ever mentions the twelfth ingredient: Fear A Handicapped parking sign does not signify that this spot is for handicapped people. It is actually in fact a warning, that the spot belongs to Chuck Norris and that you will be handicapped if you park there, Chuck Norris once roundhouse kic",
+        "severity": null,
+        "impact": "A new row",
+        "content_type": null,
+        "properties": null,
+        "order": 2,
+        "factors": null,
+        "impacts": null
+      }
+    },
+    "images": {
+      "2": {
+        "id": 2,
+        "path": "https://focus.test/storage/sotp/factors/XQso4jsxPOCjvbO4uyr8WNX05YEvFXdgY8IRYHOh.png",
+        "url": "https://focus.test/storage/sotp/factors/XQso4jsxPOCjvbO4uyr8WNX05YEvFXdgY8IRYHOh.png",
+        "name": "SOPR_Factor_Benefit_Icons_Demographic and Sociocultural.png"
+      }
+    }
+  },
+  "3": {
+    "id": 3,
+    "title": "Ecological change",
+    "slug": "ecological-change",
+    "url": "/factors/ecological-change",
+    "primary_color": "#989d6e",
+    "secondary_color": "#000000",
+    "descriptions": {
+      "3": {
+        "factor_id": 3,
+        "description": "<p>Ecological change refers to changes within and between species of plants, animals, fungi and microbes resulting from multiple factors including climate change, changing land management practises, and pollution. This could include changes to an individual species behaviour, life cycle, phenology (biological timings), population size, range and intra-species interactions. Consequently, this also includes changes to the species diversity and abundance of ecosystems, altered habitat types and biomes present in a given area, and changes to interactions between species including predation, herbivory, mutualism and parasitism. Where these changes occur, there will be a shift in the functionality of ecological systems resulting in changes to the ecosystem services they deliver.</p>\r\n<p><strong>Note on projection of future climate and socioeconomic scenarios</strong></p>\r\n<p>Research which models future change to ecological communities needs to account for possible future climate change and socioeconomic scenarios, the exact pathways of which are are uncertain due to different possible global, national and local actions. To do this, models for multiple future climate and socioeconomic pathways are used to project a range of possible future scenarios.</p>\r\n<p><em>Climate models</em></p>\r\n<p>Representative Concentration Pathways (RCPs) are used to project a range of climate change scenarios which account for different concentrations of greenhouse gas emissions<ReferenceFootnote footnoteref=\"123\">[123]</ReferenceFootnote>. This page primarily notes the two most extreme scenarios:</p>\r\n<ul>\r\n<li><strong>Best case scenario (RCP2.6): </strong>Future emissions are severely restricted to limit future climate change, although significant change is still projected.</li>\r\n</ul>\r\n<ul>\r\n<li><strong>Worst case scenario (RCP8.5</strong>): Continued current global emission trajectory.</li>\r\n</ul>\r\n<p><em>Socioeconomic models</em></p>\r\n<p>Shared Socioeconomic Pathways (SSPs) describe a range of scenarios for societal development<ReferenceFootnote footnoteref=\"100\">[100]</ReferenceFootnote>. This page also references the two extremes of these scenarios as used in ecological research:</p>\r\n<ul>\r\n<li><strong>Sustainability (SSP1): </strong>A political and social shift toward environmentally sustainable technological, economic and energy sectors.</li>\r\n<li><strong>Fossil-fuelled development (SSP5): </strong>Continued production of and demand for fossil fuels for manufacturing.</li>\r\n</ul>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 0
+      }
+    },
+    "factor_impacts": null,
+    "factor_factor_impacts": [],
+    "impacts": [],
+    "features": {
+      "16": {
+        "id": 16,
+        "group_id": 4,
+        "title": "Prehistoric monuments and sites",
+        "key_data": "70% of designated scheduled monuments are prehistoric features. Nine scheduled prehistoric features are considered at risk, while 43 scheduled features are vulnerable. Prehistoric features are found across all Landscape Character Areas of the Peak District indicating their widespread distribution.",
+        "descriptions": null,
+        "conditions": null,
+        "distributions": null,
+        "benefits": null,
+        "factors": null,
+        "landscape_character_areas": null,
+        "slug": "prehistoric-monuments-and-sites",
+        "url": "/cultural-heritage/cultural-monuments/prehistoric-monuments-and-sites"
+      }
+    },
+    "group_impacts": {
+      "4": {
+        "id": 4,
+        "group_id": 4,
+        "likelihood": null,
+        "likelihood_text": null,
+        "severity": null,
+        "impact": "Loss of visibility and accessibility of cultural monuments\r\nPhysical damage to structural remains and earthworks",
+        "content_type": null,
+        "properties": null,
+        "order": 0,
+        "factors": null,
+        "impacts": null
+      }
+    },
+    "images": {
+      "3": {
+        "id": 3,
+        "path": "https://focus.test/storage/sotp/factors/IfOEaLBs8rHWAYASB9WQOOG8fB98kNLkl1sgNrrs.png",
+        "url": "https://focus.test/storage/sotp/factors/IfOEaLBs8rHWAYASB9WQOOG8fB98kNLkl1sgNrrs.png",
+        "name": "SOPR_Factor_Benefit_Icons_Ecological Change.png"
+      }
+    }
+  },
+  "4": {
+    "id": 4,
+    "title": "Governance and legislation",
+    "slug": "governance-and-legislation",
+    "url": "/factors/governance-and-legislation",
+    "primary_color": "#9b8a64",
+    "secondary_color": "#000000",
+    "descriptions": {
+      "4": {
+        "factor_id": 4,
+        "description": "<p>Governance describes systems, processes and mechanisms of taking decisions which inform action taken by organisations, public bodies and other groups, while legislation describes the laws and legal systems to encourage or condemn certain actions. Supporting policy and regulation exist to further clarify, monitor and enforce action. Therefore, governance and legislation result from national, regional, local and organisational decisions regarding which actions are permissible and promoted and which are outlawed.</p>\r\n<p>It is not possible to have much certainty over projections of changes to governance and legislation as this factor is impacted by so many other factors in turn, from popular mood to political power. Therefore, the below projections are sometimes contradictory estimations on possible future changes related to legislation and governance. All carry a relatively low certainty.</p>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 0
+      }
+    },
+    "factor_impacts": null,
+    "factor_factor_impacts": [],
+    "impacts": [],
+    "features": {
+      "8": {
+        "id": 8,
+        "group_id": 2,
+        "title": "Calaminarian grassland",
+        "key_data": null,
+        "descriptions": null,
+        "conditions": null,
+        "distributions": null,
+        "benefits": null,
+        "factors": null,
+        "landscape_character_areas": null,
+        "slug": "calaminarian-grassland",
+        "url": "/landscape/grassland/calaminarian-grassland"
+      }
+    },
+    "group_impacts": {
+      "4": {
+        "id": 4,
+        "group_id": 4,
+        "likelihood": null,
+        "likelihood_text": null,
+        "severity": null,
+        "impact": "Loss of visibility and accessibility of cultural monuments\r\nPhysical damage to structural remains and earthworks",
+        "content_type": null,
+        "properties": null,
+        "order": 0,
+        "factors": null,
+        "impacts": null
+      }
+    },
+    "images": {
+      "4": {
+        "id": 4,
+        "path": "https://focus.test/storage/sotp/factors/Q2U2ytOPmfxXgTKqMtYnMNywu1ydoVmMkLNW1HJR.png",
+        "url": "https://focus.test/storage/sotp/factors/Q2U2ytOPmfxXgTKqMtYnMNywu1ydoVmMkLNW1HJR.png",
+        "name": "SOPR_Factor_Benefit_Icons_Governance and Legislation.png"
+      }
+    }
+  },
+  "5": {
+    "id": 5,
+    "title": "Land management practices",
+    "slug": "land-management-practices",
+    "url": "/factors/land-management-practices",
+    "primary_color": "#4a4d3a",
+    "secondary_color": "#000000",
+    "descriptions": {
+      "5": {
+        "factor_id": 5,
+        "description": "<p>Land management practices are the sets of actions undertaken which shape the ways land is used by people. Different practices will be carried out to achieve different outcomes, such as food production, natural resource extraction or biodiversity conservation. Which outcomes are chosen is affected by who owns, occupies or has the right to manage land, the historical ways the land has been used, both the biological and physical conditions of the area (e.g. underlying geology) as well as economic and socio-cultural factors.</p>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 0
+      }
+    },
+    "factor_impacts": null,
+    "factor_factor_impacts": [],
+    "impacts": [],
+    "features": {
+      "1": {
+        "id": 1,
+        "group_id": 1,
+        "title": "Upland oakwood",
+        "key_data": "Really cool. May contain owls and outlaws. And fungi.",
+        "descriptions": null,
+        "conditions": null,
+        "distributions": null,
+        "benefits": null,
+        "factors": null,
+        "landscape_character_areas": null,
+        "slug": "upland-oakwood",
+        "url": "/landscape/woodland/upland-oakwood"
+      },
+      "8": {
+        "id": 8,
+        "group_id": 2,
+        "title": "Calaminarian grassland",
+        "key_data": null,
+        "descriptions": null,
+        "conditions": null,
+        "distributions": null,
+        "benefits": null,
+        "factors": null,
+        "landscape_character_areas": null,
+        "slug": "calaminarian-grassland",
+        "url": "/landscape/grassland/calaminarian-grassland"
+      }
+    },
+    "group_impacts": {
+      "4": {
+        "id": 4,
+        "group_id": 4,
+        "likelihood": null,
+        "likelihood_text": null,
+        "severity": null,
+        "impact": "Loss of visibility and accessibility of cultural monuments\r\nPhysical damage to structural remains and earthworks",
+        "content_type": null,
+        "properties": null,
+        "order": 0,
+        "factors": null,
+        "impacts": null
+      }
+    },
+    "images": {
+      "7": {
+        "id": 7,
+        "path": "https://focus.test/storage/sotp/factors/IU5ONVgxFJ1RWpMtRfLlpEtXblOxb3kWq4hAjj1i.png",
+        "url": "https://focus.test/storage/sotp/factors/IU5ONVgxFJ1RWpMtRfLlpEtXblOxb3kWq4hAjj1i.png",
+        "name": "SOPR_Factor_Benefit_Icons_Land Management Practises.png"
+      }
+    }
+  },
+  "6": {
+    "id": 6,
+    "title": "Pollution",
+    "slug": "pollution",
+    "url": "/factors/pollution",
+    "primary_color": "#7996a4",
+    "secondary_color": "#000000",
+    "descriptions": {
+      "6": {
+        "factor_id": 6,
+        "description": "<p>Pollution is the harmful release or emission, whether accidental or intentional, of substances or energy into the natural environment which can result in harm to organisms, ecosystems or natural functions. This can include air, water, soil, light and noise pollution.</p>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 0
+      }
+    },
+    "factor_impacts": null,
+    "factor_factor_impacts": [],
+    "impacts": [],
+    "features": {
+      "16": {
+        "id": 16,
+        "group_id": 4,
+        "title": "Prehistoric monuments and sites",
+        "key_data": "70% of designated scheduled monuments are prehistoric features. Nine scheduled prehistoric features are considered at risk, while 43 scheduled features are vulnerable. Prehistoric features are found across all Landscape Character Areas of the Peak District indicating their widespread distribution.",
+        "descriptions": null,
+        "conditions": null,
+        "distributions": null,
+        "benefits": null,
+        "factors": null,
+        "landscape_character_areas": null,
+        "slug": "prehistoric-monuments-and-sites",
+        "url": "/cultural-heritage/cultural-monuments/prehistoric-monuments-and-sites"
+      },
+      "17": {
+        "id": 17,
+        "group_id": 4,
+        "title": "Roman and Romano-British sites",
+        "key_data": "4 of 8 Roman and Romano-British scheduled monuments are considered vulnerable, none are considered at risk. Roman and Romano-British features have been primarily identified in the central, southern and eastern parts of the Peak District.",
+        "descriptions": null,
+        "conditions": null,
+        "distributions": null,
+        "benefits": null,
+        "factors": null,
+        "landscape_character_areas": null,
+        "slug": "roman-and-romano-british-sites",
+        "url": "/cultural-heritage/cultural-monuments/roman-and-romano-british-sites"
+      }
+    },
+    "group_impacts": {
+      "4": {
+        "id": 4,
+        "group_id": 4,
+        "likelihood": null,
+        "likelihood_text": null,
+        "severity": null,
+        "impact": "Loss of visibility and accessibility of cultural monuments\r\nPhysical damage to structural remains and earthworks",
+        "content_type": null,
+        "properties": null,
+        "order": 0,
+        "factors": null,
+        "impacts": null
+      }
+    },
+    "images": {
+      "5": {
+        "id": 5,
+        "path": "https://focus.test/storage/sotp/factors/NsZpI6m6rtScqvcGnoCOfOG7Ui6tioYSUk022kPL.png",
+        "url": "https://focus.test/storage/sotp/factors/NsZpI6m6rtScqvcGnoCOfOG7Ui6tioYSUk022kPL.png",
+        "name": "SOPR_Factor_Benefit_Icons_Pollution.png"
+      }
+    }
+  },
+  "7": {
+    "id": 7,
+    "title": "Visitation and access",
+    "slug": "visitation-and-access",
+    "url": "/factors/visitation-and-access",
+    "primary_color": "#9b637c",
+    "secondary_color": "#000000",
+    "descriptions": {
+      "7": {
+        "factor_id": 7,
+        "description": "<p>Visitation describes the use of the National Park for leisure and recreation, either by residents or tourists travelling into the Peak District. Access refers to the structures which facilitate this such as paths, tracks, trails, tourism infrastructure and interpretation.</p>",
+        "content_type": "rte",
+        "properties": [],
+        "order": 0
+      }
+    },
+    "factor_impacts": null,
+    "factor_factor_impacts": [],
+    "impacts": {
+      "7": {
+        "factor_id": 7,
+        "impact_id": 7,
+        "title": "Increase likelihood of wildfire",
+        "slug": "increase-likelihood-of-wildfire",
+        "factor_impact_description": "<p>This is the impact description</p>"
+      }
+    },
+    "features": {
+      "5": {
+        "id": 5,
+        "group_id": 1,
+        "title": "Lowland mixed deciduous woodland",
+        "key_data": null,
+        "descriptions": null,
+        "conditions": null,
+        "distributions": null,
+        "benefits": null,
+        "factors": null,
+        "landscape_character_areas": null,
+        "slug": "lowland-mixed-deciduous-woodland",
+        "url": "/landscape/woodland/lowland-mixed-deciduous-woodland"
+      },
+      "17": {
+        "id": 17,
+        "group_id": 4,
+        "title": "Roman and Romano-British sites",
+        "key_data": "4 of 8 Roman and Romano-British scheduled monuments are considered vulnerable, none are considered at risk. Roman and Romano-British features have been primarily identified in the central, southern and eastern parts of the Peak District.",
+        "descriptions": null,
+        "conditions": null,
+        "distributions": null,
+        "benefits": null,
+        "factors": null,
+        "landscape_character_areas": null,
+        "slug": "roman-and-romano-british-sites",
+        "url": "/cultural-heritage/cultural-monuments/roman-and-romano-british-sites"
+      }
+    },
+    "group_impacts": {
+      "4": {
+        "id": 4,
+        "group_id": 4,
+        "likelihood": null,
+        "likelihood_text": null,
+        "severity": null,
+        "impact": "Loss of visibility and accessibility of cultural monuments\r\nPhysical damage to structural remains and earthworks",
+        "content_type": null,
+        "properties": null,
+        "order": 0,
+        "factors": null,
+        "impacts": null
+      },
+      "22": {
+        "id": 22,
+        "group_id": 1,
+        "likelihood": null,
+        "likelihood_text": "This is ifnsinkdf",
+        "severity": null,
+        "impact": "New two",
+        "content_type": null,
+        "properties": null,
+        "order": 3,
+        "factors": null,
+        "impacts": null
+      }
+    },
+    "images": {
+      "8": {
+        "id": 8,
+        "path": "https://focus.test/storage/sotp/factors/z6oFTy9CwvwvaLq6VQCwAvuWNaqBmmlOWVh2gn8Z.png",
+        "url": "https://focus.test/storage/sotp/factors/z6oFTy9CwvwvaLq6VQCwAvuWNaqBmmlOWVh2gn8Z.png",
+        "name": "SOPR_Factor_Benefit_Icons_Visitation and Access.png"
+      }
+    }
+  }
+}

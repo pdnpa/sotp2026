@@ -1,6 +1,6 @@
 <script lang="ts">
 import {defineComponent} from 'vue'
-import { data } from '../reportdata.data.js'
+import { data as pages } from '../loaders/pages.data.js'
 import DynamicComponent from "./DynamicComponent.vue";
 import DynamicContentType from "./DynamicContentType.vue";
 import ReferenceList from "./ReferenceList.vue";
@@ -18,7 +18,7 @@ export default defineComponent({
   },
   data() {
     return {
-      page: data.pages[this.page_id] || { ...defaultPage },
+      page: pages[this.page_id] || { ...defaultPage },
       usedReferenceIds: []
     }
   },
