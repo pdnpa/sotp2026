@@ -79,7 +79,7 @@ export default {
 <div class="factor-page" data-pagefind-body>
   <DocBefore>
     <div v-if="pageHeaderFullWidth && family?.url" class="feature-family-heading feature-family-heading__descendant" :class="`bg-${family.slug}`">
-      <a :href="family?.url ? $withBase(family.url) : '#'" class="back-to-family-link">{{family.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span> <a :href="group.url" class="back-to-group-link">{{group.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span>
+      <a :href="family?.url ? $withBase(family.url) : '#'" class="back-to-family-link">{{family.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span> <a :href="$withBase(group.url)" class="back-to-group-link">{{group.title}}</a> <span class="breadcrumb-arrow"> &rarr; </span>
     </div>
     <div :id="`objective_heading_${feature.id}`"
          v-if="pageHeaderFullWidth"
@@ -96,7 +96,7 @@ export default {
        :class="[`bg-${family.slug}`, { 'feature-family-heading-has-image': getFirstImage(family)?.url }]"
   >
     <div class="back-to-family-link__outer">
-      <a :href="family?.url ? $withBase(family.url) : '#'" class="back-to-family-link">{{family.title}}</a>  <span class="vpi-chevron-right caret-icon"></span>  <a :href="group.url" class="back-to-group-link">{{group.title}}</a> <span class="vpi-chevron-right caret-icon"></span>
+      <a :href="family?.url ? $withBase(family.url) : '#'" class="back-to-family-link">{{family.title}}</a>  <span class="vpi-chevron-right caret-icon"></span>  <a :href="$withBase(group.url)" class="back-to-group-link">{{group.title}}</a> <span class="vpi-chevron-right caret-icon"></span>
     </div>
     <div class="feature-family-heading__image-holder" v-if="getFirstImage(family)" :style="`background-image: url(`+getFirstImage(family).url+`)`"></div>
   </div>

@@ -33,7 +33,7 @@ export default {
           <span class="group-impact-title">{{impact.impact}}</span>
         <div class="compact-only factor-list-wrapper mt-4">
           <span class="compact-only cell-header">Factors</span>
-          <ul class="factor-list">
+          <ul class="factor-list wrap-items">
             <li v-for="factor in impact.factors" :key="factor.id">
 
               <div v-if="getFirstImage(factor)">

@@ -181,11 +181,11 @@ export default {
 
   <div id="state-block" class="group-section-block body-text pb-0" v-if="hasFeatures"><h2 class="mb-0 mt-0" id="State">State of {{group.title}}</h2></div>
   <div class="group-section-block pt-0">
-    <table>
+    <table class="state-of-table">
       <thead>
       <tr>
         <th class="feature-title-column">Feature</th>
-        <th>Key data</th>
+        <th class="keydata-title-column">Key data</th>
         <th class="feature-state-factors">Factors</th>
         <!-- <th>Benefits</th> -->
       </tr>
@@ -241,9 +241,7 @@ export default {
 
 <style lang="scss">
 .vp-doc {
-  .feature-title-column {
-    width: 380px;
-  }
+
 
   .feature-family-heading-page-width {
     position: relative;
@@ -264,16 +262,30 @@ export default {
 
 }
 
+.feature-title-column {
+  width: auto;
+}
 .feature-state-factors {
   width: 260px;
 }
+.keydata-title-column {
+  width: 240px;
+}
 
 @media screen and (min-width: 1180px) {
-  .feature-state-factors {
+  .feature-state-factors, .keydata-title-column {
     width: auto;
     min-width: 370px;
   }
+  .feature-title-column {
+    min-width: 240px;
+  }
 }
 
+.state-of-table {
+  td {
+    vertical-align: top;
+  }
+}
 
 </style>

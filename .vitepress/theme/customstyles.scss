@@ -67,7 +67,15 @@ html {
   }
 }
 
-
+.max-width-lg {
+  max-width: 960px;
+}
+.max-width-md {
+  max-width: 640px;
+}
+.max-width-sm {
+  max-width: 400px;
+}
 
 .vp-doc {
   h2 {
@@ -156,6 +164,8 @@ $icon-size: 60px;
   border-radius: 50%;
 }
 
+$icon-list-show-text-breakpoint: 960px;
+
 @mixin icon-list() {
   margin: 0;
   padding: 0;
@@ -226,65 +236,90 @@ $icon-size: 60px;
     }
   }
 
+
+
   &.show-icon-text {
-    &:is(.benefit-list) {
-      .image-placeholder {
-        background-color: var(--pdnpa-lime);
-      }
-    }
-    &:is(.factor-list) {
-      .image-placeholder {
-        background-color: var(--pdnpa-lightblue);
-      }
-    }
+    @include has-visible-icon-labels();
+  }
 
-    li {
-      a {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
+}
 
-        transition: background 0.2s ease-out;
-        border-radius: 14px;
-        padding: 10px;
+@mixin has-visible-icon-labels() {
+  &:is(.benefit-list) {
+    .image-placeholder {
+      background-color: var(--pdnpa-lime);
+    }
+  }
+  &:is(.factor-list) {
+    .image-placeholder {
+      background-color: var(--pdnpa-lightblue);
+    }
+  }
+
+  li {
+    > div {
+    }
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+
+      transition: background 0.2s ease-out;
+      border-radius: 14px;
+      padding: 10px;
+      text-decoration: none;
+      margin-right: 1rem;
+      max-width: 190px;
+      height: 100%;
+      line-height: 1.35;
+      background-color: var(--pdnpa-lightbrown);
+
+      &:hover, &:focus, &:focus-within {
         text-decoration: none;
-        margin-right: 1rem;
-        max-width: 190px;
-        height: 100%;
-        line-height: 1.35;
-        background-color: var(--pdnpa-lightbrown);
-
-        &:hover, &:focus, &:focus-within {
-          text-decoration: none;
-          background: var(--pdnpa-midbrown);
-          .icon-text {
-            color: color.scale(variables.$pdnpa-darkbrown, $lightness: -20%);
-            transform: translate(0, 0);
-          }
+        background: var(--pdnpa-midbrown);
+        .icon-text {
+          color: color.scale(variables.$pdnpa-darkbrown, $lightness: -20%);
+          transform: translate(0, 0);
         }
       }
-      .icon-text {
-        color: var(--pdnpa-darkbrown);
-        display: block;
-        position: relative;
-        padding: 0.5rem 0 0;
-        left: auto;
-        top: auto;
-        width: 100%;
-        visibility: visible;
-        opacity: 1;
-        transform: translate(0, 0);
-        background-color: transparent;
-      }
-      .image-placeholder {
-        background-color: var(--pdnpa-lime);
+    }
+    .icon-text {
+      color: var(--pdnpa-darkbrown);
+      display: block;
+      position: relative;
+      padding: 0.5rem 0 0;
+      left: auto;
+      top: auto;
+      width: 100%;
+      visibility: visible;
+      opacity: 1;
+      transform: translate(0, 0);
+      background-color: transparent;
+    }
+    .image-placeholder {
+      background-color: var(--pdnpa-lime);
+    }
+  }
+  @media screen and (max-width: $icon-list-show-text-breakpoint) {
+    li {
+      width: 100%;
+
+      > div {
+        flex: 1 1 100%;
       }
     }
 
   }
-
+  &.wrap-items {
+    @media screen and (max-width: $icon-list-show-text-breakpoint) {
+      li {
+        width: auto;
+      }
+    }
+  }
 }
+
 html {
   .vp-doc {
 
@@ -298,6 +333,15 @@ html {
   }
 
 
+}
+@media screen and (max-width: $icon-list-show-text-breakpoint) {
+  html {
+    .vp-doc {
+      .benefit-list, .factor-list {
+        @include has-visible-icon-labels();
+      }
+    }
+  }
 }
 
 .vp-doc p {

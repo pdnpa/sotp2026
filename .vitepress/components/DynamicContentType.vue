@@ -35,7 +35,7 @@ export default {
       <DynamicComponent :content="contentchunk[contentFieldName]" />
     </template>
     <template v-else-if="contentchunk.content_type === 'file'">
-      <div class="content-image-container" :class="{ 'content-image-container-right': contentchunk.properties.alignright ?? false }">
+      <div class="content-image-container" :class="[{ 'content-image-container-right': contentchunk.properties.alignright === '1' ?? false },contentchunk.properties.cssclassnames ?? '']">
         <img :src="contentchunk[contentFieldName]" :alt="contentchunk.properties.caption ?? ''" class="content-image-image" />
         <span v-if="contentchunk.properties.caption" class="content-image-caption">{{ contentchunk.properties.caption ?? '' }}</span>
       </div>
