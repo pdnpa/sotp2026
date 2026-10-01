@@ -173,7 +173,7 @@ export default {
     </div>
   </div>
 
-  <div id="distribution-block" class="distribution-block group-section-block body-text pb-0" v-if="hasDistributions">
+  <div id="distribution-block" class="distribution-block  group-section-block body-text pb-0" :class="{'distribution-block-stack-lcas': feature.options.distribution_block_stacked ?? 0}" v-if="hasDistributions">
 
     <div class="distribution-block-text">
       <h2 class="mb-0 mt-0" id="Distribution">Distribution</h2>
@@ -184,7 +184,7 @@ export default {
       </div>
     </div>
 
-    <div v-if="hasLcas">
+    <div v-if="hasLcas" class="distribution-block-lca-map">
       <h3>Landscape Character Areas</h3>
       <WebMap :layer="getLCALayerString(feature)"></WebMap>
     </div>
@@ -206,5 +206,25 @@ export default {
 </template>
 
 <style lang="scss">
+.distribution-block-stack-lcas {
+  flex-direction: column;
 
+  .distribution-block-lca-map {
+    margin-top: 2rem;
+    width: 100%;
+
+    .web-map-container {
+      width: 640px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .distribution-block-stack-lcas {
+    .distribution-block-lca-map {
+      .web-map-container {
+        width: 300px;
+      }
+    }
+  }
+}
 </style>
