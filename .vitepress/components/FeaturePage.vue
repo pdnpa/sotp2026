@@ -37,6 +37,8 @@ export default {
     const group = item?.group || {}
     const family = item?.family || {}
 
+    feature.options = feature.options || {}
+
     return {
       feature,
       group,
