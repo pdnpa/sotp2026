@@ -35,6 +35,24 @@ export default defineComponent({
     }
   },
   computed: {
+    orderedContents() {
+      return Object.values(this.page.contents ?? {})
+        .map((content, index) => ({content, index}))
+        .sort((a, b) => {
+          const orderA = Number(a.content.order)
+          const orderB = Number(b.content.order)
+          const hasOrderA = Number.isFinite(orderA)
+          const hasOrderB = Number.isFinite(orderB)
+
+          if (hasOrderA && hasOrderB) {
+            return orderA - orderB || a.index - b.index
+          }
+          if (hasOrderA) return -1
+          if (hasOrderB) return 1
+          return a.index - b.index
+        })
+        .map(({content}) => content)
+    },
     hasContents() {
       return this.contentCollectionIsNotEmpty(this.page.contents, 'content');
     },
@@ -51,7 +69,7 @@ export default defineComponent({
   <div class="factor-section-block pt-0" v-if="hasContents">
     <div class="factor-data-elements">
 
-      <DynamicContentType :chunks="page.contents" contentFieldName="content"/>
+      <DynamicContentType :chunks="orderedContents" contentFieldName="content"/>
 
     </div>
   </div>
