@@ -15,8 +15,8 @@
         "images": {
             "1": {
                 "id": 1,
-                "path": "https://hub/storage/sotp/benefits/JjnRlgLOsI4SrbUTr9Cud3kbOO8HTxGF4pwr4FyC.png",
-                "url": "https://hub/storage/sotp/benefits/JjnRlgLOsI4SrbUTr9Cud3kbOO8HTxGF4pwr4FyC.png",
+                "path": "https://focus.test/storage/sotp/benefits/JjnRlgLOsI4SrbUTr9Cud3kbOO8HTxGF4pwr4FyC.png",
+                "url": "https://focus.test/storage/sotp/benefits/JjnRlgLOsI4SrbUTr9Cud3kbOO8HTxGF4pwr4FyC.png",
                 "name": "SOPR_Factor_Benefit_Icons_Abiotic Production.png"
             }
         },
@@ -48,44 +48,14 @@
                 "slug": "upland-oakwood",
                 "url": "/landscape/woodland/upland-oakwood",
                 "options": null
-            },
-            "32": {
-                "id": 32,
-                "group_id": 10,
-                "title": "Geomorphology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geomorphology",
-                "url": "/landscape/geodiversity/geomorphology",
-                "options": null
-            },
-            "33": {
-                "id": 33,
-                "group_id": 10,
-                "title": "Soils",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "soils",
-                "url": "/landscape/geodiversity/soils",
-                "options": null
             }
         },
         "group_impacts": null,
         "images": {
             "2": {
                 "id": 2,
-                "path": "https://hub/storage/sotp/benefits/K9kZBVs0BUDxJwkgQ0Q71sDkFYPzTbiraEMJdSdd.png",
-                "url": "https://hub/storage/sotp/benefits/K9kZBVs0BUDxJwkgQ0Q71sDkFYPzTbiraEMJdSdd.png",
+                "path": "https://focus.test/storage/sotp/benefits/K9kZBVs0BUDxJwkgQ0Q71sDkFYPzTbiraEMJdSdd.png",
+                "url": "https://focus.test/storage/sotp/benefits/K9kZBVs0BUDxJwkgQ0Q71sDkFYPzTbiraEMJdSdd.png",
                 "name": "SOPR_Factor_Benefit_Icons_Clean and Plentiful Water.png"
             }
         },
@@ -102,29 +72,13 @@
         "factor_impacts": null,
         "factor_factor_impacts": null,
         "impacts": null,
-        "features": {
-            "32": {
-                "id": 32,
-                "group_id": 10,
-                "title": "Geomorphology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geomorphology",
-                "url": "/landscape/geodiversity/geomorphology",
-                "options": null
-            }
-        },
+        "features": [],
         "group_impacts": null,
         "images": {
             "3": {
                 "id": 3,
-                "path": "https://hub/storage/sotp/benefits/YnaKH6foJJ5EfgIDosQWmN06xIMoArhblVETsRxs.png",
-                "url": "https://hub/storage/sotp/benefits/YnaKH6foJJ5EfgIDosQWmN06xIMoArhblVETsRxs.png",
+                "path": "https://focus.test/storage/sotp/benefits/YnaKH6foJJ5EfgIDosQWmN06xIMoArhblVETsRxs.png",
+                "url": "https://focus.test/storage/sotp/benefits/YnaKH6foJJ5EfgIDosQWmN06xIMoArhblVETsRxs.png",
                 "name": "SOPR_Factor_Benefit_Icons_Climate Regulation.png"
             }
         },
@@ -141,91 +95,13 @@
         "factor_impacts": null,
         "factor_factor_impacts": null,
         "impacts": null,
-        "features": {
-            "16": {
-                "id": 16,
-                "group_id": 4,
-                "title": "Prehistoric monuments and sites",
-                "key_data": "70% of designated scheduled monuments are prehistoric features. Nine scheduled prehistoric features are considered at risk, while 43 scheduled features are vulnerable. Prehistoric features are found across all Landscape Character Areas of the Peak District indicating their widespread distribution.",
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "prehistoric-monuments-and-sites",
-                "url": "/cultural-heritage/cultural-monuments/prehistoric-monuments-and-sites",
-                "options": {
-                    "distribution_block_stacked": "1"
-                }
-            },
-            "31": {
-                "id": 31,
-                "group_id": 10,
-                "title": "Geology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geology",
-                "url": "/landscape/geodiversity/geology",
-                "options": null
-            },
-            "32": {
-                "id": 32,
-                "group_id": 10,
-                "title": "Geomorphology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geomorphology",
-                "url": "/landscape/geodiversity/geomorphology",
-                "options": null
-            },
-            "21": {
-                "id": 21,
-                "group_id": 5,
-                "title": "Religious buildings",
-                "key_data": "Historic religious buildings are widespread across the Peak District due to their connection to settlements, and can be found in every Landscape Character Area. There are approximately 100 listed religious buildings in the Peak District. Four religious buildings are considered at risk with an additional three considered vulnerable; over the last five years one religious building has been removed from being at risk indicating an improvement in condition.",
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "religious-buildings",
-                "url": "/cultural-heritage/historic-buildings/religious-buildings",
-                "options": null
-            },
-            "24": {
-                "id": 24,
-                "group_id": 8,
-                "title": "Agricultural landscapes",
-                "key_data": "The majority of the Peak District could be characterised as a heritage farming landscape. Historical farming influences vary greatly across Landscape Character Area due to different patterns of agricultural land management and settlement. There is not a consistent assessment of the heritage farming landscape, however studies show that historical boundary features have historically, and continue to, decline within the National Park.",
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "agricultural-landscapes",
-                "url": "/cultural-heritage/heritage-landscapes/agricultural-landscapes",
-                "options": null
-            }
-        },
+        "features": [],
         "group_impacts": null,
         "images": {
             "4": {
                 "id": 4,
-                "path": "https://hub/storage/sotp/benefits/QRm00qGl6H3ooYqwvFmPZO6Wg7sCuEHtIuVBvw9O.png",
-                "url": "https://hub/storage/sotp/benefits/QRm00qGl6H3ooYqwvFmPZO6Wg7sCuEHtIuVBvw9O.png",
+                "path": "https://focus.test/storage/sotp/benefits/QRm00qGl6H3ooYqwvFmPZO6Wg7sCuEHtIuVBvw9O.png",
+                "url": "https://focus.test/storage/sotp/benefits/QRm00qGl6H3ooYqwvFmPZO6Wg7sCuEHtIuVBvw9O.png",
                 "name": "SOPR_Factor_Benefit_Icons_Connection to Place.png"
             }
         },
@@ -242,76 +118,13 @@
         "factor_impacts": null,
         "factor_factor_impacts": null,
         "impacts": null,
-        "features": {
-            "16": {
-                "id": 16,
-                "group_id": 4,
-                "title": "Prehistoric monuments and sites",
-                "key_data": "70% of designated scheduled monuments are prehistoric features. Nine scheduled prehistoric features are considered at risk, while 43 scheduled features are vulnerable. Prehistoric features are found across all Landscape Character Areas of the Peak District indicating their widespread distribution.",
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "prehistoric-monuments-and-sites",
-                "url": "/cultural-heritage/cultural-monuments/prehistoric-monuments-and-sites",
-                "options": {
-                    "distribution_block_stacked": "1"
-                }
-            },
-            "32": {
-                "id": 32,
-                "group_id": 10,
-                "title": "Geomorphology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geomorphology",
-                "url": "/landscape/geodiversity/geomorphology",
-                "options": null
-            },
-            "21": {
-                "id": 21,
-                "group_id": 5,
-                "title": "Religious buildings",
-                "key_data": "Historic religious buildings are widespread across the Peak District due to their connection to settlements, and can be found in every Landscape Character Area. There are approximately 100 listed religious buildings in the Peak District. Four religious buildings are considered at risk with an additional three considered vulnerable; over the last five years one religious building has been removed from being at risk indicating an improvement in condition.",
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "religious-buildings",
-                "url": "/cultural-heritage/historic-buildings/religious-buildings",
-                "options": null
-            },
-            "24": {
-                "id": 24,
-                "group_id": 8,
-                "title": "Agricultural landscapes",
-                "key_data": "The majority of the Peak District could be characterised as a heritage farming landscape. Historical farming influences vary greatly across Landscape Character Area due to different patterns of agricultural land management and settlement. There is not a consistent assessment of the heritage farming landscape, however studies show that historical boundary features have historically, and continue to, decline within the National Park.",
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "agricultural-landscapes",
-                "url": "/cultural-heritage/heritage-landscapes/agricultural-landscapes",
-                "options": null
-            }
-        },
+        "features": [],
         "group_impacts": null,
         "images": {
             "5": {
                 "id": 5,
-                "path": "https://hub/storage/sotp/benefits/BdUFLDZBnQBiZoUMzZKbnZooCN1tmvLTjpgfooyp.png",
-                "url": "https://hub/storage/sotp/benefits/BdUFLDZBnQBiZoUMzZKbnZooCN1tmvLTjpgfooyp.png",
+                "path": "https://focus.test/storage/sotp/benefits/BdUFLDZBnQBiZoUMzZKbnZooCN1tmvLTjpgfooyp.png",
+                "url": "https://focus.test/storage/sotp/benefits/BdUFLDZBnQBiZoUMzZKbnZooCN1tmvLTjpgfooyp.png",
                 "name": "SOPR_Factor_Benefit_Icons_Cultural Significance.png"
             }
         },
@@ -343,44 +156,14 @@
                 "slug": "upland-oakwood",
                 "url": "/landscape/woodland/upland-oakwood",
                 "options": null
-            },
-            "32": {
-                "id": 32,
-                "group_id": 10,
-                "title": "Geomorphology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geomorphology",
-                "url": "/landscape/geodiversity/geomorphology",
-                "options": null
-            },
-            "33": {
-                "id": 33,
-                "group_id": 10,
-                "title": "Soils",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "soils",
-                "url": "/landscape/geodiversity/soils",
-                "options": null
             }
         },
         "group_impacts": null,
         "images": {
             "6": {
                 "id": 6,
-                "path": "https://hub/storage/sotp/benefits/StJ9Io0cp3MNoHLr9ZtbqGTKG4J4ire9MFmdmHgq.png",
-                "url": "https://hub/storage/sotp/benefits/StJ9Io0cp3MNoHLr9ZtbqGTKG4J4ire9MFmdmHgq.png",
+                "path": "https://focus.test/storage/sotp/benefits/StJ9Io0cp3MNoHLr9ZtbqGTKG4J4ire9MFmdmHgq.png",
+                "url": "https://focus.test/storage/sotp/benefits/StJ9Io0cp3MNoHLr9ZtbqGTKG4J4ire9MFmdmHgq.png",
                 "name": "SOPR_Factor_Benefit_Icons_Ecosystem Regulation.png"
             }
         },
@@ -402,8 +185,8 @@
         "images": {
             "7": {
                 "id": 7,
-                "path": "https://hub/storage/sotp/benefits/zq6CXo6rmu1Sm9YZMne275z54qrEcTx6F0uBTpzb.png",
-                "url": "https://hub/storage/sotp/benefits/zq6CXo6rmu1Sm9YZMne275z54qrEcTx6F0uBTpzb.png",
+                "path": "https://focus.test/storage/sotp/benefits/zq6CXo6rmu1Sm9YZMne275z54qrEcTx6F0uBTpzb.png",
+                "url": "https://focus.test/storage/sotp/benefits/zq6CXo6rmu1Sm9YZMne275z54qrEcTx6F0uBTpzb.png",
                 "name": "SOPR_Factor_Benefit_Icons_Food, Fuel, Fibre and Timber.png"
             }
         },
@@ -420,29 +203,13 @@
         "factor_impacts": null,
         "factor_factor_impacts": null,
         "impacts": null,
-        "features": {
-            "32": {
-                "id": 32,
-                "group_id": 10,
-                "title": "Geomorphology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geomorphology",
-                "url": "/landscape/geodiversity/geomorphology",
-                "options": null
-            }
-        },
+        "features": [],
         "group_impacts": null,
         "images": {
             "8": {
                 "id": 8,
-                "path": "https://hub/storage/sotp/benefits/rINebmCqXMUwvCMuZT4V8T6QdUNX7OhJeXT29HWn.png",
-                "url": "https://hub/storage/sotp/benefits/rINebmCqXMUwvCMuZT4V8T6QdUNX7OhJeXT29HWn.png",
+                "path": "https://focus.test/storage/sotp/benefits/rINebmCqXMUwvCMuZT4V8T6QdUNX7OhJeXT29HWn.png",
+                "url": "https://focus.test/storage/sotp/benefits/rINebmCqXMUwvCMuZT4V8T6QdUNX7OhJeXT29HWn.png",
                 "name": "SOPR_Factor_Benefit_Icons_Hazard Mitigation.png"
             }
         },
@@ -464,8 +231,8 @@
         "images": {
             "9": {
                 "id": 9,
-                "path": "https://hub/storage/sotp/benefits/eikw2Nv2XVEYzEcCDb3eTM8xSTdayYi1JuD5y3O4.png",
-                "url": "https://hub/storage/sotp/benefits/eikw2Nv2XVEYzEcCDb3eTM8xSTdayYi1JuD5y3O4.png",
+                "path": "https://focus.test/storage/sotp/benefits/eikw2Nv2XVEYzEcCDb3eTM8xSTdayYi1JuD5y3O4.png",
+                "url": "https://focus.test/storage/sotp/benefits/eikw2Nv2XVEYzEcCDb3eTM8xSTdayYi1JuD5y3O4.png",
                 "name": "SOPR_Factor_Benefit_Icons_Health and Wellbeing.png"
             }
         },
@@ -487,8 +254,8 @@
         "images": {
             "10": {
                 "id": 10,
-                "path": "https://hub/storage/sotp/benefits/2p6fhDlzuUIynKy4kdXZq7iek1QwHnfNY1GTgsc6.png",
-                "url": "https://hub/storage/sotp/benefits/2p6fhDlzuUIynKy4kdXZq7iek1QwHnfNY1GTgsc6.png",
+                "path": "https://focus.test/storage/sotp/benefits/2p6fhDlzuUIynKy4kdXZq7iek1QwHnfNY1GTgsc6.png",
+                "url": "https://focus.test/storage/sotp/benefits/2p6fhDlzuUIynKy4kdXZq7iek1QwHnfNY1GTgsc6.png",
                 "name": "SOPR_Factor_Benefit_Icons_Housing.png"
             }
         },
@@ -510,8 +277,8 @@
         "images": {
             "11": {
                 "id": 11,
-                "path": "https://hub/storage/sotp/benefits/7emc1cGehtc3z7W8y4JNQWadT6sgDUFfQL9gKJhH.png",
-                "url": "https://hub/storage/sotp/benefits/7emc1cGehtc3z7W8y4JNQWadT6sgDUFfQL9gKJhH.png",
+                "path": "https://focus.test/storage/sotp/benefits/7emc1cGehtc3z7W8y4JNQWadT6sgDUFfQL9gKJhH.png",
+                "url": "https://focus.test/storage/sotp/benefits/7emc1cGehtc3z7W8y4JNQWadT6sgDUFfQL9gKJhH.png",
                 "name": "SOPR_Factor_Benefit_Icons_Leisure and Recreation.png"
             }
         },
@@ -528,44 +295,13 @@
         "factor_impacts": null,
         "factor_factor_impacts": null,
         "impacts": null,
-        "features": {
-            "31": {
-                "id": 31,
-                "group_id": 10,
-                "title": "Geology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geology",
-                "url": "/landscape/geodiversity/geology",
-                "options": null
-            },
-            "32": {
-                "id": 32,
-                "group_id": 10,
-                "title": "Geomorphology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geomorphology",
-                "url": "/landscape/geodiversity/geomorphology",
-                "options": null
-            }
-        },
+        "features": [],
         "group_impacts": null,
         "images": {
             "12": {
                 "id": 12,
-                "path": "https://hub/storage/sotp/benefits/wty01mRpBPebVbcwXEJbj6OHHCYoaNhg47OF6Ojp.png",
-                "url": "https://hub/storage/sotp/benefits/wty01mRpBPebVbcwXEJbj6OHHCYoaNhg47OF6Ojp.png",
+                "path": "https://focus.test/storage/sotp/benefits/wty01mRpBPebVbcwXEJbj6OHHCYoaNhg47OF6Ojp.png",
+                "url": "https://focus.test/storage/sotp/benefits/wty01mRpBPebVbcwXEJbj6OHHCYoaNhg47OF6Ojp.png",
                 "name": "SOPR_Factor_Benefit_Icons_Livelihoods.png"
             }
         },
@@ -598,44 +334,13 @@
         "factor_impacts": null,
         "factor_factor_impacts": null,
         "impacts": null,
-        "features": {
-            "32": {
-                "id": 32,
-                "group_id": 10,
-                "title": "Geomorphology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geomorphology",
-                "url": "/landscape/geodiversity/geomorphology",
-                "options": null
-            },
-            "33": {
-                "id": 33,
-                "group_id": 10,
-                "title": "Soils",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "soils",
-                "url": "/landscape/geodiversity/soils",
-                "options": null
-            }
-        },
+        "features": [],
         "group_impacts": null,
         "images": {
             "14": {
                 "id": 14,
-                "path": "https://hub/storage/sotp/benefits/QnYR1hl4SuRTf9igKJVBWvkIR7YeZZd5UEqAg7r2.png",
-                "url": "https://hub/storage/sotp/benefits/QnYR1hl4SuRTf9igKJVBWvkIR7YeZZd5UEqAg7r2.png",
+                "path": "https://focus.test/storage/sotp/benefits/QnYR1hl4SuRTf9igKJVBWvkIR7YeZZd5UEqAg7r2.png",
+                "url": "https://focus.test/storage/sotp/benefits/QnYR1hl4SuRTf9igKJVBWvkIR7YeZZd5UEqAg7r2.png",
                 "name": "SOPR_Factor_Benefit_Icons_Regulation of Soil Quality.png"
             }
         },
@@ -652,44 +357,13 @@
         "factor_impacts": null,
         "factor_factor_impacts": null,
         "impacts": null,
-        "features": {
-            "32": {
-                "id": 32,
-                "group_id": 10,
-                "title": "Geomorphology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geomorphology",
-                "url": "/landscape/geodiversity/geomorphology",
-                "options": null
-            },
-            "24": {
-                "id": 24,
-                "group_id": 8,
-                "title": "Agricultural landscapes",
-                "key_data": "The majority of the Peak District could be characterised as a heritage farming landscape. Historical farming influences vary greatly across Landscape Character Area due to different patterns of agricultural land management and settlement. There is not a consistent assessment of the heritage farming landscape, however studies show that historical boundary features have historically, and continue to, decline within the National Park.",
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "agricultural-landscapes",
-                "url": "/cultural-heritage/heritage-landscapes/agricultural-landscapes",
-                "options": null
-            }
-        },
+        "features": [],
         "group_impacts": null,
         "images": {
             "15": {
                 "id": 15,
-                "path": "https://hub/storage/sotp/benefits/oUdbBUUcL7oXkImNriN3Oo3E1WdBknSW8QLlbX9N.png",
-                "url": "https://hub/storage/sotp/benefits/oUdbBUUcL7oXkImNriN3Oo3E1WdBknSW8QLlbX9N.png",
+                "path": "https://focus.test/storage/sotp/benefits/oUdbBUUcL7oXkImNriN3Oo3E1WdBknSW8QLlbX9N.png",
+                "url": "https://focus.test/storage/sotp/benefits/oUdbBUUcL7oXkImNriN3Oo3E1WdBknSW8QLlbX9N.png",
                 "name": "SOPR_Factor_Benefit_Icons_Sensory and Aesthetic Regulation.png"
             }
         },
