@@ -158,6 +158,12 @@ html {
   .content-image-container.content-image-container-right {
     max-width: 30vw;
     margin-left: 3.8rem;
+
+    &.image-right-wider {
+      /*max-width: 40vw;*/
+      max-width: 560px;
+      min-width: 450px;
+    }
   }
 }
 
