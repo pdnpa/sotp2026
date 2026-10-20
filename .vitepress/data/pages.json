@@ -1,18 +1,48 @@
 {
     "9": {
         "id": 9,
-        "title": "Executive Summary",
-        "description": "A short description of the exec summary",
-        "slug": "executive-summary",
-        "url": "/pages/executive-summary",
+        "title": "Key findings",
+        "description": "Check back for updates",
+        "slug": "key-findings",
+        "url": "/pages/key-findings",
         "contents": {
             "9": {
                 "id": 9,
                 "page_id": 9,
-                "content": "<p>This is the content</p>",
+                "content": "<h2>Woodland</h2>\r\n<table border=\"1\" style=\"border-collapse: collapse; width: 100.065%;\">\r\n<tbody>\r\n<tr>\r\n<td style=\"width: 17.6702%;\"><strong>State</strong></td>\r\n<td width=\"161\" style=\"width: 20.7788%; background-color: #f8cac6;\">\r\n<p>Significant concern</p>\r\n</td>\r\n<td width=\"71\" style=\"width: 11.2893%;\">\r\n<p><strong>Trend</strong></p>\r\n</td>\r\n<td width=\"104\" style=\"width: 18.3246%; background-color: #f8cac6;\">\r\n<p>Deteriorating</p>\r\n</td>\r\n<td width=\"100\" style=\"width: 15.8704%;\">\r\n<p><strong>Certainty</strong></p>\r\n</td>\r\n<td width=\"100\" style=\"width: 15.8704%; background-color: #fbeeb8;\">\r\n<p>Moderate</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><strong>Key findings</strong></p>\r\n<ul>\r\n<li>There are roughly 3,725ha of priority woodland habitats in the Peak District which is only 2.6% of the area of the National Park.</li>\r\n<li>These priority woodlands are highly fragmented and scattered across the National Park, and are unevenly distributed between and within the different Landscape Character Areas (LCAs). The most wooded areas LCA is the Derwent Valley, while in other areas woodland tend to be restricted to steep sided valleys and cloughs.</li>\r\n<li>Trees outside of woodlands make up the largest cumulative area of woodland habitats assessed in this report but by nature this is completely fragmented across the landscape in lone trees or small groups.</li>\r\n<li>There are very limited data to assess the current condition of woodland habitat types; the limited condition records from Site of Special Scientific Interest monitoring suggest that where priority woodlands are within these protected sites, they are unlikely to be declining, however the scarcity of data makes the certainty of this very low.</li>\r\n<li>Woodlands are being impacted by a range of factors that make it likely they are in deteriorating condition. A key cause of this is ash dieback disease, which has infected up to 99% of ash trees and as a result may cause the near complete loss of upland mixed ash woodlands.\u00a0</li>\r\n</ul>",
                 "content_type": "rte",
                 "properties": [],
                 "order": 0
+            },
+            "47": {
+                "id": 47,
+                "page_id": 9,
+                "content": "https://report-publishing/media/sotp26/Woodland%20drivers%20of%20change.jpg",
+                "content_type": "file",
+                "properties": {
+                    "alignright": "1",
+                    "cssclassnames": ""
+                },
+                "order": 1
+            },
+            "45": {
+                "id": 45,
+                "page_id": 9,
+                "content": "<h2>Grassland</h2>\r\n<table border=\"1\" style=\"border-collapse: collapse; width: 100.065%;\">\r\n<tbody>\r\n<tr>\r\n<td style=\"width: 17.6702%;\"><strong>State</strong></td>\r\n<td width=\"161\" style=\"width: 20.7788%; background-color: #fbeeb8;\">\r\n<p>Moderate concern</p>\r\n</td>\r\n<td width=\"71\" style=\"width: 11.2893%;\">\r\n<p><strong>Trend</strong></p>\r\n</td>\r\n<td width=\"104\" style=\"width: 18.3246%; background-color: #fbeeb8;\">\r\n<p>No change</p>\r\n</td>\r\n<td width=\"100\" style=\"width: 15.8704%;\">\r\n<p><strong>Certainty</strong></p>\r\n</td>\r\n<td width=\"100\" style=\"width: 15.8704%; background-color: #f8cac6;\">\r\n<p>Low</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p><strong>Key findings</strong></p>\r\n<ul>\r\n<li>There are around 14,156ha of priority grassland habitats in the Peak District with a further 10,161ha of good quality semi-improved grassland; this makes up around 17% of the area of the National Park.</li>\r\n<li>Grassland habitats are widely distributed across the National Park with different grassland types occurring locally within Landscape Character Areas as a result of underlying geology; calcareous grasslands in the limestone areas and acid grasslands in the gritstone areas. Purple moor grass and rush pasture occurs almost exclusively in the Southwest Peak, while good quality semi-improved grassland cab be found across the National Park.</li>\r\n<li>Condition records are only available for grassland habitats within Sites of Special Scientific Interest which is only a sample of sites, and these records are often 10-20 years old which gives low certainty to an overall condition assessment. However, where records are available condition tends to be more likely to be favourable or improving than declining.</li>\r\n<li>Land management decisions, particularly grazing, are a key factor putting pressure on grasslands, which rely on a balance of grazing to maintain their current state. Climate change will also increasingly cause impact as pressures such as changes in rainfall and likelihood of wildfire increase.</li>\r\n</ul>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 2
+            },
+            "46": {
+                "id": 46,
+                "page_id": 9,
+                "content": "https://report-publishing/media/sotp26/MTc5MjE2MjGrassland%20drivers%20of%20change.jpg",
+                "content_type": "file",
+                "properties": {
+                    "alignright": "1",
+                    "cssclassnames": ""
+                },
+                "order": 3
             }
         },
         "options": null
@@ -220,57 +250,5 @@
             }
         },
         "options": null
-    },
-    "40": {
-        "id": 40,
-        "title": "Test Page",
-        "description": null,
-        "slug": "test-page",
-        "url": "/pages/test-page",
-        "contents": [],
-        "options": {
-            "show_header": true,
-            "custom_color": "#123456",
-            "tags": [
-                "a",
-                "b"
-            ]
-        }
-    },
-    "55": {
-        "id": 55,
-        "title": "Page With Options",
-        "description": "Test Desc",
-        "slug": "page-with-options",
-        "url": "/pages/page-with-options",
-        "contents": [],
-        "options": {
-            "custom_header": true,
-            "theme": "blue"
-        }
-    },
-    "58": {
-        "id": 58,
-        "title": "Page With Options",
-        "description": "Test Desc",
-        "slug": "page-with-options",
-        "url": "/pages/page-with-options",
-        "contents": [],
-        "options": {
-            "custom_header": true,
-            "theme": "blue"
-        }
-    },
-    "65": {
-        "id": 65,
-        "title": "Page With Options",
-        "description": "Test Desc",
-        "slug": "page-with-options",
-        "url": "/pages/page-with-options",
-        "contents": [],
-        "options": {
-            "custom_header": true,
-            "theme": "blue"
-        }
     }
 }

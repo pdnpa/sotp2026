@@ -98,28 +98,28 @@
                     "collapsed": true
                 },
                 {
-                    "text": "Moorland, heath and rocky habitats",
-                    "link": "/landscape/moorland-heath-and-rocky-habitats/moorland-heath-and-rocky-habitats",
+                    "text": "Moorland & heath",
+                    "link": "/landscape/moorland-heath/moorland-heath",
                     "items": [
                         {
                             "text": "Fragmented heath",
-                            "link": "/landscape/moorland-heath-and-rocky-habitats/fragmented-heath"
+                            "link": "/landscape/moorland-heath/fragmented-heath"
                         },
                         {
                             "text": "Grass moorland",
-                            "link": "/landscape/moorland-heath-and-rocky-habitats/grass-moorland"
+                            "link": "/landscape/moorland-heath/grass-moorland"
                         },
                         {
                             "text": "Lowland heathland",
-                            "link": "/landscape/moorland-heath-and-rocky-habitats/lowland-heathland"
+                            "link": "/landscape/moorland-heath/lowland-heathland"
                         },
                         {
                             "text": "Upland heathland",
-                            "link": "/landscape/moorland-heath-and-rocky-habitats/upland-heathland"
+                            "link": "/landscape/moorland-heath/upland-heathland"
                         },
                         {
-                            "text": "Limestone pavement",
-                            "link": "/landscape/moorland-heath-and-rocky-habitats/limestone-pavement"
+                            "text": "DELETE PAGE",
+                            "link": "/landscape/moorland-heath/delete-page"
                         }
                     ],
                     "collapsed": true
@@ -288,8 +288,8 @@
                     "link": "/people/economy/economy",
                     "items": [
                         {
-                            "text": "Key economic sectors",
-                            "link": "/people/economy/key-economic-sectors"
+                            "text": "DELETE PAGE",
+                            "link": "/people/economy/delete-page"
                         },
                         {
                             "text": "Economic output",
@@ -304,96 +304,14 @@
                             "link": "/people/economy/businesses"
                         },
                         {
-                            "text": "Development and infrastructure",
-                            "link": "/people/economy/development-and-infrastructure"
+                            "text": "Infrastructure",
+                            "link": "/people/economy/infrastructure"
                         }
                     ],
                     "collapsed": true
                 }
             ],
             "collapsed": true
-        },
-        {
-            "text": "Test Family",
-            "link": "/test-family/test-family",
-            "items": [
-                {
-                    "text": "Test Group",
-                    "link": "/test-family/test-group/test-group"
-                }
-            ],
-            "collapsed": true
-        },
-        {
-            "text": "Test Family",
-            "link": "/test-family/test-family"
-        },
-        {
-            "text": "Test Family",
-            "link": "/test-family/test-family",
-            "items": [
-                {
-                    "text": "Test Group",
-                    "link": "/test-family/test-group/test-group"
-                }
-            ],
-            "collapsed": true
-        },
-        {
-            "text": "Test Family",
-            "link": "/test-family/test-family"
-        },
-        {
-            "text": "Test Family",
-            "link": "/test-family/test-family",
-            "items": [
-                {
-                    "text": "Test Group",
-                    "link": "/test-family/test-group/test-group",
-                    "items": [
-                        {
-                            "text": "Test Feature",
-                            "link": "/test-family/test-group/test-feature"
-                        }
-                    ],
-                    "collapsed": true
-                }
-            ],
-            "collapsed": true
-        },
-        {
-            "text": "Test Fam for Group",
-            "link": "/test-fam-for-group/test-fam-for-group"
-        },
-        {
-            "text": "Fam for Feat",
-            "link": "/fam-for-feat/fam-for-feat",
-            "items": [
-                {
-                    "text": "Grp for Feat",
-                    "link": "/fam-for-feat/grp-for-feat/grp-for-feat"
-                }
-            ],
-            "collapsed": true
-        },
-        {
-            "text": "Test Family",
-            "link": "/test-family/test-family",
-            "items": [
-                {
-                    "text": "Test Group",
-                    "link": "/test-family/test-group/test-group"
-                }
-            ],
-            "collapsed": true
-        },
-        {
-            "text": "Test Family",
-            "link": "/test-family/test-family"
-        },
-        {
-            "text": "Family With Options",
-            "link": "/family-with-options/family-with-options"
         }
     ],
     "contentsFactors": [
@@ -424,38 +342,6 @@
         {
             "text": "Visitation and access",
             "link": "/factors/visitation-and-access"
-        },
-        {
-            "text": "Test Factor For Group",
-            "link": "/factors/test-factor-for-group"
-        },
-        {
-            "text": "Available Test Factor",
-            "link": "/factors/available-test-factor"
-        },
-        {
-            "text": "Test Factor For Group",
-            "link": "/factors/test-factor-for-group"
-        },
-        {
-            "text": "Available Test Factor",
-            "link": "/factors/available-test-factor"
-        },
-        {
-            "text": "Test Factor",
-            "link": "/factors/test-factor"
-        },
-        {
-            "text": "Test Factor For Group",
-            "link": "/factors/test-factor-for-group"
-        },
-        {
-            "text": "Available Test Factor",
-            "link": "/factors/available-test-factor"
-        },
-        {
-            "text": "Factor With Options",
-            "link": "/factors/factor-with-options"
         }
     ]
 }
