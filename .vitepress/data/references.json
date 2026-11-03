@@ -1240,5 +1240,473 @@
         "title": "A57 Snake Pass landslip",
         "link": "https://www.derbyshire.gov.uk/transport-roads/roads-traffic/landslips/snake-pass/a57-snake-pass.aspx",
         "date_accessed": "2026-09-04 00:00:00"
+    },
+    "147": {
+        "id": 147,
+        "author": "Global Tourism Solutions",
+        "reference_date": null,
+        "reference_date_year": null,
+        "title": "STEAM MODEL TOURISM ECONOMIC IMPACT",
+        "link": "https://www.globaltourismsolutions.co.uk/steam-model",
+        "date_accessed": "2026-10-22 00:00:00"
+    },
+    "148": {
+        "id": 148,
+        "author": "Peak District National Park Authority",
+        "reference_date": null,
+        "reference_date_year": 2022,
+        "title": "STEAM Report for 2011-2022",
+        "link": "Internal access only",
+        "date_accessed": "2026-10-01 00:00:00"
+    },
+    "149": {
+        "id": 149,
+        "author": "Natural England",
+        "reference_date": null,
+        "reference_date_year": 2019,
+        "title": "Monitor of Engagement with the Natural Environment (MENE): Headline Report 2018 to 2019",
+        "link": "https://www.gov.uk/government/statistics/monitor-of-engagement-with-the-natural-environment-headline-report-and-technical-reports-2018-to-2019",
+        "date_accessed": "2026-10-22 00:00:00"
+    },
+    "150": {
+        "id": 150,
+        "author": "Natural England",
+        "reference_date": null,
+        "reference_date_year": 2026,
+        "title": "The People and Nature Surveys for England: Data tables and publications from Adults' survey year 6 (April 2025 \u2013 March 2026)",
+        "link": "https://www.gov.uk/government/statistics/the-people-and-nature-surveys-for-england-data-tables-and-publications-from-adults-survey-year-6-april-2025-march-2026",
+        "date_accessed": "2026-10-22 00:00:00"
+    },
+    "151": {
+        "id": 151,
+        "author": "Peak District National Park Authority",
+        "reference_date": null,
+        "reference_date_year": 2024,
+        "title": "Visitor Survey 2024",
+        "link": "Internal access only",
+        "date_accessed": "2026-10-01 00:00:00"
+    },
+    "152": {
+        "id": 152,
+        "author": "Sue Smith",
+        "reference_date": null,
+        "reference_date_year": 2025,
+        "title": "Peak District Local Access Forum",
+        "link": "https://democracy.peakdistrict.gov.uk/documents/s62045/LAFbg251015-Item9.pdf",
+        "date_accessed": null
+    },
+    "153": {
+        "id": 153,
+        "author": "Sue Smith",
+        "reference_date": null,
+        "reference_date_year": 2023,
+        "title": "Peak District Local Access Forum",
+        "link": "https://democracy.peakdistrict.gov.uk/documents/s53402/LAFbg230614-Item6.pdf",
+        "date_accessed": "2026-10-22 00:00:00"
+    },
+    "154": {
+        "id": 154,
+        "author": "Tim Nicholson",
+        "reference_date": null,
+        "reference_date_year": 2025,
+        "title": "Trail User Data: Presentation to the LAF Sub-group",
+        "link": "https://democracy.peakdistrict.gov.uk/documents/s62897/LAFbg260204-Item5-2.pdf",
+        "date_accessed": "2026-10-22 00:00:00"
+    },
+    "155": {
+        "id": 155,
+        "author": "Peak District National Park Authority",
+        "reference_date": null,
+        "reference_date_year": 2023,
+        "title": "New funding unlocks National Park access improvements",
+        "link": "https://www.peakdistrict.gov.uk/learning-about/news/archive/2023-press-releases/2023-news/new-funding-unlocks-national-park-access-improvements",
+        "date_accessed": "2026-10-22 00:00:00"
+    },
+    "156": {
+        "id": 156,
+        "author": "Sue Smith (b)",
+        "reference_date": null,
+        "reference_date_year": 2025,
+        "title": "Peak District Local Access Forum",
+        "link": "https://democracy.peakdistrict.gov.uk/documents/s59744/LAFbg250219-Item8.pdf",
+        "date_accessed": "2026-10-22 00:00:00"
+    },
+    "157": {
+        "id": 157,
+        "author": "Sue Smith",
+        "reference_date": null,
+        "reference_date_year": 2026,
+        "title": "Peak District Local Access Forum",
+        "link": "https://democracy.peakdistrict.gov.uk/documents/s62900/LAFbg260204-Item8.pdf",
+        "date_accessed": "2026-10-22 00:00:00"
+    },
+    "158": {
+        "id": 158,
+        "author": "Natural England",
+        "reference_date": null,
+        "reference_date_year": 2026,
+        "title": "Priority Habitat Inventory (England)",
+        "link": "https://naturalengland-defra.opendata.arcgis.com/datasets/Defra::priority-habitats-inventory-england/about",
+        "date_accessed": "2026-09-24 00:00:00"
+    },
+    "159": {
+        "id": 159,
+        "author": "Peak District National Park Authority",
+        "reference_date": null,
+        "reference_date_year": 2026,
+        "title": "Internal PDNPA ecology habitat mapping",
+        "link": "Internal access only",
+        "date_accessed": "2026-09-24 00:00:00"
+    },
+    "160": {
+        "id": 160,
+        "author": "Natural England",
+        "reference_date": null,
+        "reference_date_year": 2026,
+        "title": "Protected Landscapes Targets and Outcomes Framework Target Indicator 2: Percentage of SSSI features within Protected Landscapes in favourable condition",
+        "link": "Internal access only",
+        "date_accessed": "2026-09-24 00:00:00"
+    },
+    "161": {
+        "id": 161,
+        "author": "Moors for the Future Partnership",
+        "reference_date": null,
+        "reference_date_year": 2015,
+        "title": "Kinder Catchment Monitoring Project: Final Report",
+        "link": "https://www.moorsforthefuture.org.uk/__data/assets/pdf_file/0025/86146/KCP-final-report.pdf",
+        "date_accessed": "2026-09-21 00:00:00"
+    },
+    "162": {
+        "id": 162,
+        "author": "Moors for the Future Partnership",
+        "reference_date": null,
+        "reference_date_year": 2022,
+        "title": "Monitoring the biodiversity and ecosystem service impacts of restoration of degraded blanket bog sites",
+        "link": "https://www.moorsforthefuture.org.uk/__data/assets/pdf_file/0022/96142/Biodiversity-and-ecosystem-services-of-Blanket-Bogs-_Diversity_MLIFE2020_2022_web-res.pdf",
+        "date_accessed": "2026-09-21 00:00:00"
+    },
+    "163": {
+        "id": 163,
+        "author": "Ordnance Survey",
+        "reference_date": null,
+        "reference_date_year": 2026,
+        "title": "OS Open Rivers",
+        "link": "https://www.ordnancesurvey.co.uk/products/os-open-rivers",
+        "date_accessed": "2026-10-22 00:00:00"
+    },
+    "164": {
+        "id": 164,
+        "author": "Environment Agency",
+        "reference_date": null,
+        "reference_date_year": 2025,
+        "title": "WFD River, Canal, and SWT Water Bodies Cycle 4 Classification 2025 (Simplified)",
+        "link": "https://environment.data.gov.uk/dataset/69c06a9b-149c-483e-bcd1-fe948d10d0fd",
+        "date_accessed": "2026-09-23 00:00:00"
+    },
+    "165": {
+        "id": 165,
+        "author": "Penny Anderson",
+        "reference_date": null,
+        "reference_date_year": 2016,
+        "title": "State of Nature in the Peak District",
+        "link": "https://www.peakdistrict.gov.uk/__data/assets/pdf_file/0022/86530/State-of-Nature-in-the-Peak-District-Report-by-Penny-Anderson-for-Nature-Peak-District.pdf",
+        "date_accessed": "2026-09-23 00:00:00"
+    },
+    "166": {
+        "id": 166,
+        "author": "Natural England",
+        "reference_date": null,
+        "reference_date_year": 2014,
+        "title": "Derbyshire Dales National Nature Reserve",
+        "link": "https://publications.naturalengland.org.uk/publication/31052?category=23001",
+        "date_accessed": "2026-09-24 00:00:00"
+    },
+    "167": {
+        "id": 167,
+        "author": "Life in the Ravines",
+        "reference_date": null,
+        "reference_date_year": 2020,
+        "title": "Life in the Ravines",
+        "link": "https://lifeintheravines.co.uk",
+        "date_accessed": "2026-09-23 00:00:00"
+    },
+    "168": {
+        "id": 168,
+        "author": "Natural England",
+        "reference_date": null,
+        "reference_date_year": 1998,
+        "title": "Chatsworth Old Park SSSI citation",
+        "link": "https://designatedsites.naturalengland.org.uk/PDFsForWeb/Citation/2000325.pdf",
+        "date_accessed": "2026-09-24 00:00:00"
+    },
+    "169": {
+        "id": 169,
+        "author": "Forestry Commission",
+        "reference_date": null,
+        "reference_date_year": 2025,
+        "title": "Nationals Trees Outside Woodlands Map",
+        "link": "https://environment.data.gov.uk/dataset/9c41b3c6-2453-44f6-9900-e7821f1a1072",
+        "date_accessed": "2026-09-24 00:00:00"
+    },
+    "170": {
+        "id": 170,
+        "author": "John Barnatt, Kieron Huston, Dave Mallon, Rebekah Newman, Rebecca Penny and Richard Shaw",
+        "reference_date": null,
+        "reference_date_year": 2013,
+        "title": "The Lead Legacy: An Updated Inventory of Important Metal and Gangue Mining Sites in the Peak District",
+        "link": null,
+        "date_accessed": "2026-09-29 00:00:00"
+    },
+    "171": {
+        "id": 171,
+        "author": "Natural England",
+        "reference_date": null,
+        "reference_date_year": 1972,
+        "title": "Castleton SSSI citation",
+        "link": "https://designatedsites.naturalengland.org.uk/PDFsForWeb/Citation/1002643.pdf",
+        "date_accessed": "2026-09-29 00:00:00"
+    },
+    "172": {
+        "id": 172,
+        "author": "Natural England",
+        "reference_date": null,
+        "reference_date_year": 1972,
+        "title": "Cressbrook Dale SSSI citation",
+        "link": "https://designatedsites.naturalengland.org.uk/PDFsForWeb/Citation/1002731.pdf",
+        "date_accessed": "2026-09-29 00:00:00"
+    },
+    "173": {
+        "id": 173,
+        "author": "Roly Smith",
+        "reference_date": null,
+        "reference_date_year": null,
+        "title": "Goyt Valley",
+        "link": "https://www.goyt-valley.org.uk/goyt-valley-by-roland-smith-1/",
+        "date_accessed": "2026-09-29 00:00:00"
+    },
+    "174": {
+        "id": 174,
+        "author": "Natural England",
+        "reference_date": null,
+        "reference_date_year": 1972,
+        "title": "Goyt Valley SSSI citation",
+        "link": "https://designatedsites.naturalengland.org.uk/PDFsForWeb/Citation/1002841.pdf",
+        "date_accessed": "2026-09-29 00:00:00"
+    },
+    "175": {
+        "id": 175,
+        "author": "Peak District National Park Authority",
+        "reference_date": null,
+        "reference_date_year": null,
+        "title": "Meadows",
+        "link": "https://www.peakdistrict.gov.uk/visiting/places-to-visit/meadows",
+        "date_accessed": "2026-09-30 00:00:00"
+    },
+    "176": {
+        "id": 176,
+        "author": "Natural England",
+        "reference_date": null,
+        "reference_date_year": 1972,
+        "title": "Leek Moors SSSI",
+        "link": "https://designatedsites.naturalengland.org.uk/PDFsForWeb/Citation/1003770.pdf",
+        "date_accessed": "2026-09-30 00:00:00"
+    },
+    "177": {
+        "id": 177,
+        "author": "Joint Nature Conservation Committee",
+        "reference_date": null,
+        "reference_date_year": 2024,
+        "title": "Guidelines for the Selection of Biological SSSIs",
+        "link": "https://data.jncc.gov.uk/data/c1773745-b067-4f74-bbc4-83e942807247/sssi-guidelines-9-upland-habitats-2024.pdf",
+        "date_accessed": "2026-09-30 00:00:00"
+    },
+    "178": {
+        "id": 178,
+        "author": "Natural England",
+        "reference_date": null,
+        "reference_date_year": 1972,
+        "title": "Dove Valley and Bigging Dale SSSI citation",
+        "link": "https://designatedsites.naturalengland.org.uk/PDFsForWeb/Citation/1002787.pdf",
+        "date_accessed": "2026-09-30 00:00:00"
+    },
+    "179": {
+        "id": 179,
+        "author": "Staffordshire Wildlife Trust",
+        "reference_date": null,
+        "reference_date_year": null,
+        "title": "The Roaches",
+        "link": "https://www.staffs-wildlife.org.uk/nature-reserves/roaches",
+        "date_accessed": "2026-10-01 00:00:00"
+    },
+    "180": {
+        "id": 180,
+        "author": "RSPB",
+        "reference_date": null,
+        "reference_date_year": null,
+        "title": "Eastern Moors",
+        "link": "https://www.rspb.org.uk/days-out/reserves/eastern-moors",
+        "date_accessed": "2026-10-01 00:00:00"
+    },
+    "181": {
+        "id": 181,
+        "author": "Office for National Statistics",
+        "reference_date": null,
+        "reference_date_year": 2021,
+        "title": "TS001 \u2013 Number of usual residents in households and communal establishments",
+        "link": "https://www.nomisweb.co.uk/query/select/getdatasetbytheme.asp?theme=93",
+        "date_accessed": "2026-10-27 00:00:00"
+    },
+    "182": {
+        "id": 182,
+        "author": "Office for National Statistics",
+        "reference_date": null,
+        "reference_date_year": 2021,
+        "title": "TS007 \u2013 Age by single year",
+        "link": "https://www.nomisweb.co.uk/query/construct/summary.asp?mode=construct&version=0&dataset=2027",
+        "date_accessed": "2026-10-27 00:00:00"
+    },
+    "183": {
+        "id": 183,
+        "author": "Office for National Statistics",
+        "reference_date": null,
+        "reference_date_year": 2021,
+        "title": "TS021 \u2013 Ethnic group",
+        "link": "https://www.nomisweb.co.uk/query/construct/summary.asp?mode=construct&version=0&dataset=2041",
+        "date_accessed": "2026-10-27 00:00:00"
+    },
+    "184": {
+        "id": 184,
+        "author": "Office for National Statistics",
+        "reference_date": null,
+        "reference_date_year": 2021,
+        "title": "TS037 \u2013 General health",
+        "link": "https://www.nomisweb.co.uk/query/construct/summary.asp?mode=construct&version=0&dataset=2055",
+        "date_accessed": "2026-10-27 00:00:00"
+    },
+    "185": {
+        "id": 185,
+        "author": "Office for National Statistics",
+        "reference_date": null,
+        "reference_date_year": 2021,
+        "title": "TS011 \u2013 Households by deprivation dimensions",
+        "link": "https://www.nomisweb.co.uk/query/construct/summary.asp?mode=construct&version=0&dataset=2031",
+        "date_accessed": "2026-10-27 00:00:00"
+    },
+    "186": {
+        "id": 186,
+        "author": "Office for National Statistics",
+        "reference_date": null,
+        "reference_date_year": 2021,
+        "title": "TS044 \u2013 Accommodation Type",
+        "link": "https://www.nomisweb.co.uk/query/construct/summary.asp?mode=construct&version=0&dataset=2062",
+        "date_accessed": "2026-10-27 00:00:00"
+    },
+    "187": {
+        "id": 187,
+        "author": "Office for National Statistics",
+        "reference_date": null,
+        "reference_date_year": 2021,
+        "title": "TS054 \u2013 Tenure",
+        "link": "https://www.nomisweb.co.uk/query/construct/summary.asp?reset=yes&mode=construct&dataset=2072&version=0&anal=1",
+        "date_accessed": "2026-10-27 00:00:00"
+    },
+    "188": {
+        "id": 188,
+        "author": "Office for National Statistics",
+        "reference_date": null,
+        "reference_date_year": 2021,
+        "title": "TS003 \u2013 Household Composition",
+        "link": "https://www.nomisweb.co.uk/query/construct/summary.asp?reset=yes&mode=construct&dataset=2023&version=0&anal=1",
+        "date_accessed": "2026-10-27 00:00:00"
+    },
+    "189": {
+        "id": 189,
+        "author": "Office for National Statistics",
+        "reference_date": null,
+        "reference_date_year": 2021,
+        "title": "TS050 \u2013 Number of Bedrooms",
+        "link": "https://www.nomisweb.co.uk/query/construct/summary.asp?reset=yes&mode=construct&dataset=2023&version=0&anal=1",
+        "date_accessed": "2026-10-27 00:00:00"
+    },
+    "190": {
+        "id": 190,
+        "author": "Cumulus",
+        "reference_date": null,
+        "reference_date_year": 2023,
+        "title": "Gross Value Added of Englands National Parks",
+        "link": "Internal access only",
+        "date_accessed": null
+    },
+    "191": {
+        "id": 191,
+        "author": "Travel Derbyshire",
+        "reference_date": null,
+        "reference_date_year": 2025,
+        "title": "Peak District Bus Timetable ROUTE MAP",
+        "link": "https://travelderbyshire.co.uk/app/uploads/2026/01/Peak-District-Extract.pdf",
+        "date_accessed": "2026-10-29 00:00:00"
+    },
+    "192": {
+        "id": 192,
+        "author": "Office for National Statistics",
+        "reference_date": null,
+        "reference_date_year": 2021,
+        "title": "TS061 \u2013 Method used to travel to work",
+        "link": "https://www.nomisweb.co.uk/datasets/c2021ts061",
+        "date_accessed": "2026-10-29 00:00:00"
+    },
+    "193": {
+        "id": 193,
+        "author": "Peak District National Park Authority",
+        "reference_date": null,
+        "reference_date_year": 2026,
+        "title": "Average Annual Daily Flows across Peak District Roads",
+        "link": "Internal access only",
+        "date_accessed": null
+    },
+    "195": {
+        "id": 195,
+        "author": "Office for National Statistics",
+        "reference_date": null,
+        "reference_date_year": 2025,
+        "title": "Activity, Business and Location data for National Parks of England.",
+        "link": "Supplied on request by the Inter-Departmental Business Register Data Analysis Service",
+        "date_accessed": null
+    },
+    "196": {
+        "id": 196,
+        "author": "Office for National Statistics",
+        "reference_date": null,
+        "reference_date_year": 2021,
+        "title": "TS066 \u2013 Economic Activity Status",
+        "link": "https://www.nomisweb.co.uk/query/construct/summary.asp?mode=construct&version=0&dataset=2083",
+        "date_accessed": null
+    },
+    "197": {
+        "id": 197,
+        "author": "Office for National Statistics",
+        "reference_date": null,
+        "reference_date_year": 2021,
+        "title": "TS063 \u2013 Occupation",
+        "link": "https://www.nomisweb.co.uk/query/construct/summary.asp?mode=construct&version=0&dataset=2080",
+        "date_accessed": null
+    },
+    "198": {
+        "id": 198,
+        "author": "Office for National Statistics",
+        "reference_date": null,
+        "reference_date_year": 2021,
+        "title": "TS062 \u2013 NS-SEC",
+        "link": "https://www.nomisweb.co.uk/query/construct/summary.asp?mode=construct&version=0&dataset=2079",
+        "date_accessed": null
+    },
+    "199": {
+        "id": 199,
+        "author": "Office for National Statistics",
+        "reference_date": null,
+        "reference_date_year": 2025,
+        "title": "Annual survey of hours and earnings \u2013 resident and workplace analysis",
+        "link": "https://www.nomisweb.co.uk/query/select/getdatasetbytheme.asp?opt=3&theme=&subgrp=",
+        "date_accessed": null
     }
 }

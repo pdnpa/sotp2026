@@ -127,8 +127,8 @@ export default withChartjs(defineConfig({
         ],
         sidebar:[
             {
-                "text": "Executive summary",
-                "link": "/executive-summary"
+                "text": "Key findings",
+                "link": "/key-findings"
             },
             {
               "text": "Introduction",

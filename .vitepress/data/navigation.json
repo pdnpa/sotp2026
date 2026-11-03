@@ -116,10 +116,6 @@
                         {
                             "text": "Upland heathland",
                             "link": "/landscape/moorland-heath/upland-heathland"
-                        },
-                        {
-                            "text": "DELETE PAGE",
-                            "link": "/landscape/moorland-heath/delete-page"
                         }
                     ],
                     "collapsed": true
@@ -250,16 +246,16 @@
                     "link": "/people/local-communities/local-communities",
                     "items": [
                         {
-                            "text": "Population",
-                            "link": "/people/local-communities/population"
+                            "text": "Residents",
+                            "link": "/people/local-communities/residents"
                         },
                         {
                             "text": "Housing",
                             "link": "/people/local-communities/housing"
                         },
                         {
-                            "text": "Transport",
-                            "link": "/people/local-communities/transport"
+                            "text": "Travel",
+                            "link": "/people/local-communities/travel"
                         }
                     ],
                     "collapsed": true
@@ -269,8 +265,8 @@
                     "link": "/people/visitors/visitors",
                     "items": [
                         {
-                            "text": "Visitor volume and value",
-                            "link": "/people/visitors/visitor-volume-and-value"
+                            "text": "Visitor numbers and economic impact",
+                            "link": "/people/visitors/visitor-numbers-and-economic-impact"
                         },
                         {
                             "text": "Visitor demographics and engagement",
@@ -287,10 +283,6 @@
                     "text": "Economy",
                     "link": "/people/economy/economy",
                     "items": [
-                        {
-                            "text": "DELETE PAGE",
-                            "link": "/people/economy/delete-page"
-                        },
                         {
                             "text": "Economic output",
                             "link": "/people/economy/economic-output"

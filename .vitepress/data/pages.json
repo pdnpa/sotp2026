@@ -2,36 +2,63 @@
     "9": {
         "id": 9,
         "title": "Key findings",
-        "description": "Check back for updates",
+        "description": null,
         "slug": "key-findings",
         "url": "/pages/key-findings",
         "contents": {
-            "72": {
-                "id": 72,
+            "81": {
+                "id": 81,
                 "page_id": 9,
-                "content": "<h2>Woodland</h2>\r\n<table border=\"1\" style=\"border-collapse: collapse; width: 100.065%;\">\r\n<tbody>\r\n<tr>\r\n<td style=\"width: 17.6702%;\"><strong>State</strong></td>\r\n<td width=\"161\" style=\"width: 20.7788%; background-color: #f8cac6;\">\r\n<p>Significant concern</p>\r\n</td>\r\n<td width=\"71\" style=\"width: 11.2893%;\">\r\n<p><strong>Trend</strong></p>\r\n</td>\r\n<td width=\"104\" style=\"width: 18.3246%; background-color: #f8cac6;\">\r\n<p>Deteriorating</p>\r\n</td>\r\n<td width=\"100\" style=\"width: 15.8704%;\">\r\n<p><strong>Certainty</strong></p>\r\n</td>\r\n<td width=\"100\" style=\"width: 15.8704%; background-color: #fbeeb8;\">\r\n<p>Moderate</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+                "content": "<h2>Introduction</h2>\r\n<p>This report summarises the key findings from the 2026 State of the Park Report update. Each of the twelve key features of the Peak District National Park are outlined below, assessing their distribution, condition, and key hazards they are at risk from. The current \u2018state\u2019 (condition) and the trend of this condition are given a rating, with an additional rating for the certainty of this assessment \u2013 the scales of these assessments are outlined below.</p>\r\n<table border=\"1\" style=\"border-collapse: collapse; width: 100%;\">\r\n<tbody>\r\n<tr>\r\n<td width=\"200\" style=\"width: 33.3333%;\">\r\n<p><strong>State</strong></p>\r\n</td>\r\n<td width=\"200\" style=\"width: 33.3333%;\">\r\n<p><strong>Trend</strong></p>\r\n</td>\r\n<td width=\"200\" style=\"width: 33.3333%;\">\r\n<p><strong>Certainty</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #bfedd2;\">\r\n<p>Good condition</p>\r\n</td>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #bfedd2;\">\r\n<p>Improving</p>\r\n</td>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #bfedd2;\">\r\n<p>High</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #fbeeb8;\">\r\n<p>Moderate concern</p>\r\n</td>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #fbeeb8;\">\r\n<p>No change</p>\r\n</td>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #fbeeb8;\">\r\n<p>Moderate</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #f8cac6;\">\r\n<p>Significant concern</p>\r\n</td>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #f8cac6;\">\r\n<p>Declining</p>\r\n</td>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #f8cac6;\">\r\n<p>Low</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>The certainty ratings for many features are low due to the scarcity of condition data available across features. For landscape and cultural heritage features, designated features for which there are more frequent condition assessments are used as a proxy. However, these features only represent a small proportion of the overall feature present in the National Park, and even for designated features where condition assessment should take place regularly, this information can often be upwards to 15 years old. Therefore, while this report offers a snapshot into the condition of the key features in the Peak District, ongoing assessment and monitoring of features will be needed to evaluate the success of actions which manage these features.</p>",
                 "content_type": "rte",
                 "properties": [],
                 "order": 0
             },
-            "47": {
-                "id": 47,
+            "82": {
+                "id": 82,
                 "page_id": 9,
-                "content": "https://report-publishing/media/sotp26/Woodland%20drivers%20of%20change.jpg",
+                "content": "https://report-publishing/media/sotp26/Explainer.jpg",
                 "content_type": "file",
                 "properties": {
                     "alignright": "1",
-                    "cssclassnames": ""
+                    "cssclassnames": "image-right-wider"
                 },
                 "order": 1
+            },
+            "83": {
+                "id": 83,
+                "page_id": 9,
+                "content": "<h3>Drivers of change</h3>\r\n<p>Each feature-assessment is accompanied by a \u2018drivers of change\u2019 diagram which summarises the key factors which have been assessed as likely to drive change to the feature, detailing some of the key hazards which is cause impacts to the feature. The size of the arrows in these diagrams indicates the level of risk from each driver.</p>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 2
+            },
+            "72": {
+                "id": 72,
+                "page_id": 9,
+                "content": "<h2>Woodland</h2>\r\n<table border=\"1\" style=\"border-collapse: collapse; width: 100.065%;\">\r\n<tbody>\r\n<tr>\r\n<td style=\"width: 17.7509%;\"><strong>State</strong></td>\r\n<td width=\"161\" style=\"width: 17.9862%; background-color: #f8cac6;\">\r\n<p>Significant concern</p>\r\n</td>\r\n<td width=\"71\" style=\"width: 14.1729%;\">\r\n<p><strong>Trend</strong></p>\r\n</td>\r\n<td width=\"104\" style=\"width: 18.3272%; background-color: #f8cac6;\">\r\n<p>Deteriorating</p>\r\n</td>\r\n<td width=\"100\" style=\"width: 15.9066%;\">\r\n<p><strong>Certainty</strong></p>\r\n</td>\r\n<td width=\"100\" style=\"width: 15.9066%; background-color: #fbeeb8;\">\r\n<p>Moderate</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 3
+            },
+            "80": {
+                "id": 80,
+                "page_id": 9,
+                "content": "https://report-publishing/media/sotp26/MTc5MjUwNjWoodland%20drivers%20of%20change.jpg",
+                "content_type": "file",
+                "properties": {
+                    "alignright": "1",
+                    "cssclassnames": "image-right-wider"
+                },
+                "order": 4
             },
             "9": {
                 "id": 9,
                 "page_id": 9,
-                "content": "<p><strong>Key findings</strong></p>\r\n<ul>\r\n<li>There are roughly 3,725ha of priority woodland habitats in the Peak District which is only 2.6% of the area of the National Park.</li>\r\n<li>These priority woodlands are highly fragmented and scattered across the National Park, and are unevenly distributed between and within the different Landscape Character Areas (LCAs). The most wooded areas LCA is the Derwent Valley, while in other areas woodland tend to be restricted to steep sided valleys and cloughs.</li>\r\n<li>Trees outside of woodlands make up the largest cumulative area of woodland habitats assessed in this report but by nature this is completely fragmented across the landscape in lone trees or small groups.</li>\r\n<li>There are very limited data to assess the current condition of woodland habitat types; the limited condition records from Site of Special Scientific Interest monitoring suggest that where priority woodlands are within these protected sites, they are unlikely to be declining, however the scarcity of data makes the certainty of this very low.</li>\r\n<li>Woodlands are being impacted by a range of factors that make it likely they are in deteriorating condition. A key cause of this is ash dieback disease, which has infected up to 99% of ash trees and as a result may cause the near complete loss of upland mixed ash woodlands.\u00a0</li>\r\n</ul>",
+                "content": "<h3><strong>Key findings</strong></h3>\r\n<p><strong>Total area: </strong>There are roughly 3,725ha of priority woodland habitats in the Peak District, which is 2.6% of the area of the National Park. Trees outside of woodlands make up the largest cumulative area of woodland habitats assessed in this report but by nature this is completely fragmented across the landscape in lone trees or small groups.</p>\r\n<p><strong>Distribution: </strong>These priority woodlands are highly fragmented and scattered across the National Park, and are unevenly distributed between and within the different Landscape Character Areas (LCAs). The most wooded areas LCA is the Derwent Valley, while in other areas woodland tend to be restricted to steep sided valleys and cloughs.</p>\r\n<p><strong>Condition</strong>: There are very limited data to assess the current condition of woodland habitat types; the limited condition records from Site of Special Scientific Interest monitoring suggest that where priority woodlands are within these protected sites, they are unlikely to be declining, however the scarcity of data makes the certainty of this very low.</p>\r\n<p><strong>Hazards: </strong></p>\r\n<ul>\r\n<li>Woodlands are being impacted by a range of factors that make it likely they are in deteriorating condition. Climate change is a key driver of change as it is changing the conditions which woodland habitats to survive, as well as increasing the likelihood of wildfire.</li>\r\n<li>A key hazard for woodland in the Peak District is ash dieback disease, which has infected up to 99% of ash trees and as a result may cause the near complete loss of upland mixed ash woodlands.\u00a0</li>\r\n</ul>",
                 "content_type": "rte",
                 "properties": [],
-                "order": 2
+                "order": 5
             },
             "73": {
                 "id": 73,
@@ -39,26 +66,80 @@
                 "content": "<h2>Grassland</h2>\r\n<table border=\"1\" style=\"border-collapse: collapse; width: 100.065%;\">\r\n<tbody>\r\n<tr>\r\n<td style=\"width: 17.6702%;\"><strong>State</strong></td>\r\n<td width=\"161\" style=\"width: 20.7788%; background-color: #fbeeb8;\">\r\n<p>Moderate concern</p>\r\n</td>\r\n<td width=\"71\" style=\"width: 11.2893%;\">\r\n<p><strong>Trend</strong></p>\r\n</td>\r\n<td width=\"104\" style=\"width: 18.3246%; background-color: #fbeeb8;\">\r\n<p>No change</p>\r\n</td>\r\n<td width=\"100\" style=\"width: 15.8704%;\">\r\n<p><strong>Certainty</strong></p>\r\n</td>\r\n<td width=\"100\" style=\"width: 15.8704%; background-color: #f8cac6;\">\r\n<p>Low</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
                 "content_type": "rte",
                 "properties": [],
-                "order": 3
+                "order": 6
             },
             "46": {
                 "id": 46,
                 "page_id": 9,
-                "content": "https://report-publishing/media/sotp26/MTc5MjE2MjGrassland%20drivers%20of%20change.jpg",
+                "content": "https://report-publishing/media/sotp26/MTc5MjUwNTGrassland%20drivers%20of%20change.jpg",
                 "content_type": "file",
                 "properties": {
                     "alignright": "1",
-                    "cssclassnames": ""
+                    "cssclassnames": "image-right-wider"
                 },
-                "order": 4
+                "order": 7
             },
             "45": {
                 "id": 45,
                 "page_id": 9,
-                "content": "<p><strong>Key findings</strong></p>\r\n<ul>\r\n<li>There are around 14,156ha of priority grassland habitats in the Peak District with a further 10,161ha of good quality semi-improved grassland; this makes up around 17% of the area of the National Park.</li>\r\n<li>Grassland habitats are widely distributed across the National Park with different grassland types occurring locally within Landscape Character Areas as a result of underlying geology; calcareous grasslands in the limestone areas and acid grasslands in the gritstone areas. Purple moor grass and rush pasture occurs almost exclusively in the Southwest Peak, while good quality semi-improved grassland cab be found across the National Park.</li>\r\n<li>Condition records are only available for grassland habitats within Sites of Special Scientific Interest which is only a sample of sites, and these records are often 10-20 years old which gives low certainty to an overall condition assessment. However, where records are available condition tends to be more likely to be favourable or improving than declining.</li>\r\n<li>Land management decisions, particularly grazing, are a key factor putting pressure on grasslands, which rely on a balance of grazing to maintain their current state. Climate change will also increasingly cause impact as pressures such as changes in rainfall and likelihood of wildfire increase.</li>\r\n</ul>",
+                "content": "<h3><strong>Key findings</strong></h3>\r\n<p><strong>Total area: </strong>There are around 14,156ha of priority grassland habitats in the Peak District with a further 10,161ha of good quality semi-improved grassland; this makes up around 17% of the area of the National Park.</p>\r\n<p><strong>Distribution: </strong>Grassland habitats are widely distributed across the National Park with different grassland types occurring locally within Landscape Character Areas as a result of underlying geology; calcareous grasslands in the limestone areas and acid grasslands in the gritstone areas. Purple moor grass and rush pasture occurs almost exclusively in the Southwest Peak, while good quality semi-improved grassland can be found across the National Park.\u00a0</p>\r\n<p><strong>Condition: </strong>Condition records are only available for grassland habitats within Sites of Special Scientific Interest which is only a sample of sites, and these records are often 10-20 years old which gives low certainty to an overall condition assessment. However, where records are available condition tends to be more likely to be favourable or improving than declining.</p>\r\n<p><strong>Hazards: </strong></p>\r\n<ul>\r\n<li>Land management decisions, particularly grazing, are a key factor putting pressure on grasslands, which rely on a balance of grazing to maintain their current state.</li>\r\n<li>Climate change will also increasingly cause impact as pressures such as changes in rainfall and likelihood of wildfire increase.</li>\r\n</ul>",
                 "content_type": "rte",
                 "properties": [],
-                "order": 5
+                "order": 8
+            },
+            "74": {
+                "id": 74,
+                "page_id": 9,
+                "content": "<h2>Freshwater &amp; wetland</h2>\r\n<table border=\"1\" style=\"border-collapse: collapse; width: 100%;\">\r\n<tbody>\r\n<tr>\r\n<td style=\"width: 15.0598%;\"><strong>State</strong></td>\r\n<td style=\"width: 15.0598%; background-color: #fbeeb8;\">Moderate concern</td>\r\n<td style=\"width: 15.0598%;\"><strong>Trend</strong></td>\r\n<td style=\"width: 15.0598%; background-color: #bfedd2;\">Improving</td>\r\n<td style=\"width: 15.0598%;\"><strong>Certainty</strong></td>\r\n<td style=\"width: 15.0598%; background-color: #f8cac6;\">Low</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 9
+            },
+            "75": {
+                "id": 75,
+                "page_id": 9,
+                "content": "https://report-publishing/media/sotp26/Freshwater%20drivers%20of%20change.jpg",
+                "content_type": "file",
+                "properties": {
+                    "alignright": "1",
+                    "cssclassnames": "image-right-wider"
+                },
+                "order": 10
+            },
+            "76": {
+                "id": 76,
+                "page_id": 9,
+                "content": "<h3><strong>Key findings</strong></h3>\r\n<p><strong>Total area: </strong>There is a total of<strong> </strong>31,038ha of wetland habitats in the Peak District, 21% of the total area - with 3,065 ponds and 867km of rivers and streams making up the freshwater habitats. Blanket bog makes up 29,780km of the National Park, the largest signal area of any priority habitat type.</p>\r\n<p><strong>Distribution: </strong>Freshwater and wetland habitats are unevenly distributed across the National Park; the Dark Peak Landscape Character Area (LCA) is predominantly wetland with many rivers and streams, while the Eastern Moors and Southwest Peak have significant wetland areas. The White Peak LCA contains very few rivers due to the porous underlying limestone, while it does have the highest density of ponds, mostly associated with agricultural landscapes.</p>\r\n<p><strong>Condition: </strong>Wetland habitats within Sites of Special Scientific Interest have some limited condition data available, which generally indicates that they are in either favourable or recovering condition. Freshwater habitats rely on other sources for condition information, which generally indicate they are in a moderate condition. However, the certainty for this assessment is low due to the limited availability of condition data.</p>\r\n<p><strong>Hazards:</strong></p>\r\n<ul>\r\n<li>Climate change will be a primary driver of change in wetland and freshwater habitats as a result of changing precipitation and temperature patterns, effecting water availability which is vital to these habitats. Land management will have compound impacts as this can also impact drainage.</li>\r\n<li>Pollution is also a more significant hazard in these habitats than others due to water transporting pollutants, which can become concentrated.\u00a0</li>\r\n</ul>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 11
+            },
+            "77": {
+                "id": 77,
+                "page_id": 9,
+                "content": "<h2>Moorland &amp; heath</h2>\r\n<table border=\"1\" style=\"border-collapse: collapse; width: 100%;\">\r\n<tbody>\r\n<tr>\r\n<td style=\"width: 15.0598%;\"><strong>Status</strong></td>\r\n<td style=\"width: 15.0598%; background-color: #fbeeb8;\">Moderate concern</td>\r\n<td style=\"width: 15.0598%;\"><strong>Trend</strong></td>\r\n<td style=\"width: 15.0598%; background-color: #fbeeb8;\">No change</td>\r\n<td style=\"width: 15.0598%;\"><strong>Certainty</strong></td>\r\n<td style=\"width: 15.0598%; background-color: #f8cac6;\">Low</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 12
+            },
+            "78": {
+                "id": 78,
+                "page_id": 9,
+                "content": "https://report-publishing/media/sotp26/Moorland%20drivers%20of%20change.jpg",
+                "content_type": "file",
+                "properties": {
+                    "alignright": "1",
+                    "cssclassnames": "image-right-wider"
+                },
+                "order": 13
+            },
+            "79": {
+                "id": 79,
+                "page_id": 9,
+                "content": "<h3><strong>Key findings</strong></h3>\r\n<p><strong>Total area: </strong>There are around 20,658ha of priority moorland and heath habitat in the Peak District, with a further 4,919ha of grass moorland and fragmented heath which is important as it could be managed back into priority condition. This totals 18% of the National Park\u2019s area.</p>\r\n<p><strong>Distribution: </strong>Moorland and heath is almost completely absent from the White Peak Landscape Character Area (LCA) but can be found extensively in the Dark Peak and Eastern Moors and in smaller fragments in the Southwest Peak and Derwent Valley. This shows these habitats predominate on the acidic soils primarily found in the areas with underlying gritstone geology.</p>\r\n<p><strong>Condition: </strong>No condition information is available for the non-priority moorland and heath habitats, so their condition is unknown. Upland and lowland heath, which are considered priority habitats, are considered to be in favourable or recovering condition where records are available, however confidence in these ratings is low.</p>\r\n<p><strong>Hazards:</strong></p>\r\n<ul>\r\n<li>A key hazard for moorland and heath habitats is uncontrolled fire, which can cause extensive damage and is becoming more likely as a result of climate change.</li>\r\n<li>Changes in land management practices, for example away from grouse moor management, may also impact this habitat including it\u2019s extent and species composition.</li>\r\n</ul>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 14
             }
         },
         "options": null
