@@ -52,7 +52,11 @@ export default {
         <h3 class="feature-assessment-title" :class="[isLandingPage ? 'landing-feature-assessment-title' : '' ]">{{page.title}}
           <span v-if="showIntros && page.intro" class="feature-assessment-intro" :class="[isLandingPage ? 'landing-feature-assessment-intro' : '' ]">{{page.intro}}</span>
         </h3>
-
+        <span :html="getFirstImage(page)"></span>
+        <div class="feature-assessment-image" :class="[isLandingPage ? 'landing-feature-assessment-image' : '' ]">
+          <img v-if="getFirstImage(page)"
+               :src="$withBase(getFirstImage(page).url)" :alt="getFirstImage(page).name">
+        </div>
 
       </a>
     </div>
