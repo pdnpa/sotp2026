@@ -16,11 +16,13 @@ const defaultGroup = {
   ,introductions: []
   ,features: []
   ,distributions: []
+  ,landscape_character_areas: []
   ,importances: []
   ,data_qualities: []
   ,impacts: []
   ,slug: ''
   ,url: ''
+  ,options: {}
 }
 
 export default {
@@ -40,9 +42,12 @@ export default {
     }
   },
   data() {
+    const group = data.families[this.family_id]?.['groups']?.[this.group_id] || { ...defaultGroup }
+    group.options = group.options || {}
+
     return {
       pageHeaderFullWidth: false,
-      group: data.families[this.family_id]?.['groups']?.[this.group_id] || { ...defaultGroup },
+      group,
       family: data.families[this.family_id] || {},
       usedReferenceIds: []
     }
