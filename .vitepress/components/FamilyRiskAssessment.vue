@@ -52,7 +52,7 @@ export default {
       <tr v-for="groupassessments in family.riskAssessments">
         <td><a :href="$withBase(getGroupUrlFromGroupAssessments(groupassessments))">{{getGroupTitleFromGroupAssessments(groupassessments)}}</a></td>
         <td v-for="factor in factors" :key="factor.id">
-          <RiskScaleBadge :risktype="getAssessmentByFactorId(groupassessments,factor.id)?.risk_level"></RiskScaleBadge>
+          <RiskScaleBadge :risktype="getAssessmentByFactorId(groupassessments,factor.id)?.risk_level" :tooltip="getAssessmentByFactorId(groupassessments,factor.id)?.risk_level"></RiskScaleBadge>
         </td>
       </tr>
     </tbody>

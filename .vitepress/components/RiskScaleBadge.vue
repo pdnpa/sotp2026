@@ -16,6 +16,10 @@ export default {
       default() {
         return false;
       }
+    },
+    tooltip: {
+      type: String,
+      default: ''
     }
   },
   data() {
@@ -25,7 +29,39 @@ export default {
   },
   mounted() {
     this.isOpen = this.open_on_load;
-    tippy('[data-tippy-content]',{placement: 'top-end'});
+    const el = this.$refs.badge;
+    if (this.tooltip) {
+      el.setAttribute('data-tippy-content', this.getMarkerTextFromCustomString(this.tooltip));
+    } else if (!this.marker) {
+      // el.textContent.trim()
+      el.setAttribute('data-tippy-content', '');
+    }
+    if(el.getAttribute('data-tippy-content')) {
+      tippy(el,{placement: 'top-end'});
+    }
+  },
+  methods: {
+    getMarkerTextFromCustomString(source) {
+      switch(source) {
+        case 'low':
+        case 1:
+          return 'Very low to low';
+        case 'medium' :
+        case 2:
+          return 'Medium';
+        case 'high' :
+        case 3:
+          return 'High';
+        case 'veryhigh':
+        case 4:
+          return 'Very High';
+        case '':
+        case 0:
+          return 'N/A';
+        default:
+          return source;
+      }
+    }
   },
   computed: {
     marker_class() {
@@ -74,7 +110,7 @@ export default {
 </script>
 
 <template>
-  <div class="risk-indicator" :data-tippy-content="marker_text" :class="[marker_class, {'is-marker': marker}]"><slot v-if="!marker"></slot></div>
+  <div class="risk-indicator" :data-tippy-content="tooltip || (marker ? marker_text : undefined)" :class="[marker_class, {'is-marker': marker}]" ref="badge"><slot v-if="!marker"></slot></div>
 </template>
 
 <style lang="scss">
