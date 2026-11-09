@@ -46,6 +46,7 @@ export default defineComponent({
     <p>This report is a comprehensive account of the condition of the Peak District National Park. It presents the latest data and evidence to account for the wide variety of features that make the National Park a special place, and assesses what factors are driving change in the landscape.</p>
 
     <ul class="landing-btns">
+      <li><a :href="withBase('/key-findings')" class="landing-btn">Key findings</a></li>
       <li><a :href="withBase('/introduction/introduction')" class="landing-btn">Introduction</a></li>
       <li><a :href="withBase('/introduction/methodology')" class="landing-btn">Methodology</a></li>
     </ul>
@@ -99,6 +100,7 @@ export default defineComponent({
     align-items: center;
     justify-content: flex-start;
     gap: 1rem;
+    flex-wrap: wrap;
 
     li {
       padding: 0;
