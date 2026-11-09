@@ -29,10 +29,10 @@ export default {
 <div>
   <div v-for="contentchunk in chunks" :key="contentchunk.id" :class="outerClass">
     <template v-if="contentchunk.content_type === 'rte'">
-      <DynamicComponent :content="contentchunk[contentFieldName]" />
+      <DynamicComponent :content="contentchunk[contentFieldName]" :classname="contentchunk.properties.cssclassnames ?? ''" />
     </template>
     <template v-else-if="contentchunk.content_type === 'md'">
-      <DynamicComponent :content="contentchunk[contentFieldName]" />
+      <DynamicComponent :content="contentchunk[contentFieldName]" :classname="contentchunk.properties.cssclassnames ?? ''" />
     </template>
     <template v-else-if="contentchunk.content_type === 'file'">
       <div class="content-image-container" :class="[{ 'content-image-container-right': contentchunk.properties.alignright === '1' ?? false },contentchunk.properties.cssclassnames ?? '']">

@@ -10,6 +10,10 @@ const props = defineProps({
   content: {
     type: String,
     required: true
+  },
+  classname: {
+    type: String,
+    required: false
   }
 })
 
@@ -23,7 +27,7 @@ const wrappedContent = computed(() => {
 const comp = computed(() => {
   if (isSSR) return null
   return markRaw(defineComponent({
-    template: `<div>${wrappedContent.value}</div>`
+    template: `<div class="${props.classname ?? ''}">${wrappedContent.value}</div>`
   }))
 })
 </script>

@@ -78,40 +78,53 @@ export default {
 </template>
 
 <style lang="scss">
-@use 'sass:color';
+:root {
+  --risk-low: #FCFDBF;
+  --risk-low-text: #030303;
+  --risk-low-border: #ced11f;
+  --risk-medium: #FC8961;
+  --risk-medium-text: #1c120d;
+  --risk-high: #B73779;
+  --risk-high-text: #ffffff;
+  --risk-veryhigh: #51127C;
+  --risk-veryhigh-text: #ffffff;
+  --risk-na: #e8e8e8;
+  --risk-na-text: #434343;
+}
 
-
-$low: #FCFDBF;
-$medium: #FC8961;
-$high: #B73779;
-$veryhigh: #51127C;
-$na: #e8e8e8;
-
-$low-text: #030303;
-$medium-text: #1c120d;
-$high-text: #ffffff;
-$veryhigh-text: #ffffff;
-$na-text: #434343;
+.risk-indicator-traffic-light {
+  --risk-low: #2e7d32;
+  --risk-low-text: #ffffff;
+  --risk-low-border: #1b5e20;
+  --risk-medium: #d6b83d;
+  --risk-medium-text: #321608;
+  --risk-high: #e67e22;
+  --risk-high-text: #ffffff;
+  --risk-veryhigh: #932828;
+  --risk-veryhigh-text: #ffffff;
+  --risk-na: #e8e8e8;
+  --risk-na-text: #434343;
+}
 
 .risk-bg-low, .vp-doc table th.risk-bg-low {
-  background-color: $low;
-  color: $low-text;
+  background-color: var(--risk-low);
+  color: var(--risk-low-text);
 }
 .risk-bg-medium, .vp-doc table th.risk-bg-medium {
-  background-color: $medium;
-  color: $medium-text;
+  background-color: var(--risk-medium);
+  color: var(--risk-medium-text);
 }
 .risk-bg-high, .vp-doc table th.risk-bg-high {
-  background-color: $high;
-  color: $high-text;
+  background-color: var(--risk-high);
+  color: var(--risk-high-text);
 }
 .risk-bg-veryhigh, .vp-doc table th.risk-bg-veryhigh {
-  background-color: $veryhigh;
-  color: $veryhigh-text;
+  background-color: var(--risk-veryhigh);
+  color: var(--risk-veryhigh-text);
 }
 .risk-bg-na, .vp-doc table th.risk-bg-na {
-  background-color: $na;
-  color: $na-text;
+  background-color: var(--risk-na);
+  color: var(--risk-na-text);
 }
 
 .risk-level-text {
@@ -161,12 +174,13 @@ $texture-cross: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0
 
 // 3. Level-Specific Modifiers
 .risk-badge-low {
-  background-color: $low; color: $low-text;
+  background-color: var(--risk-low);
+  color: var(--risk-low-text);
   &.is-marker {
     background-color: transparent;
     &::before {
-      background-color: $low;
-      border: 2px solid color.adjust($low, $lightness: -25%);
+      background-color: var(--risk-low);
+      border: 2px solid var(--risk-low-border);
 
       border-radius: 50%; // Circle
     }
@@ -178,13 +192,13 @@ $texture-cross: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0
 }
 
 .risk-badge-medium {
-  background-color: $medium;
-  color: $medium-text;
+  background-color: var(--risk-medium);
+  color: var(--risk-medium-text);
 
   &.is-marker {
     background-color: transparent;
     &::before {
-      background-color: $medium;
+      background-color: var(--risk-medium);
       background-image: $texture-dots;
       // Pentagon Clip-Path
       clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
@@ -193,24 +207,26 @@ $texture-cross: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0
 }
 
 .risk-badge-high {
-  background-color: $high; color: $high-text;
+  background-color: var(--risk-high);
+  color: var(--risk-high-text);
 
   &.is-marker {
     background-color: transparent;
     &::before {
-      background-color: $high;
+      background-color: var(--risk-high);
       background-image: $texture-lines;
     }
   }
 }
 
 .risk-badge-veryhigh {
-  background-color: $veryhigh; color: $veryhigh-text;
+  background-color: var(--risk-veryhigh);
+  color: var(--risk-veryhigh-text);
 
   &.is-marker {
     background-color: transparent;
     &::before {
-      background-color: $veryhigh;
+      background-color: var(--risk-veryhigh);
       background-image: $texture-cross;
       clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); // Diamond
     }
@@ -219,12 +235,13 @@ $texture-cross: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0
 }
 
 .risk-badge-na {
-  background-color: $na; color: $na-text;
+  background-color: var(--risk-na);
+  color: var(--risk-na-text);
 
   &.is-marker {
     background-color: transparent;
     &::before {
-      background-color: $na-text;
+      background-color: var(--risk-na-text);
     }
   }
 
