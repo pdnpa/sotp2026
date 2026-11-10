@@ -130,12 +130,18 @@ export default {
     padding: 0;
   }
 
+  // Fallback colours only. Kept at low specificity via :where() so the
+  // family-specific .bg-* classes always override them, regardless of the
+  // order stylesheets load in (this component's CSS is loaded asynchronously).
+  :where(.family-feature-group) {
+    background-color: var(--pdnpa-lightblue);
+    color: #fff;
+  }
+
   .family-feature-group {
     margin: 0 1rem 0 0;
-    background-color: var(--pdnpa-lightblue);
     border-radius: var(--block-border-radius);
     padding: 1.4rem 1.6rem;
-    color: #fff;
 
     ul {
       list-style: none;

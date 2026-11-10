@@ -19,12 +19,11 @@ export default {
     }
   },
   data() {
+    // Populated in data() (not a lifecycle hook) so the tiles are included in
+    // the server-rendered HTML as well as on the client.
     return {
-      families: []
+      families: data.familySummaries || Object.values(data.families)
     }
-  },
-  beforeMount() {
-    this.families = data.familySummaries || Object.values(data.families);
   },
   methods: {
     getFirstImage

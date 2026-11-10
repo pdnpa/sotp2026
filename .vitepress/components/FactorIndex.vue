@@ -47,12 +47,16 @@ export default defineComponent({
 }
 .factor-list-entry {
 }
+// Fallback colour only, kept at low specificity so factor-specific .bg-*
+// classes always win regardless of stylesheet load order (async component CSS).
+:where(.factor-list-link) {
+  background-color: var(--pdnpa-midbrown);
+}
 .factor-list-link {
   display: block;
   font-size: 1.2rem;
   text-decoration: none;
   border-radius: var(--block-border-radius);
-  background-color: var(--pdnpa-midbrown);
   transition: backgroundColor 120ms ease-in-out;
 
   &:hover, &:focus, &:focus-within {

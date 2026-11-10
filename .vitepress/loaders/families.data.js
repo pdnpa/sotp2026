@@ -9,7 +9,10 @@ export default {
     const rawFamilies = JSON.parse(fs.readFileSync(filePath, 'utf8'))
     const families = await transformContentData(rawFamilies)
 
-    // Build fast lookup indices for groups and features with parent relationships
+    // Lookup indices store IDs only. Loader output is serialised to JSON, so
+    // storing object references here would duplicate whole families/groups
+    // into every entry (this previously inflated the module to 40MB+).
+    // Resolve parents client-side via data.families[familyId].groups[groupId].
     const features = {}
     const groups = {}
 
@@ -17,26 +20,25 @@ export default {
       const family = families[familyId]
       for (const groupId in family.groups || {}) {
         const group = family.groups[groupId]
-        groups[groupId] = {
-          group,
-          family
-        }
+        groups[groupId] = { familyId, groupId }
         const featList = Array.isArray(group.features) ? group.features : Object.values(group.features || {})
-        for (const feat of featList) {
-          features[feat.id] = {
-            feature: feat,
-            group,
-            family
-          }
-        }
+        featList.forEach((feat, featureIndex) => {
+          features[feat.id] = { familyId, groupId, featureIndex }
+        })
       }
     }
+
+    // Lightweight, un-rendered summaries for index/landing listings
+    // (description is displayed as plain text, so keep the raw value).
+    const familySummaries = Object.values(rawFamilies).map(({ id, url, slug, title, description, images }) => ({
+      id, url, slug, title, description, images
+    }))
 
     return {
       families,
       groups,
       features,
-      rawFamilies
+      familySummaries
     }
   }
 }
