@@ -33,9 +33,10 @@ export default {
   },
   data() {
     const item = data.features?.[this.feature_id]
-    const feature = item?.feature || {}
-    const group = item?.group || {}
-    const family = item?.family || {}
+    const family = data.families?.[item?.familyId] || {}
+    const group = family.groups?.[item?.groupId] || {}
+    const featList = Array.isArray(group.features) ? group.features : Object.values(group.features || {})
+    const feature = featList[item?.featureIndex] || {}
 
     feature.options = feature.options || {}
 

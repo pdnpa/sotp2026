@@ -24,7 +24,7 @@ export default {
     }
   },
   beforeMount() {
-    this.families = Object.values(data.rawFamilies || data.families);
+    this.families = data.familySummaries || Object.values(data.families);
   },
   methods: {
     getFirstImage
