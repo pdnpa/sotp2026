@@ -176,7 +176,7 @@ export default {
     </div>
   </div>
 
-  <div id="distribution-block" class="distribution-block  group-section-block body-text pb-0" :class="{'distribution-block-stack-lcas': feature.options.distribution_block_stacked ?? 0}" v-if="hasDistributions">
+  <div id="distribution-block" class="distribution-block  group-section-block body-text pb-0" :class="{'distribution-block-stack-lcas': feature.options?.distribution_block_stacked == 1}" v-if="hasDistributions">
 
     <div class="distribution-block-text">
       <h2 class="mb-0 mt-0" id="Distribution">Distribution</h2>
