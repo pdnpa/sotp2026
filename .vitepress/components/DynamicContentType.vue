@@ -20,6 +20,31 @@ export default {
     return {
       contentType: 'text'
     }
+  },
+  computed: {
+    // Sort chunks by their `order` property where set; chunks without an order
+    // keep their natural position relative to each other and follow ordered ones.
+    orderedChunks() {
+      const toOrder = (value) => {
+        if (value === null || value === undefined || value === '') return NaN
+        return Number(value)
+      }
+
+      return Object.values(this.chunks ?? {})
+        .map((chunk, index) => ({chunk, index, order: toOrder(chunk?.order)}))
+        .sort((a, b) => {
+          const hasOrderA = Number.isFinite(a.order)
+          const hasOrderB = Number.isFinite(b.order)
+
+          if (hasOrderA && hasOrderB) {
+            return a.order - b.order || a.index - b.index
+          }
+          if (hasOrderA) return -1
+          if (hasOrderB) return 1
+          return a.index - b.index
+        })
+        .map(({chunk}) => chunk)
+    }
   }
 }
 
@@ -27,7 +52,7 @@ export default {
 
 <template>
 <div>
-  <div v-for="contentchunk in chunks" :key="contentchunk.id" :class="outerClass">
+  <div v-for="contentchunk in orderedChunks" :key="contentchunk.id" :class="outerClass">
     <template v-if="contentchunk.content_type === 'rte'">
       <DynamicComponent :content="contentchunk[contentFieldName]" :classname="contentchunk.properties.cssclassnames ?? ''" />
     </template>
