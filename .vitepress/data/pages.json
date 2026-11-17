@@ -2,16 +2,19 @@
     "9": {
         "id": 9,
         "title": "Key findings",
-        "description": null,
+        "description": "This page summarises the key findings from the 2026 State of the Park Report update.",
         "slug": "key-findings",
         "url": "/pages/key-findings",
         "contents": {
             "81": {
                 "id": 81,
                 "page_id": 9,
-                "content": "<h2>Introduction</h2>\r\n<p>This report summarises the key findings from the 2026 State of the Park Report update. Each of the twelve key features of the Peak District National Park are outlined below, assessing their distribution, condition, and key hazards they are at risk from. The current \u2018state\u2019 (condition) and the trend of this condition are given a rating, with an additional rating for the certainty of this assessment \u2013 the scales of these assessments are outlined below.</p>\r\n<table border=\"1\" style=\"border-collapse: collapse; width: 100%;\">\r\n<tbody>\r\n<tr>\r\n<td width=\"200\" style=\"width: 33.3333%;\">\r\n<p><strong>State</strong></p>\r\n</td>\r\n<td width=\"200\" style=\"width: 33.3333%;\">\r\n<p><strong>Trend</strong></p>\r\n</td>\r\n<td width=\"200\" style=\"width: 33.3333%;\">\r\n<p><strong>Certainty</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #bfedd2;\">\r\n<p>Good condition</p>\r\n</td>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #bfedd2;\">\r\n<p>Improving</p>\r\n</td>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #bfedd2;\">\r\n<p>High</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #fbeeb8;\">\r\n<p>Moderate concern</p>\r\n</td>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #fbeeb8;\">\r\n<p>No change</p>\r\n</td>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #fbeeb8;\">\r\n<p>Moderate</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #f8cac6;\">\r\n<p>Significant concern</p>\r\n</td>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #f8cac6;\">\r\n<p>Declining</p>\r\n</td>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #f8cac6;\">\r\n<p>Low</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>The certainty ratings for many features are low due to the scarcity of condition data available across features. For landscape and cultural heritage features, designated features for which there are more frequent condition assessments are used as a proxy. However, these features only represent a small proportion of the overall feature present in the National Park, and even for designated features where condition assessment should take place regularly, this information can often be upwards to 15 years old. Therefore, while this report offers a snapshot into the condition of the key features in the Peak District, ongoing assessment and monitoring of features will be needed to evaluate the success of actions which manage these features.</p>",
+                "content": "<h2>Introduction</h2>\r\n<p>This page summarises the key findings from the 2026 State of the Park Report update. Each of the twelve key features of the Peak District National Park are outlined below, assessing their distribution, condition, and key hazards they are at risk from. The current \u2018state\u2019 (condition) and the trend of this condition are given a rating, with an additional rating for the certainty of this assessment \u2013 the scales of these assessments are outlined below.</p>\r\n<table border=\"1\" style=\"border-collapse: collapse; width: 100%;\">\r\n<thead>\r\n<tr>\r\n<th width=\"200\" style=\"width: 33.3333%;\">\r\n<p><strong>State</strong></p>\r\n</th>\r\n<th width=\"200\" style=\"width: 33.3333%;\">\r\n<p><strong>Trend</strong></p>\r\n</th>\r\n<th width=\"200\" style=\"width: 33.3333%;\">\r\n<p><strong>Certainty</strong></p>\r\n</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #bfedd2;\"><RiskScaleBadgeTrafficLight risktype=\"low\">Good condition</RiskScaleBadgeTrafficLight></td>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #bfedd2;\"><RiskScaleBadgeTrafficLight risktype=\"low\">Improving</RiskScaleBadgeTrafficLight></td>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #bfedd2;\"><RiskScaleBadgeTrafficLight risktype=\"low\">High</RiskScaleBadgeTrafficLight></td>\r\n</tr>\r\n<tr>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #fbeeb8;\"><RiskScaleBadgeTrafficLight risktype=\"medium\">Moderate concern</RiskScaleBadgeTrafficLight></td>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #fbeeb8;\"><RiskScaleBadgeTrafficLight risktype=\"medium\">No change</RiskScaleBadgeTrafficLight></td>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #fbeeb8;\"><RiskScaleBadgeTrafficLight risktype=\"medium\">Moderate</RiskScaleBadgeTrafficLight></td>\r\n</tr>\r\n<tr>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #f8cac6;\"><RiskScaleBadgeTrafficLight risktype=\"veryhigh\">Significant concern</RiskScaleBadgeTrafficLight></td>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #f8cac6;\"><RiskScaleBadgeTrafficLight risktype=\"veryhigh\">Declining</RiskScaleBadgeTrafficLight></td>\r\n<td width=\"200\" style=\"width: 33.3333%; background-color: #f8cac6;\"><RiskScaleBadgeTrafficLight risktype=\"veryhigh\">Low</RiskScaleBadgeTrafficLight></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>The certainty ratings for many features are low due to the scarcity of condition data available across features. For landscape and cultural heritage features, designated features for which there are more frequent condition assessments are used as a proxy. However, these features only represent a small proportion of the overall feature present in the National Park, and even for designated features where condition assessment should take place regularly, this information can often be upwards to 15 years old. Therefore, while this report offers a snapshot into the condition of the key features in the Peak District, ongoing assessment and monitoring of features will be needed to evaluate the success of actions which manage these features.</p>",
                 "content_type": "rte",
-                "properties": [],
+                "properties": {
+                    "alignright": "0",
+                    "cssclassnames": "has-table-no-borders"
+                },
                 "order": 0
             },
             "82": {
@@ -36,7 +39,7 @@
             "72": {
                 "id": 72,
                 "page_id": 9,
-                "content": "<h2>Woodland</h2>\r\n<table border=\"1\" style=\"border-collapse: collapse; width: 100.065%;\">\r\n<tbody>\r\n<tr>\r\n<td style=\"width: 17.7509%;\"><strong>State</strong></td>\r\n<td width=\"161\" style=\"width: 17.9862%; background-color: #f8cac6;\">\r\n<p>Significant concern</p>\r\n</td>\r\n<td width=\"71\" style=\"width: 14.1729%;\">\r\n<p><strong>Trend</strong></p>\r\n</td>\r\n<td width=\"104\" style=\"width: 18.3272%; background-color: #f8cac6;\">\r\n<p>Deteriorating</p>\r\n</td>\r\n<td width=\"100\" style=\"width: 15.9066%;\">\r\n<p><strong>Certainty</strong></p>\r\n</td>\r\n<td width=\"100\" style=\"width: 15.9066%; background-color: #fbeeb8;\">\r\n<p>Moderate</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+                "content": "<h2>Woodland</h2>\r\n<table border=\"1\" style=\"border-collapse: collapse; width: 100.065%;\">\r\n<tbody>\r\n<tr>\r\n<th style=\"width: 17.7141%;\">State:</th>\r\n<td width=\"161\" style=\"width: 18.0212%; background-color: #f8cac6;\"><RiskScaleBadgeTrafficLight risktype=\"veryhigh\">Significant concern</RiskScaleBadgeTrafficLight></td>\r\n<th width=\"71\" style=\"width: 14.1303%;\">Trend:</th>\r\n<td width=\"104\" style=\"width: 18.3284%; background-color: #f8cac6;\"><RiskScaleBadgeTrafficLight risktype=\"veryhigh\">Declining</RiskScaleBadgeTrafficLight></td>\r\n<th width=\"100\" style=\"width: 15.871%;\">Certainty:</th>\r\n<td width=\"100\" style=\"width: 15.871%; background-color: #fbeeb8;\"><RiskScaleBadgeTrafficLight risktype=\"medium\">Moderate</RiskScaleBadgeTrafficLight></td>\r\n</tr>\r\n</tbody>\r\n</table>",
                 "content_type": "rte",
                 "properties": [],
                 "order": 3
@@ -44,7 +47,7 @@
             "80": {
                 "id": 80,
                 "page_id": 9,
-                "content": "https://report-publishing/media/sotp26/MTc5MjUwNjWoodland%20drivers%20of%20change.jpg",
+                "content": "https://report-publishing/media/sotp26/MTc5NDU4MDWoodland%20drivers%20of%20change.jpg",
                 "content_type": "file",
                 "properties": {
                     "alignright": "1",
@@ -63,7 +66,7 @@
             "73": {
                 "id": 73,
                 "page_id": 9,
-                "content": "<h2>Grassland</h2>\r\n<table border=\"1\" style=\"border-collapse: collapse; width: 100.065%;\">\r\n<tbody>\r\n<tr>\r\n<td style=\"width: 17.6702%;\"><strong>State</strong></td>\r\n<td width=\"161\" style=\"width: 20.7788%; background-color: #fbeeb8;\">\r\n<p>Moderate concern</p>\r\n</td>\r\n<td width=\"71\" style=\"width: 11.2893%;\">\r\n<p><strong>Trend</strong></p>\r\n</td>\r\n<td width=\"104\" style=\"width: 18.3246%; background-color: #fbeeb8;\">\r\n<p>No change</p>\r\n</td>\r\n<td width=\"100\" style=\"width: 15.8704%;\">\r\n<p><strong>Certainty</strong></p>\r\n</td>\r\n<td width=\"100\" style=\"width: 15.8704%; background-color: #f8cac6;\">\r\n<p>Low</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+                "content": "<h2>Grassland</h2>\r\n<table border=\"1\" style=\"border-collapse: collapse; width: 100.065%;\">\r\n<tbody>\r\n<tr>\r\n<th style=\"width: 17.6702%;\">State:</th>\r\n<td width=\"161\" style=\"width: 20.7788%; background-color: #fbeeb8;\"><RiskScaleBadgeTrafficLight risktype=\"medium\">Moderate concern</RiskScaleBadgeTrafficLight></td>\r\n<th width=\"71\" style=\"width: 11.2893%;\">Trend:</th>\r\n<td width=\"104\" style=\"width: 18.3246%; background-color: #fbeeb8;\"><RiskScaleBadgeTrafficLight risktype=\"medium\">No change</RiskScaleBadgeTrafficLight></td>\r\n<th width=\"100\" style=\"width: 15.8704%;\">Certainty:</th>\r\n<td width=\"100\" style=\"width: 15.8704%; background-color: #f8cac6;\"><RiskScaleBadgeTrafficLight risktype=\"veryhigh\">Low</RiskScaleBadgeTrafficLight></td>\r\n</tr>\r\n</tbody>\r\n</table>",
                 "content_type": "rte",
                 "properties": [],
                 "order": 6
@@ -71,7 +74,7 @@
             "46": {
                 "id": 46,
                 "page_id": 9,
-                "content": "https://report-publishing/media/sotp26/MTc5MjUwNTGrassland%20drivers%20of%20change.jpg",
+                "content": "https://report-publishing/media/sotp26/MTc5NDU4MDGrassland%20drivers%20of%20change.jpg",
                 "content_type": "file",
                 "properties": {
                     "alignright": "1",
@@ -90,7 +93,7 @@
             "74": {
                 "id": 74,
                 "page_id": 9,
-                "content": "<h2>Freshwater &amp; wetland</h2>\r\n<table border=\"1\" style=\"border-collapse: collapse; width: 100%;\">\r\n<tbody>\r\n<tr>\r\n<td style=\"width: 15.0598%;\"><strong>State</strong></td>\r\n<td style=\"width: 15.0598%; background-color: #fbeeb8;\">Moderate concern</td>\r\n<td style=\"width: 15.0598%;\"><strong>Trend</strong></td>\r\n<td style=\"width: 15.0598%; background-color: #bfedd2;\">Improving</td>\r\n<td style=\"width: 15.0598%;\"><strong>Certainty</strong></td>\r\n<td style=\"width: 15.0598%; background-color: #f8cac6;\">Low</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+                "content": "<h2>Freshwater &amp; wetland</h2>\r\n<table style=\"border-collapse: collapse; width: 100%; height: auto;\">\r\n<tbody>\r\n<tr style=\"height: 22.3906px;\">\r\n<th style=\"width: 15.0598%; height: 22.3906px;\">State:</th>\r\n<td style=\"width: 15.0598%; background-color: #fbeeb8; height: 22.3906px;\"><RiskScaleBadgeTrafficLight risktype=\"medium\">Moderate concern</RiskScaleBadgeTrafficLight></td>\r\n<th style=\"width: 15.0598%; height: 22.3906px;\">Trend:</th>\r\n<td style=\"width: 15.0598%; background-color: #bfedd2; height: 22.3906px;\"><RiskScaleBadgeTrafficLight risktype=\"low\">Improving</RiskScaleBadgeTrafficLight></td>\r\n<th style=\"width: 15.0598%; height: 22.3906px;\">Certainty:</th>\r\n<td style=\"width: 15.0598%; background-color: #f8cac6; height: 22.3906px;\"><RiskScaleBadgeTrafficLight risktype=\"veryhigh\">Low</RiskScaleBadgeTrafficLight></td>\r\n</tr>\r\n</tbody>\r\n</table>",
                 "content_type": "rte",
                 "properties": [],
                 "order": 9
@@ -98,7 +101,7 @@
             "75": {
                 "id": 75,
                 "page_id": 9,
-                "content": "https://report-publishing/media/sotp26/Freshwater%20drivers%20of%20change.jpg",
+                "content": "https://report-publishing/media/sotp26/MTc5NDU4MDFreshwater%20drivers%20of%20change.jpg",
                 "content_type": "file",
                 "properties": {
                     "alignright": "1",
@@ -109,7 +112,7 @@
             "76": {
                 "id": 76,
                 "page_id": 9,
-                "content": "<h3><strong>Key findings</strong></h3>\r\n<p><strong>Total area: </strong>There is a total of<strong> </strong>31,038ha of wetland habitats in the Peak District, 21% of the total area - with 3,065 ponds and 867km of rivers and streams making up the freshwater habitats. Blanket bog makes up 29,780km of the National Park, the largest signal area of any priority habitat type.</p>\r\n<p><strong>Distribution: </strong>Freshwater and wetland habitats are unevenly distributed across the National Park; the Dark Peak Landscape Character Area (LCA) is predominantly wetland with many rivers and streams, while the Eastern Moors and Southwest Peak have significant wetland areas. The White Peak LCA contains very few rivers due to the porous underlying limestone, while it does have the highest density of ponds, mostly associated with agricultural landscapes.</p>\r\n<p><strong>Condition: </strong>Wetland habitats within Sites of Special Scientific Interest have some limited condition data available, which generally indicates that they are in either favourable or recovering condition. Freshwater habitats rely on other sources for condition information, which generally indicate they are in a moderate condition. However, the certainty for this assessment is low due to the limited availability of condition data.</p>\r\n<p><strong>Hazards:</strong></p>\r\n<ul>\r\n<li>Climate change will be a primary driver of change in wetland and freshwater habitats as a result of changing precipitation and temperature patterns, effecting water availability which is vital to these habitats. Land management will have compound impacts as this can also impact drainage.</li>\r\n<li>Pollution is also a more significant hazard in these habitats than others due to water transporting pollutants, which can become concentrated.\u00a0</li>\r\n</ul>",
+                "content": "<h3><strong>Key findings</strong></h3>\r\n<p><strong>Total area: </strong>There is a total of\u00a0<strong> </strong>31,038ha of wetland habitats in the Peak District, 21% of the total area - with 3,065 ponds and 867km of rivers and streams making up the freshwater habitats. Blanket bog makes up 29,780km of the National Park, the largest signal area of any priority habitat type.</p>\r\n<p><strong>Distribution: </strong>Freshwater and wetland habitats are unevenly distributed across the National Park; the Dark Peak Landscape Character Area (LCA) is predominantly wetland with many rivers and streams, while the Eastern Moors and Southwest Peak have significant wetland areas. The White Peak LCA contains very few rivers due to the porous underlying limestone, while it does have the highest density of ponds, mostly associated with agricultural landscapes.</p>\r\n<p><strong>Condition: </strong>Wetland habitats within Sites of Special Scientific Interest have some limited condition data available, which generally indicates that they are in either favourable or recovering condition. Freshwater habitats rely on other sources for condition information, which generally indicate they are in a moderate condition. However, the certainty for this assessment is low due to the limited availability of condition data.</p>\r\n<p><strong>Hazards:</strong></p>\r\n<ul>\r\n<li>Climate change will be a primary driver of change in wetland and freshwater habitats as a result of changing precipitation and temperature patterns, effecting water availability which is vital to these habitats. Land management will have compound impacts as this can also impact drainage.</li>\r\n<li>Pollution is also a more significant hazard in these habitats than others due to water transporting pollutants, which can become concentrated.\u00a0</li>\r\n</ul>",
                 "content_type": "rte",
                 "properties": [],
                 "order": 11
@@ -117,7 +120,7 @@
             "77": {
                 "id": 77,
                 "page_id": 9,
-                "content": "<h2>Moorland &amp; heath</h2>\r\n<table border=\"1\" style=\"border-collapse: collapse; width: 100%;\">\r\n<tbody>\r\n<tr>\r\n<td style=\"width: 15.0598%;\"><strong>Status</strong></td>\r\n<td style=\"width: 15.0598%; background-color: #fbeeb8;\">Moderate concern</td>\r\n<td style=\"width: 15.0598%;\"><strong>Trend</strong></td>\r\n<td style=\"width: 15.0598%; background-color: #fbeeb8;\">No change</td>\r\n<td style=\"width: 15.0598%;\"><strong>Certainty</strong></td>\r\n<td style=\"width: 15.0598%; background-color: #f8cac6;\">Low</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+                "content": "<h2>Moorland &amp; heath</h2>\r\n<table border=\"1\" style=\"border-collapse: collapse; width: 100%;\">\r\n<tbody>\r\n<tr>\r\n<th style=\"width: 15.0598%;\">Status:</th>\r\n<td style=\"width: 15.0598%; background-color: #fbeeb8;\"><RiskScaleBadgeTrafficLight risktype=\"medium\">Moderate concern</RiskScaleBadgeTrafficLight></td>\r\n<th style=\"width: 15.0598%;\">Trend:</th>\r\n<td style=\"width: 15.0598%; background-color: #fbeeb8;\"><RiskScaleBadgeTrafficLight risktype=\"medium\">No change</RiskScaleBadgeTrafficLight></td>\r\n<th style=\"width: 15.0598%;\">Certainty:</th>\r\n<td style=\"width: 15.0598%; background-color: #f8cac6;\"><RiskScaleBadgeTrafficLight risktype=\"veryhigh\">Low</RiskScaleBadgeTrafficLight></td>\r\n</tr>\r\n</tbody>\r\n</table>",
                 "content_type": "rte",
                 "properties": [],
                 "order": 12
@@ -125,7 +128,7 @@
             "78": {
                 "id": 78,
                 "page_id": 9,
-                "content": "https://report-publishing/media/sotp26/Moorland%20drivers%20of%20change.jpg",
+                "content": "https://report-publishing/media/sotp26/MTc5NDU4MDMoorland%20drivers%20of%20change.jpg",
                 "content_type": "file",
                 "properties": {
                     "alignright": "1",
@@ -140,6 +143,195 @@
                 "content_type": "rte",
                 "properties": [],
                 "order": 14
+            },
+            "87": {
+                "id": 87,
+                "page_id": 9,
+                "content": "<h2>Cultural monuments</h2>\r\n<table>\r\n<tbody>\r\n<tr>\r\n<td width=\"66\">\r\n<p><strong>State</strong></p>\r\n</td>\r\n<td width=\"161\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"medium\">Moderate concern</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n<td width=\"71\">\r\n<p><strong>Trend</strong></p>\r\n</td>\r\n<td width=\"104\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"medium\">No change</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n<td width=\"100\">\r\n<p><strong>Certainty</strong></p>\r\n</td>\r\n<td width=\"100\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"medium\">Moderate</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 15
+            },
+            "88": {
+                "id": 88,
+                "page_id": 9,
+                "content": "https://report-publishing/media/sotp26/Cultural%20monuments%20drivers%20of%20change.jpg",
+                "content_type": "file",
+                "properties": {
+                    "alignright": "1",
+                    "cssclassnames": ""
+                },
+                "order": 16
+            },
+            "89": {
+                "id": 89,
+                "page_id": 9,
+                "content": "<h3><strong>Key findings</strong></h3>\r\n<p><strong>Distribution: </strong>Cultural monuments can be found widely distributed across the whole National Park, but occur most densely in the White Peak, Derwent Valley and Eastern Moors Landscape Character Areas. This may be due to the historical uses of these areas but could also be a reporting bias due to these areas being highly accessible from currently settled areas.</p>\r\n<p><strong>Condition: </strong>There is limited detailed condition available for cultural monuments. Designated scheduled monuments were used as a proxy due to condition assessments being carried out more frequently for these sites, however these assessments are often updated infrequently or unavailable. From the assessment data that is available, only eleven out of 390 features are considered to be at risk, with a further 56 vulnerable, which indicated a moderate overall condition.</p>\r\n<p><strong>Hazards:</strong></p>\r\n<ul>\r\n<li>Land management practices are a primary factor which may drive change to cultural monuments, due to these features being at risk from changes in how land is used. This could be physical damage, for example from ploughing, but also could result if changes in vegetation obscure visibility and access to these sites.</li>\r\n<li>Climate change will also cause impact to these features in a number of ways. The increased likelihood of extreme weather events and wildfires along with ecological changes is likely to increase rates of erosion and weather, which may speed up physical damage and degradation of cultural monuments.\u00a0</li>\r\n</ul>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 17
+            },
+            "90": {
+                "id": 90,
+                "page_id": 9,
+                "content": "<h2>Historic buildings</h2>\r\n<table>\r\n<tbody>\r\n<tr>\r\n<td width=\"66\">\r\n<p><strong>State</strong></p>\r\n</td>\r\n<td width=\"161\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"medium\">Moderate concern</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n<td width=\"71\">\r\n<p><strong>Trend</strong></p>\r\n</td>\r\n<td width=\"104\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"na\">Unknown</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n<td width=\"100\">\r\n<p><strong>Certainty</strong></p>\r\n</td>\r\n<td width=\"100\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"veryhigh\">Low</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 18
+            },
+            "91": {
+                "id": 91,
+                "page_id": 9,
+                "content": "https://report-publishing/media/sotp26/Historic%20buildings.jpg",
+                "content_type": "file",
+                "properties": {
+                    "alignright": "1",
+                    "cssclassnames": ""
+                },
+                "order": 19
+            },
+            "92": {
+                "id": 92,
+                "page_id": 9,
+                "content": "<h3><strong>Key findings</strong></h3>\r\n<p><strong>Distribution: </strong>Historic buildings can be found across every Landscape Character Area (LCA) of the Peak District, but are more densely found in the more populated, lower altitude areas, predominantly the White Peak and Derwent Valley LCAs. The high moors of the Dark Peak LCA have the least historic buildings.</p>\r\n<p><strong>Condition: </strong>Listed buildings were used as a proxy to understand the condition of historic buildings as a whole, due to condition information being held for these designated buildings. However, many of the condition records are out of date and in some cases absent, meaning certainty over this assessment is low. Where condition information is available this indicates that buildings of industry are the most likely to be at risk types of historic buildings are at risk, with 25% of listed buildings of industry at risk. Overall, of the 1,857 listed historic buildings, around 6% are considered at risk with a further 1% vulnerable, indicating relatively good condition.</p>\r\n<p><strong>Hazards:</strong></p>\r\n<ul>\r\n<li>Changes to the demographic and sociocultural communities of residents in the Peak District may impact historic buildings, as it could lead to change in the use and social value of buildings, which may result in the loss of their historic integrity and significance.</li>\r\n<li>Climate change, and the resulting increasing in extreme weather and rates of erosion and weathering, could impact historic buildings as it may increase the likelihood of physical damage to the fabric of buildings.</li>\r\n</ul>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 20
+            },
+            "93": {
+                "id": 93,
+                "page_id": 9,
+                "content": "<h2>Heritage landscapes</h2>\r\n<table>\r\n<tbody>\r\n<tr>\r\n<td width=\"66\">\r\n<p><strong>State</strong></p>\r\n</td>\r\n<td width=\"161\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"medium\">Moderate concern</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n<td width=\"71\">\r\n<p><strong>Trend</strong></p>\r\n</td>\r\n<td width=\"104\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"veryhigh\">Declining</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n<td width=\"100\">\r\n<p><strong>Certainty</strong></p>\r\n</td>\r\n<td width=\"100\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"medium\">Moderate</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 21
+            },
+            "94": {
+                "id": 94,
+                "page_id": 9,
+                "content": "https://report-publishing/media/sotp26/Heritage%20landscapes.jpg",
+                "content_type": "file",
+                "properties": {
+                    "alignright": "1",
+                    "cssclassnames": ""
+                },
+                "order": 22
+            },
+            "95": {
+                "id": 95,
+                "page_id": 9,
+                "content": "<h3><strong>Key findings</strong></h3>\r\n<p><strong>Distribution: </strong>The whole of the Peak District could be described as a heritage landscape, with different landscape types, from agricultural to \u2018polite\u2019, found across all Landscape Character Areas in the National Park. Using priority leadworking landscapes and both designated and undesignated parks and gardens to indicate the location of some key heritage landscapes shows that these are primarily distributed in the lower and more populated areas of the White Peak, Derwent Valley and the Peak District fringes.</p>\r\n<p><strong>Condition: </strong>There is not a consistent understanding or assessment of the \u2018condition\u2019 of heritage landscapes, especially as these are usually still lived-in and productive landscapes. Particular types of landscape features can be assessed, for example lead mining features which are likely to be vulnerable, or features of estates, parks and gardens which are likely to be in relatively good condition. Traditional boundary features, which are key to heritage agricultural landscapes, continue to decline with 12% having been lost since 1951.</p>\r\n<p><strong>Hazards:</strong></p>\r\n<ul>\r\n<li>The biggest impact to heritage landscape is their overall loss of integrity, which will be contributed to by a wide range of factors. Changes in land management practices is key to this, as heritage landscapes are maintained through traditional land management practices.</li>\r\n<li>Climate change and related ecological changes are likely to have compound impacts, with changes in the characteristic plant communities and the loss of ancient trees contributing to a change in the character of heritage landscapes.\u00a0</li>\r\n</ul>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 23
+            },
+            "96": {
+                "id": 96,
+                "page_id": 9,
+                "content": "<h2>Intangible heritage</h2>\r\n<table>\r\n<tbody>\r\n<tr>\r\n<td width=\"66\">\r\n<p><strong>State</strong></p>\r\n</td>\r\n<td width=\"161\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"na\">Unknown</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n<td width=\"71\">\r\n<p><strong>Trend</strong></p>\r\n</td>\r\n<td width=\"104\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"na\">Unknown</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n<td width=\"100\">\r\n<p><strong>Certainty</strong></p>\r\n</td>\r\n<td width=\"100\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"na\">Unknown</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 24
+            },
+            "97": {
+                "id": 97,
+                "page_id": 9,
+                "content": "https://report-publishing/media/sotp26/Intangible%20heritage.jpg",
+                "content_type": "file",
+                "properties": {
+                    "alignright": "1",
+                    "cssclassnames": ""
+                },
+                "order": 25
+            },
+            "98": {
+                "id": 98,
+                "page_id": 9,
+                "content": "<h3><strong>Key findings</strong></h3>\r\n<p><strong>Distribution: </strong>The available data does not make it possible to account for this distribution of intangible heritage across the landscape. Certain intangible heritage features are associated with specific places, such as the myths of Castleton\u2019s caves or the location of well dressing events across the National Park. However, by its very nature it is difficult to account of the spatial distribution of intangible heritage.</p>\r\n<p><strong>Condition: </strong>There is not a clear understanding of the condition of intangible heritage features or data which exists to assess this. Accounting for some limited examples across the different types of intangible heritage features shows that they are still present in the landscape, however this is not enough to identify what the trend in this condition is. There is a national idea that intangible heritage such as folklore and traditions is decline, but evidence is not available to confirm this in the Peak District.</p>\r\n<p><strong>Hazards:</strong></p>\r\n<ul>\r\n<li>Demographic and sociocultural change is likely to have the biggest impact on intangible heritage due to possible changes in the social value of local traditions, stories, events and other features in this group. However it is uncertain if this impact will occur.</li>\r\n<li>Changes to the climate and ecological conditions of the National Park could also impact intangible heritage due to the connections between the landscape and these features, for example fell races may have to change routes.</li>\r\n</ul>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 26
+            },
+            "99": {
+                "id": 99,
+                "page_id": 9,
+                "content": "<h2>Local communities</h2>\r\n<table>\r\n<tbody>\r\n<tr>\r\n<td width=\"66\">\r\n<p><strong>State</strong></p>\r\n</td>\r\n<td width=\"161\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"medium\">Moderate concern</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n<td width=\"71\">\r\n<p><strong>Trend</strong></p>\r\n</td>\r\n<td width=\"104\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"veryhigh\">Declining</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n<td width=\"100\">\r\n<p><strong>Certainty</strong></p>\r\n</td>\r\n<td width=\"100\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"veryhigh\">Low</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 27
+            },
+            "100": {
+                "id": 100,
+                "page_id": 9,
+                "content": "https://report-publishing/media/sotp26/Local%20communities.jpg",
+                "content_type": "file",
+                "properties": {
+                    "alignright": "1",
+                    "cssclassnames": ""
+                },
+                "order": 28
+            },
+            "101": {
+                "id": 101,
+                "page_id": 9,
+                "content": "<h3><strong>Key findings</strong></h3>\r\n<p><strong>Distribution: </strong>Local communities are distributed across the whole of the Peak District however settlements are particularly concentrated in the White Peak and Derwent Valley Landscape Character Areas (LCAs). Bakewell, the Peak District\u2019s only town, is an important centre for the Peak District\u2019s communities as a historic market town in the Derwent Valley LCA. There are fewer settlements in the Dark Peak, although strong communities still exist which are often linked into those in the areas on the fringes of the National Park, such as Glossop or Holmfirth.</p>\r\n<p><strong>Condition:</strong> It is difficult to assess the trend in condition of local communities, as shifting characteristics of communities will always occur over time. Current trends indicate the Peak District\u2019s resident population is getting smaller and older, causing a decline in the working-age population. There are also rising tensions between visitors and residents, and a decline in service and transport provision for communities. Depending on the provision of new housing, the population is could rise again in the future, while there is high uncertainty of how structural changes in the local economy may impact local communities.</p>\r\n<p><strong>Hazards:</strong></p>\r\n<ul>\r\n<li>Demographic change is the primary factor driving change in local communities. The local population has continued to decrease, with a larger proportion of retirees and less young people. If this trend continues it could have a significant impact on the sustainability of local communities, exacerbated by issues of under-occupancy and high prices in the housing market.</li>\r\n<li>Rising tensions between visitors and residents is often reported, resulting from issues such as anti-social parking and littering. If visitor numbers continue rise, this therefore brings potential social challenges, but also economic opportunities for local communities.</li>\r\n</ul>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 29
+            },
+            "102": {
+                "id": 102,
+                "page_id": 9,
+                "content": "<h2>Visitors</h2>\r\n<table>\r\n<tbody>\r\n<tr>\r\n<td width=\"66\">\r\n<p><strong>State</strong></p>\r\n</td>\r\n<td width=\"161\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"low\">Good condition</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n<td width=\"71\">\r\n<p><strong>Trend</strong></p>\r\n</td>\r\n<td width=\"104\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"medium\">No change</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n<td width=\"100\">\r\n<p><strong>Certainty</strong></p>\r\n</td>\r\n<td width=\"100\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"medium\">Moderate</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 30
+            },
+            "103": {
+                "id": 103,
+                "page_id": 9,
+                "content": "https://report-publishing/media/sotp26/Visitors.jpg",
+                "content_type": "file",
+                "properties": {
+                    "alignright": "1",
+                    "cssclassnames": ""
+                },
+                "order": 31
+            },
+            "104": {
+                "id": 104,
+                "page_id": 9,
+                "content": "<h3><strong>Key findings</strong></h3>\r\n<p><strong>Distribution: </strong>Whilst visitors are not evenly distributed across the park, it\u2019s useful to understand this as a feature that does affect the entire National Park. The Peak District is widely accessible, with large areas of open access land and links to a large network of urban areas including, Manchester, Stoke-on-Trent, Derby and Sheffield.</p>\r\n<p><strong>Condition: </strong>Visitor-features are understood to be in good condition, with the primary source of data being the visitor survey. Visitor satisfaction is overwhelmingly high with 97% saying they would be likely to return and 96% saying the National Park seems well managed and cared for. According to economic modelling data visitors have been steadily rising, although the Covid-19 pandemic had a large impact and the most recent data from 2022 shows numbers and visitor spend had not fully recovered to pre-Covid levels.</p>\r\n<p><strong>Hazards:</strong></p>\r\n<ul>\r\n<li>Degradation of the rights of way network has the potential to impact visitor experience. Currently there is not a downward trend in condition, however this will rely on continued funding and is vulnerable to weathering and erosion accelerated by increasing extreme weather.</li>\r\n<li>Increase in vector-borne diseases is a potential future hazard. There is a lack of data locally, however national trends make it clear that risk is increasing. Lyme disease infection rates are rising and some climate projections show mosquito-borne diseases becoming established across England by 2050. Rural areas are generally of higher risk and increasing temperatures will continue to drive this change.</li>\r\n</ul>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 32
+            },
+            "105": {
+                "id": 105,
+                "page_id": 9,
+                "content": "<h2>Economy</h2>\r\n<table>\r\n<tbody>\r\n<tr>\r\n<td width=\"66\">\r\n<p><strong>State</strong></p>\r\n</td>\r\n<td width=\"161\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"low\">Good condition</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n<td width=\"71\">\r\n<p><strong>Trend</strong></p>\r\n</td>\r\n<td width=\"104\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"medium\">No change</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n<td width=\"100\">\r\n<p><strong>Certainty</strong></p>\r\n</td>\r\n<td width=\"100\">\r\n<p><RiskScaleBadgeTrafficLight risktype=\"medium\">Moderate</RiskScaleBadgeTrafficLight></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 33
+            },
+            "106": {
+                "id": 106,
+                "page_id": 9,
+                "content": "https://report-publishing/media/sotp26/Economy.jpg",
+                "content_type": "file",
+                "properties": {
+                    "alignright": "1",
+                    "cssclassnames": ""
+                },
+                "order": 34
+            },
+            "107": {
+                "id": 107,
+                "page_id": 9,
+                "content": "<h3><strong>Key findings</strong></h3>\r\n<p><strong>Distribution: </strong>Economic-features are distributed across the whole of the Peak District; however different sectors can be understood to be unevenly distributed across the National Park. For example, the agricultural economy is most concentrated in the White Peak where richer grassland is available, the visitor economy and service industry centre around settlements such as Bakewell, while mineral extraction centred around specific quarries and production sites.</p>\r\n<p><strong>Condition: </strong>The Peak District\u2019s economy can be understood to be in good and stable condition overall, due to the lack of any serious concerns on the sustainability of the economic features assessed in this report. Change within these features is, however, occurring, even if overall condition is not declining. Noticeably this includes change in the agricultural sector, with a fall in dairy farming in particular. The road and rail network, as vital parts of economic infrastructure of the National Park, are also at risk to multiple factors, and the visitor economy will be an area of growth and change into the next decade.</p>\r\n<p><strong>Hazards:</strong></p>\r\n<ul>\r\n<li>Changes in land use, primarily in the agricultural sector, will likely have the largest impact on the economy. There is likely to be an ongoing trend of farm consolidation and changes in farm business type away from dairy toward arable, as well as growing climactic challenges to farming practices. Pressures driving farmers towards climate mitigation, agritourism and nature conservation will also have an impact.</li>\r\n<li>Visitation &amp; access is also a driving factor for change in the economy. The visitor-related economy will likely increase over time; accommodation and food services have already increased as a sector. This will be exacerbated by other factors such as population increase and climate change driving Northern European tourism.</li>\r\n</ul>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 35
             }
         },
         "options": null
@@ -188,18 +380,13 @@
             "28": {
                 "id": 28,
                 "page_id": 11,
-                "content": "<h2>Definitions</h2>\r\n<p>This report uses a \u201cfeature and factor\u201d based approach to understand landscape and landscape change. Key definitions that may be useful in engaging with this report are:</p>\r\n<table>\r\n<tbody>\r\n<tr>\r\n<td width=\"94\">\r\n<p><strong>Feature</strong></p>\r\n</td>\r\n<td width=\"507\">\r\n<p>A tangible aspect of the landscape which, together with other features, constitutes the landscapes\u2019 character, its special qualities and contributes towards the benefits it provides.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"94\">\r\n<p><strong>Factor</strong></p>\r\n</td>\r\n<td width=\"507\">\r\n<p>Something which is driving change to the features, positive or negative. May also be called \u201cdriver of change\u201d or \u201cpressure\u201d.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"94\">\r\n<p><strong>Impact</strong></p>\r\n</td>\r\n<td width=\"507\">\r\n<p>The outcome of the interaction between the feature and the factor, i.e. how the features has changed.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"94\">\r\n<p><strong>Cause</strong></p>\r\n</td>\r\n<td width=\"507\">\r\n<p>The mechanism through which the factor has an impact on the feature, may otherwise be referred to as a hazard.\u00a0</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+                "content": "<h2>Definitions</h2>\r\n<p>This report uses a \u201cfeature and factor\u201d based approach to understand landscape and landscape change. Key definitions that may be useful in engaging with this report are:</p>\r\n<table border=\"1\" style=\"border-collapse: collapse; width: 100%;\">\r\n<tbody>\r\n<tr>\r\n<td width=\"94\" style=\"width: 17.1857%;\"><strong>Feature</strong></td>\r\n<td width=\"507\" style=\"width: 82.8143%;\">\r\n<p>A tangible aspect of the landscape which, together with other features, constitutes the landscapes\u2019 character, its special qualities and contributes towards the benefits it provides.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"94\" style=\"width: 17.1857%;\"><strong>Factor</strong></td>\r\n<td width=\"507\" style=\"width: 82.8143%;\">\r\n<p>Something which is driving change to the features, positive or negative. May also be called \u201cdriver of change\u201d or \u201cpressure\u201d.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"94\" style=\"width: 17.1857%;\"><strong>Impact</strong></td>\r\n<td width=\"507\" style=\"width: 82.8143%;\">\r\n<p>The outcome of the interaction between the feature and the factor, i.e. how the features has changed.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"94\" style=\"width: 17.1857%;\"><strong>Cause</strong></td>\r\n<td width=\"507\" style=\"width: 82.8143%;\">\r\n<p>The mechanism through which the factor has an impact on the feature, may otherwise be referred to as a hazard.\u00a0</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
                 "content_type": "rte",
-                "properties": [],
+                "properties": {
+                    "alignright": "0",
+                    "cssclassnames": "has-table-no-borders"
+                },
                 "order": 1
-            },
-            "29": {
-                "id": 29,
-                "page_id": 11,
-                "content": "https://report-publishing/media/sotp26/Feature%20and%20factor%20explainer.jpg",
-                "content_type": "file",
-                "properties": [],
-                "order": 2
             },
             "30": {
                 "id": 30,
@@ -207,15 +394,18 @@
                 "content": "<h2>Step 1- Feature condition assessment</h2>\r\n<h4><em>Defining the features to be assessed</em></h4>\r\n<p>This report uses a list of features compiled from previous work for the Climate Change Vulnerability Assessment. These features were further consolidated and refined to align to the latest policy, for example using Protected Landscape Targets and Outcomes Framework priority habitats, and through discussion with expert officers within the Peak District National Park Authority.</p>\r\n<p>Features were grouped with others with shared characteristics that as a result are likely to experience similar impacts, and therefore require similar management actions. This resulted in 3 feature families, 12 feature groups and 51 features.</p>",
                 "content_type": "rte",
                 "properties": [],
-                "order": 3
+                "order": 2
             },
             "31": {
                 "id": 31,
                 "page_id": 11,
-                "content": "https://report-publishing/media/sotp26/Feature%20grouping%20v2.jpg",
+                "content": "https://report-publishing/media/sotp26/MTc5Mzg4NzFeature%20grouping%20v2.jpg",
                 "content_type": "file",
-                "properties": [],
-                "order": 4
+                "properties": {
+                    "alignright": "0",
+                    "cssclassnames": ""
+                },
+                "order": 3
             },
             "32": {
                 "id": 32,
@@ -223,15 +413,15 @@
                 "content": "<h4><em>Condition evidence gathering</em></h4>\r\n<p>Evidence to assess the condition of the identified features was gathered through desk-based research between December 2025 and July 2026. This sought to answer three key questions regarding each feature:</p>\r\n<ul>\r\n<li>Where is it?</li>\r\n<li>How much is there?</li>\r\n<li>What condition is it in?</li>\r\n</ul>\r\n<p>Evidence to answer these questions was drawn from a variety of sources including data from relevant governmental departments, internal Peak District National Park Authority data, academic research and grey literature. Original analyses of data were undertaken where necessary.</p>\r\n<p>\u00a0In many cases, evidence was limited to answering the first and second questions, with limited evidence to contribute to condition understanding for many features. Data gaps are identified on feature-group pages.</p>",
                 "content_type": "rte",
                 "properties": [],
-                "order": 5
+                "order": 4
             },
-            "33": {
-                "id": 33,
+            "108": {
+                "id": 108,
                 "page_id": 11,
-                "content": "<h2>Step 2 \u2013 Factor identification</h2>\r\n<p>A preliminary list of factors impacting the Peak District list was drawn up during previous work which defined the special qualities of the National Park. This was cross-referenced with the IPBES\u2019s <em>Global assessment report on Biodiversity and Ecosystem Services</em><ReferenceFootnote footnoteref=\"69\">[69]</ReferenceFootnote><em> </em>classification of direct and indirect drivers.</p>\r\n<p>This led to a factor list which was tailored to the Peak District as a cultural landscape within its context, which also aligns with international best practice.</p>",
+                "content": "<h2>Step 2 \u2013 Factor identification</h2>",
                 "content_type": "rte",
                 "properties": [],
-                "order": 6
+                "order": 5
             },
             "34": {
                 "id": 34,
@@ -239,8 +429,18 @@
                 "content": "https://report-publishing/media/sotp26/IPBES%20drivers%20of%20change.png",
                 "content_type": "file",
                 "properties": {
+                    "alignright": "1",
+                    "cssclassnames": "mt-0",
                     "caption": "Direct and indirect drivers of change to ecosystems from IPBES\u2019 Global assessment report on Biodiversity and Ecosystem Services report."
                 },
+                "order": 6
+            },
+            "33": {
+                "id": 33,
+                "page_id": 11,
+                "content": "<p>A preliminary list of factors impacting the Peak District list was drawn up during previous work which defined the special qualities of the National Park. This was cross-referenced with the IPBES\u2019s <em>Global assessment report on Biodiversity and Ecosystem Services</em><ReferenceFootnote footnoteref=\"69\">[69]</ReferenceFootnote><em> </em>classification of direct and indirect drivers.</p>\r\n<p>This led to a factor list which was tailored to the Peak District as a cultural landscape within its context, which also aligns with international best practice.</p>",
+                "content_type": "rte",
+                "properties": [],
                 "order": 7
             },
             "35": {
@@ -248,16 +448,38 @@
                 "page_id": 11,
                 "content": "https://report-publishing/media/sotp26/Factors.jpg",
                 "content_type": "file",
-                "properties": [],
+                "properties": {
+                    "alignright": "0",
+                    "cssclassnames": "max-width-md"
+                },
                 "order": 8
+            },
+            "109": {
+                "id": 109,
+                "page_id": 11,
+                "content": "<h2>Step 3 \u2013 Risk assessment</h2>",
+                "content_type": "rte",
+                "properties": [],
+                "order": 9
+            },
+            "29": {
+                "id": 29,
+                "page_id": 11,
+                "content": "https://report-publishing/media/sotp26/Feature%20and%20factor%20explainer.jpg",
+                "content_type": "file",
+                "properties": {
+                    "alignright": "1",
+                    "cssclassnames": "max-width-md"
+                },
+                "order": 10
             },
             "36": {
                 "id": 36,
                 "page_id": 11,
-                "content": "<h2>Step 3 \u2013 Risk assessment</h2>\r\n<p>The risk assessment methodology is drawn from Natural England\u2019s <em>State of Natural Capital Report </em>and the Peak District National Park Authority\u2019s <em>Climate Change Vulnerability Assessment. </em>It was determined that assessing risk at the level of the feature-group was most appropriate due to the availability of information and as this is a landscape-scale report having a higher resolution of assessment for risk is most appropriate.</p>\r\n<p>Risk was estimated by:</p>\r\n<ol>\r\n<li>Determining what factors may cause impact to features over the next 5-10 years (including whether this impact is currently underway or whether it will continue beyond this period).</li>\r\n<li>Assigning a severity and impact rating for each factor against each feature-group based on how many impacts it is likely to cause, the consequences of these impacts, and the certainty and evidence availability that these are likely to occur.</li>\r\n</ol>\r\n<p>Definitions of severity and impact used in this assessment:</p>\r\n<p><strong>Severity</strong>: A measure of how significant the impact will be on the feature which can include how and to what degree it will change the feature, how noticeable this would be to a specialist or non-specialist, the scale of the impact and how manageable the impact could be.</p>\r\n<p><strong>Likelihood</strong>: The chance or possibility that the impact will occur over the next five to ten years taking account of the availability and quality of projections, expert opinions and an estimation of the degree of change that will occur over this time period.</p>",
+                "content": "<p>The risk assessment methodology is drawn from Natural England\u2019s <em>State of Natural Capital Report </em>and the Peak District National Park Authority\u2019s <em>Climate Change Vulnerability Assessment. </em>It was determined that assessing risk at the level of the feature-group was most appropriate due to the availability of information and as this is a landscape-scale report having a higher resolution of assessment for risk is most appropriate.</p>\r\n<p>Risk was estimated by:</p>\r\n<ol>\r\n<li>Determining what factors may cause impact to features over the next 5-10 years (including whether this impact is currently underway or whether it will continue beyond this period).</li>\r\n<li>Assigning a severity and impact rating for each factor against each feature-group based on how many impacts it is likely to cause, the consequences of these impacts, and the certainty and evidence availability that these are likely to occur.</li>\r\n</ol>\r\n<p>Definitions of severity and impact used in this assessment:</p>\r\n<p><strong>Severity</strong>: A measure of how significant the impact will be on the feature which can include how and to what degree it will change the feature, how noticeable this would be to a specialist or non-specialist, the scale of the impact and how manageable the impact could be.</p>\r\n<p><strong>Likelihood</strong>: The chance or possibility that the impact will occur over the next five to ten years taking account of the availability and quality of projections, expert opinions and an estimation of the degree of change that will occur over this time period.</p>",
                 "content_type": "rte",
                 "properties": [],
-                "order": 9
+                "order": 11
             },
             "37": {
                 "id": 37,
@@ -265,7 +487,7 @@
                 "content": "https://report-publishing/media/sotp26/Risk%20ratings.jpg",
                 "content_type": "file",
                 "properties": [],
-                "order": 10
+                "order": 12
             }
         },
         "options": null
@@ -288,7 +510,7 @@
             "39": {
                 "id": 39,
                 "page_id": 12,
-                "content": "https://report-publishing/media/sotp26/LCAs%20nice%20map.jpg",
+                "content": "https://report-publishing/media/sotp26/LCAs%20nice%20map%20small.png",
                 "content_type": "file",
                 "properties": {
                     "alignright": "0",
@@ -296,24 +518,35 @@
                 },
                 "order": 1
             },
+            "41": {
+                "id": 41,
+                "page_id": 12,
+                "content": "https://report-publishing/media/sotp26/Land%20cover%20small.png",
+                "content_type": "file",
+                "properties": {
+                    "alignright": "1",
+                    "cssclassnames": "max-width-md"
+                },
+                "order": 2
+            },
             "40": {
                 "id": 40,
                 "page_id": 12,
                 "content": "<p>While together these LCAs make up the Peak District landscape as a whole, they each have distinct characteristics which can be seen today in the types of land cover across the National Park. The topography and altitude of the Peak District has a significant bearing upon some types of land cover, whilst the climate will also affect the extent of certain vegetation types. Using the most recent UKCEH (the UK Centre for Ecology and Hydrology) land cover data from 2024, the different land cover types within different LCAs become visible; the Dark Peak dominated by bog, the Eastern Moors by acid grassland, and the White Peak by improved and calcareous grassland, for example.</p>",
                 "content_type": "rte",
                 "properties": [],
-                "order": 2
+                "order": 3
             },
-            "41": {
-                "id": 41,
+            "43": {
+                "id": 43,
                 "page_id": 12,
-                "content": "https://report-publishing/media/sotp26/Land%20cover.jpg",
+                "content": "https://report-publishing/media/sotp26/Consituent%20authorities%20map%20small.png",
                 "content_type": "file",
                 "properties": {
-                    "alignright": "0",
+                    "alignright": "1",
                     "cssclassnames": "max-width-md"
                 },
-                "order": 3
+                "order": 4
             },
             "42": {
                 "id": 42,
@@ -321,23 +554,12 @@
                 "content": "<h3>Legal status</h3>\r\n<p>The Peak District was designated as a National Park in 1951, giving it the statutory purposes to:</p>\r\n<ul>\r\n<li>To conserve and enhance the natural beauty, wildlife and cultural heritage</li>\r\n<li>To promote opportunities for the public understanding and enjoyment of the special qualities of the Parks</li>\r\n</ul>\r\n<p>And a duty to:</p>\r\n<ul>\r\n<li>To seek to foster the social and economic wellbeing of the local communities within the National Park in pursuit of our purposes.</li>\r\n</ul>\r\n<p>In cases where an irreconcilable conflict exists between the two purposes, the first purpose should take precedence \u2013 this is known as the Sandford Principle.</p>\r\n<p>Other key pieces of legislation and policy have an influence over the National Park, for example the National Planning Policy Framework which guides the work of the Peak District National Park as a Planning Authority, the Protected Landscapes Targets and Outcomes Framework guides the direction of land management in the National Park, and the Countryside and Rights of Way Act 2000 designates large parts of the National Park as open access for some recreational activities.</p>\r\n<h3>Governance and land ownership</h3>\r\n<p>There is no one person or organisation who is responsible for delivering these purposes for the landscape. The Peak District National Park Authority exists to guide this work and collaborate with stakeholders and delivery partners to develop a National Park Management Plan.</p>\r\n<p>Other constituent authorities in the National Park, along with other government departments and public bodies, such as Natural England and the Environment Agency, have a responsibility to further the delivery of the National Parks purposes (the Protected Landscapes Duty). In return, the Peak District National Park Authority has a responsibility to engage with these bodies in developing the Management Plan.</p>\r\n<p>These \u2018relevant authorities\u2019 \u2013 the local and combined authorities and other public bodies - are one of large land owners in the Peak District who contribute to delivering the National Park purposes. Others include environmental NGOs (non-governmental organisations) such as Wildlife Trusts and the Woodland Trust, as well as private estates. The below map shows some these major land owners, which account for about 40% of the Peak District\u2019s total area. The other 60% is likely to be owned by private individuals such as farms and businesses; there is little data about this land ownership, but it shows that as they own 60% of the land these smaller land owners are also important contributors to delivering the National Park purposes.</p>",
                 "content_type": "rte",
                 "properties": [],
-                "order": 4
-            },
-            "43": {
-                "id": 43,
-                "page_id": 12,
-                "content": "https://report-publishing/media/sotp26/Consituent%20authorities%20map.jpg",
-                "content_type": "file",
-                "properties": {
-                    "alignright": "0",
-                    "cssclassnames": "max-width-md"
-                },
                 "order": 5
             },
             "44": {
                 "id": 44,
                 "page_id": 12,
-                "content": "https://report-publishing/media/sotp26/Land%20ownership.jpg",
+                "content": "https://report-publishing/media/sotp26/MTc5Mzg5MjLand%20ownership%20small.png",
                 "content_type": "file",
                 "properties": {
                     "alignright": "0",
