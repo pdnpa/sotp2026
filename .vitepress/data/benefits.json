@@ -34,26 +34,11 @@
         "factor_factor_impacts": null,
         "impacts": null,
         "features": {
-            "32": {
-                "id": 32,
-                "group_id": 10,
-                "title": "Geomorphology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geomorphology",
-                "url": "/landscape/geodiversity/geomorphology",
-                "options": null
-            },
             "33": {
                 "id": 33,
                 "group_id": 10,
                 "title": "Soils",
-                "key_data": null,
+                "key_data": "An estimated 2.5cm depth of peat is lost every year overall in the Peak District and Southern Pennines. With the exception of the arable loess soils of the White Peak, the vast majority of farmland in the peak district is grade 4 or 5 in the Agricultural Land Classification rating, meaning it is of poor or very poor quality. Intensive agriculture has led to the loss of 40% to 60% of organic carbon in soils across England and Wales.",
                 "descriptions": null,
                 "conditions": null,
                 "distributions": null,
@@ -62,7 +47,9 @@
                 "landscape_character_areas": null,
                 "slug": "soils",
                 "url": "/landscape/geodiversity/soils",
-                "options": null
+                "options": {
+                    "distribution_block_stacked": "1"
+                }
             }
         },
         "group_impacts": null,
@@ -87,23 +74,7 @@
         "factor_impacts": null,
         "factor_factor_impacts": null,
         "impacts": null,
-        "features": {
-            "32": {
-                "id": 32,
-                "group_id": 10,
-                "title": "Geomorphology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geomorphology",
-                "url": "/landscape/geodiversity/geomorphology",
-                "options": null
-            }
-        },
+        "features": [],
         "group_impacts": null,
         "images": {
             "3": {
@@ -148,7 +119,7 @@
                 "id": 31,
                 "group_id": 10,
                 "title": "Geology",
-                "key_data": null,
+                "key_data": "31 active surface mineral extraction sites, 1 dormant surface site, 1 active (but not producing) underground mine, 2 dormant underground mines and 6 sites in aftercare (as of 2025). Hope Cement Works is the UK's largest cement plant, producing around 16% of UK cement. Fluorspar production at Milldam Mine stopped in 2023.",
                 "descriptions": null,
                 "conditions": null,
                 "distributions": null,
@@ -157,22 +128,9 @@
                 "landscape_character_areas": null,
                 "slug": "geology",
                 "url": "/landscape/geodiversity/geology",
-                "options": null
-            },
-            "32": {
-                "id": 32,
-                "group_id": 10,
-                "title": "Geomorphology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geomorphology",
-                "url": "/landscape/geodiversity/geomorphology",
-                "options": null
+                "options": {
+                    "distribution_block_stacked": "1"
+                }
             },
             "21": {
                 "id": 21,
@@ -187,7 +145,9 @@
                 "landscape_character_areas": null,
                 "slug": "religious-buildings",
                 "url": "/cultural-heritage/historic-buildings/religious-buildings",
-                "options": null
+                "options": {
+                    "distribution_block_stacked": "1"
+                }
             },
             "24": {
                 "id": 24,
@@ -202,7 +162,9 @@
                 "landscape_character_areas": null,
                 "slug": "agricultural-landscapes",
                 "url": "/cultural-heritage/heritage-landscapes/agricultural-landscapes",
-                "options": null
+                "options": {
+                    "distribution_block_stacked": "1"
+                }
             }
         },
         "group_impacts": null,
@@ -245,21 +207,6 @@
                     "distribution_block_stacked": "1"
                 }
             },
-            "32": {
-                "id": 32,
-                "group_id": 10,
-                "title": "Geomorphology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geomorphology",
-                "url": "/landscape/geodiversity/geomorphology",
-                "options": null
-            },
             "21": {
                 "id": 21,
                 "group_id": 5,
@@ -273,7 +220,9 @@
                 "landscape_character_areas": null,
                 "slug": "religious-buildings",
                 "url": "/cultural-heritage/historic-buildings/religious-buildings",
-                "options": null
+                "options": {
+                    "distribution_block_stacked": "1"
+                }
             },
             "24": {
                 "id": 24,
@@ -288,7 +237,9 @@
                 "landscape_character_areas": null,
                 "slug": "agricultural-landscapes",
                 "url": "/cultural-heritage/heritage-landscapes/agricultural-landscapes",
-                "options": null
+                "options": {
+                    "distribution_block_stacked": "1"
+                }
             }
         },
         "group_impacts": null,
@@ -314,26 +265,11 @@
         "factor_factor_impacts": null,
         "impacts": null,
         "features": {
-            "32": {
-                "id": 32,
-                "group_id": 10,
-                "title": "Geomorphology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geomorphology",
-                "url": "/landscape/geodiversity/geomorphology",
-                "options": null
-            },
             "33": {
                 "id": 33,
                 "group_id": 10,
                 "title": "Soils",
-                "key_data": null,
+                "key_data": "An estimated 2.5cm depth of peat is lost every year overall in the Peak District and Southern Pennines. With the exception of the arable loess soils of the White Peak, the vast majority of farmland in the peak district is grade 4 or 5 in the Agricultural Land Classification rating, meaning it is of poor or very poor quality. Intensive agriculture has led to the loss of 40% to 60% of organic carbon in soils across England and Wales.",
                 "descriptions": null,
                 "conditions": null,
                 "distributions": null,
@@ -342,7 +278,9 @@
                 "landscape_character_areas": null,
                 "slug": "soils",
                 "url": "/landscape/geodiversity/soils",
-                "options": null
+                "options": {
+                    "distribution_block_stacked": "1"
+                }
             }
         },
         "group_impacts": null,
@@ -390,23 +328,7 @@
         "factor_impacts": null,
         "factor_factor_impacts": null,
         "impacts": null,
-        "features": {
-            "32": {
-                "id": 32,
-                "group_id": 10,
-                "title": "Geomorphology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geomorphology",
-                "url": "/landscape/geodiversity/geomorphology",
-                "options": null
-            }
-        },
+        "features": [],
         "group_impacts": null,
         "images": {
             "8": {
@@ -503,7 +425,7 @@
                 "id": 31,
                 "group_id": 10,
                 "title": "Geology",
-                "key_data": null,
+                "key_data": "31 active surface mineral extraction sites, 1 dormant surface site, 1 active (but not producing) underground mine, 2 dormant underground mines and 6 sites in aftercare (as of 2025). Hope Cement Works is the UK's largest cement plant, producing around 16% of UK cement. Fluorspar production at Milldam Mine stopped in 2023.",
                 "descriptions": null,
                 "conditions": null,
                 "distributions": null,
@@ -512,22 +434,9 @@
                 "landscape_character_areas": null,
                 "slug": "geology",
                 "url": "/landscape/geodiversity/geology",
-                "options": null
-            },
-            "32": {
-                "id": 32,
-                "group_id": 10,
-                "title": "Geomorphology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geomorphology",
-                "url": "/landscape/geodiversity/geomorphology",
-                "options": null
+                "options": {
+                    "distribution_block_stacked": "1"
+                }
             }
         },
         "group_impacts": null,
@@ -569,26 +478,11 @@
         "factor_factor_impacts": null,
         "impacts": null,
         "features": {
-            "32": {
-                "id": 32,
-                "group_id": 10,
-                "title": "Geomorphology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geomorphology",
-                "url": "/landscape/geodiversity/geomorphology",
-                "options": null
-            },
             "33": {
                 "id": 33,
                 "group_id": 10,
                 "title": "Soils",
-                "key_data": null,
+                "key_data": "An estimated 2.5cm depth of peat is lost every year overall in the Peak District and Southern Pennines. With the exception of the arable loess soils of the White Peak, the vast majority of farmland in the peak district is grade 4 or 5 in the Agricultural Land Classification rating, meaning it is of poor or very poor quality. Intensive agriculture has led to the loss of 40% to 60% of organic carbon in soils across England and Wales.",
                 "descriptions": null,
                 "conditions": null,
                 "distributions": null,
@@ -597,7 +491,9 @@
                 "landscape_character_areas": null,
                 "slug": "soils",
                 "url": "/landscape/geodiversity/soils",
-                "options": null
+                "options": {
+                    "distribution_block_stacked": "1"
+                }
             }
         },
         "group_impacts": null,
@@ -623,21 +519,6 @@
         "factor_factor_impacts": null,
         "impacts": null,
         "features": {
-            "32": {
-                "id": 32,
-                "group_id": 10,
-                "title": "Geomorphology",
-                "key_data": null,
-                "descriptions": null,
-                "conditions": null,
-                "distributions": null,
-                "benefits": null,
-                "factors": null,
-                "landscape_character_areas": null,
-                "slug": "geomorphology",
-                "url": "/landscape/geodiversity/geomorphology",
-                "options": null
-            },
             "24": {
                 "id": 24,
                 "group_id": 8,
@@ -651,7 +532,9 @@
                 "landscape_character_areas": null,
                 "slug": "agricultural-landscapes",
                 "url": "/cultural-heritage/heritage-landscapes/agricultural-landscapes",
-                "options": null
+                "options": {
+                    "distribution_block_stacked": "1"
+                }
             }
         },
         "group_impacts": null,
